@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pv-inquiry</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body id="PV-Inquiry">
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li>
+                    <a href="dashboard.html">My Business Center</a></li>
+                <li>PV Inquiry</li></ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/pv-inquiry" class="js-account-option-link text-capitalize">PV Inquiry</option>
+                        <option value="/my-business-center/customer-sales-history" class="js-account-option-link text-capitalize">Customer Sales History</option>
+                        <option value="/my-business-center/key-indicators" class="js-account-option-link text-capitalize">Key Indicators</option>
+                        <option value="/my-business-center/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center" class="js-account-option-link text-capitalize">Business Center</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">Line of Sponsorship</option>
+                        <option value="/my-business-center/create-receipt" class="js-account-option-link text-capitalize">Create a Receipt</option>
+                        <option value="/my-business-center/PV/BV-Transfer" class="js-account-option-link text-capitalize">PV/BV Transfer</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+                <div class="buttons-wrap">
+                    <div class="edit-button-wrap">
+                        <a class="prw-link-reg" href="">
+                            <div class="prw-btn-reg">
+                                <span class="prw-panel-icon icon-register-user"></span>
+                                <span>Register</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="edit-button-wrap">
+                        <a class="prw-btn-edit">
+                            <span class="prw-panel-icon icon-edit"></span>
+                            <span>Edit</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container kpi-tracking PV-inquiry">
+        <div class="account-section">
+            <div class="account-section-content order-history-account-section-content">
+                <div class="row">
+                    <div class="container-lg">
+                        <div class="account-landing-page">
+                            <div class="order-history-box">
+                                <div class="customer-sales-history-searched-content">
+                                    <h1 class="page-title">PV Inquiry</h1>
+                                    <div class="key-indicator-description">Brief description about PV Inquiry will do here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus  vulputate diam eu prelium. Mauris elit orci,
+                                        ultricies id fementum vel, porta et eros.</div>
+                                </div>
+                                <div class="account-section-content order-history-account-section-content inter-account-section">
+                                    <div class="amway-theme">
+                                        <!--tabs component-->
+                                        <div class="ditto-nav-tabs-wrap js-ditto-nav-tabs-wrap">
+                                            <div class="navigation-tabs-container">
+                                                <div class="form-wrapper search-form-wrapper js-search-form-wrapper">
+                                                    <form id="searchForm" action="" method="POST">
+                                                        <span class="bonus-period">Bonus Period</span>
+                                                        <select id="transaction-type" name="sort" class="form-control">
+                                                            <option value="relevance-default-s" selected="selected">November 2016</option>
+                                                            <option value="name-asc-s">December 2016</option>
+                                                            <option value="name-desc-s">April 2016</option>
+                                                        </select>
+                                                        <button class="btn btn-primary" type="submit">
+                                                            <span>Apply</span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                                <div class="outer-border-bottom">
+                                                <ul class="tabs-toggles">
+                                                    <li class="tab-toggle-wrap js-tab-toggle-wrap active">
+                                                        <a class="tab-toggle" href="#personal-pv" data-toggle="tab">
+                                                            <h6 class="toggle-text">Personal PV Details</h6></a>
+                                                    </li>
+                                                    <li class="tab-toggle-wrap js-tab-toggle-wrap">
+                                                        <a class="tab-toggle" href="#downLine-personal-PV" data-toggle="tab">
+                                                            <h6 class="toggle-text">DownLine Personal PV</h6></a>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                                <div class="tab-content tabs-content-blocks my-count-page-wrap pv-inquiry">
+                                                    <div class="tab-pane content-block  active" id="personal-pv">
+                                                        <div class="list-content">
+                                                            <div class="list-row-title row">
+                                                                <div class="col-md-2 col-xs-7">invoice Number<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 col-xs-5 col-xs-rig">description<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">ordering ID#<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">Date<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">CVR<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">PV<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">BV<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Account +/-<i class="fas fa-angle-down"></i></div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-2 col-xs-7">1390665812</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Web Delivery</div>
+                                                                    <div class="col-md-2 col-xs-7">60</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">11/30/2018</div>
+                                                                    <div class="col-md-1 col-xs-7">No</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">1,904.28</div>
+                                                                    <div class="col-md-1 col-xs-7">5,919.87</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">$0.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-2 col-xs-7">1390665812</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">VISA Usage-Other-IBO</div>
+                                                                    <div class="col-md-2 col-xs-7">60</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">11/30/2018</div>
+                                                                    <div class="col-md-1 col-xs-7">No</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">1,904.28</div>
+                                                                    <div class="col-md-1 col-xs-7">5,919.87</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">$0.00</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane content-block" id="downLine-personal-PV">
+                                                        <div class="sort-refine-bar">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 col-sm-12 col-md-5">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label cart-detail__label" for="sortForm1">Sort by</label>
+                                                                        <select class="cart-detail__size" id="sortBy">
+                                                                            <option selected="">All</option>
+                                                                            <option>IBO Name & Number</option>
+                                                                            <option>Type</option>
+                                                                        </select>
+                                                                        <button class="payment-forms__apply btn primary cart-detail__mob-hide" href="javascript:void(0);">apply</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-7 pointer-icon">
+                                                                    <span class="list-product">
+                                                                        <span><img src="images/pv-inquiry1.svg">Personally Sponsored</span>
+                                                                        <span class="divider hidden-sm hidden-xs">|</span>
+                                                                        <span><img src="images/pv-inquiry2.svg">Group Leader</span>
+                                                                        <span class="divider hidden-sm hidden-xs">|</span>
+                                                                        <span><img src="images/pv-inquiry3.svg">Qualified Platinum</span>
+                                                                        <span class="divider  hidden-sm hidden-xs">|</span>
+                                                                        <span><img src="images/pv-inquiry4.svg">Platinum</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-content">
+                                                            <div class="list-row-title row">
+                                                                <div class="col-md-4 col-xs-7">IBO Name & Number<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 col-xs-5 col-xs-rig">type<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">CVR<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">PPV<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">PBV<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-1 hidden-xs">APV<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Bonus%<i class="fas fa-angle-down"></i></div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-4 col-xs-7">Abbott,James & Bea-579848</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig"><img src="images/pv-inquiry1.svg"></div>
+                                                                    <div class="col-md-1 col-xs-7 red">No</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">140.20</div>
+                                                                    <div class="col-md-1 col-xs-7">465.81</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">1,904.28</div>
+                                                                    <div class="col-md-2 col-xs-7 red">3%</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-4 col-xs-7">Bohannnon, Rebecca & Roy - 7289395</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig"><img src="images/pv-inquiry2.svg"><img src="images/pv-inquiry4.svg"></div>
+                                                                    <div class="col-md-1 col-xs-7 red">Yes</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">140.20</div>
+                                                                    <div class="col-md-1 col-xs-7">465.81</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">1,904.28</div>
+                                                                    <div class="col-md-2 col-xs-7 red">16%</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-4 col-xs-7">Abbott,James & Bea-579848</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig"><img src="images/pv-inquiry1.svg"><img src="images/pv-inquiry2.svg"><img src="images/pv-inquiry3.svg"></div>
+                                                                    <div class="col-md-1 col-xs-7 red">---</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">140.20</div>
+                                                                    <div class="col-md-1 col-xs-7">465.81</div>
+                                                                    <div class="col-md-1 col-xs-5 col-xs-rig">1,904.28</div>
+                                                                    <div class="col-md-2 col-xs-7 red">22%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="account-orderhistory-pagination">
+                                                            <p class="text-center">
+                                                                <a type="button" id="show-more" class="btn-link show-more-orders js-show-more-personal"><span>View More</span>
+                                                                    <span class="icon icon-arrow-dropdown"></span>
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div id="cboxOverlay" class="bonus-payment-method"></div>
+<div id="colorbox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened personal-pv-box" >
+    <div id="cboxWrapper">
+        <div id="cboxContent">
+            <div id="cboxTitle" style="float: left; display: table;">
+                <div class="headline">
+                    <span class="headline-text">Invoice Number : #1390665812</span></div>
+            </div>
+            <div id="cboxLoadedContent">
+                <div id="bonusPaymentMethodHistory" class="row">
+                    <div class="invoice-box-content-items col-md-4 col-xs-12">
+                    <div class="invoice-box-content-item-header">This Order will ship to</div>
+                    <div class="invoice-box-content-item-body">
+                        <div>John Smit</div>
+                        <div>259 Burlingame Ave SW</div>
+                        <div>Wyoming, MI 49509-5337</div>
+                        <div>(555) 345-7989</div>
+                        <div>#3546576</div>
+                    </div>
+                </div>
+                    <div class="invoice-box-content-items col-md-4 col-xs-12">
+                        <div class="invoice-box-content-item-header">This Order will bill to</div>
+                        <div class="invoice-box-content-item-body">
+                            <div>John Smit</div>
+                            <div>259 Burlingame Ave SW</div>
+                            <div>Wyoming, MI 49509-5337</div>
+                            <div>(555) 345-7989</div>
+                            <div>#3546576</div>
+                        </div>
+                    </div>
+                    <div class="invoice-box-content-items col-md-4 col-xs-12">
+                        <div class="invoice-box-content-item-header">Order Setup Options</div>
+                        <div class="invoice-box-content-item-body last-item">
+                            <div><span>Exempt From Sales Tax</span>No</div>
+                            <div><span>Bonus Period</span>8/2016</div>
+                            <div><span>Shipping Method</span>Economy</div>
+                            <div><span>Volume IBO</span>John Smith</div>
+                        </div>
+                    </div>
+                    <div class="ditto-view-by-month-wrapper">
+                        <div class="ditto-month">
+                            <div class="col-md-12 ditto-list-colomn-wrapper">
+                                <div class="ditto-item-list add-to-component-container">
+                                    <hr>
+                                    <ul class="ditto-item-list js-ditto-item-list ditto-month-list">
+                                        <li class="hidden-xs hidden-sm product-list-head clearfix">
+                                            <div class="col-md-4  head-item-title first-title">
+                                                Product Details
+                                            </div>
+                                            <div class="col-md-8 head-product-prop-wrapper">
+                                                <div class="col-md-2  list-item-quantity">Qty</div>
+                                                <div class="col-md-4  head-item-title head-price-title">Set Price</div>
+                                                <div class="col-md-3 total-pvbv-width  head-item-title">Total Price</div>
+                                                <div class="col-md-3 total-pvbv-width  head-item-title">Total PV/BV</div>
+                                            </div>
+                                        </li>
+                                        <li class="js-ditto-product-item first-item">
+                                            <div class="ditto-product-item-wrapper">
+                                                <div class="col-sm-12 col-md-4 product-details-wrapper">
+                                                    <!-- checkbox -->
+                                                    <!-- product image -->
+                                                    <div class="product-details-cell product-item-image">
+                                                        <div class="image-wrapper">
+                                                            <a href=""><img src="images/energe.png" alt="XS™ Energy + Focus Dietary Supplement" title="XS™ Energy + Focus Dietary Supplement">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- product name, code -->
+                                                    <div class="product-details-cell product-item-description">
+
+                                                        <a href="" class="item-name">
+                                                            <span>	XS™ Energy + Focus Dietary Supplement</span>
+                                                        </a>
+                                                        <div class="item-number-block">
+                                                            <span>Item #</span>
+                                                            <span class="item-text">107846</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-8 product-prop-wrapper">
+                                                    <!-- qty -->
+                                                    <div class="col-md-2 product-prop-qty">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Qty
+                                                                    </label>
+                                                              </span>
+                                                        <div class="amway-theme"> 1</div>
+                                                    </div>
+
+                                                    <!-- price -->
+                                                    <div class="col-sm-12 col-md-4 product-prop-price">
+                                                        <div class="prop-price-text">
+                                                                  <span class="visible-xs visible-sm">
+                                                                        <label class="visible-xs visible-sm">
+                                                                            Set price:
+                                                                        </label>
+                                                                    </span>
+
+                                                            <div class="amway-theme">
+                                                                IBO Price-$95.40
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- total price -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-total">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Total Price:
+                                                                    </label>
+                                                                </span>
+                                                        <span class="value-wrapper">
+										                            $95.40
+							                                    </span>
+                                                    </div>
+                                                    <!-- pv/bv -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-pvbv print-col-3">
+                                                            <span class="visible-xs visible-sm">
+                                                                <label class="visible-xs visible-sm">
+                                                                  Total PV/BV:
+                                                              </label>
+                                                            </span>
+                                                        <span>
+                                                                5.0 /
+                                                                4.0
+                                                            </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="js-ditto-product-item">
+                                            <div class="ditto-product-item-wrapper">
+                                                <div class="col-sm-12 col-md-4 product-details-wrapper">
+                                                    <!-- checkbox -->
+                                                    <!-- product image -->
+                                                    <div class="product-details-cell product-item-image">
+                                                        <div class="image-wrapper">
+                                                            <a href=""><img src="images/Nutrilite_Bundle.jpg" alt="Nutrilite Cal Mag D" title="Nutrilite Cal Mag D">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- product name, code -->
+                                                    <div class="product-details-cell product-item-description">
+
+                                                        <a href="" class="item-name">
+                                                            <span>Nutrilite Cal Mag D</span>
+                                                        </a>
+                                                        <div class="item-number-block">
+                                                            <span>Item #</span>
+                                                            <span class="item-text">107846</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-8 product-prop-wrapper">
+                                                    <!-- qty -->
+                                                    <div class="col-md-2 product-prop-qty">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Qty
+                                                                    </label>
+                                                              </span>
+                                                        <div class="amway-theme"> 1</div>
+                                                    </div>
+
+                                                    <!-- price -->
+                                                    <div class="col-sm-12 col-md-4 product-prop-price">
+                                                        <div class="prop-price-text">
+                                                                  <span class="visible-xs visible-sm">
+                                                                        <label class="visible-xs visible-sm">
+                                                                            Set price:
+                                                                        </label>
+                                                                    </span>
+
+                                                            <div class="amway-theme">
+                                                                IBO Price-$95.40
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- total price -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-total">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Total Price:
+                                                                    </label>
+                                                                </span>
+                                                        <span class="value-wrapper">
+										                            $95.40
+							                                    </span>
+                                                    </div>
+                                                    <!-- pv/bv -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-pvbv print-col-3">
+                                                            <span class="visible-xs visible-sm">
+                                                                <label class="visible-xs visible-sm">
+                                                                  Total PV/BV:
+                                                              </label>
+                                                            </span>
+                                                        <span>
+                                                                5.0 /
+                                                                4.0
+                                                            </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="js-ditto-product-item">
+                                            <div class="ditto-product-item-wrapper">
+                                                <div class="col-sm-12 col-md-4 product-details-wrapper">
+                                                    <!-- checkbox -->
+                                                    <!-- product image -->
+                                                    <div class="product-details-cell product-item-image">
+                                                        <div class="image-wrapper">
+                                                            <a href=""><img src="images/energe.png" alt="XS™ Energy + Focus Dietary Supplement" title="XS™ Energy + Focus Dietary Supplement">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- product name, code -->
+                                                    <div class="product-details-cell product-item-description">
+
+                                                        <a href="" class="item-name">
+                                                            <span>	XS™ Energy + Focus Dietary Supplement</span>
+                                                        </a>
+                                                        <div class="item-number-block">
+                                                            <span>Item #</span>
+                                                            <span class="item-text">107846</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-8 product-prop-wrapper">
+                                                    <!-- qty -->
+                                                    <div class="col-md-2 product-prop-qty">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Qty
+                                                                    </label>
+                                                              </span>
+                                                        <div class="amway-theme"> 1</div>
+                                                    </div>
+
+                                                    <!-- price -->
+                                                    <div class="col-sm-12 col-md-4 product-prop-price">
+                                                        <div class="prop-price-text">
+                                                                  <span class="visible-xs visible-sm">
+                                                                        <label class="visible-xs visible-sm">
+                                                                            Set price:
+                                                                        </label>
+                                                                    </span>
+
+                                                            <div class="amway-theme">
+                                                                IBO Price-$95.40
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- total price -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-total">
+                                                                <span class="visible-xs visible-sm">
+                                                                    <label class="visible-xs visible-sm">
+                                                                        Total Price:
+                                                                    </label>
+                                                                </span>
+                                                        <span class="value-wrapper">
+										                            $95.40
+							                                    </span>
+                                                    </div>
+                                                    <!-- pv/bv -->
+                                                    <div class="col-sm-12 col-md-3 total-pvbv-width product-prop-text product-prop-pvbv print-col-3">
+                                                            <span class="visible-xs visible-sm">
+                                                                <label class="visible-xs visible-sm">
+                                                                  Total PV/BV:
+                                                              </label>
+                                                            </span>
+                                                        <span>
+                                                                5.0 /
+                                                                4.0
+                                                            </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amway-theme">
+                        <div class="navigation-tabs-container order-history-container js-order-history-container">
+                            <div class="amway-theme clearfix">
+                                <div class="table-content-rows order-history-summary">
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-bonus-period-title">
+                                                        Bonus Period Applied
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-bonus-period-value-order">
+                                                        08/2017
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-items-total-title">
+                                                        Item(s) Total
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-items-total-value-order">
+                                                        $30.40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-delivery-title">
+                                                        Promotions
+                                                        <span class="order-details-wrapper">
+                                                            (
+                                                            <span class="order-details-btn js-checkout-tax-details-btn red" data-content="orderSummaryTaxModal100-700000926">
+                                                                Details
+                                                            </span>
+                                                            )
+                                                        </span>
+                                                    </span>
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-delivery-value-order">
+                                                        $20.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-delivery-title">
+                                                        Delivery
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-delivery-value-order">
+                                                        $20.00
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-tax-delivery-title">
+                                                        Tax on Delivery
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-tax-delivery-value-order">
+                                                        $0.80
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-sales-tax-title">
+                                                        Sales Tax
+                                                        <span class="order-details-wrapper">
+                                                            (
+                                                            <span class="order-details-btn js-checkout-tax-details-btn" data-content="orderSummaryTaxModal100-700000926">
+                                                                Details
+                                                            </span>
+                                                            )
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-sales-tax-value-order">
+                                                        $6.99
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-service-fee-title">
+                                                        Service Fee(s)
+                                                         <span class="order-details-wrapper">
+                                                            (
+                                                            <span class="order-details-btn js-checkout-tax-details-btn red" data-content="orderSummaryTaxModal100-700000926">
+                                                                Details
+                                                            </span>
+                                                            )
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-service-fee-value-order">
+                                                        FREE
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row table-row total-row">
+                                        <div class="col-xs-12">
+                                            <div class="table-row-wrapper clearfix">
+                                                <div class="col-xs-6 row-element">
+                                                    <span class="row-text js-automation-total-title">
+                                                        Total
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+
+                                                </div>
+                                                <div class="col-xs-3 row-element">
+                                                    <span class="visible-sm header-text">
+                                                        Order
+                                                    </span>
+                                                    <span class="row-text js-automation-total-value-order">
+                                                        $58.19
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button type="button" id="cboxClose" class="cClose"><span class="modal-close-icon">×</span></button>
+    </div>
+</div>
+<div id="colorbox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox Ditto-colorbox downline-pv-box">
+    <div id="cboxWrapper">
+        <div id="cboxContent">
+            <div id="cboxTitle" style="float: left; display: table;">
+                <div class="headline">
+                    <span class="headline-text">IBO Profile</span></div>
+            </div>
+            <div id="cboxLoadedContent"  class="downline-box-content">
+                <div class="IBO-profile-top">
+                    <div class="IBO-profile-left">
+                        <img src="images/yui.png" alt="">
+                        <span class="user-name">Yui Mori</span>
+                    </div>
+                    <div class="IBO-profile-right">
+                        <span class="list-product">
+                            <span class="">IBO # 12345657</span>
+                            <span class="divider">|</span>
+                            <span class="">United States</span>
+                             <span class="divider">|</span>
+                             <span class=""><img src="images/users-icon.png">&nbsp;45</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="IBO-profile-middle">
+                    <div class="shipping-delivery-ship">
+                        <div class="order-preview-box">
+                            <label class="order-preview-label">mobile phone</label>
+                            <div class="order-preview-value">
+                                <p class="shipping-delivery-address-detail">(555) 456-7890</p></div>
+                        </div>
+                        <div class="order-preview-box">
+                            <label class="order-preview-label">email</label>
+                            <div class="order-preview-value">
+                                <p class="shipping-delivery-address-detail">amyrnac_amway@email.com</p></div>
+                        </div>
+                        <div class="order-preview-box">
+                            <label class="order-preview-label">address</label>
+                            <div class="order-preview-value">
+                                <p class="shipping-delivery-address-detail">2980 Burlingame Ave SW
+                                    <br>Wyoming, MI 29509-5337
+                                   <br> United States
+                                   </p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="IBO-profile-bottom row">
+                    <div class="invoice-box-content-items col-md-4 col-xs-12">
+                        <div class="invoice-box-content-item-header">Foster Sponsor</div>
+                        <div class="invoice-box-content-item-body">
+                            <div>Gustafsson, Jakob</div>
+                            <div>ABO # 1234567  |  Sweden</div>
+                            <div>+46 123 456 789</div>
+                            <div>amwayjakob@email.com</div>
+                            <img src="images/yui.png" alt="">
+                        </div>
+                    </div>
+                    <div class="invoice-box-content-items col-md-4 col-xs-12">
+                        <div class="invoice-box-content-item-header">Platinum</div>
+                        <div class="invoice-box-content-item-body">
+                            <div>Gustafsson, Jakob</div>
+                            <div>ABO # 1234567  |  Sweden</div>
+                            <div>+46 123 456 789</div>
+                            <div>amwayjakob@email.com</div>
+                            <img src="images/yui.png" alt="">
+                        </div>
+                    </div>
+                    <div class="invoice-box-content-items empty col-md-4 col-xs-12">
+                        <div class="invoice-box-content-item-header"></div>
+                        <div class="invoice-box-content-item-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button type="button" id="cboxClose" class="cClose01"><span class="modal-close-icon">×</span></button>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".select2-hidden-accessible").select2();
+
+        //personal box
+        $('#personal-pv .responsive-table-link').click(function(event) {
+            event.preventDefault();
+            $("#cboxOverlay, #colorbox.personal-pv-box").show();
+        });
+        $(".personal-pv-box .cClose").click(function() {
+            $("#cboxOverlay, #colorbox.personal-pv-box").hide();
+        });
+
+        //downline box
+        $('#downLine-personal-PV .responsive-table-link').click(function(event) {
+            event.preventDefault();
+            $("#cboxOverlay, #colorbox.downline-pv-box").show();
+        });
+        $(".downline-pv-box .cClose01").click(function() {
+            $("#cboxOverlay,#colorbox.downline-pv-box").hide();
+        });
+    })
+</script>
+</body>
+
+</html>

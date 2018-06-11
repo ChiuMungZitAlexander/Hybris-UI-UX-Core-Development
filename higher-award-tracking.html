@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>higher-award-tracking</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body id="key-indicators">
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li>
+                    <a href="dashboard.html">My Business Center</a></li>
+                <li>Higher Award Tracking</li></ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/LOS-ListView" class="js-account-option-link text-capitalize">LOS List View</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">LOS Tree View</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                        <option value="/my-business-center/higher-award-tracking" class="js-account-option-link text-capitalize" selected="selected">Higher Award Tracking</option>
+                        <option value="/my-business-center/dashboard" class="js-account-option-link text-capitalize">Dashboard</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container kpi-tracking">
+        <div class="account-section">
+            <div class="account-section-content order-history-account-section-content">
+                <div class="row">
+                    <div class="container-lg">
+                        <div class="account-landing-page">
+                            <div class="order-history-box">
+                                <div class="customer-sales-history-searched-content">
+                                    <h1 class="page-title">HIGHER AWARD TRACKING</h1>
+                                </div>
+                                <div>
+                                    <img style="max-width: 100%;" src="images/form-img-5.png">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".select2-hidden-accessible").select2();
+
+        $(".checkbox-element-wrapper").click(function(e){
+            e.preventDefault();
+            if(!$(this).parent(".chart-select-item").hasClass('active')){
+                $(this).parent(".chart-select-item").addClass("active");
+            }else{
+                $(this).parent(".chart-select-item").removeClass("active");
+            }
+
+        })
+    })</script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bonus-payment-preference</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        
+        <link rel="stylesheet" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body class="page-bonus-payment">
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li> <a href="my-account.html">My Account</a></li>
+                <li> Bonus Payment Preferences</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container-fluid my-count">
+        <div class="row">
+            <div class="container-lg">
+                <div class="account-landing-page">
+                    <div class="user-account-header row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="user-block col-sm-4">
+                                    <div class="user-image-container">
+                                        <img class="user-image" src="images/yui.png">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </div>
+                                    <div class="user-info">
+                                        <span class="user-name">Yui Mori</span>
+                                        <span class="user-id">ABO # 1234567</span>
+                                    </div>
+                                </div>
+                                <div class="go-block col-sm-8">
+                                    <div class="amway-theme">
+                                        <div class="jump-to">
+                                            <span>Jump to</span>
+                                        </div>
+                                        <div class="jump-to-wrapper">
+                                            <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                                <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                                <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                                <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                                <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                                <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                                <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                                <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                                <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Edit Profile</option>
+                                                <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T & C Management</option>
+                                                <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                                <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                            </select>
+                                            <input type="button" class="js-jump-to-selection-btn" value="GO">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="bonus-payment amway-theme">
+                    <div class="bonus-payment-content">
+                        <div class="bonus-payment-wrapper">
+                            <div class="bonus-payment__title">
+                                <span class="icon icon-credit bonus-payment__title-icon"></span>Bonus payment preferances</div>
+                            <div class="bonus-payment__description">How do you want to receive your bonus payment? We offer paper check, direct deposit, eCelerate, and more.</div>
+                            <div class="bonus-payment__items">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="bonus-payment__item">
+                                            <div class="bonus-payment__item-title">paper check</div>
+                                            <div class="bonus-payment__item-description">Receive a check for your bonus amount.</div>
+                                            <a class="bonus-payment__item-button bonus-payment__item-button--activated">
+                                                <span class="icon icon-check-bold-with-circle bonus-payment__item-button--activated-icon"></span>Activated
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="bonus-payment__item">
+                                            <div class="bonus-payment__item-title">direct deposit</div>
+                                            <div class="bonus-payment__item-description">Receive a paperless transfer for your bonus amount.</div>
+                                            <a id="bonus-payment-new" class="bonus-payment__item-button btn btn-primary js-bonus-payment-btn">Activate</a>
+                                            <a class="bonus-payment__item-button bonus-payment__item-button--activated" style="display:none;">
+                                                <span class="icon icon-check-bold-with-circle bonus-payment__item-button--activated-icon"></span>Activated
+                                            </a>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <div class="bonus-payment__item">
+                                            <div class="bonus-payment__item-title">prepaid card</div>
+                                            <div class="bonus-payment__item-description">Receive a prepaid card for your bonus amount.</div>
+                                            <a class="bonus-payment__item-button btn btn-primary js-bonus-payment-btn" data-content="bonusPaymentPrepaidCard" data-promotions-modal-title="bonus payment method: prepaid card" data-active-link="/activate/prepaid_card">Activate</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bonus-payment__history js-bonus-payment-btn" data-content="bonusPaymentMethodHistory" data-promotions-modal-title="bonus payment method: history" data-active-link="/history">
+                                <a href="#">View Payment Method History</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div id="cboxOverlay" class="bonus-payment-method"></div>
+<div id="colorbox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox" >
+    <div id="cboxWrapper">
+        <div id="cboxContent">
+            <div class="step_01">
+                <div id="cboxLoadedContent">
+                    <div id="bonusPaymentDirectDeposit">
+                        <div class="bonus-payment-method__wrapper">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="bonus-payment-method__text">Ready to opt-in to direct deposit? Simply add your bank account information below for authorization.</div></div>
+                                <div class="col-xs-12">
+                                    <div class="bonus-payment-method__text bonus-payment-method__text--required">All fields are required.</div></div>
+                            </div>
+                            <form id="bonus-payment-form" class="bonus-payment-method-form" action="#" method="post">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-7">
+                                        <div class="form-group bonus-payment-method-form__input ">
+                                            <label class="control-label " for="name">Account holder's name</label>
+                                            <input id="name" name="accountHolderName" class="text form-control" type="text" value=""></div>
+                                        <div class="form-group bonus-payment-method-form__input ">
+                                            <label class="control-label " for="routingNumber">Routing number</label>
+                                            <input id="routingNumber" name="routingNumber" class="text form-control" type="text" value=""></div>
+                                        <div class="form-group bonus-payment-method-form__input ">
+                                            <label class="control-label " for="accountNumber">Account number</label>
+                                            <input id="accountNumber" name="accountNumber" class="text form-control" type="text" value=""></div>
+                                        <div class="form-group bonus-payment-method-form__input ">
+                                            <label class="control-label " for="institution">Banking institution</label>
+                                            <input id="institution" name="bankingInstitution" class="text form-control" type="text" value=""></div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="accountType">Account type</label>
+                                            <select id="accountType"  class="js-jump-to-selection hide select2-hidden-accessible form-control" name="accountType">
+                                                <option value="Checking">Checking</option>
+                                                <option value="Saving">Saving</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-5">
+                                        <div class="bonus-payment-method__image-wrapper"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-12">
+                                        <div class="form-group">
+                                            <label class="control-label bonus-payment-method-form__agreement" for="agreement">authorization &amp; agreement</label>
+                                            <textarea disabled="" id="agreement" name="agreement">You hereby authorize Amway to make deposits or transmit ACH credits from time to time to the above-described account maintained at the above-named Financial Institution as a means of issuing bonus payments to the IBO number listed above. This authorization shall remain in full force and effect until such time that it is terminated as provided below. You further agree that: The deposit by Amway of the first ACH credit transmitted under this Agreement shall constitute Amway's acceptance of this Agreement. Amway will not be responsible under any circumstances for NSF charges or other account fees. You are responsible for verifying each deposit/credit to your account prior to drawing the funds from the account. The amount of each deposit/credit will be reported on your Monthly Bonus Statement received from Amway. This Authorization shall continue in effect unless and until terminated by either Amway or Depositor(s) by written notice to the other party. Any written notice of termination from Depositor(s) must be signed by all parties in whose name the independent business is registered, and must be received by Amway in time and in such manner to afford Amway a reasonable opportunity to act on it. This authorization may not be modified except by terminating the same and executing a new Direct Deposit Authorization form. Amway is authorized to make any appropriate adjusting entries if deposit errors occur. Your authorization is conducted electronically, whereby you acknowledge your intent to sign the agreement by clicking with your mouse pointer on the appropriate box labeled with language of acceptance. Each Depositor, including Co-Depositors, must be present and click on their own behalf. A permanent record will be retained in electronic form and reproduced upon request. You may print a copy of your agreement now by right-clicking with your mouse pointer to access your print menu.</textarea></div>
+                                        <div class="form-group">
+                                            <label class="control-label bonus-payment-method-form__acceptance" for="acceptance">Depositor's Acceptance</label>
+                                            <div id="acceptance" class="bonus-payment-method-form__acceptance-checkbox"><input name="authorizationAndAgreement" type="checkbox" value="false"></div>
+                                            <input type="hidden" name="_authorizationAndAgreement" value="on">
+                                            <span class="bonus-payment-method-form__acceptance-message">I certify the account information I have provided to be true and accurate, and I acknowledge my accpetance of the Authorization and Agreement set forth above.</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-group bonus-payment-method-form__control">
+                                    <button type="submit" id="agreeBtn" class="btn btn-primary" disabled>Agree</button>
+                                    <a href="#">
+                                        <span class="bonus-payment-method-form__cancel js-bonus-payment-method-form__cancel">Cancel</span></a>
+                                </div>
+                                <div>
+                                    <input type="hidden" name="CSRFToken" value="840e6089-4e40-49be-9542-181d1e52e100"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="cboxTitle" style="float: left; display: table;">
+                    <div class="headline">
+                        <span class="headline-text">bonus payment method: direct deposit</span></div>
+                </div>
+            </div>
+            <div class="step_02">
+                <div id="cboxLoadedContent">
+                    <div class="bonus-payment-method__response">
+                        <span class="icon icon-check-bold-with-circle bonus-payment-method__response-icon"></span>
+                        Your bonus payment method has been updated.
+                    </div>
+                </div>
+                <div id="cboxTitle" style="float: left; display: table;">
+                    <div class="headline">
+                        <span class="headline-text">bonus payment method: direct deposit</span></div>
+                </div>
+                
+            </div>
+            <button type="button" id="cboxClose" class="cClose01"><span class="modal-close-icon">×</span></button>
+        </div>
+    </div>
+</div>
+<div id="colorbox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened historyBox" >
+    <div id="cboxWrapper">
+        <div id="cboxContent">
+            <div id="cboxLoadedContent">
+                <div id="bonusPaymentMethodHistory">
+                    <div class="bonus-payment-method-history__wrapper">
+                        <div class="row">
+                            <div class="hidden-xs col-sm-12 table-header">
+                                <div class="col-sm-3">Status</div>
+                                <div class="col-sm-3">Bonus Payment option</div>
+                                <div class="col-sm-3">Date Requested</div>
+                                <div class="col-sm-3">Effective Date</div></div>
+                            <div class="col-xs-12 table-body">
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Paper Check</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">ACTIVE</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Prepaid Card</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Paper Check</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Prepaid Card</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Paper Check</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Direct Deposit</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Direct Deposit</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                                <div class="table-row">
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Status</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">Paper Check</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Bonus Payment option</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value">CANCELLED</div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Date Requested</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                    <span class="visible-xs-block col-xs-7 method-history__hint">Effective Date</span>
+                                    <div class="col-md-3 col-xs-5 method-history__value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cboxTitle" style="float: left; display: table;">
+                <div class="headline">
+                    <span class="headline-text">bonus payment method: history</span></div>
+            </div>
+
+            <button type="button" id="cboxClose" class="cClose"><span class="modal-close-icon">×</span></button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+            
+            
+        $('#bonus-payment-new').click(function(event) {
+            event.preventDefault();
+            $("#cboxOverlay, #colorbox.directbox").show();
+        });
+        $(".cClose01").click(function() {
+            $("#cboxOverlay, #colorbox.directbox").hide();
+        });
+        
+        $('.bonus-payment__history').click(function(event) {
+            event.preventDefault();
+            $("#cboxOverlay, #colorbox.historyBox").show();
+        });
+         $(".cClose").click(function() {
+            $("#cboxOverlay, #colorbox.historyBox").hide();
+        });
+        $(".step_01 .btn").click(function(event) {
+            event.preventDefault();
+            $(this).parents(".step_01").hide();
+            $(this).parents(".step_01").next(".step_02").show();
+        })
+
+
+        $("#acceptance").find("input").change(function(){
+            var xh=$("#acceptance").find("input:checked").size();
+            if(xh){ 
+                $("#agreeBtn").prop({"disabled":false});
+            }else{
+                $("#agreeBtn").prop({"disabled":"disabled"});
+            }
+        });	
+        
+
+        $(".select2-hidden-accessible").select2();
+
+        $(".js-order-history-filters").click(function () {
+            $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+            } else {
+                $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+        $(".js-order-history-search").click(function () {
+            $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+            } else {
+                $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        $(".js-expand-order").click(function () {
+            if (!$(this).hasClass("open")) {
+                $(this).addClass("open");
+                $(this).next(".js-order-details-block").addClass("expanded");
+            } else {
+                $(this).removeClass("open");
+                $(this).next(".js-order-details-block").removeClass("expanded");
+            }
+        });
+
+    })</script>
+</body>
+
+</html>

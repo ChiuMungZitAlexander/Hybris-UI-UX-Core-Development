@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>action-reports-birthday</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" type="text/css" href="scripts/bootstrap-slider.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    
+    <body id="reports-page" class="page">
+        <main>
+            <div id="header"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="dashboard.html">My Business Center</a>
+                        </li>
+                        <li class="active">Action Reports</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="amway-theme">
+                    <div class="prw-nav">
+                        <div class="prw-nav-container clearfix">
+                            <div class="title">
+                                Jump To
+                            </div>
+                            <div class="jump-dropdown-container">
+                                <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                    <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                                    <option value="/my-business-center/customer-sales-history" class="js-account-option-link text-capitalize">Customer Sales History</option>
+                                    <option value="/my-business-center/key-indicators" class="js-account-option-link text-capitalize">Key Indicators</option>
+                                    <option value="/my-business-center/pv-inquiry" class="js-account-option-link text-capitalize">PV Inquiry</option>
+                                    <option value="/my-business-center/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                    <option value="/my-business-center" class="js-account-option-link text-capitalize">Business Center</option>
+                                    <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">Line of Sponsorship</option>
+                                    <option value="/my-business-center/create-receipt" class="js-account-option-link text-capitalize">Create a Receipt</option>
+                                    <option value="/my-business-center/PV/BV-Transfer" class="js-account-option-link text-capitalize">PV/BV Transfer</option>
+                                    <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                                </select>
+                            </div>
+                            <div class="jump-to-button-wrap">
+                                <button class="btn primary small prw-jump-to-button">Go</button>
+                            </div>
+                            <div class="buttons-wrap">
+                                <div class="edit-button-wrap">
+                                    <a class="prw-link-reg" href="">
+                                        <div class="prw-btn-reg">
+                                            <span class="prw-panel-icon icon-register-user"></span>
+                                            <span>Register</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="edit-button-wrap">
+                                    <a class="prw-btn-edit">
+                                        <span class="prw-panel-icon icon-edit"></span>
+                                        <span>Edit</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid main-container">
+                <h1 class="page-title">Action Reports</h1>
+                <div id="reports-filter" class="new-type">
+                    <div class="row" >
+                        <div class="col-md-8 col-xs-12">
+                            <div class="item-group type-item">
+                                <select class="select-control filter-type">
+                                    <option value="new-type">Who's New</option>
+                                    <option value="close-type">Who's Close</option>
+                                    <option value="birth-type" selected="selected">Birthdays</option>
+                                    <option value="renew-type">Renewals</option>
+                                </select>
+                            </div>
+                            <div class="item-group date-item">
+                                <div class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Sept 2016</a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="aLabel">
+                                        <li><a href="javascript:void(0);">Jan 2016 <span>2</span></a></li>
+                                        <li><a href="javascript:void(0);">Feb 2016 <span>1</span></a></li>
+                                        <li><a href="javascript:void(0);">Mar 2016 <span>2</span></a></li>
+                                        <li><a href="javascript:void(0);">Apr 2016 <span>0</span></a></li>
+                                        <li><a href="javascript:void(0);">May 2016 <span>3</span></a></li>
+                                        <li><a href="javascript:void(0);">Jul 2016 <span>1</span></a></li>
+                                        <li><a href="javascript:void(0);">Aug 2016 <span>2</span></a></li>
+                                        <li><a href="javascript:void(0);">Sept 2016 <span>1</span></a></li>
+                                        <li><a href="javascript:void(0);">Oct 2016 <span>3</span></a></li>
+                                        <li><a href="javascript:void(0);">Nov 2016 <span>2</span></a></li>
+                                        <li><a href="javascript:void(0);">Dec 2016 <span>5</span></a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="item-group show-slider-item">
+                                <div class="active show-slider-btn"><i class="icon icon-filter"></i>FILTER</div>
+                            </div>
+                            <div class="item-group slider-bar">
+                                <p class="text">SELECT A % VALUE TO VIEW WHO'S CLOSE</p>
+                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="5" data-slider-max="50" data-slider-step="1" />
+                                <ul class="slider-dot">
+                                    <li>5%</li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li><span class="dot"></span></li>
+                                    <li>50%</li>
+                                </ul>
+                            </div>
+                            <div class="item-group apply-item">
+                                <button class="btn btn-primary apply-btn"> Apply</button>
+                            </div>
+                            <div class="cutting-line"></div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="dropdown-div text-right">
+                                <button id="change-view" type="button" class="dropdown-btn">
+                                    CHANGE VIEW
+                                    <i class="icon icon-arrow-downs"></i>
+                                    <i class="icon icon-arrow-ups"></i>
+                                </button>
+                                <div class="dropdown-box text-left box-sizing">
+                                    <ul id="hide-items">
+                                        <li>
+                                            <input id="hide-inactive" type="checkbox" />
+                                            <label for="hide-inactive">Hide Inactive</label>
+                                        </li>
+                                        <li>
+                                            <input id="hide-ibo" type="checkbox" />
+                                            <label for="hide-ibo">Hide IBO’s with no Volume</label>
+                                        </li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>                
+                    </div>                    
+                </div>
+                <p class="notice">2 Birthdays in September 2016</p>
+                <ul class="list">
+                    <li>
+                        <h4>September 1</h4>
+                        <div class="list-box">
+                            <div class="top-bar">
+                                <span class="idx">1</span>
+                                <h5>CHOKSI,  RUSHIL</h5>
+                                <p>CHOKSI,  RUSHIL</p>
+                                <p>IBO # 8785<span class="line">|</span>United States</p>
+                                <p>2564570769<span class="line">|</span>RULISHILCHOKSI92@GMAIL.COM</p>
+                                <div class="indicator-box">
+                                    <span class="text">SP Month</span>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                            <div class="footer-bar">
+                                <div class="num"><i class="icon icon-person pos-vertical-center"></i>240</div>
+                                <div class="action">
+                                    <button type="button"><i class="icon icon-three-dots-h pos-vertical-center"></i></button>
+                                    <ul class="action-list">
+                                        <div class="arrow-right"></div>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>View Profile</li>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>Isolate</li>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>View Performance</li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+                    </li>
+                    <li>
+                        <h4>September 8</h4>
+                        <div class="list-box">
+                            <div class="top-bar">
+                                <span class="idx">2</span>
+                                <h5>MALIGALIG, MARIA ADELA VILLEGAS</h5>
+                                <p>MALIGALIG, MARIA ADELA VILLEGAS</p>
+                                <p>IBO # 1015184<span class="line">|</span>Philippines</p>
+                                <p>9764570769<span class="line">|</span>maligalic@GMAIL.COM</p>
+                                <div class="indicator-box">
+                                    <span class="indicator international"></span>
+                                    <span class="indicator orange"></span>
+                                </div>
+                            </div>
+                            <div class="footer-bar">
+                                <div class="num"><i class="icon icon-person pos-vertical-center"></i>240</div>
+                                <div class="action">
+                                    <button type="button"><i class="icon icon-three-dots-h pos-vertical-center"></i></button>
+                                    <ul class="action-list">
+                                        <div class="arrow-right"></div>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>View Profile</li>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>Isolate</li>
+                                        <li><i class="icon icon-person pos-vertical-center"></i>View Performance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap-slider.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $(".select2-hidden-accessible").select2();
+                $('.filter-type').change(function () {
+                    var type = $(this).val();
+                    var text = '';
+
+                    $('#reports-filter').removeClass().addClass(type);
+
+                    switch (type) {
+                        case 'new-type':
+                            text = '3 new ABO(s) in September 2016';
+                            break;
+                        case 'close-type':
+                            text = '3 ABO(s) Are Within 25% of the Next Bonus Level';
+                            break;
+                        case 'birth-type':
+                            text = '2 Birthdays in September 2016';
+                            break;
+                        case 'renew-type':
+                            text = '3 ABO(s) need to Renew';
+                            break
+
+                    }
+
+                    $('.notice').text(text)
+                });
+
+                $('.dropdown-btn').click(function () {
+                    var parent = $(this).parent();
+                    var box = $(this).next('.dropdown-box');
+                    
+                    if (box.is(':hidden')) {
+                        box.show();
+                        parent.addClass('active')
+                    } else {
+                        box.hide();
+                        parent.removeClass('active')
+                    }
+                });
+
+                $('#ex1').slider({
+                    tooltip: 'always',
+                    formatter: function(value) {
+                        return value + '%'
+                    }
+                });
+
+                $('.tooltip').css('margin-left', '-14.5px');
+
+                $(window).resize(function(){
+                    setTimeout(function () {
+                        $('.tooltip').css('margin-left', '-14.5px')
+                    }, 1000)
+                });
+
+                $('.show-slider-btn').click(function () {
+                    var obj = $('#reports-filter');
+
+                    if (obj.hasClass('close-active')) {
+                        obj.removeClass('close-active')
+                    } else {
+                        obj.addClass('close-active')
+                    }
+                });
+
+                $('.action button').click(function () {
+                    $(this).next('ul').fadeToggle('fast');
+                    $(this).parents("li").siblings().find(".action-list").hide();
+                });
+
+                //apply button to link to birthday and overview
+                $(".apply-item").click(function(e){
+                    e.preventDefault();
+                    var value =$(".filter-type").val();
+                    if (value == 'birth-type') {
+                        window.location.href = "action-reports-birthday.html";
+                    }
+                });
+            })
+        </script>
+    </body>
+
+</html>

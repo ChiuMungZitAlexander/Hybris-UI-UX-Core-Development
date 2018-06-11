@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>checkout-2-payment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main>
+    <header class="js-mainHeader main-header general-header">
+        <div></div>
+        <div class="amway-theme">
+            <nav class="header-container header-style-checkout checkout-container">
+                <div class="header-wrapper">
+                    <div class="country-language-container header-content">
+                        <div>
+                            <div class="site-logo">
+                                <a href="homepage-logged-in.html"></a>
+                            </div>
+                            <a href="shopping-cart.html" class="checkout-topbar-back">
+                                <span class="glyphicon glyphicon-menu-left"></span>BACK TO
+                                <label class="mobile-hidden">SHOPPING</label>CART</a>
+                            <form id="lang-form" class="hidden" action="#" method="post">
+                                <div class="form-group">
+                                    <select name="code" id="lang-selector" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                        <option value="en" lang="en">English</option>
+                                        <option value="es" lang="es">Español</option></select>
+                                    <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;">
+                                                <span class="selection">
+                                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-lang-selector-container">
+                                                        <span class="select2-selection__rendered" id="select2-lang-selector-container" title="English">English</span>
+                                                        <span class="select2-selection__arrow" role="presentation">
+                                                            <b role="presentation"></b>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                            </span>
+                                </div>
+                                <div>
+                                    <input type="hidden" name="CSRFToken" value="a2a5ec40-53df-43c9-87ae-c3e661dbd64d"></div>
+                            </form>
+                            <div class="checkout-topbar-user">
+                                <div class="checkout-topbar-member">
+                                    <img class="checkout-topbar-avatar" src="images/logged_in_user.jpg" alt="avatar">
+                                    <span class="checkout-topbar-membername">Yui Mori</span></div>
+                                <div class="checkout-topbar-question">
+                                    <span class="checkout-topbar-question-icon"></span>
+                                    <span class="checkout-topbar-service">CUSTOMER SERVICE</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="nav-links-container">
+                            <ul class="nav-list clearfix"></ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--search suggest-->
+        <div class="popover auto-suggestion-popover fade bottom in" role="tooltip" id="popover698389">
+            <div class="popover-arrow arrow" style="left: 71.9353%;"></div>
+            <h3 class="popover-title" style="display: none;"></h3>
+            <div class="popover-content">
+                <button class="search-results-close">x</button>
+                <ul>
+                    <div class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">cion</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">lite</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">plant</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">tion</span></div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="category-wrapper js-category-wrapper products-wrapper hidden-xs hidden-sm">
+                        <div class="header row">
+                            <div class="title col-md-6">
+                                <span>Products</span></div>
+                            <div class="view-all-container col-md-6">
+                                <a class="js-products-view-all-results" href="">View all results</a></div>
+                        </div>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/1.jpeg" /></div>
+                                <div class="name">Nutrilite Vitamin C</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/2.jpeg" /></div>
+                                <div class="name">Nutrilite Women’s Pack</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/3.jpeg" /></div>
+                                <div class="name">Nutrilite Cal Mag D</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/4.jpeg" /></div>
+                                <div class="name">Nutrilite Double X 31</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/5.jpeg" /></div>
+                                <div class="name">Nutrilite dietary</div></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--search end--></header>
+    <div class="container-fluid main-container checkout-body-container">
+        <div class="shipping-delivery">
+            <div class="container-fluid">
+                <div class="row cartTitile">
+                    <div class="product-list-page-title mb25">CHECKOUT</div></div>
+            </div>
+            <ul class="checkout-steps new-checkout-steps">
+                <li class="checkout-step col-xs-6 col-md-6 checkout-steps-past"><span class="checkout-steps-text arrow-steps-ship"><span class="checkout-steps-past-icon"></span>Shipping &amp; delivery</span> </li>
+                <li class="checkout-step col-xs-6 col-md-6 checkout-steps-active"><span class="checkout-steps-text checkout-steps-pay">payment</span></li>
+            </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9 cart-items-wrapper">
+                        <div id="shippingdiv" class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">payment options</p>
+                            <div class="panel">
+                                <div id="" class="option-bar-warp">
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-2 col-xs-12">POINTS</label>
+                                        <div class="option-bar-block col-md-4 col-xs-12">
+                                            <div class="ratings_bars" id="ratings_bars">
+                                                <span class="bars_begin">0</span>
+                                                <div class="scale" id="bar0">
+                                                    <div></div>
+                                                    <span id="btn0"><label id="sub0"></label></span>
+                                                </div>
+                                                <span class="bars_end">48,000</span>
+                                            </div>
+                                            <div class="result-bars">
+                                                <div class="result-bars-content">Pay<div class="current-num-wrap"><input type="text" id="title0" value="" class="current-num"/></div>with <span id="title0-2" class="">0</span> points.</div>
+                                                <p>*100 points = $1 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-2 col-xs-12">AR</label>
+                                        <div class="option-bar-block col-md-4 col-xs-12">
+                                            <div class="ratings_bars">
+                                                <span class="bars_begin">0</span>
+                                                <div class="scale" id="bar1">
+                                                    <div></div>
+                                                    <span id="btn1"><label id="sub1"></label></span>
+                                                </div>
+                                                <span class="bars_end">480</span>
+                                            </div>
+                                            <div class="result-bars">
+                                                <div class="result-bars-content">Pay<div class="current-num-wrap"><input type="text" id="title1" value="" class="current-num"/></div>with <span id="title1-2" class="">0</span> AR amount.</div>
+                                                <p>*1 AR = $1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-2 col-xs-12">VOUCHER</label>
+                                        <div class="col-md-5 col-xs-12">
+                                            <button class="btn-white-blue">select voucher</button>
+                                            <div class="select-wrap">
+                                                <div class="select-row">
+                                                    Artistry Return Voucher<span>$50<label><i class="fas fa-times"></i>Remove</label></span>
+                                                </div>
+                                                <div class="select-row">
+                                                    Artistry Return Voucher<span>$50<label><i class="fas fa-times"></i>Remove</label></span>
+                                                </div>
+                                                <div class="select-row">
+                                                    Artistry Return Voucher<span>$40<label><i class="fas fa-times"></i>Remove</label></span>
+                                                </div>
+                                                <div class="total-pay">Pay <span>$140.00</span> with vouchers.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1">
+                                <label for="radio1" class="collapsed" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">Saved Credit Card</label>
+                                <div id="collapseOne" class="shipping-delivery-radio-body panel-collapse collapse">
+                                    <div class="panel-body">Saved Credit Card</div></div>
+                            </div>
+                            <div class="panel">
+                                <input class="amwa-radio" type="radio" name="optradio" id="radio2">
+                                <label for="radio2" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">New Credit Card</label>
+                                <div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse in">
+                                    <form action="" method="post" name="editAddress">
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label for="cardNumber" class="col-md-2 col-xs-12">Card number</label>
+                                                <input name="cardNumber" type="text"/>
+                                                <div class="card-image">
+                                                    <img src="images/visa-new.png" alt="Visa" />
+                                                    <img src="images/mastercard-new.png" alt="Master" />
+                                                    <img src="images/jcb-new.png" alt="jcb" />
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="addName" class="col-md-2 col-xs-12">name on card</label>
+                                                <input name="addName" type="text" /></div>
+                                            <div class="form-group row">
+                                                <label for="expDate" class="col-md-2 col-xs-12">expiration date</label>
+                                                <input name="expDate" type="text" placeholder="MM" />
+                                                <div class="payment-forms-back-slash">/</div>
+                                                <input name="expDate2" type="text" placeholder="YY" /></div>
+                                            <div class="form-group row">
+                                                <label for="expDate3" class="col-md-2 col-xs-12">security code</label>
+                                                <input name="expDate3" type="text" /></div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-12 col-md-3 shipping-delivery-summary">
+                        <div class="shipping-delivery-side">
+                            <div class="shipping-delivery-summary-header">
+                                <span>order summary</span></div>
+                            <div class="shipping-delivery-summary-prices">
+                                <ul>
+                                    <li class="shipping-delivery-list-item">
+                                        <span class="shipping-delivery-item-label">Item(s) Subtotal</span>
+                                        <span class="performance-box-item-abovalue">$556.59</span></li>
+                                    <li class="shipping-delivery-list-item">
+                                                <span class="shipping-delivery-item-label">Promotions(
+                                                    <a class="color-blue">Details</a>)</span>
+                                        <span class="performance-box-item-abovalue red">-$13.51</span></li>
+                                    <li class="shipping-delivery-list-item">
+                                        <span class="shipping-delivery-item-label">Shipping</span>
+                                        <span class="performance-box-item-abovalue">$0.00</span></li>
+                                    <li class="shipping-delivery-list-item-total">
+                                        <span class="shipping-delivery-item-total">TOTAL</span>
+                                        <span class="shipping-delivery-item-totalvalue">$543.08</span></li>
+                                    <li class="shipping-delivery-list-item-pvbv">
+                                        <span class="shipping-delivery-item-total">TOTAL PV/ BV</span>
+                                        <span class="shipping-delivery-item-totalvalue">222.45 / 699.63</span></li>
+                                </ul>
+                            </div>
+                            <div class="shipping-delivery-summary-link">
+                                <a href="checkout-3-order-preview.html" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="javascript:location.href='checkout-3-order-preview.html'">continue to preview</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 cartlist panel">
+            <div class="panel-heading" role="tab" id="cartlist">
+                <h4 class="panel-title cartlist-detail-mob cartlist-header">
+                    <span class="full-width" data-toggle="collapse" href="#cartlistContent" data-parent="#accordion"> ORDER DETAILS<span class="pull-right icon-minus"></span></span>
+                </h4>
+            </div>
+            <div id="cartlistContent" class="cartlist-content panel-collapse collapse in">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="">
+                            <div class="cartlist-th cartlist-detail-desktop">
+                                <div>
+                                    <div class="col-xs-6">
+                                        PRODUCT DETAILS
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        QTY
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        SET PRICE
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        TOTAL PRICE
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        TOTAL PB/BV
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cartlist-tbody">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div>
+                                         </span>
+                                         </span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div> </span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 amwa-btnbar">
+            <a href="checkout-4-confirm.html" class="btn-blue-white" onclick="">submit order</a>
+            <a class="cartlist-cancelorder">Cancel Order</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/new.js"></script>
+<script>$(function() {
+    $(".quickShopBody").collapse();
+
+    //search box click even
+    $(".icon-search").click(function(e) {
+        e.preventDefault();
+        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+        console.log(value);
+        if (value == 'did you mean') {
+            window.location.href = "did-you-mean.html";
+        } else {
+            window.location.href = "search-no-result.html";
+        }
+    });
+
+    $(".select-row label").click(function() {
+        $(this).parent().parent().remove();
+    });
+})</script>
+<script>
+    scale = function (btn, bar, title,title2,sub,limit) {
+        this.btn = document.getElementById(btn);
+        this.bar = document.getElementById(bar);
+        this.title = document.getElementById(title);
+        this.title2 = document.getElementById(title2);
+        this.sub = document.getElementById(sub);
+        this.step = this.bar.getElementsByTagName("DIV")[0];
+        this.limit = limit;
+        this.init();
+    };
+    scale.prototype = {
+        init: function () {
+            var f = this, g = document, b = window;
+            var startEvent = 'ontouchstart' in document ? 'touchstart' : 'mousedown' ;
+            var moveEvent = 'ontouchstart' in document ? 'touchmove' : 'mousemove' ;
+            var upEvent = 'ontouchstart' in document ? 'touchend' : 'mouseup' ;
+            f.btn.addEventListener(startEvent,function () {
+                var x;
+                if('ontouchstart' in document){
+                    x = b.event.changedTouches[0].clientX;
+                }else{
+                    x = b.event.clientX;
+                }
+                var l = this.offsetLeft;
+                var max = f.bar.offsetWidth - this.offsetWidth;
+
+                function moves() {
+                    var thisX;
+                    if('ontouchstart' in document){
+                        thisX = b.event.changedTouches[0].clientX;
+                    }else{
+                        thisX = b.event.clientX;
+                    }
+                    var to = Math.min(max, Math.max(-2, l + (thisX - x)));
+                    var iv = this.title.value;
+                    f.btn.style.left = to + 'px';
+                    f.ondrag(Math.round(Math.max(0, to / max) * 100), to);
+                    b.getSelection ? b.getSelection().removeAllRanges() : g.selection.empty();
+                }
+                g.addEventListener(moveEvent,moves);
+                g.addEventListener(upEvent,function () {
+                    g.removeEventListener(moveEvent,moves);
+
+                });
+            });
+
+            f.title.oninput = function () {
+                var iv = f.title.value;
+                f.valuechange(iv);
+            }
+        },
+        ondrag: function (pos, x) {
+            this.step.style.width = Math.max(0, x) + 'px';
+            this.title.value = (pos* this.limit)/100 + '';
+            this.title2.innerHTML = (pos* this.limit)/100 + '';
+            this.sub.innerHTML = (pos* this.limit)/100 + '';
+        },
+        valuechange:function(iv){
+            var rW = document.getElementById("ratings_bars").offsetWidth;
+            if(iv < this.limit){
+                this.title2.innerHTML = iv;
+                this.sub.innerHTML = iv;
+                this.step.style.width = (iv/this.limit)*rW + 'px';
+                this.btn.style.left=(iv/this.limit)*rW + 'px';
+            }else{
+                this.step.style.width = rW + 'px';
+                this.btn.style.left=rW + 'px';
+                this.sub.innerHTML = this.limit;
+            }
+        }
+    }
+    new scale('btn0', 'bar0', 'title0','title0-2','sub0',48000);
+    new scale('btn1', 'bar1', 'title1','title1-2','sub1',480);
+</script>
+</body>
+
+</html>

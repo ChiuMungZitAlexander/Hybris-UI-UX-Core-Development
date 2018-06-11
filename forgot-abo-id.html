@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>forgot-abo-id</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    <body>
+        <main class="amway-theme">
+            <div id="header"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="register-landing.html">Login</a>
+                        </li>
+                        <li class="active">ABO ID Recovery</li>
+                    </ol>
+                </div>
+                <div class="product-list-page-title md25">ABO ID RECOVERY</div>
+            </div>
+            <div class="container-fluid main-container">
+                <h3 class="form-sub-title-gray">Please enter your Identity Card Number / Passport Number and birthday for verification purposes.</h3>
+                <div class="form-horizontal amway-theme reg-input-maxwidth">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Identity Card Number / Passport Number</label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Date of birth</label>
+                        <div class="col-md-10 col-xs-12">
+                            <div class="row form-item-row">
+                                <div class="col-xs-4 col">
+                                    <select class="form-control">
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col">
+                                    <select class="form-control">
+                                        <option>18</option>
+                                        <option>19</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-4 col last-col">
+                                    <select class="form-control">
+                                        <option>2018</option>
+                                        <option>1980</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="next-control">
+                    <a class="btn primary btn-xl" id="submit-btn">Next</a>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#submit-btn').click(function () {
+                    location.href = 'forgot-abo-id-error.html'
+                })
+                $(".interOpt").click(function(){
+                    var isOpt = $('.interOpt:checked').val();
+                    if(isOpt == null) {
+                        $(".international-type-options-block").show();
+                    } else {
+                        $(".international-type-options-block").hide();
+                    }
+                })
+                
+                
+            
+            })
+        </script>
+    </body>
+
+</html>

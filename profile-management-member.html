@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>profile management</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main class="amway-theme">
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="my-account.html">My Account</a>
+                </li>
+                <li class="active">Profile Management</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container-fluid my-count">
+        <div class="row">
+            <div class="container-lg">
+                <div class="account-landing-page">
+                    <div class="user-account-header row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="user-block col-md-4">
+                                    <div class="user-image-container">
+                                        <img class="user-image" src="images/yui.png">
+                                    </div>
+                                    <div class="user-info">
+                                        <span class="user-name">Yui Mori</span>
+                                        <span class="user-id">ABO # 1234567</span>
+                                    </div>
+                                </div>
+                                <div class="go-block col-md-8">
+                                    <div class="amway-theme">
+                                        <div class="jump-to">
+                                            <span>Jump to</span>
+                                        </div>
+                                        <div class="jump-to-wrapper">
+                                            <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                                <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                                <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                                <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                                <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                                <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                                <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                                <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                                <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                                <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                                <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                                <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                                <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                                <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                                <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option>
+                                            </select>
+                                            <input type="button" class="js-jump-to-selection-btn" value="GO">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" container">
+                <div class="panel-group account-profile" id="profileEditAccordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading active" role="tab" id="headingPI">
+                            <h4 class="panel-title">
+                                <div role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapsePI" aria-expanded="true" aria-controls="collapsePI" class="">
+                                    <i class="fa fa-user"></i>
+                                    <span class="text-uppercase">PRIMARY APPLICANT</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapsePI" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingPI" style="">
+                            <div class="panel-body">
+                                <div class="row amway-theme">
+                                    <div class="col-md-12">
+                                        <form id="updateProfileForm" action="" method="post">
+                                            <h5>PERSONAL INFORMATION</h5>
+                                            <div class="row name-form-group">
+                                                <label class="col-md-3 account-profile__label">Name</label>
+                                                <div class="col-md-9 account-profile__value">Judie Fawster</div>
+                                                <div class="col-md-4 account-profile__editor name-editor">
+                                                    <div class="form-group">
+                                                        <input id="testerName" type="text" name="testerName" class="text form-control" value="" placeholder="">
+                                                        <div class="help-block profile-management-help-block"><span id="iboNumber.errors">Enter your name</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Citizenship</label>
+                                                <div class="col-md-9 account-profile__value">Japan</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="preferredName" class="text form-control" value="" placeholder="Japan"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">identity card number</label>
+                                                <div class="col-md-9 account-profile__value">034-09876</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="preferredName" class="text form-control" value="" placeholder="034-09876"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">GENDER</label>
+                                                <div class="col-md-9 account-profile__value">Female</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="preferredName" class="text form-control" value="" placeholder="Female"></div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Date of Birth</label>
+                                                <div class="col-md-9 account-profile__value">January 01</div>
+                                                <div class="col-md-2 account-profile__editor account-month">
+                                                    <select id="" name="preferredLanguage" class="form-control">
+                                                        <option value="en" selected="selected">Aug</option>
+                                                        <option value="es_US">July</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-1 account-profile__editor  account-data">
+                                                    <select id="profile.preferredLanguage" name="preferredLanguage" class="form-control">
+                                                        <option value="en" selected="selected">12</option>
+                                                        <option value="es_US">10</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-1 account-profile__editor  account-year">
+                                                    <select id="profile.preferredLanguage" name="preferredLanguage" class="form-control">
+                                                        <option value="en" selected="selected">1975</option>
+                                                        <option value="es_US">1973</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Preferred language</label>
+                                                <div class="col-md-9 account-profile__value">English</div>
+                                                <div class="col-md-2 account-profile__editor">
+                                                    <template:errorspanfield path="preferredLanguage">
+                                                        <select id="profile.preferredLanguage" name="preferredLanguage" class="form-control">
+                                                            <option value="en" selected="selected">English</option>
+                                                            <option value="es_US">Español</option></select>
+                                                    </template:errorspanfield>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row progile-photo-form-group">
+                                                <label class="col-md-3 account-profile__label">Profile Photo
+                                                    <div class="subtext">This photo will be used for Personal Retail Website and Business Center Dashboard</div></label>
+                                                <!--<div class="col-md-9 account-profile__value account-profile__value__avatar">-->
+                                                <!--<img src="images/no_photo.jpg" class="" alt="Tester" title="Tester">-->
+                                                <!--</div>-->
+                                                <div class="editing">
+                                                    <div class="delete-container col-md-4 account-profile__editor form-group">
+                                                        <div class="col-md-4 account-profile__editor account-profile__editor__avatar form-group">
+                                                            <div class="account-profile__editor__avatar__img-overlay js-personal-info-edit-photo-button">
+                                                                <i class="fas fa-pencil-alt"></i>
+                                                                <span>EDIT</span>
+                                                            </div>
+                                                            <input id="uploadPersonalPhoto" name="uploadPersonalPhoto" accept="image/jpeg,image/png,image/gif,image/xpng" type="file">
+                                                            <img src="images/no_photo.jpg" class="" alt="Tester" title="Tester">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h5>TAXATION</h5>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">TAX I.D</label>
+                                                <div class="col-md-9 account-profile__value">
+                                                    0987 7654 4321
+                                                </div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="preferredName" class="text form-control" value="" placeholder="0987 6534 1231">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">TAXATION ADDRESS</label>
+                                                <div class="col-md-9 account-profile__value">Roberson Quay<br/> 123 Street<br/> FLat E, 4th Floor<br/> Grand Rapids MI<br/> 49501 1234</div>
+                                                <div class="account-profile__editor">
+                                                    <div class="form-group check-form">
+                                                        <div class="checkbox account-profile__checkbox-wrapper">
+                                                            <div class="control-label">
+                                                                <input id="set-address" name="verified" type="checkbox" />
+                                                                <label for="set-address" class="normal">Set as Primary Address</label>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ">
+                                                            <label class="col-md-2 col-xs-12 account-profile__label" for="taxIdType">COUNTRY</label>
+                                                            <div class="col-md-5  col-xs-12 account-profile__editor">
+                                                                <select name="taxType" class="form-control">
+                                                                    <option value="U.S.A">U.S.A</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row ">
+                                                            <label class="col-md-2 col-xs-12 account-profile__label" for="">PROVINCE</label>
+                                                            <div class="col-md-5 col-xs-12 account-profile__editor">
+                                                                <select name="" class="form-control">
+                                                                    <option value="">MI</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row ">
+                                                            <label class="col-md-2 col-xs-12 account-profile__label" for="">CITY</label>
+                                                            <div class="col-md-5 col-xs-12 account-profile__editor">
+                                                                <select name="" class="form-control">
+                                                                    <option value="">Grand Rapids</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 col-xs-12 account-profile__label" for="taxID">NEIGHBORHOOD/LAND-LOT NUMBER</label>
+                                                            <div class="col-md-5 col-xs-12 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="Roberson Quay 123 Street FLat E, 4th Floor">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 col-xs-12 account-profile__label" for="taxID">COMPLEX NAME</label>
+                                                            <div class="col-md-5 col-xs-12 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="Grand Rapids MI">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 account-profile__label" for="taxID">POSTAL CODE</label>
+                                                            <div class="col-md-5 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="49501 1234">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h5>CONTACT INFORMATION</h5>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">MOBILE PHONE</label>
+                                                <div class="col-md-9 account-profile__value">+098 2345 6713</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="testerName" class="text form-control" value="" placeholder="+098 2345 6713">
+                                                        <div class="help-block"><span id=""></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">E-MAIL ADDRESS</label>
+                                                <div class="col-md-9 account-profile__value">asdf@email.com</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="testerName" class="text form-control" value="" placeholder="asdf@email.com">
+                                                        <div class="help-block"><span id=""></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">PRIMARY ADDRESS</label>
+                                                <div class="col-md-9 account-profile__value">Roberson Quay<br/> 123 Street<br/> FLat E, 4th Floor<br/> Grand Rapids MI<br/> 49501 1234</div>
+                                                <div class="account-profile__editor">
+                                                    <div class="form-group check-form">
+
+                                                        <div class="row ">
+                                                            <label class="col-md-2 account-profile__label" for="">COUNTRY</label>
+                                                            <div class="col-md-5  account-profile__editor">
+                                                                <select name="taxType" class="form-control">
+                                                                    <option value="U.S.A">U.S.A</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row ">
+                                                            <label class="col-md-2 account-profile__label" for="">PROVINCE</label>
+                                                            <div class="col-md-5  account-profile__editor">
+                                                                <select name="" class="form-control">
+                                                                    <option value="">MI</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row ">
+                                                            <label class="col-md-2 account-profile__label" for="">CITY</label>
+                                                            <div class="col-md-5  account-profile__editor">
+                                                                <select name="" class="form-control">
+                                                                    <option value="">Grand Rapids</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 account-profile__label" for="taxID">NEIGHBORHOOD/LAND-LOT NUMBER</label>
+                                                            <div class="col-md-5 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="Roberson Quay 123 Street FLat E, 4th Floor">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 account-profile__label" for="taxID">COMPLEX NAME</label>
+                                                            <div class="col-md-5 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="Grand Rapids MI">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-md-2 account-profile__label" for="taxID">POSTAL CODE</label>
+                                                            <div class="col-md-5 account-profile__editor form-group">
+                                                                <input name="" class="text form-control" value="" placeholder="49501 1234">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-5">
+                                                    <div class="accountActions account-profile__editor">
+                                                        <button type="button" onclick="beforeSubmit();" class="btn primary save-button">Save changes</button>
+                                                        <button type="button" class="business-action-btn cancel-btn js-personal-info-cancel-button">Cancel</button>
+                                                    </div>
+                                                    <div class="account-profile__value">
+                                                        <button type="submit" class="btn primary edit-button">EDIT</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <div id="popup_confirm_my_account_photo_delete" class="js-my_account_photo_delete_confirm_modal">
+                                        <div class="modal-actions">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                                                    <button type="button" class="btn primary btn-block js-my_account_photo_delete_confirm">Delete</button></div>
+                                                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                                                    <button type="button" class="js-my_account_photo_delete_cancel btn btn-default btn-block">Cancel</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading active" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <div class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2" class="">
+                                    <i class="fas fa-users"></i>
+                                    <span class="text-uppercase">CO-APPLICANT</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" style="">
+                            <div class="panel-body">
+                                <div class="row amway-theme">
+                                    <div class="col-md-12">
+                                        <form id="" action="" method="post">
+                                            <h5>PERSONAL INFORMATION</h5>
+                                            <div class="row name-form-group">
+                                                <label class="col-md-3 account-profile__label">Name</label>
+                                                <div class="col-md-9 account-profile__value editing-show">Judie Fawster</div>
+
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Citizenship</label>
+                                                <div class="col-md-9 account-profile__value editing-show">Japan</div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">identity card number</label>
+                                                <div class="col-md-9 account-profile__value editing-show">034-09876</div>
+
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">PASSPORT number</label>
+                                                <div class="col-md-9 account-profile__value editing-show">l098123123</div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">GENDER</label>
+                                                <div class="col-md-9 account-profile__value editing-show">Female</div>
+
+                                            </div>
+
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Date of Birth</label>
+                                                <div class="col-md-9 account-profile__value editing-show">January 01</div>
+
+                                            </div>
+
+                                            <h5>CONTACT INFORMATION</h5>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">MOBILE PHONE</label>
+                                                <div class="col-md-9 account-profile__value">+098 2345 6713</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="testerName" class="text form-control" value="" placeholder="+098 2345 6713">
+                                                        <div class="help-block"><span id=""></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">E-MAIL ADDRESS</label>
+                                                <div class="col-md-9 account-profile__value">asdf@email.com</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="text" name="testerName" class="text form-control" value="" placeholder="asdf@email.com">
+                                                        <div class="help-block"><span id=""></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-5">
+                                                    <div class="accountActions account-profile__editor">
+                                                        <button type="button" class="btn primary save-button">Save changes</button>
+                                                        <button type="button" class="business-action-btn cancel-btn js-personal-info-cancel-button">Cancel</button>
+                                                    </div>
+                                                    <div class="account-profile__value">
+                                                        <button type="submit" class="btn primary edit-button">Edit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <input name="CSRFToken" value="b86a7fe2-cff1-444e-8054-d410f311f5c1" type="hidden"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <div id="popup_confirm_my_account_photo_delete" class="js-my_account_photo_delete_confirm_modal">
+                                        <div class="modal-actions">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                                                    <button type="button" class="btn primary btn-block js-my_account_photo_delete_confirm">Delete</button></div>
+                                                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                                                    <button type="button" class="js-my_account_photo_delete_cancel btn btn-default btn-block">Cancel</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading active" role="tab" id="heading3">
+                            <h4 class="panel-title">
+                                <div class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3" class="">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="text-uppercase">MEMBER INFORMATION</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3" style="">
+                            <div class="panel-body">
+                                <div class="row amway-theme">
+                                    <div class="col-md-12">
+                                        <form id="" action="" method="post">
+                                            <button class="btn primary becomeABO">become an ABO</button>
+                                            <div class="row name-form-group">
+                                                <label class="col-md-3 account-profile__label">Membership Name</label>
+                                                <div class="col-md-9 account-profile__value ">Judie Fawster</div>
+
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">Member NUMBER</label>
+                                                <div class="col-md-9 account-profile__value">123124</div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">JOIN DATE</label>
+                                                <div class="col-md-9 account-profile__value ">January 07,2021</div>
+                                            </div>
+
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">EXPIRY DATE</label>
+                                                <div class="col-md-9 account-profile__value ">January 07,2021<a href="" class="blue-link">Renew</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <div id="popup_confirm_my_account_photo_delete" class="js-my_account_photo_delete_confirm_modal">
+                                        <div class="modal-actions">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                                                    <button type="button" class="btn primary btn-block js-my_account_photo_delete_confirm">Delete</button></div>
+                                                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                                                    <button type="button" class="js-my_account_photo_delete_cancel btn btn-default btn-block">Cancel</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading active" role="tab" id="heading4">
+                            <h4 class="panel-title">
+                                <div class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" class="">
+                                    <i class="fas fa-key"></i>
+                                    <span class="text-uppercase">PASSWORD</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse collapse4" role="tabpanel" aria-labelledby="heading4" style="">
+                            <div class="panel-body">
+                                <div class="row amway-theme">
+                                    <div class="col-md-12">
+                                        <form id="" action="" method="post">
+                                            <div class="row">
+                                                <label class="col-md-3 account-profile__label">PASSWORD</label>
+                                                <div class="col-md-9 account-profile__value">abc123123</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="password" name="testerName" class="text form-control" value="" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row open-show">
+                                                <label class="col-md-3 account-profile__label">confirm password</label>
+                                                <div class="col-md-9 account-profile__value">abc123123</div>
+                                                <div class="col-md-4 account-profile__editor">
+                                                    <div class="form-group">
+                                                        <input id="" type="password" name="testerName" class="text form-control" value="" placeholder="">
+
+                                                        <div class="action verification">
+                                                            <p class="form-tips">Must be at least 6 characters and contain a number.</p>
+                                                            <div class="row form-item-row">
+                                                                <div class="col-xs-4 col">
+                                                                    <div class="password-strength active"></div>
+                                                                </div>
+                                                                <div class="col-xs-4 col">
+                                                                    <div class="password-strength active"></div>
+                                                                </div>
+                                                                <div class="col-xs-4 col last-col">
+                                                                    <div class="password-strength"></div>
+                                                                </div>
+                                                                <em class="password-strength-text">Good</em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-5 collapse4-btn">
+                                                    <div class="accountActions account-profile__editor">
+                                                        <button type="button" class="btn primary save-button ">Save changes</button>
+                                                        <button type="button" class="business-action-btn cancel-btn js-personal-info-cancel-button">Cancel</button>
+                                                    </div>
+                                                    <div class="account-profile__value">
+                                                        <button type="submit" class="btn primary edit-button">Edit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <input name="CSRFToken" value="b86a7fe2-cff1-444e-8054-d410f311f5c1" type="hidden"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="hidden">
+                                    <div id="popup_confirm_my_account_photo_delete" class="js-my_account_photo_delete_confirm_modal">
+                                        <div class="modal-actions">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                                                    <button type="button" class="btn primary btn-block js-my_account_photo_delete_confirm">Delete</button></div>
+                                                <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                                                    <button type="button" class="js-my_account_photo_delete_cancel btn btn-default btn-block">Cancel</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading" role="tab" id="headingEmail">
+                            <h4 class="panel-title">
+                                <div class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="text-uppercase">Email Subscriptions</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapseEmail" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEmail">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12 email-subscriptions-container">
+                                        <div class="account-profile__subtitle">Choose the eNewsletters you’d like us to deliver.  </div>
+                                        <div class="js-email-subscriptions-container">
+                                            <div class="amway-theme">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name1" name="name1" class="amw-global-checkbox" type="checkbox">
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up01" name="verified" type="checkbox" />
+                                                                    <label for="amy-up01" class="normal">Amway Weekly Update</label>
+                                                                    <p>Stay up to date on weekly business news & developments</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name3" name="name3" class="amw-global-checkbox" type="checkbox" checked>
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up02" name="verified" type="checkbox" />
+                                                                    <label for="amy-up02" class="normal">Amway Updates</label>
+                                                                    <p>The latest news & updates on Amway</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name2" name="name2" class="amw-global-checkbox" type="checkbox">
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up03" name="verified" type="checkbox" />
+                                                                    <label for="amy-up03" class="normal">My IBO Business Info</label>
+                                                                    <p>The latest in personal business news</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name1" name="name1" class="amw-global-checkbox" type="checkbox" checked>
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up04" name="verified" type="checkbox" />
+                                                                    <label for="amy-up04" class="normal">Campaign Updates</label>
+                                                                    <p>News, views, the Amway Coaches Poll, and more</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name3" name="name3" class="amw-global-checkbox" type="checkbox" checked>
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up05" name="verified" type="checkbox" />
+                                                                    <label for="amy-up05" class="normal">IBOAI Newsletter</label>
+                                                                    <p>News from Independent Business Owners Association International</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-6">
+                                                        <div class="account-profile__checkbox-wrapper">
+                                                            <div class="amw-checkbox-wrap">
+                                                                <input id="name2" name="name2" class="amw-global-checkbox" type="checkbox">
+                                                                <span class="amw-checkbox-overlay"></span>
+                                                                <div class="amw-checkbox-lable-box">
+                                                                    <input id="amy-up06" name="verified" type="checkbox" />
+                                                                    <label for="amy-up06" class="normal">Amway Market Research</label>
+                                                                    <p>Keep your finger on the pulse of business</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="js-email-subscriptions-buttons">
+
+                                            <button class="btn primary js-email-subscriptions-save-btn" type="button" name="button">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel panel-default account-profile__panel">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h4 class="panel-title">
+                                <div class="collapsed" role="button" data-toggle="collapse" data-parent="#profileEditAccordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <i class="fas fa-check"></i>
+                                    <span class="text-uppercase">ACKNOWLEDGEMENTS & AGREEMENTS</span>
+                                    <span class="indicator pull-right"></span>
+                                </div>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse collapse5" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12 email-subscriptions-container acknowledge-container">
+                                        <div class="account-profile__subtitle">By completing this pre-registration,you acknowledge the following...<a href="" class="blue-link">Read more</a></div>
+                                        <div class="js-email-subscriptions-container collapse5-agree">
+                                            <div class="amway-theme">
+                                                <div class="row">
+                                                    <div class="radio-wrapper ">
+                                                        <label class="amw-radio-wrap radio-label radio-row">
+                                                            <input type="radio" name="radio-1" class="amw-global-radio">
+                                                            <span class="amw-radio-overlay"></span>
+                                                            <span class="amw-label-radio-text">I agree</span></label>
+
+                                                        <label class="amw-radio-wrap radio-label radio-row">
+                                                            <input type="radio" name="radio-1" class="amw-global-radio">
+                                                            <span class="amw-radio-overlay"></span>
+                                                            <span class="amw-label-radio-text">Do not agree</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div class="overlay"></div>
+<div class="cbox avatar-edit">
+    <div class="cart-popup__dialog">
+        <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">EDIT PROFILE PHOTO
+                        <i class="pop-close cart-popup__close icon icon-x-close"></i></span></div>
+        <div class="cart-popup__content">
+            <div class="cart-popup__item-info">
+                <img src="images/avatar-edit.jpg">
+            </div>
+            <div class="cart-popup__item-link ">
+                <a href="" class="btn-normal">Delete</a>
+                <button href="" class="btn">upload photo</button>
+                <button href="" class="btn primary">apply</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    function beforeSubmit(){
+        var text = document.getElementById("testerName");
+        if(text.value == "") {
+            $("#testerName").parent().parent().addClass("has-error");
+            return false;
+        } else {
+            $("#collapsePI").removeClass("editing");
+        }
+        return true;
+    }
+    $(function() {
+
+        $("#collapsePI .accountActions .cancel-btn").click(function(e){
+            e.preventDefault();
+            $("#collapsePI").removeClass("editing");
+        }) ;
+        $("#collapsePI .accountActions .save-button").click(function(){
+
+            if($(this).parents().find('.name-editor').val()==''){
+                $(this).parents().find('.name-editor').addClass('has-error');
+//            return false;
+            }else{
+                $("#collapsePI").removeClass("editing");
+                $(this).parents().find('.name-editor').removeClass('has-error');
+            }
+        }) ;
+
+        $("#collapsePI .edit-button").click(function(e){
+            e.preventDefault();
+            $("#collapsePI").addClass("editing");
+            $(this).parents().find('.name-editor').removeClass('has-error');
+        });
+
+        $("#collapse2 .accountActions .cancel-btn,#collapse2 .accountActions .save-button").click(function(e){
+            e.preventDefault();
+            $("#collapse2").removeClass("editing");
+        });
+        $("#collapse2 .edit-button").click(function(e){
+            e.preventDefault();
+            $("#collapse2").addClass("editing");
+        });
+
+        $("#collapse4 .accountActions .cancel-btn,#collapse4 .accountActions .save-button").click(function(e){
+            e.preventDefault();
+            $("#collapse4").removeClass("editing");
+        });
+        $("#collapse4 .edit-button").click(function(e){
+            e.preventDefault();
+            $("#collapse4").addClass("editing");
+        });
+
+
+        $('.account-profile__editor__avatar').click(function(event) {
+            event.preventDefault();
+            $(".cbox,.overlay").show();
+
+        });
+        $(".cart-popup__close,.closeCbox").click(function(event) {
+            event.preventDefault();
+            $(".cbox,.overlay").hide();
+        });
+
+
+        $("#editPw").click(function(e){
+            e.preventDefault();
+            $(this).parent().hide();
+            $(this).parent().next().show();
+        });
+        $("#editPw-sv").click(function(e){
+            e.preventDefault();
+            $(this).parents(".account-profile__editor").hide();
+            $(this).parents(".account-profile__editor").prev().show();
+        })
+    })
+</script>
+</body>
+
+</html>

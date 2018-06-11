@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>customer-sales-history</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body id="customer-sales-history">
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li>
+                    <a href="dashboard.html.html">My Business Center</a></li>
+                <li>Customer Sales History</li></ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/customer-sales-history" class="js-account-option-link text-capitalize">Customer Sales History</option>
+                        <option value="/my-business-center/key-indicators" class="js-account-option-link text-capitalize">Key Indicators</option>
+                        <option value="/my-business-center/pv-inquiry" class="js-account-option-link text-capitalize">PV Inquiry</option>
+                        <option value="/my-business-center/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center" class="js-account-option-link text-capitalize">Business Center</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">Line of Sponsorship</option>
+                        <option value="/my-business-center/create-receipt" class="js-account-option-link text-capitalize">Create a Receipt</option>
+                        <option value="/my-business-center/PV/BV-Transfer" class="js-account-option-link text-capitalize">PV/BV Transfer</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+                <div class="buttons-wrap">
+                    <div class="edit-button-wrap">
+                        <a class="prw-link-reg" href="">
+                            <div class="prw-btn-reg">
+                                <span class="prw-panel-icon icon-register-user"></span>
+                                <span>Register</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="edit-button-wrap">
+                        <a class="prw-btn-edit">
+                            <span class="prw-panel-icon icon-edit"></span>
+                            <span>Edit</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container my-count">
+        <div class="account-section">
+            <div class="account-section-content order-history-account-section-content">
+                <div class="row">
+                    <div class="container-lg">
+                        <div class="account-landing-page">
+                            <div class="order-history-box">
+                                <h1 class="page-title">Customer Sales History</h1>
+                                <div class="account-section-content order-history-account-section-content">
+                                    <div class="account-orderhistory">
+                                        <div class="order-history-container js-order-modify-view-container display-none"></div>
+                                        <div class="amway-theme">
+                                            <div class="navigation-tabs-container order-history-container js-order-history-container my-count-page-wrap">
+                                                <div class="tab-content">
+                                                    <div class="order-history-search-wrapper amway-theme row">
+                                                        <div class="hidden-md hidden-lg toggle-buttons-container row">
+                                                            <button class="col-sm-6 js-order-history-filters"> <span class="icon-Humburger_list"></span><span>Filters</span> </button>
+                                                            <button class="col-sm-6 js-order-history-search"> <span class="icon-search"></span> <span>Search</span> </button>
+                                                        </div>
+                                                        <div class="form-wrapper col-md-7 col-sm-12 hidden-sm hidden-xs js-filter-form-wrapper new-select">
+                                                            <span class="view hidden-xs hidden-sm">VIEW</span>
+                                                            <form id="filterForm" action="" method="POST">
+                                                                <select id="date" name="date" class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                                                    <option value="last30Days">Last 30 Days</option>
+                                                                    <option value="2017-07">July 2017</option>
+                                                                    <option value="2017-06">June 2017</option>
+                                                                    <option value="2017-05">May 2017</option>
+                                                                    <option value="2017-04">April 2017</option>
+                                                                    <option value="2017-03">March 2017</option>
+                                                                    <option value="2017-02">February 2017</option>
+                                                                    <option value="2017-01">January 2017</option>
+                                                                    <option value="2016-12">December 2016</option>
+                                                                    <option value="2016-11">November 2016</option>
+                                                                    <option value="2016-10">October 2016</option>
+                                                                    <option value="2016-09">September 2016</option>
+                                                                    <option value="2016-08">August 2016</option>
+                                                                    <option value="2016-07">July 2016</option>
+                                                                    <option value="2016-06">June 2016</option>
+                                                                    <option value="2016-05">May 2016</option>
+                                                                </select>
+                                                                <button class="primary small js-automation-order-history-sort-apply" type="submit"><span>Apply</span></button>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="form-wrapper search-form-wrapper col-md-5 col-sm-12 hidden-sm hidden-xs js-search-form-wrapper">
+                                                            <form id="searchForm" action="" method="POST">
+                                                                <input id="searchData" name="searchData" placeholder="Search for Customer Name,#,or Date" type="text" value="" />
+
+                                                                   <button class="btn btn-primary primary small js-automation-order-history-search-btn" href="customer-sales-history-searched.html" onclick="javascript:location.href='customer-sales-history-searched.html'">
+                                                                       <span class="hidden-sm hidden-xs"> Search</span>
+                                                                       <span class="icon-search hidden-md hidden-lg"></span>
+                                                                    </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-content tabs-content-blocks">
+                                                    <div class="tab-pane content-block active" id="myShoppingLists">
+                                                        <div class="list-content">
+                                                            <div class="list-row-title row">
+                                                                <div class="col-md-2 col-xs-7">Date<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 col-xs-5 col-xs-rig">Type<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Transaction#<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Customer Name & ID<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Sale Amount<i class="fas fa-angle-down"></i></div>
+                                                                <div class="col-md-2 hidden-xs">Your Cost<i class="fas fa-angle-down"></i></div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-2 col-xs-7">09/01/2017</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Receipt</div>
+                                                                    <div class="col-md-2 col-xs-7"><a>8399284924</a></div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Jennifer Jones<br>#9876543</div>
+                                                                    <div class="col-md-2 col-xs-7">$10.00 </div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">$10.00 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-2 col-xs-7">09/01/2017</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Receipt</div>
+                                                                    <div class="col-md-2 col-xs-7"><a>8399284924</a></div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Jennifer Jones<br>#9876543</div>
+                                                                    <div class="col-md-2 col-xs-7">$10.00 </div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">$10.00 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row content-list">
+                                                                <div class="row con-list-item">
+                                                                    <div class="col-md-2 col-xs-7">09/01/2017</div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Receipt</div>
+                                                                    <div class="col-md-2 col-xs-7"><a>8399284924</a></div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">Jennifer Jones<br>#9876543</div>
+                                                                    <div class="col-md-2 col-xs-7">$10.00 </div>
+                                                                    <div class="col-md-2 col-xs-5 col-xs-rig">$10.00 </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+        $(".js-order-history-filters").click(function(){
+            $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            if($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+            }else{
+                $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        $(".js-order-history-search").click(function(){
+            $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            if($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+            }else{
+                $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+    })</script>
+</body>
+
+</html>

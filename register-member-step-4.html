@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>register-member-step-4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main class="amway-theme">
+    <div id="headerNologin"></div>
+    <div class="container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="register-landing.html">Register</a>
+                </li>
+                <li class="active">member Registration</li>
+            </ol>
+        </div>
+        <div class="product-list-page-title md25">member registration</div>
+    </div>
+    <ul class="checkout-steps abo-checkout-steps">
+        <li class="checkout-step col-xs-4 col-md-3 checkout-steps-before">  <span class="checkout-steps-text arrow-steps-ship"><i class="fas fa-check"></i>Primary Applicant</span> </li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-before">  <span class="checkout-steps-text checkout-steps-pay"><i class="fas fa-check"></i>Co-Applicant</span></li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-before"> <span class="checkout-steps-text checkout-steps-order"><i class="fas fa-check"></i>Purchase</span></li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-active"> <span class="checkout-steps-text checkout-steps-order">payment</span></li>
+    </ul>
+    <div class="container new-ibo-reg">
+        <h6 class="tips">All fields are required unless noted as optional.</h6>
+        <div class="row">
+            <div class="col-md-9 col-xs-12 shipping-delivery">
+                <div class="form-horizontal amway-theme">
+                    <h3 class="h3-title fontWeight600">shopping & payment information</h3>
+
+                    <div id="shippingdiv" class="shipping-delivery-ship">
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1">
+                            <label for="radio1" class="radio-label" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">New Credit Card</label>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="payment-sub-box">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">card number</label>
+                                        <div class="col-md-8 col-xs-12">
+                                            <input type="text" class="form-control">
+                                            <img src="images/register/card-1.jpg" class="card-img">
+                                            <img src="images/register/card-2.jpg" class="card-img">
+                                            <img src="images/register/card-3.jpg" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">NAME ON CARD</label>
+                                        <div class="col-md-8 col-xs-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="expiration-date">
+                                        <label class="col-md-2 control-label">EXPIRATION DATE</label>
+                                        <div class="col-md-8 col-xs-12 col">
+                                            <div class="row">
+                                                <div class="col-xs-6 mm">
+                                                    <input type="text" class="form-control" placeholder="MM">
+                                                </div>
+                                                <div class="col-xs-6 yy">
+                                                    <input type="text" class="form-control" placeholder="YY">
+                                                </div>
+                                            </div>
+
+                                            <span class="slash">/</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">SECURITY CODE</label>
+                                        <div class="col-md-8 col-xs-12">
+                                            <input type="text" class="form-control security-code">
+                                            <div class="action">
+                                                <input id="use-primary" type="checkbox" checked="checked">
+                                                <label for="use-primary" class="normal">Use as Primary Card</label>
+                                                <br><br>
+                                                <input id="use-registration" type="checkbox" checked="checked">
+                                                <label for="use-registration" class="normal">Use Registration as Billing Address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel col-panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio2">
+                            <label for="radio2" class="radio-label collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">PayPal</label>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio3">
+                            <label for="radio3" class="radio-label collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">Bank Draft</label>
+                            <div id="collapseThree" class="panel-collapse collapse">
+
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio4">
+                            <label for="radio4" class="radio-label collapsed" data-toggle="collapse" href="#collapseFour" data-parent="#shippingdiv">2 Interest-Free Payments of $XX.XX&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="fontWeight600">Details</a></label>
+                            <div id="collapseFour" class="panel-collapse collapse">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="reg-side-info">
+                    <h3>Order summary</h3>
+                    <ul class="content">
+                        <li><div class="fl fontWeight600">Registration Items</div> <i>2 X Amway product <br>Starter Kit</i> <span>$99.99</span></li>
+                        <li><div class="fl fontWeight600">Registration Items </div> <i>2 X Applicant</i><span>$50.00</span></li>
+                        <li><div class="fl fontWeight600">ABOAI Menbership</div> <i>2 X Applicant</i> <span>$12.00</span></li>
+                        <li class="line"></li>
+                        <li><div class="fontWeight600">Item(s) Subtotal </div><span>$149.99</span></li>
+                        <li><div class="fontWeight600">Delivery Charge</div> <span>$11.75</span></li>
+                        <li class="line"></li>
+                        <li class="stress">Total <span>$181.56</span></li>
+                        <li class="line"></li>
+                        <li class="stress">Total PV/BV <span>30.00 / 60.00</span></li>
+                    </ul>
+                    <div class="reg-side-info-tips">
+                        <p>Exact discounts, promotions, delivery charges, taxes, and other fees will be calculated after submitting this sales report.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divider"></div>
+
+        <div class="next-control">
+            <a class="btn primary" id="submit-btn">submit</a>
+            <a class="btn btn-cancel">Back</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    function checkAttr() {
+        if ($("#remember").is(':checked')) {
+            $('#shopping-address').slideDown();
+        } else {
+            $('#shopping-address').slideUp();
+        }
+    }
+    $(function() {
+        $('#submit-btn').click(function () {
+            location.href = 'register-member-step-5.html'
+        })
+        $(".checklabel").click(function(){
+            checkAttr();
+        })
+
+
+    })
+</script>
+</body>
+
+</html>

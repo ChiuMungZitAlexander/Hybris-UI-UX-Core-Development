@@ -1,0 +1,116 @@
+@import 'variables.less';
+@import 'fonts.less';
+
+.amway-theme {
+  .navigation-tabs-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs-toggles {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+
+  .tab-toggle-wrap {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+  }
+
+  .tabs-toggles {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid @grey1;
+
+    .tab-toggle-wrap {
+      margin-bottom: -1px;
+      min-width: 16%;
+      &:last-of-type {
+        .tab-toggle {
+          border-right: 1px solid @grey1;
+        }
+      }
+      .tab-toggle {
+        border: 1px solid @grey1;
+        border-right: none;
+        background: @grey0;
+        padding: 15px 1.875em;
+        outline: none;
+        width:100%;
+        text-align: center;
+        .toggle-text {
+          line-height: 1.25em;
+          color: @grey4;
+          background: none;
+        }
+
+        &:hover {
+          .toggle-text {
+            color: @deepBlue;
+          }
+        }
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      &.active .tab-toggle {
+        background: @white;
+        border-bottom: none;
+        border-top: 4px solid @cyan;
+        padding-top: 12px;
+        .toggle-text {
+          color: @deepBlue;
+        }
+      }
+    }
+    //&.have-more-tabs{    //angela 0321 add
+    //  @media(max-width:768px){
+    //    width: 100%;
+    //    margin-bottom: 20px;
+    //    overflow-x: scroll;
+    //    .tab-toggle-wrap {
+    //      .tab-toggle {
+    //        padding:10px 15px;
+    //        vertical-align: middle;
+    //      }
+    //    }
+    //
+    //  }
+    //}
+  }
+  .navigation-tabs-container {
+    .outer-border-bottom {
+      @media(max-width:768px){
+        width: 109%;
+        overflow-x: auto;
+        margin-left: -16px;
+        .have-more-tabs {
+          li {
+            float:left;
+            min-width: auto;
+            width:auto;
+            a {
+              display: block;
+              white-space:nowrap;
+              padding: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tabs-content-blocks {
+    margin: 0;
+    padding: 0;
+    .content-block {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+

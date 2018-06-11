@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>shopping-cart</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet" href="scripts/owl.carousel.css">
+        <link rel="stylesheet" href="scripts/owl.theme.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    
+    <body>
+        <main class="amway-theme">
+            <div id="header"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a></li>
+                        <li class="active">Shopping Cart</li></ol>
+                </div>
+            </div>
+            <div class="container-fluid main-container">
+                <div class="border cartTitile">
+                    <h1 class="page-title shopping-list-page-title mb25">SHOPPING CART</h1>
+                    <h4 class="product-list-page-sub-title">Welcome to your shopping cart! You can manage and complete your orders below.</h4>
+                </div>
+                <div class="cart-content-wrapper">
+                    <div class="account-section-content">
+                        <div id="quickOrder" class="account-section shopping-cart-quick-shop-wrapper shopping-list-detail-shop-wrapper" data-grid-confirm-message="">
+                            <div class="quick-shop-container new-quick-shop-container">
+                                <div id="quickShopAccordion" class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="quickShop">
+                                            <h4 class="panel-title">
+                                                <div role="button" data-toggle="collapse" data-parent="#quickShopAccordion" href="#quickShopBody" aria-controls="quickShopBody" class="collapsed quick-shop-collapse">
+                                                    <i class="far fa-barcode"></i>
+                                                    <span class="text-uppercase accordion-header-text">Quick Shop</span>
+                                                    <span class="pull-right icon-minus"></span>
+                                                </div>
+                                            </h4>
+                                        </div>
+                                        <div id="quickShopBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <div id="quickShopForm" class="quickShopForm">
+                                                    <div class="item-name-container">
+                                                        <label class="js-sku-input-field-label sku-input-field-label">Item name or number</label>
+                                                        <input id="quick-shop-search" class="js-quick-shop-name quick-shop-name" type="text">
+                                                    </div>
+                                                        <button class="btn primary btn-block js-quick-shop-submit" onclick="changeFunction()">Search</button>
+                                                        <a class="btn btn-link reset">Reset</a>
+
+                                                </div>
+                                                <div class="row" id="quick-search-list" style="display:none;">
+                                                    <div class="amway-suggest pdp-general-amway-suggest">
+                                                        <div id="productSuggestListTabs" class="owl-carousel owl-theme carousel-title-containeramway-suggest__list">
+                                                            <div class="item">
+                                                                <div class="amway-suggest__item">
+                                                                    <div class="amway-suggest__item-content amwahover">
+                                                                        <img src="images/img-quick-shop-01.png" class="amway-suggest__thumbnail" alt="product">
+                                                                        <div class="amway-suggest__item-detail">
+                                                                            <div class="amway-suggest__item-number">SKU: 116991</div>
+                                                                            <div class="amway-suggest__item-title">ARTISTRY SIGNATURE COLOR Lipstick</div>
+                                                                            <div class="amway-suggest__item-title amway-suggest__item-aboprice">
+                                                                                <span class="amway-suggest__item-abovalue">$140</span></div>
+                                                                            <div class="product-list__item-title product-list__item-aboprice">
+                                                                                <span class="product-list__item-abovalue amount-cal list-total">
+                                                                                    <a class="icon-del opera" data="-">
+                                                                                        <i class="fas fa-minus fa-delete"></i>
+                                                                                    </a>
+                                                                                    <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="2">
+                                                                                    <a class="icon-add opera" data="+">
+                                                                                        <i class="fas fa-plus fa-add"></i>
+                                                                                    </a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="amway-suggest__item-link">
+                                                                        <a href="#" class="btn primary" data-toggle="modal" data-target="#cart-modal" tabindex="0">add to cart</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="amway-suggest__item">
+                                                                    <div class="amway-suggest__item-content amwahover">
+                                                                        <img src="images/img-quick-shop-02.png" class="amway-suggest__thumbnail" alt="product">
+                                                                        <div class="amway-suggest__item-detail">
+                                                                            <div class="amway-suggest__item-number">SKU: 116991</div>
+                                                                            <div class="amway-suggest__item-title">ARTISTRY Length &  Definition Mascara - Black</div>
+                                                                            <div class="amway-suggest__item-title amway-suggest__item-aboprice">
+                                                                                <span class="amway-suggest__item-abovalue">$140</span></div>
+                                                                            <div class="product-list__item-title product-list__item-aboprice">
+                                                                                <span class="product-list__item-abovalue amount-cal list-total">
+                                                                                    <a class="icon-del opera" data="-">
+                                                                                        <i class="fas fa-minus fa-delete"></i>
+                                                                                    </a>
+                                                                                    <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="5">
+                                                                                    <a class="icon-add opera" data="+">
+                                                                                        <i class="fas fa-plus fa-add"></i>
+                                                                                    </a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="amway-suggest__item-link">
+                                                                        <a href="#" class="btn primary" data-toggle="modal" data-target="#cart-modal" tabindex="0">add to cart</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="amway-suggest__item">
+                                                                    <div class="amway-suggest__item-content amwahover">
+                                                                        <img src="images/img-quick-shop-03.png" class="amway-suggest__thumbnail" alt="product">
+                                                                        <div class="amway-suggest__item-detail">
+                                                                            <div class="amway-suggest__item-number">SKU: 116991</div>
+                                                                            <div class="amway-suggest__item-title">ARTISTRY Length &  Definition Mascara - Black</div>
+                                                                            <div class="amway-suggest__item-title amway-suggest__item-aboprice">
+                                                                                <span class="amway-suggest__item-abovalue">$140</span></div>
+                                                                            <div class="product-list__item-title product-list__item-aboprice">
+                                                                                <span class="product-list__item-abovalue amount-cal list-total">
+                                                                                    <a class="icon-del opera" data="-">
+                                                                                        <i class="fas fa-minus fa-delete"></i>
+                                                                                    </a>
+                                                                                    <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="6">
+                                                                                    <a class="icon-add opera" data="+">
+                                                                                        <i class="fas fa-plus fa-add"></i>
+                                                                                    </a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="amway-suggest__item-link">
+                                                                        <a href="#" class="btn primary" data-toggle="modal" data-target="#cart-modal" tabindex="0">add to cart</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="amway-suggest__item">
+                                                                    <div class="amway-suggest__item-content amwahover">
+                                                                        <img src="images/img-quick-shop-04.png" class="amway-suggest__thumbnail" alt="product">
+                                                                        <div class="amway-suggest__item-detail">
+                                                                            <div class="amway-suggest__item-number">SKU: 116991</div>
+                                                                            <div class="amway-suggest__item-title">ARTISTRY Length &  Definition Mascara - Black</div>
+                                                                            <div class="amway-suggest__item-title amway-suggest__item-aboprice">
+                                                                                <span class="amway-suggest__item-abovalue">$140</span></div>
+                                                                            <div class="product-list__item-title product-list__item-aboprice">
+                                                                                <span class="product-list__item-abovalue amount-cal list-total">
+                                                                                    <a class="icon-del opera" data="-">
+                                                                                        <i class="fas fa-minus fa-delete"></i>
+                                                                                    </a>
+                                                                                    <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="14">
+                                                                                    <a class="icon-add opera" data="+">
+                                                                                        <i class="fas fa-plus fa-add"></i>
+                                                                                    </a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="amway-suggest__item-link">
+                                                                        <a href="#" class="btn primary" data-toggle="modal" data-target="#cart-modal" tabindex="0">add to cart</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="amway-suggest__item">
+                                                                    <div class="amway-suggest__item-content amwahover">
+                                                                        <img src="images/img-quick-shop-05.png" class="amway-suggest__thumbnail" alt="product">
+                                                                        <div class="amway-suggest__item-detail">
+                                                                            <div class="amway-suggest__item-number">SKU: 116991</div>
+                                                                            <div class="amway-suggest__item-title">ARTISTRY EXACT FIT  Perfecting Loose Powder</div>
+                                                                            <div class="amway-suggest__item-title amway-suggest__item-aboprice">
+                                                                                <span class="amway-suggest__item-abovalue">$140</span></div>
+                                                                            <div class="product-list__item-title product-list__item-aboprice">
+                                                                                <span class="product-list__item-abovalue amount-cal list-total">
+                                                                                    <a class="icon-del opera" data="-">
+                                                                                        <i class="fas fa-minus fa-delete"></i>
+                                                                                    </a>
+                                                                                    <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="12">
+                                                                                    <a class="icon-add opera" data="+">
+                                                                                        <i class="fas fa-plus fa-add"></i>
+                                                                                    </a>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="amway-suggest__item-link">
+                                                                        <a href="#" class="btn primary" data-toggle="modal" data-target="#cart-modal" tabindex="0">add to cart</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="eligibleGifts">
+                                            <h4 class="panel-title">
+                                                <div role="button" data-toggle="collapse" data-parent="#quickShopAccordion" href="#eligibleGiftsBody" aria-controls="eligibleGiftsBody" class="collapsed quick-shop-collapse">
+                                                    <i class="fas fa-gift"></i>
+                                                    <span class="text-uppercase accordion-header-text">eligible gifts</span>
+                                                    <span class="pull-right icon-minus"></span>
+                                                </div>
+                                            </h4>
+                                        </div>
+                                        <div id="eligibleGiftsBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <div class="eligibleGifts-alert red fontWeight600"><i class="fas fa-exclamation-circle"></i>  Can't see your promotion? Either NO STOCKS or MAX LIMITED reached.</div>
+                                                <div class="gift-box-item">
+                                                    <div class="gift blue uppercase fontWeight600">Gift</div>
+                                                    <p>Free BodyKey™ Shaker Cup when purchase over $300 of BodyKey™ products.</p>
+                                                    <div class="items-selection">
+                                                        <span>You are eligible for <span id="giftCount" class="giftCount">3</span> free gift(s).</span>
+                                                        <span class="items-selection-num uppercase fontWeight600">Items Selected: 0/3</span>
+                                                    </div>
+
+                                                    <div class="giftList">
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-01.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Lime Green</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="2">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-02.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Shocking Blue</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-03.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Purple</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <button id="addToCar" class="btn primary">Add To Cart</button>
+                                                    </div>
+                                                </div>
+                                                <div class="gift-box-item">
+                                                    <div class="gift blue uppercase fontWeight600">Gift</div>
+                                                    <p>Free BodyKey™ Shaker Cup when purchase over $300 of BodyKey™ products.</p>
+                                                    <div class="items-selection">
+                                                        <span>You are eligible for <span id="giftCount" class="giftCount">3</span> free gift(s).</span>
+                                                        <span class="items-selection-num uppercase fontWeight600">Items Selected: 3/3</span>
+                                                    </div>
+
+                                                    <div class="giftList">
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-01.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Lime Green</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="2">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-02.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Shocking Blue</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-03.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Purple</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <button id="addToCar" class="btn primary hidden">Add To Cart</button>
+                                                        <button id="changeSelect" class="btn primary">Change Selection</button>
+                                                    </div>
+                                                </div>
+                                                <div class="gift-box-item lack-limit">
+                                                    <div class="gift blue uppercase fontWeight600">Gift</div>
+                                                    <p>Free BodyKey™ Shaker Cup when purchase over $300 of BodyKey™ products.</p>
+                                                    <div class="items-selection">
+                                                        <span>You are eligible for <span id="giftCount" class="giftCount">3</span> free gift(s).</span>
+                                                        <span class="red fontWeight600">Please select a total of 3 product(s).</span>
+                                                        <span class="items-selection-num uppercase fontWeight600">Items Selected: 0/3</span>
+                                                    </div>
+
+                                                    <div class="giftList">
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-01.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Lime Green</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-02.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Shocking Blue</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-03.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Purple</a></div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn primary">Add To Cart</button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="gift-box-item">
+                                                    <div class="gift blue uppercase fontWeight600">Purchase with Purchase</div>
+                                                    <p>Purchase a full sized Satinique® shampoo at discounted prices when purchase over $200 worth of Satinique® products.</p>
+                                                    <div class="items-selection">
+                                                        <span>You are eligible for <span id="giftCount" class="giftCount">1</span> purchase with purchase item(s).</span>
+                                                        <span class="items-selection-num uppercase fontWeight600">Items Selected: 1/1</span>
+                                                    </div>
+
+                                                    <div class="giftList">
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® 2 in 1 Shampoo and Conditioner 25.6fl. oz</a>
+                                                                <div class="">Price:$18.55</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-05.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® Color Repair Shampoo 25.6 fl. oz.</a>
+                                                                <div class="">Price:$21.00</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-06.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® Smooth Moisture Shampoo 25.6 fl. oz.</a>
+                                                                <div class="">Price:$17.50</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn primary">Add To Cart</button>
+                                                    </div>
+                                                </div>
+                                                <div class="gift-box-item out-limit">
+                                                    <div class="gift blue uppercase fontWeight600">Purchase with Purchase</div>
+                                                    <p>Purchase a full sized Satinique® shampoo at discounted prices when purchase over $200 worth of Satinique® products.</p>
+                                                    <div class="items-selection">
+                                                        <span>You are eligible for <span id="giftCount" class="giftCount">1</span> purchase with purchase item(s).</span><span class="red fontWeight600">Quantity exceeds product specific allowance.(1)</span>
+                                                        <span class="items-selection-num uppercase fontWeight600">Items Selected: 1/1</span>
+                                                    </div>
+                                                    <div class="giftList">
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® 2 in 1 Shampoo and Conditioner 25.6fl. oz</a>
+                                                                <div class="">Price:$18.55</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-05.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® Color Repair Shampoo 25.6 fl. oz.</a>
+                                                                <div class="">Price:$21.00</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="1">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="giftBox">
+                                                            <div class="giftImg"><img src="images/gift-img-06.png" alt="Soft Cleanser" title="Soft Cleanser"></div>
+                                                            <div class="giftName"><a>Satinique® Smooth Moisture Shampoo 25.6 fl. oz.</a>
+                                                                <div class="">Price:$17.50</div>
+                                                            </div>
+                                                            <div class="giftCon">
+                                                            <span class="amount-cal gift-total">
+                                                                <a class="icon-del opera" data="-">
+                                                                    <i class="far fa-angle-down"></i>
+                                                                </a>
+                                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-gift-input" value="0">
+                                                                <a class="icon-add opera" data="+">
+                                                                    <i class="far fa-angle-up"></i>
+                                                                </a>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn primary">Add To Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-top-totals">your cart <span>(26 Items)</span></div>
+                    <div class="row">
+                        <div class="col-md-9 cart-items-wrapper shopping-cart-items-wrapper">
+                            <div class="order-entry-pagination">
+                                <div class="row mb20">
+                                    <div class="col-xs-6">
+                                        <div class="pull-left"><a>Delete Selected</a></div>
+                                    </div>
+                                    <div class="col-xs-6 pagination-wrap">
+                                        <div class="pull-right"><a class="add-to-wishList"><i class="far fa-heart"></i> ADD TO WISHLIST</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id="shopping-list-content">
+                                
+                                <ul class="shopping-cart-item-list js-shopping-cart-item-list new-shopping-cart-item-list change-shopping-cart-item-list">
+                                    <li class="visible-md visible-lg">
+                                        <div class="col-xs-12 uppercase list-header change-list-header">
+                                            <div class="col-xs-5 list-item-info">
+                                                
+                                                 <label class="checkbox-element-wrapper">
+                                                    <input id="selectAllDitto" class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                                Item (style number)
+                                            </div>
+                                            <div class="col-xs-3 list-item-quantity">Qty</div>
+                                            <div class="col-xs-2 list-item-set-price">Option</div>
+                                            <div class="col-xs-1 list-item-price">Price</div>
+                                            <div class="col-xs-1 list-item-total">Total</div></div>
+                                    </li>
+                                    <li class="visible-xs">
+                                        <div class="col-xs-12 uppercase list-header change-list-header mob-list-header">
+                                            <label class="checkbox-element-wrapper">
+                                                <input id="selectAllDitto" class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item delete-example">
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">Nutrilite® Heart Health Pack  60-count Long Name Can Wrap to Three Lines </span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span>60 pack</span>
+                                                <a class="uppercase change-color">
+                                                    change <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span class="past-price"><del>$258.80</del></span><span class="new-price red">$238.80</span></div>
+                                        </div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                   Nutrilite® Heart Health Pack  60-count Long Name Can Wrap to Three Lines </span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                
+                                                <select class="size-select text-center js-qty-selector-input form-control" value="Payment in Full(PIF)">
+                                                    <option>Payment in Full(PIF)</option>
+                                                    <option>Zero Interest Payment Plan(ZIPP)24</option>
+                                                    <option>Zero Interest Payment Plan(ZIPP)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span>60 pack</span>
+                                                <a class="uppercase change-color">
+                                                    change <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span class="past-price"><del>$258.80</del></span><span class="new-price red">$238.80</span></div>
+                                        </div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="tag-group list-tag-group">
+                                            <div class="tag green"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/lip-gloss-swatches.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                    Artistry® Light Up Lip Gloss</span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                <div class="product-stock has-promotion-stock">
+                                                    <div class="promotion">
+                                                        <div class="lightBlue pointer promotion-tip"><img src="images/PromotionTooltip_icon.png" alt="promotion" title="promotion" class="promotionTooTip-icon"><span>PROMOTIONS</span> </div>
+                                                        <div class="promotion-tip-alert">
+                                                            Receive a free utility tote when you purchase the Busy Mom Bundle,a $24.99 value. <a>Learn More</a>
+                                                            <div id="triangle-down"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartlist-instock"><i class="fas fa-check green"></i>Applied</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">Options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <img class="pd-color" src="images/glitz-3.png" alt="color-3">
+                                                <span>Flaming Red</span>
+                                                <a class="uppercase change-color">
+                                                    change <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span>$238.80</span></div></div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/nu105480.jpg" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                   Nutrilite® Heart Health Pack  60-count Long Name Can Wrap to Three Lines </span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                <select class="size-select text-center js-qty-selector-input form-control" value="Payment in Full(PIF)">
+                                                    <option>Payment in Full(PIF)</option>
+                                                    <option>Zero Interest Payment Plan(ZIPP)24</option>
+                                                    <option>Zero Interest Payment Plan(ZIPP)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span class="past-price"><del>$258.80</del></span><span class="new-price red">$238.80</span></div>
+                                        </div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="tag-group list-tag-group">
+                                            <div class="tag purple"><span class="rectangle">bundle & save</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/lo-c-bundle_checkout.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                    Artistry® Light Up Lip Gloss</span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                <div class="product-stock cartlist-promotions cartlist-view"><a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a></div>
+                                                <div class="view-bundle-contents shopping-cart-view-bundle-contents">
+                                                    <div class="col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-xs-4">
+                                                                BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                            </div>
+                                                            <div class="col-xs-4">5</div>
+                                                            <div class="col-xs-4 text-right">$35.00</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-4">
+                                                                BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                            </div>
+                                                            <div class="col-xs-4">5</div>
+                                                            <div class="col-xs-4 text-right">$35.00</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-4">
+                                                                NUTRILITE Nutri Fibre Blend
+                                                            </div>
+                                                            <div class="col-xs-4">5</div>
+                                                            <div class="col-xs-4 text-right">$35.00</div>
+                                                        </div>
+                                                        <div class="row order-error">
+                                                            <div class="col-xs-4">
+                                                                NUTRILITE Nutri Fibre Blend
+                                                            </div>
+                                                            <div class="col-xs-4">5</div>
+                                                            <div class="col-xs-4 color-mark text-right">BackOrder</div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-4">
+                                                                BodyKey Gym Bag (Blue/White)
+                                                            </div>
+                                                            <div class="col-xs-4">5</div>
+                                                            <div class="col-xs-4 text-right">$35.00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper limit-num">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="1">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">Options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span>$238.80</span></div></div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="tag-group list-tag-group">
+                                            <div class="tag purple"><span class="rectangle">bundle & save</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/lo-c-bundle_checkout.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                
+                                                <span class="product-name">
+                                                    Artistry® Light Up Lip Gloss</span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                <div class="product-stock cartlist-promotions cartlist-view"><a class="">View Bundle Contents<i class="fas fa-angle-down"></i></a></div>
+                                                <div class="view-bundle-contents shopping-cart-view-bundle-contents">
+                                                 <div class="col-xs-12">
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 text-right">$35.00</div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 text-right">$35.00</div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 text-right">$35.00</div>
+                                                     </div>
+                                                     <div class="row order-error">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 color-mark text-right">No Longer Available</div>
+                                                     </div>
+
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                            BodyKey Gym Bag (Blue/White)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 text-right">$35.00</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper limit-num">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name='pdpAddtoCartInput' id="amount-cal-input" value="1">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">Options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <a class="uppercase">
+                                                    change <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span>$238.80</span></div></div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item first-item">
+                                        <div class="tag-group list-tag-group">
+                                            <div class="tag blue"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-toggle">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input class="shopping-cart-entry-checkbox _checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/gift-img-04.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                                <div class="list-item-remove">
+                                                    <a class="remove-item-btn js-remove-entry-button" id="removeEntry_1">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                   Satinique® 2 in 1 Shampoo and Conditioner 25.6fl. oz</span>
+                                                <div class="product-code">SKU:
+                                                    <span class="product-item-number">105480</span></div>
+                                                <div class="product-category">18.22PV/57.31BV</div>
+                                                <div class="product-stock has-promotion-stock">
+                                                    <div class="promotion">
+                                                        <div class="lightBlue pointer promotion-tip"><img src="images/PromotionTooltip_icon.png" alt="promotion" title="promotion" class="promotionTooTip-icon"><span>PROMOTIONS</span> </div>
+                                                        <div class="promotion-tip-alert">
+                                                            Receive a free utility tote when you purchase the Busy Mom Bundle,a $24.99 value. <a>Learn More</a>
+                                                            <div id="triangle-down"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+                                            <span class="total-price-label">Options</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <img class="pd-color" src="images/glitz-3.png" alt="color-3">
+                                                <span>Flaming Red</span>
+                                                <a class="uppercase change-color">
+                                                    change <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper"><span>$238.80</span></div></div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="total-price-label">Total PV/BV</span>
+                                            <div class="value-wrapper new-value-wrapper">
+                                                <span class="hidden-xs hidden-sm">$570.00</span>
+                                                <span class="hidden-xs hidden-sm">91.10PV/<br>286.55BV</span>
+                                                <span class="hidden-md hidden-lg">91.10 / 286.55</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item gwp-item">
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/gift-img-01.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                    <span class="blue block-right">GWP</span>BodyKey Shaker Cup</span>
+                                                <div class="gwp-gift-selections">
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="col-xs-8">BodyKey Shaker Cup Lime Green</div>
+                                                            <div class="col-xs-4 text-right">1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="col-xs-8">BodyKey Shaker Cup Lime Green</div>
+                                                            <div class="col-xs-4 text-right">2</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="openGift uppercase">Gift Selection<i class="far fa-arrow-to-top"></i></a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+
+                                        </div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper uppercase">
+                                               Free
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-list-item js-shopping-cart-list-item gwp-item delete-example-gift">
+                                        <div class="col-xs-12 col-md-5 product-details print-col-6">
+                                            <div class="product-item-element list-item-image">
+                                                <div>
+                                                    <a href="#">
+                                                        <img src="images/gift-img-07.png" alt="Soft Cleanser" title="Soft Cleanser"></a>
+                                                </div>
+                                            </div>
+                                            <div class="product-item-element list-item-info">
+                                                <span class="product-name">
+                                                    <span class="blue block-right">GWP</span>BodyKey Shaker Cup</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-9 product-item-element col-md-3 list-item-amount print-col-6">
+                                            <span class="qty-label">Qty</span>
+                                            <span class="amount-cal list-total value-wrapper new-value-wrapper">
+                                                <a class="icon-del opera" data="-">
+                                                    <i class="fas fa-minus fa-delete"></i>
+                                                </a>
+                                                <input type="tel" class="pdpAddtoCartInput amount-cal-input" name="pdpAddtoCartInput" id="amount-cal-input" value="12">
+                                                <a class="icon-add opera" data="+">
+                                                    <i class="fas fa-plus fa-add"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-9 col-md-2 product-item-element list-item-quantity print-col-6">
+
+                                        </div>
+                                        <div class="col-xs-9 product-item-element list-item-ibo-price col-md-1 list-item-price print-col-6">
+
+                                        </div>
+                                        <div class="col-xs-9 col-md-1 product-item-element list-item-price js-item-total  print-col-6">
+                                            <span class="price-label">Total Price</span>
+                                            <div class="value-wrapper new-value-wrapper uppercase">
+                                                Free
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="order-entry-pagination hidden-lg hidden-md">
+                                <div class="row mb20">
+                                    <div class="col-xs-6">
+                                        <div class="pull-left"><a>Delete Selected</a></div>
+                                    </div>
+                                    <div class="col-xs-6 pagination-wrap">
+                                        <div class="pull-right"><a class="add-to-wishList"><i class="far fa-heart"></i> ADD TO WISHLIST</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row cart-actions new-cart-actions">
+                                <div class="col-xs-12 checkout-button-container">
+                                    <a href='checkout-1-shipping-and-delivery.html' class="btn primary btn-block checkoutButton continueCheckout" data-checkout-url="#">proceed to checkout</a>
+                                    <button class="btn btn-link btn-block continueShoppingButton" data-continue-shopping-url="#">Continue Shopping</button>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 shopping-cart-order-summary">
+                            <div class="row shopping-cart-total-wrapper new-shopping-cart-total-wrapper">
+                                <div class="shopping-cart-total">
+                                    <div class="order-block">
+                                        <div class="order-block-header">
+                                            <span>Order Summary</span></div>
+                                        <div class="cart-totals">
+                                            <div class="js-cart-totals js-cart-totals-order-summary">
+                                                <div class="wrapper row auto-subtotal">
+                                                    <div class="col-xs-6 cart-totals-left">Item(s) Subtotal</div>
+                                                    <div class="col-xs-6 cart-totals-right text-right">$58.20</div></div>
+                                                <div class="wrapper row auto-promotions">
+                                                    <div class="col-xs-8 cart-totals-left">
+                                                        <span>Discounts</span></div>
+                                                    <div class="col-xs-4 cart-totals-right text-right red">- $12.00</div></div>
+                                               
+                                                
+                                                <div class="wrapper wrapper-borders row auto-total">
+                                                    <div class="col-xs-6 cart-totals-left">Total</div>
+                                                    <div class="col-xs-6 cart-totals-right text-right">$46.20</div></div>
+                                                <div class="wrapper wrapper-borders row auto-total noTop">
+                                                    <div class="col-xs-6 cart-totals-left">TOTAL PV/ BV</div>
+                                                    <div class="col-xs-6 cart-totals-right text-right">222.45 / 699.63</div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-voucher new-cart-voucher">
+                                                <div class="wrapper wrapper-borders row auto-total noTop coupons-discount">
+                                                    <div class="col-xs-6 cart-totals-left fontWeight600">Coupon(s)</div>
+                                                    <div class="col-xs-6 cart-totals-right text-right red">ARTISTRY10OFF</div>
+                                                </div>
+                                                <button id="applyCoupon-btn" class="btn secondary">apply coupon</button>
+                                                <div class="lightBlue blue-clarify-text">
+                                                    <p>On Purchase of Products of Order Total greater than $500, get PWP LOC Cleaner @$10.00</p>
+                                                    <p>Free BodyKey™ Shaker Cup when purchase over $300 of BodyKey™ </p>
+                                                </div>
+                                            </div>
+                                            <div class="order-summary-bottom">
+                                                <div class="voucher-description"><i>Exact discounts, promotions, delivery charges, taxes, and other fees will be calculated after submitting this sales report.</i></div>
+                                                <div class="proceed-to-checkout-container">
+                                                    <a class="btn primary btn-block btn--continue-checkout js-continue-checkout-button" data-checkout-url="#" href='checkout-1-shipping-and-delivery.html'>Proceed to Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="amway-suggest cart-amway-suggest ">
+                            <h4 class="amway-suggest__title">Recommended promotions</h4>
+                            <div id="recommendedListTabs" class="owl-carousel owl-theme carousel-title-containeramway-suggest__list">
+                                <div class="item">
+                                    <div class="amway-suggest__item">
+                                        <div class="tag-group">
+                                            <div class="tag green"><span class="rectangle">Upcoming</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="amway-suggest__item-content amwahover">
+                                            <img src="images/lip-gloss-swatches.png" class="amway-suggest__thumbnail" alt="product">
+                                            <div class="amway-suggest__item-detail">
+                                                <div class="amway-suggest__item-title">Nutrilite® Twist Tubes 2GO™ - Immunity Health Lorem Ipsum Dolor Sit Amet Consectetur...</div>
+                                                <div class="amway-suggest__item-number lightBlue">Valid: 8 Jan 2018 - 15 Feb 2018</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="amway-suggest__item">
+                                        <div class="tag-group">
+                                            <div class="tag blue"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="amway-suggest__item-content amwahover">
+                                            <img src="images/no-border-images/blush.png" class="amway-suggest__thumbnail" alt="product">
+                                            <div class="amway-suggest__item-detail">
+                                                <div class="amway-suggest__item-title">With every purchase of Dreamland mattress, Free Genova Comforter Set</div>
+                                                <div class="amway-suggest__item-number lightBlue">Valid: 8 Jan 2018 - 15 Feb 2018</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="amway-suggest__item">
+                                        <div class="tag-group">
+                                            <div class="tag blue"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="amway-suggest__item-content amwahover">
+                                            <img src="images/body-key.png" class="amway-suggest__thumbnail" alt="product">
+                                            <div class="amway-suggest__item-detail">
+                                                <div class="amway-suggest__item-title">10% off BodyKey™ Variety Pack</div>
+                                                <div class="amway-suggest__item-number lightBlue">Valid: 8 Jan 2018 - 15 Feb 2018</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="amway-suggest__item">
+                                        <div class="tag-group">
+                                            <div class="tag blue"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="amway-suggest__item-content amwahover">
+                                            <img src="images/artistry-set.png" class="amway-suggest__thumbnail" alt="product">
+                                            <div class="amway-suggest__item-detail">
+                                                <div class="amway-suggest__item-title">Set of 3 Artistry Products</div>
+                                                <div class="amway-suggest__item-number lightBlue">Valid: 8 Jan 2018 - 15 Feb 2018</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="amway-suggest__item">
+                                        <div class="tag-group">
+                                            <div class="tag blue"><span class="rectangle">promotion</span><span class="triangle"></span></div>
+                                        </div>
+                                        <div class="amway-suggest__item-content amwahover">
+                                            <img src="images/product_list_item8.png" class="amway-suggest__thumbnail" alt="product">
+                                            <div class="amway-suggest__item-detail">
+                                                <div class="amway-suggest__item-title">Nutrilite® Twist Tubes 2GO™ - Immunity Health Lorem Ipsum Dolor Sit Amet Consectetur...</div>
+                                                <div class="amway-suggest__item-number lightBlue">Valid: 8 Jan 2018 - 15 Feb 2018</div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <div class="overlay"></div>
+        <div class="cbox cboxAddToYourDitto">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">added to your SOP
+                        <i class="pop-close icon icon-x-close"></i></span></div>
+                <div class="cart-popup__content">
+                    <div class="car-popup-item-des">
+                        <b>1</b>item added to 3 SOP lists</div>
+                    <div class="cart-popup__item-info amwahover">
+                        <div class="item-list-module in-dialog">
+                            <ul>
+                                <li>
+                                    <h5>
+                                        <a href="">Jennifer Jones'First SOP(20)</a>
+                                        <label class="label-date">Order Drop Date 11/15/16</label></h5>
+                                    <span>Created for Jennifer Jones</span></li>
+                                <li>
+                                    <h5>
+                                        <a href="">Second SOP List Name(54)</a>
+                                        <label class="label-date">Order Drop Date 12/15/15</label></h5>
+                                    <span>Created for Jennifer Jones</span></li>
+                                <li>
+                                    <h5>
+                                        <a href="">My Other SOP List Has a Long Name(999)</a>
+                                        <label class="label-date">Order Drop Date 05/12/10</label></h5>
+                                    <span>Created for Jennifer Jones</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="sop-site.html" class="btn primary">GO TO SOP</a>
+                        <a class="cart-popup__item-link-text closeCbox" href="javascript:void(0);">Continue Shopping</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox cboxCreateNewDitto">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Create a new ditto schedule
+                        <i class="pop-close icon icon-x-close"></i></span></div>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__item-info amwahover">
+                        <div class="dialog-form-module">
+                            <div class="row">
+                                <div class="col-md-4 form-name">Ditto name</div>
+                                <div class="col-md-8 form-opera">
+                                    <input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 form-name">order recipient</div>
+                                <div class="col-md-8 form-opera">
+                                    <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1">
+                                    <label for="radio1" data-parent="#order1">Me</label>
+                                    <input class="amwa-radio" type="radio" name="optradio" id="radio2" value="radio2">
+                                    <label for="radio2" data-parent="#order1">My Sponsor[Sponsor Name Goes Here]</label>
+                                    <input class="amwa-radio" type="radio" name="optradio" id="radio3" value="radio3">
+                                    <label for="radio3" data-parent="#order1">Custom List from My Contacts</label>
+                                    <div class="search-contacts">
+                                        <img src="images/add_new_people.png">
+                                        <a href="#" id="searchContacts">Search Contacts</a>|&nbsp;(0)Total</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="javascript:void(0);" class="closeCbox btn primary">CREATE SOP</a>
+                        <a class="cart-popup__item-link-text closeCbox" href="javascript:void(0);">Cancel</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox cboxCreateNewDittoNext">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Create a new ditto schedule
+                        <i class="pop-close icon icon-x-close"></i></span></div>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__item-info amwahover height-auto">
+                        <div class="dialog-form-module">
+                            <a href="#" id="backPrevious">
+                                <a> Go Back to Previous Screen</a>
+                                    <h6>QUICKFIND:
+                                        <label>Enter the Name or ID Number of the IBO/Customer</label></h6>
+                                    <div class="search-wrap">
+                                        <input class="form-control" id="contacts-search">
+                                        <div class="contacts-auto-suggestion">
+                                            <div class="suggestion-header container-fluid">
+                                                <div class="suggestion-row row">
+                                                    <div class="col-md-6">NAME</div>
+                                                    <div class="col-md-3">TYPE</div>
+                                                    <div class="col-md-3">ID NUMBER</div></div>
+                                            </div>
+                                            <div class="suggestion-body container-fluid">
+                                                <div class="suggestion-row row">
+                                                    <div class="suggestion-name col-md-6">Andrew Allen</div>
+                                                    <div class="col-md-3">IBO</div>
+                                                    <div class="col-md-3">123124124124</div></div>
+                                                <div class="suggestion-row row">
+                                                    <div class="suggestion-name col-md-6">Andrew Hackman</div>
+                                                    <div class="col-md-3">IBO</div>
+                                                    <div class="col-md-3">123124124124</div></div>
+                                                <div class="suggestion-row row">
+                                                    <div class="suggestion-name col-md-6">Andrew Frisch</div>
+                                                    <div class="col-md-3">IBO</div>
+                                                    <div class="col-md-3">123124124124</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6>SELECT CUSTOMERS/IBO:</h6>
+                                    <div class="table container-fluid">
+                                        <div class="table-header row">
+                                            <div class="col-md-7">NAME
+                                                <i class="glyphicon glyphicon-menu-down"></i></div>
+                                            <div class="col-md-2">TYPE
+                                                <i class="glyphicon glyphicon-menu-down"></i></div>
+                                            <div class="col-md-3">ID NUMBER</div></div>
+                                        <div class="table-body container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category1" name="category1" type="checkbox">
+                                                    <label for="category1">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category2" name="category1" type="checkbox">
+                                                    <label for="category2">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category3" name="category1" type="checkbox">
+                                                    <label for="category3">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category5" name="category1" type="checkbox">
+                                                    <label for="category5">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category4" name="category1" type="checkbox">
+                                                    <label for="category4">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category6" name="category1" type="checkbox">
+                                                    <label for="category6">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input class="login-form__remember" id="category7" name="category1" type="checkbox">
+                                                    <label for="category7">Aaron Ackerman</label></div>
+                                                <div class="col-md-2">IBO</div>
+                                                <div class="col-md-3">1231241241</div></div>
+                                        </div>
+                                    </div>
+                                    <h6>RECIPIENT LIST:
+                                        <span>(5)Total</span></h6>
+                                    <div class="border-from">
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                        <div>Aaron Ackerman
+                                            <i class="glyphicon glyphicon-remove"></i></div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="javascript:void(0);" class="btn primary closeCbox">CONFIRM</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox" id="select-coupon">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Apply Coupon
+                        <i class="pop-close icon icon-x-close"></i></span></div>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__item-info amwahover">
+                        <div class="popup-coupon-text">16 activated coupons</div>
+                        <div class="amway-theme">
+                            <div class="list-content">
+                                <div class="list-row-title row">
+                                    <div class="col-md-6 col-xs-12">Coupon Name</div>
+                                    <div class="col-md-3 hidden-xs">Date</div>
+                                    <div class="col-md-3 hidden-xs">Value</div>
+                                </div>
+                                <div class="content-overflow">
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-12 coupon-name">
+                                                <div class="coupon-name-input">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                 <div class="coupon-name-content">
+                                                     Artistry Super Saver<br>
+                                                     11709290028728<br>
+                                                     Save to RM10 for every RM400 spent in single order.
+                                                 </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Date</div>
+                                                <div class="mob-right">08/19/2016 - 08/19/2016</div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Value</div>
+                                                <div class="mob-right">RM10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-12 coupon-name">
+                                                <div class="coupon-name-input">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="coupon-name-content">
+                                                    Artistry Super Saver<br>
+                                                    11709290028728<br>
+                                                    Save to RM10 for every RM400 spent in single order.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Date</div>
+                                                <div class="mob-right">08/19/2016 - 08/19/2016</div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Value</div>
+                                                <div class="mob-right">RM10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-12 coupon-name">
+                                                <div class="coupon-name-input">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="coupon-name-content">
+                                                    Artistry Super Saver<br>
+                                                    11709290028728<br>
+                                                    Save to RM10 for every RM400 spent in single order.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Date</div>
+                                                <div class="mob-right">08/19/2016 - 08/19/2016</div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="mob-left hidden-sm hidden-md hidden-lg">Value</div>
+                                                <div class="mob-right">RM10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="javascript:void(0);" class="btn primary" id="coupon-apply">Apply</a>
+                        <a href="javascript:void(0);" class="cancel-delete btn btn-link" id="cancel-delete">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox" id="select-color">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Change Option
+                        <i class="pop-close icon icon-x-close"></i></span></div>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__item-info amwahover">
+                        <div class="select-color-tip">Please select your preferred choice.</div>
+                        <ul class="lip-color-choose__nav">
+                            <div class="color-tip">Colors:</div>
+                            <li>
+                                <img data-toggle="tab" src="images/glitz-1.png" alt="color-1"></li>
+                            <li>
+                                <img data-toggle="tab" src="images/glitz-2.png" alt="color-2"></li>
+                            <li class="active">
+                                <img data-toggle="tab" src="images/glitz-3.png" alt="color-3"></li>
+                            <li>
+                                <img data-toggle="tab" src="images/glitz-4.png" alt="color-4"></li>
+                            <li>
+                                <img data-toggle="tab" src="images/glitz-5.png" alt="color-5"></li>
+                            
+                                <li>
+                                    <img data-toggle="tab" src="images/glitz-6.png" alt="color-6"></li>
+                                <li>
+                                    <img data-toggle="tab" src="images/glitz-7.png" alt="color-7"></li>
+                                <li>
+                                    <img data-toggle="tab" src="images/glitz-8.png" alt="color-8"></li>
+                                <li>
+                                    <img data-toggle="tab" src="images/glitz-9.png" alt="color-9"></li>
+                           
+                        </ul>
+                        <div class="color-clarification">Color:Glitz(Cool,Shimmer).</div>
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="javascript:void(0);" class="btn primary">Apply</a>
+                        <a href="javascript:void(0);" class="cancel-delete btn btn-link">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cbox delete-list-box remove-item-box" id="delete-list-box">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Item(s) Removed <span class="hidden-xs hidden-sm">from your cart</span>
+                    <i class="pop-close icon icon-x-close"></i>
+                </span>
+                </div>
+                <div class="cart-popup__content">
+                    <div class="popup-coupon-text red"><div><i class="fas fa-exclamation-circle red"></i></div><div>The following GWP and/or PWP have been removed from your cart as you are no longer eligible.</div></div>
+                    <div class="cart-popup__item-info amwahover">
+                        <div class="amway-theme">
+                            <div class="list-content">
+                                <div class="list-row-title row">
+                                    <div class="col-xs-7">List Name</div>
+                                    <div class="col-xs-2">Qty</div>
+                                    <div class="col-xs-3">Total Price</div>
+                                </div>
+                                <div class="content-list row">
+                                    <div class="row con-list-item">
+                                        <div class="col-xs-7"><a>GWP:</a>BodyKey™ Shaker Cup</div>
+                                        <div class="col-xs-2">6</div>
+                                        <div class="col-xs-3"><a></a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list row">
+                                    <div class="row con-list-item">
+                                        <div class="col-xs-7"><a>GWP:</a>Satnique® Color Repair Shampoo 25.6 fl.oz Long Name</div>
+                                        <div class="col-xs-2">6</div>
+                                        <div class="col-xs-3">$21.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-popup__item-link">
+                        <a href="javascript:void(0);" class="btn primary view-cart" id="list-confirm">View Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/owl.carousel.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script>
+            function countGift() {
+                var inputs = $('.giftList input');
+                var val = 0;
+                inputs.each(function(){
+                    val += + this.value;
+                });
+                return val;
+            }
+           function changeFunction(){
+               var inputValue = $("#quick-shop-search").val().trim();
+                if(inputValue == '')
+                {
+                    $("#quick-search-list").slideUp();
+                }
+                else
+                {
+                    $("#quick-search-list").slideDown(1000);
+                }
+           }
+        $(function() {
+            var counts = $("#giftCount").html();
+            var inputs = $('.giftList input');
+            var val = countGift();
+
+                if (val > 99) {
+                     $('.giftList .gift-total').addClass('count-limit');
+                     $(".gift-total .icon-add").removeClass("opera");
+                } else {
+                    $('.giftList .gift-total').removeClass('count-limit');
+                    $(".gift-total .icon-add").addClass("opera");
+                }
+          
+                
+            $('.giftList').delegate('.gift-total .opera', 'click', function(){
+                var count = $(this).attr("data");
+                var inputNum = $(this).parent().children("#amount-gift-input");
+                
+                inputNum.val(function(){ 
+                    var value= $(this).val();
+                    var parent = $(this).parent();
+                    count=="-"?value--:value++;
+                    if ( value < 1) {
+                        parent.children(".icon-del").removeClass("opera");
+                        var value = 0;
+                    } else {
+                        parent.children(".icon-del").addClass("opera");
+                    }
+                    var val = countGift();
+                    if (val < 99) {
+                        $(".gift-total .icon-add").addClass("opera");
+                        $('.giftList .gift-total').removeClass('count-limit');
+                        return value;
+                    } else {
+                        $(".gift-total .icon-add").removeClass("opera");
+                        $('.giftList .gift-total').addClass('count-limit');
+                        return value;
+                    }
+                })
+               //$("#giftCount").html(val);
+            });
+
+            var owl2 = $('#productSuggestListTabs');
+            owl2.owlCarousel({
+                margin: 0,
+                nav: true,
+                dots: false,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 2
+                  },
+                  960: {
+                    items: 5
+                  }
+                }
+                
+            });
+            var owl = $('#recommendedListTabs');
+            owl.owlCarousel({
+                margin: 0,
+                nav: true,
+                dots: false,
+                loop: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 2
+                  },
+                  960: {
+                    items: 4
+                  }
+                }
+                
+            });
+            $('body').delegate('.list-total .opera','click',function(){
+                var count = $(this).attr("data");
+                var inputNum = $(this).parent().children("#amount-cal-input");
+                inputNum.val(function(){
+                    var value=$(this).val();
+                    count=="-"?value--:value++;
+                    if(value>=20){
+                        $(".list-total .icon-add").removeClass("opera");
+                        $(this).parent('.amount-cal').addClass('limit-num');
+                        $(this).parents('.product__list--item').addClass('has-limit');
+                        $(this).parents('.product__list--item').find('.non-click-panel').show();
+                        var value =20;
+                        return value;
+                    }
+                    else if(value>1){
+                        $(this).parent('.amount-cal').removeClass('limit-num');
+                        $(".list-total .icon-del").addClass("opera");
+                        $(".list-total .icon-add").addClass("opera");
+                        $(this).parents('.product__list--item').removeClass('has-limit');
+                        $(this).parents('.product__list--item').find('.non-click-panel').hide();
+                        return value;
+                    }
+                    else if(value<=1){
+                        $(".list-total .icon-del").removeClass("opera");
+                        $(this).parent('.amount-cal').addClass('limit-num');
+                        $(this).parents('.product__list--item').addClass('has-limit');
+                        $(this).parents('.product__list--item').find('.non-click-panel').show();
+                        var value =1;
+                        return value;
+                    }
+                    else if(1<value<20){
+                        $(this).parents('.product__list--item').find('.non-click-panel').hide();
+                        $(this).parents('.product__list--item').removeClass('has-limit');
+                        $(".list-total .icon-add").addClass("opera");
+                        $(this).parent('.amount-cal').removeClass('limit-num');
+                        return value;
+                    }
+                })
+            });
+            //open gift
+            $(".openGift").click(function(){
+                $("#eligibleGifts .quick-shop-collapse").removeClass("collapsed");
+                $("#eligibleGiftsBody").css("height", "auto");
+                $("#eligibleGiftsBody").addClass("in");
+            })
+                //delete function
+            $('.remove-item-btn').click(function(){
+                $(".delete-list-box,.overlay").show();
+            });
+               //pop-up view-cart function
+            $('.view-cart').click(function(){
+                $(".delete-list-box,.overlay").hide();
+                $('.delete-example,.delete-example-gift').hide();
+            });
+
+                $('#addToDitto').click(function(event) {
+                    event.preventDefault();
+                    $(".cboxAddToYourDitto,.overlay").show();
+
+                });
+                $(".cart-popup__close,.closeCbox, .pop-close, .cart-popup__item-link .btn").click(function() {
+                    $(".cbox,.overlay").hide();
+                });
+                $('#creatNewDitto').click(function(event) {
+                    event.preventDefault();
+                    $(".cboxCreateNewDitto,.overlay").show();
+
+                });
+
+                $('#searchContacts').click(function(event) {
+                    event.preventDefault();
+                    $(".cboxCreateNewDittoNext,.overlay").show();
+
+                });
+
+                $('#backPrevious').click(function(event) {
+                    event.preventDefault();
+                    $(".cboxCreateNewDittoNext").hide();
+                    $(".creatNewDitto").show();
+
+                });
+                $(".quickShopBody").collapse();
+
+                //add to event
+                $(".cart-detail__addto.dropdown-toggle").click(function() {
+                    if ($(".cart-detail__dropdown-menu.dropdown-menu").css('display') == 'none') {
+                        $(".cart-detail__dropdown-menu.dropdown-menu").show();
+                    } else {
+                        $(".cart-detail__dropdown-menu.dropdown-menu").hide();
+                    }
+
+                });
+                $("#applyCoupon-btn").click(function() {
+                    $("#select-coupon,.overlay").show();
+                });
+                $("#cancel-delete").click(function() {
+                    $("#select-coupon,.overlay").hide();
+                });
+                $("#coupon-apply").click(function() {
+                    $("#select-coupon,.overlay,.select-coupon").hide();
+                    $(".coupon-applied").show();
+                });
+                $("#remove-coupon").click(function() {
+                    $(".coupon-applied").hide();
+                    $(".select-coupon").show();
+                });
+                // apply promotion
+                $("#js-voucher-apply-btn").click(function() {
+                    if ($("#js-voucher-code-text").val() !== '') {
+                        $(".promotion-applied").show();
+                        $(".apply-promotion-area").hide();
+                    }
+                });
+                $("#remove-promotion").click(function() {
+                    $(".promotion-applied").hide();
+                    $(".apply-promotion-area").show();
+                });
+                
+                //select all function
+                $("#shopping-list-content #selectAllDitto").click(function() {
+                    if (this.checked) {
+                        $("#shopping-list-content .shopping-cart-item-list :checkbox").prop("checked", true);
+                    } else {
+                        $("#shopping-list-content .shopping-cart-item-list :checkbox").prop("checked", false);
+                    }
+                });
+
+
+                $("#shopping-list-content .shopping-cart-item-list :checkbox").click(function() {
+                    allchkone();
+                });
+
+                //change color
+                $(".change-color").click(function(){
+                    $("#select-color,.overlay").show();
+                });
+
+                //reset
+                $('.reset').click(function(){
+                    $(this).parents('#quickShopForm').find('#quick-shop-search').val('');
+                    $(this).parents('#quickShopForm').next('#quick-search-list').slideUp(1000);
+                });
+
+                $('.lip-color-choose__nav li').click(function(){
+                    $(this).parents('.lip-color-choose__nav').find('li').not(this).removeClass('active');
+                })
+            });
+
+            function allchkone() {
+                var chknum = $("#shopping-list-content .shopping-cart-item-list :checkbox").size(); //选项总个数
+                console.log(chknum);
+                var chk = 0;
+                $("#shopping-list-content .shopping-cart-item-list :checkbox").each(function() {
+                    if ($(this).prop("checked") == true) {
+                        chk++;
+                    }
+                });
+                if (chknum == chk) { //全选
+                    $("#shopping-list-content #selectAllDitto").prop("checked", true);
+                } else { //不全选
+                    $("#shopping-list-content #selectAllDitto").prop("checked", false);
+                }
+            }
+
+        </script>
+    </body>
+
+</html>

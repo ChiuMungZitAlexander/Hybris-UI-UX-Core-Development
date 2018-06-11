@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>message-center</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" href="scripts/owl.carousel.css">
+    <link rel="stylesheet" href="scripts/owl.theme.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body>
+<main class="amway-theme">
+    <div id="header"></div>
+    <div class="container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="my-account.html">My Account</a>
+                </li>
+                <li class="active">Message Center</li>
+            </ol>
+        </div>
+    </div>
+    <div class="user-account-header">
+        <div class="container">
+            <div class="row">
+                <div class="user-block col-sm-4">
+                    <div class="user-image-container">
+                        <img class="user-image" src="images/yui.png">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Yui Mori</span>
+                        <span class="user-id">ABO # 1234567</span></div>
+                </div>
+                <div class="go-block col-sm-8">
+                    <div class="amway-theme">
+                        <div class="jump-to">
+                            <span>Jump to</span></div>
+                        <div class="jump-to-wrapper">
+                            <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option>
+                            </select>
+                            <input type="button" class="js-jump-to-selection-btn" value="GO"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-count">
+        <div class="row">
+            <div class="container-lg">
+                <div class="account-landing-page">
+                    <div class="my-account-content">
+                        <div class="row">
+                            <div class="container">
+                                <h4 class="panel-title">
+                                    <i class="far fa-envelope"></i>
+                                    <span class="text-uppercase panel-title-text">Message Center</span>
+                                </h4>
+                                <div class="message-title">
+                                    <p class="notice">15 messages</p>
+                                    <div>Type of Messages: <b>All</b><span class="line">|</span>Unread</div>
+                                </div>
+                                <div class="pagination-bar top new-pagination-bar">
+                                    <div class="print-hide pagination-toolbar delivery-pagination-toolbar">
+                                        <div class="sort-refine-bar">
+                                            <div class="order-history-search-wrapper">
+
+                                                <div class="col-xs-12 col-md-5 form-wrapper js-search-form-wrapper">
+                                                    <form id="searchForm" action="" method="POST">
+                                                        <input id="searchData" name="searchData" placeholder="Search Messages" value="" type="text">
+                                                        <button class="btn-primary" type="submit">Search</button></form>
+                                                </div>
+
+                                                <div class="col-xs-12 col-md-7 form-wrapper text-right js-filter-form-wrapper">
+
+                                                    <div class="channel-sort channel-text">Sort by:
+                                                        <select class="form-control" id="sortBy">
+                                                            <option selected="selected">Latest</option>
+                                                            <option>Recipient Name A-Z</option>
+                                                            <option>Recipient Name Z-A</option></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="action-panel">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <a id="delete" href="javascript:void(0)">Delete Selected</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="message-center-list" class="amway-theme message-center-list container">
+                                    <div class="row message-center-list-title">
+                                        <div class="col-xs-1">
+                                            <label class="checkbox-element-wrapper">
+                                                <input id="selectAll" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-7">
+                                            Title
+                                        </div>
+                                        <div class="col-md-2 hidden-xs">
+                                            Date
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row unreadList">
+
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="col-md-9 col-xs-11">
+                                            <a class="pop-style-one" href="message-center-pop1.html">February End-of-Month Customer Service Hours</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-11 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row unreadList">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a class="pop-style-two" href="message-center-pop2.html">What’s Trending Now?</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-11 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-md-1 col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>Your Credit Card Will Expire in 30 Days</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-11 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>Limited Time Offer - Earn Extra PV/BV!</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">02/21/2018 - 12:00pm</div>
+                                    </div>
+                                    <div class="row message-center-list-row unreadList">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>Don’t Forget to Sign and Return your Silver Producer Acknowledgment</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>Privacy Warning</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">   02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>January End-of-Month Customer Service Hours</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>Get Started Strong with New IBO Training Videos</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a>What’s Trending Now?</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="row message-center-list-row">
+                                        <div class="col-xs-1 message-select-box">
+                                            <label class="checkbox-element-wrapper">
+                                                <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                <span class="_checkbox-element-global-span"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-9 col-xs-11">
+                                            <a> Missing Information Notification</a>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 date">
+                                            02/21/2018 - 12:00pm
+                                        </div>
+                                    </div>
+                                    <div class="list-page-pagination">
+                                        <ul class="pagination">
+                                            <li class="disabled">
+                                                <a href="#" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
+                                            </li>
+                                            <li class="active">
+                                                <a class="page-link" href="#">1</a></li>
+                                            <li>
+                                                <a class="page-link" href="#">2</a></li>
+                                            <li>
+                                                <a class="page-link" href="#">3</a></li>
+                                            <li>
+                                                <a class="page-link" href="#">4</a></li>
+                                            <li>
+                                                <a class="page-link" href="#">5</a></li>
+                                            <li>
+                                                <span>...</span></li>
+                                            <li>
+                                                <a href="#" class="page-link">9</a></li>
+                                            <li class="next">
+                                                <a href="#" aria-label="Next"><i class="fas fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-slider.min.js"></script>
+<script src="scripts/owl.carousel.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+
+        var owl2 = $('#productSuggestListTabs');
+        owl2.owlCarousel({
+            margin: 0,
+            nav: true,
+            dots: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                960: {
+                    items: 4
+                }
+            }
+
+        });
+
+        $(".js-order-history-filters").click(function(){
+            $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            if($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+            }else{
+                $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        $(".js-order-history-search").click(function(){
+            $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            if($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+            }else{
+                $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        //select all function
+        $("#message-center-list #selectAll").click(function() {
+            if (this.checked) {
+                $("#message-center-list .message-center-list-row :checkbox").prop("checked", true);
+            } else {
+                $("#message-center-list .message-center-list-row :checkbox").prop("checked", false);
+            }
+        });
+        $("#message-center-list .message-center-list-row :checkbox").click(function() {
+            allchkone();
+        });
+    });
+    function allchkone() {
+        var chknum = $("#message-center-list .message-center-list-row :checkbox").size(); //选项总个数
+        var chk = 0;
+        $("#message-center-list .message-center-list-row :checkbox").each(function() {
+            if ($(this).prop("checked") == true) {
+                chk++;
+            }
+        });
+        if (chknum == chk) { //全选
+            $("#message-center-list #selectAllMessage").prop("checked", true);
+        } else { //不全选
+            $("#message-center-list #selectAllMessage").prop("checked", false);
+        }
+    }
+
+    $(document).ready(function () {
+        // reference for main items
+        var slider = $('#slider');
+        // reference for thumbnail items
+        var thumbnailSlider = $('#thumbnailSlider');
+        //transition time in ms
+        var duration = 500;
+
+        // carousel function for main slider
+        slider.owlCarousel({
+            loop:false,
+            nav:false,
+            dots: false,
+            items:1
+        }).on('changed.owl.carousel', function (e) {
+            //On change of main item to trigger thumbnail item
+            thumbnailSlider.trigger('to.owl.carousel', [e.item.index, duration, true]);
+        });
+
+        // carousel function for thumbnail slider
+        thumbnailSlider.owlCarousel({
+            loop:false,
+            center:false, //to display the thumbnail item in center
+            nav:false,
+            dots: false,
+            responsive:{
+                0:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        }).on('click', '.owl-item', function () {
+            // On click of thumbnail items to trigger same main item
+            slider.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+
+        }).on('changed.owl.carousel', function (e) {
+            // On change of thumbnail item to trigger main item
+            slider.trigger('to.owl.carousel', [e.item.index, duration, true]);
+        });
+
+
+        //These two are navigation for main items
+        $('.slider-right').click(function() {
+            slider.trigger('next.owl.carousel');
+        });
+        $('.slider-left').click(function() {
+            slider.trigger('prev.owl.carousel');
+        });
+    });
+</script>
+</body>
+
+</html>

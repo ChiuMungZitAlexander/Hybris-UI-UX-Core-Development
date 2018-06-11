@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>checkout-4-confirm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main>
+    <header class="js-mainHeader main-header general-header">
+        <div></div>
+        <div class="amway-theme">
+            <nav class="header-container header-style-checkout checkout-container">
+                <div class="header-wrapper">
+                    <div class="country-language-container header-content">
+                        <div>
+                            <div class="site-logo">
+                                <a href="homepage-logged-in.html"></a>
+                            </div>
+                            <a href="shopping-cart.html" class="checkout-topbar-back">
+                                <span class="glyphicon glyphicon-menu-left"></span>BACK TO
+                                <label class="mobile-hidden">SHOPPING</label>CART</a>
+                            <form id="lang-form" class="hidden" action="#" method="post">
+                                <div class="form-group">
+                                    <select name="code" id="lang-selector" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                        <option value="en" lang="en">English</option>
+                                        <option value="es" lang="es">Español</option></select>
+                                    <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;">
+                                                <span class="selection">
+                                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-lang-selector-container">
+                                                        <span class="select2-selection__rendered" id="select2-lang-selector-container" title="English">English</span>
+                                                        <span class="select2-selection__arrow" role="presentation">
+                                                            <b role="presentation"></b>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                            </span>
+                                </div>
+                                <div>
+                                    <input type="hidden" name="CSRFToken" value="a2a5ec40-53df-43c9-87ae-c3e661dbd64d"></div>
+                            </form>
+                            <div class="checkout-topbar-user">
+                                <div class="checkout-topbar-member">
+                                    <img class="checkout-topbar-avatar" src="images/logged_in_user.jpg" alt="avatar">
+                                    <span class="checkout-topbar-membername">Yui Mori</span></div>
+                                <div class="checkout-topbar-question">
+                                    <span class="checkout-topbar-question-icon"></span>
+                                    <span class="checkout-topbar-service">CUSTOMER SERVICE</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="nav-links-container">
+                            <ul class="nav-list clearfix"></ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--search suggest-->
+        <div class="popover auto-suggestion-popover fade bottom in" role="tooltip" id="popover698389">
+            <div class="popover-arrow arrow" style="left: 71.9353%;"></div>
+            <h3 class="popover-title" style="display: none;"></h3>
+            <div class="popover-content">
+                <button class="search-results-close">x</button>
+                <ul>
+                    <div class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">cion</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">lite</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">plant</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">tion</span></div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="category-wrapper js-category-wrapper products-wrapper hidden-xs hidden-sm">
+                        <div class="header row">
+                            <div class="title col-md-6">
+                                <span>Products</span></div>
+                            <div class="view-all-container col-md-6">
+                                <a class="js-products-view-all-results" href="">View all results</a></div>
+                        </div>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/1.jpeg" /></div>
+                                <div class="name">Nutrilite Vitamin C</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/2.jpeg" /></div>
+                                <div class="name">Nutrilite Women’s Pack</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/3.jpeg" /></div>
+                                <div class="name">Nutrilite Cal Mag D</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/4.jpeg" /></div>
+                                <div class="name">Nutrilite Double X 31</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/5.jpeg" /></div>
+                                <div class="name">Nutrilite dietary</div></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--search end--></header>
+    <div class="container checkout-body-container">
+        <div class="shipping-delivery">
+            <div class="container-fluid">
+                <div class="row cartTitile">
+                    <div class="product-list-page-title mb25">CHECKOUT</div>
+                    <div class="confirm-box">
+                        <p class="confirm-box-message"><i class="fas fa-check"></i>Thanks for your order!</p>
+                        <p class="payment-forms-header-sub">Your order confirmation number is
+                            <span class="confirm-box-message-sub-bold">298239828</span>.</p>
+                        <a class="confirm-box-continue-shopping">Continue Shopping</a></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9 cart-items-wrapper">
+                        <div id="shippingdiv" class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">SHIPPING & DELIVERY</p>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">order Will ship to</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-name">Yui Mori</p>
+                                    <p class="shipping-delivery-address-detail">120 - 0023
+                                        <br>Tokyo-to
+                                        <br>3-5-10, Taito, Taito-Ku, Tokyo
+                                        <br>RM 102-1,1F
+                                        <br>03 - 5739 - 3341
+                                        <br>yui.mori@email.com
+                                        <br></p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">delivery options</label>
+                                <div class="order-preview-value  col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">Economy
+                                        <br>Delivered on or before [DATE]</p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">prices on packing list</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">Price Included</p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">Exempt from sales tax</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">No</p></div>
+                            </div>
+                            <!--<a name="savebutton" href="#" class="shipping-delivery-save btn-blue-white">edit</a>-->
+                        </div>
+                        <div class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">payment</p>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">payment method</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">Mastercard ...9876</p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">volume month</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">November</p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">pv/bv recipient</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">1234567 - Yui Mori</p></div>
+                            </div>
+                            <div class="order-preview-box row">
+                                <label class="order-preview-label col-md-3 col-xs-12">Applied promotions</label>
+                                <div class="order-preview-value col-md-9 col-xs-12">
+                                    <p class="shipping-delivery-address-detail">PromoCode123
+                                        <br>Winter2016</p></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 shipping-delivery-summary">
+                        <div class="shipping-delivery-side">
+                            <div class="shipping-delivery-summary-header">
+                                <span>order summary</span></div>
+                            <div class="shipping-delivery-summary-prices">
+                                <ul>
+                                    <li class="shipping-delivery-list-item">
+                                        <span class="shipping-delivery-item-label">Item(s) Subtotal</span>
+                                        <span class="performance-box-item-abovalue">$556.59</span></li>
+                                    <li class="shipping-delivery-list-item">
+                                        <span class="shipping-delivery-item-label">Promotions</span>
+                                        <span class="performance-box-item-abovalue color-red">-$13.51</span></li>
+                                    <li class="shipping-delivery-list-item-total">
+                                        <span class="shipping-delivery-item-total">TOTAL</span>
+                                        <span class="shipping-delivery-item-totalvalue">$543.08</span></li>
+                                    <li class="shipping-delivery-list-item-pvbv">
+                                        <span class="shipping-delivery-item-total">TOTAL PV/ BV</span>
+                                        <span class="shipping-delivery-item-totalvalue">222.45 / 699.63</span></li>
+                                </ul>
+                            </div>
+                            <!--<div class="shipping-delivery-summary-link">-->
+                            <!--<a href="#" class="shipping-delivery-summary-continue btn-blue-white" data-toggle="modal" data-target="#cart-modal" onclick="">continue to payment</a>-->
+                            <!--</div>--></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartlist panel">
+            <div class="panel-heading" role="tab" id="cartlist">
+                <h4 class="panel-title cartlist-detail-mob cartlist-header">
+                    <span class="full-width" data-toggle="collapse" href="#cartlistContent" data-parent="#accordion"> ORDER DETAILS<span class="pull-right icon-minus"></span></span>
+                </h4>
+            </div>
+            <div id="cartlistContent" class="cartlist-content panel-collapse collapse in">
+                <div class="container">
+                    <div class="row">
+                        <div class="">
+                            <div class="cartlist-th cartlist-detail-desktop">
+                                <div>
+                                    <div class="col-xs-6">
+                                        PRODUCT DETAILS
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        QTY
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        SET PRICE
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        TOTAL PRICE
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        TOTAL PB/BV
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cartlist-tbody">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div>
+                                         </span>
+                                         </span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div>
+                                         </span>
+                                         </span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="plp-item-label limit-stock"><span>bundle & save</span><span class="right-white-triangle"></span></div>
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <a class="cartlist-promotions cartlist-view">View Bundle Contents<i class="fas fa-angle-down"></i></a>
+                                    <div class="view-bundle-contents">
+                                                 <div class="col-xs-12">
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-1">5</div>
+                                                         <div class="col-xs-3">$35.00</div>
+                                                         <div class="col-xs-4"></div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-1">5</div>
+                                                         <div class="col-xs-3">$35.00</div>
+                                                         <div class="col-xs-4"></div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-1">5</div>
+                                                         <div class="col-xs-3">$35.00</div>
+                                                         <div class="col-xs-4 color-mark">BACKORDER</div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-1">5</div>
+                                                         <div class="col-xs-3">$35.00</div>
+                                                         <div class="col-xs-4 color-mark">BACKORDER</div>
+                                                     </div>
+
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                            BodyKey Gym Bag (Blue/White)
+                                                         </div>
+                                                         <div class="col-xs-1">5</div>
+                                                         <div class="col-xs-3">$35.00</div>
+                                                         <div class="col-xs-4"></div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div> </span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="plp-item-label limit-stock"><span>bundle & save</span><span class="right-white-triangle"></span></div>
+                                    <div class="col-xs-6 extraclass-mobile-width">
+                                        <div class="cartlist-image">
+                                            <img src="images/no-border-images/heart-health_checkout.png" class="no-border-image" />
+                                        </div>
+                                        <div class="cartlist-text">
+                                         <span calss="cartlist-big"> Nutrilite&reg; Heart Health Pack 60-count Has a Long Name Can Wrap to Three Lines <span> <br /> <span class="cartlist-small1">60 Count </span> <br /> <span class="cartlist-small2">Item # 116991 </span> <br /> <span class="cartlist-small3">18.22 PV / 57.31 BV </span> <br /> <span class="cartlist-instock"><img src="images/check.png" alt="check" /> IN STOCK </span>
+                                           <a class="cartlist-promotions cartlist-view">View Bundle Contents<i class="fas fa-angle-down"></i></a>
+                                    <div class="view-bundle-contents">
+                                                 <div class="col-xs-12">
+                                                     <div class="row ">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4">$35.00</div>
+                                                     </div>
+                                                     <div class="row color-gray">
+                                                         <div class="col-xs-4">
+                                                             BodyKey by NUTRILITE Meal <br/> Replacement Shake (Chocolate)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4 color-mark">NO LONGER AVAILABLE</div>
+
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4">$35.00</div>
+                                                     </div>
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                             NUTRILITE Nutri Fibre Blend
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4">$35.00</div>
+                                                     </div>
+
+                                                     <div class="row">
+                                                         <div class="col-xs-4">
+                                                            BodyKey Gym Bag (Blue/White)
+                                                         </div>
+                                                         <div class="col-xs-4">5</div>
+                                                         <div class="col-xs-4">$35.00</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="cartlist-detail-mob">
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">QTY</span>
+                                             <span class="cartlist-mbright">5</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">SET PRICE</span>
+                                             <span class="cartlist-mbright">$22.80</span>
+                                            </div>
+
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PRICE</span>
+                                             <span class="cartlist-mbright">$114.00</span>
+                                            </div>
+                                            <div class="cartlist-mbweight">
+                                             <span class="cartlist-mbleft">TOTAL PV/BV</span>
+                                             <span class="cartlist-mbright">91.10 / 285.55</span>
+                                            </div>
+                                           </div> </span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td">5</p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-1">
+                                        <p class="cartlist-td"> $22.80</p>
+                                    </div>
+
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> $114.00 </p>
+                                    </div>
+                                    <div class="cartlist-detail-desktop col-xs-2">
+                                        <p class="cartlist-td"> 91.10 / 285.55</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="amwa-btnbar">
+            <a href="#" class="btn-blue-white" onclick="">PRINT</a>
+            <a href="#" class="btn-blue-white" onclick="">EMAIL</a></div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/new.js"></script>
+<script>$(function() {
+    $(".quickShopBody").collapse();
+
+    //search box click even
+    $(".icon-search").click(function(e) {
+        e.preventDefault();
+        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+        console.log(value);
+        if (value == 'did you mean') {
+            window.location.href = "did-you-mean.html";
+        } else {
+            window.location.href = "search-no-result.html";
+        }
+    });
+})</script>
+</body>
+
+</html>

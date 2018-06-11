@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>register-customer-step-3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" type="text/css" href="scripts/bootstrap-slider.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    <body id="register-step-page" class="page">
+        <main>
+            <div id="headerNologin"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="register-landing.html">Register</a>
+                        </li>
+                        <li class="active">CUSTOMER Registration</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="container-fluid main-container">
+                <div  class="product-list-page-title md25">CUSTOMER registration</div>
+                <p class="result-tip color-red">Your information has not been sent successfully.</p>
+                <p>In order to complete your registration, please click the confirmation link in the email that we have sent to you.</p>
+
+                <div class="divider"></div>
+                <div class="next-control">
+                    <a class="btn primary" id="another-btn">REGISTER ANOTHER</a>
+                    <a href="" class="">Continue Shopping</a>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+
+        </main>
+
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#another-btn').click(function () {
+                    location.href = 'register-customer-step-1.html'
+                });
+                $(".select2-hidden-accessible").select2();
+            })
+        </script>
+    </body>
+
+</html>

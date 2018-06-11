@@ -1,0 +1,115 @@
+@import 'variables.less';
+@import 'fonts.less';
+  a {
+    color: @blue;
+    text-decoration: none;
+    background: transparent;
+    font-size: 1em;
+    font-family: 'SourceSansPro';
+    font-weight: 400;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      color: @deepBlue;
+      text-decoration: none;
+      box-shadow: none;
+      span {
+        color: @deepBlue;
+        text-decoration: none;
+      }
+    }
+  }
+.amway-theme {
+ 
+  a {
+    span {
+      font-weight: 600;
+      color: @blue;
+      text-decoration: none;
+    }
+
+    &.primary-link {
+      text-transform: uppercase;
+
+      span {
+
+        text-transform: uppercase;
+      }
+
+      .primary-link-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 3px;
+        background: @rose;
+        border-radius: 50%;
+        color: @white;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        font-weight: 400;
+
+        &:before {
+          position: relative;
+
+        }
+      }
+
+      &:hover, &:focus {
+        color: @deepBlue;
+        text-decoration: none;
+        span {
+          color: @deepBlue;
+        }
+
+        .primary-link-icon {
+          text-decoration: none;
+          color: @white;
+        }
+      }
+    }
+
+    &.secondary-link-with-icon {
+      text-transform: uppercase;
+
+      span {
+        text-transform: uppercase;
+      }
+      .secondary-link-icon {
+        font-size: 24px;
+        line-height: 24px;
+        margin-right: 3px;
+        vertical-align: bottom;
+        display: inline-block;
+        font-weight: 400;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+
+        .secondary-link-icon {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      cursor: default !important;
+      color: @grey2;
+
+      span {
+        color: @grey2;
+      }
+
+      .primary-link-icon {
+        background-color: @grey2;
+        color: @white;
+      }
+    }
+  }
+  .panel-title {
+    a, a span {
+      color: @deepBlue;
+    }
+  }
+}

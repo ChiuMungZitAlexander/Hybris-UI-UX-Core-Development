@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WishList</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    <body>
+    <main class="amway-theme">
+        <div id="header"></div>
+        <div class="container">
+            <div class="print-hide breadcrumb-section">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="homepage-logged-in.html">Home</a></li>
+                    <li class="active">WishList</li></ol>
+            </div>
+        </div>
+        <div class="user-account-header">
+            <div class="container">
+                <div class="row">
+                    <div class="user-block col-sm-4">
+                        <div class="user-image-container">
+                            <img class="user-image" src="images/yui.png">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Yui Mori</span>
+                            <span class="user-id">ABO # 1234567</span></div>
+                    </div>
+                    <div class="go-block col-sm-8">
+                        <div class="amway-theme">
+                            <div class="jump-to">
+                                <span>Jump to</span></div>
+                            <div class="jump-to-wrapper">
+                                <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                    <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                    <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                    <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                    <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                    <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                    <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                    <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                    <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                    <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                    <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                    <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                    <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                    <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                    <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                    <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option>
+                                </select>
+                                <input type="button" class="js-jump-to-selection-btn" value="GO"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-count">
+            <div class="cart-content-wrapper">
+                <div class="create-new-shopping-list-container new-create-new-shopping-list-container wishList-create-new-list">
+                    <div class="account-section-content shoppingListDetail-content">
+                        <div class="account-section shopping-cart-quick-shop-wrapper" data-grid-confirm-message="">
+                            <div class="quick-shop-container">
+                                <div  class="panel-group accordion-custom" role="tablist" aria-multiselectable="true">
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="ShopListDetail">
+                                            <h4 class="panel-title">
+                                                <div role="button" data-toggle="collapse" data-parent="#shoppingListDetailAccordion" href="#ShopListDetailBody" aria-controls="ShopListDetailBody" class="">
+                                                    <i class="fas fa-cart-plus"></i>
+                                                    <span class="text-uppercase accordion-header-text">Create new wishlist</span>
+                                                    <span class="pull-right icon-minus"></span>
+                                                </div>
+                                            </h4>
+                                        </div>
+                                        <div id="ShopListDetailBody" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body row">
+                                                <form id="saveShoppingListForm" class="form-horizontal create-shopping-list-form" action="#" method="post">
+                                                    <div class="row">
+
+                                                        <div class="col-xs-12 col-md-9">
+                                                            <div class="new-shopping-list-row">
+                                                                <div class="description">You can create shopping lists for yourself, your uplines, or your downlines. It's a simple way to keep track of your customers' favorite products, manage your orders, and share your lists.</div>
+                                                            </div>
+                                                            <div id="quickShopForm" class="quickShopForm">
+                                                                <div class="item-name-container">
+                                                                    <label class="js-sku-input-field-label sku-input-field-label">New List Name</label>
+                                                                    <input id="quick-shop-search" class="js-quick-shop-name quick-shop-name" type="text">
+                                                                </div>
+                                                                <button class="btn primary btn-block wishList-create-list">Create List</button>
+                                                            </div>
+                                                             <!--<div class="row form-group new-shopping-list-row">-->
+                                                                <!--<div class="col-xs-12 col-md-12">-->
+                                                                    <!--<div class="shopping-list-row-button-wrapper">-->
+                                                                     <!--</div>-->
+                                                                <!--</div>-->
+                                                            <!--</div>-->
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination-bar top new-pagination-bar">
+                    <div class="print-hide pagination-toolbar delivery-pagination-toolbar">
+                        <div class="sort-refine-bar">
+                            <div class="order-history-search-wrapper">
+                                <div class="col-xs-12 col-md-5 form-wrapper js-search-form-wrapper">
+                                    <form id="searchForm" action="" method="POST">
+                                        <input id="searchData" name="searchData" placeholder="Search by list name" value="" type="text">
+                                        <button class="btn-primary" type="submit">Search</button></form>
+                                    <div class="search-result-popup"></div></div>
+
+                                <div class="col-xs-12 col-md-7 form-wrapper text-right js-filter-form-wrapper">
+                                    <div class="channel-sort channel-text">Sort by:
+                                        <select class="form-control" id="sort-by">
+                                            <option selected="selected">Latest</option>
+                                            <option>Recipient Name A-Z</option>
+                                            <option>Recipient Name Z-A</option></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-panel">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a id="delete" href="javascript:void(0)" class="delete-selected">Delete Selected</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive my-count-page-wrap wish-list">
+                    <div class="list-content group-list-content">
+                        <div class="list-row-title row">
+                            <div class="col-md-8 col-xs-12">
+                                <div class="list-item-select">
+                                    <label class="checkbox-element-wrapper">
+                                        <input id="selectAllDitto" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                        <span class="_checkbox-element-global-span"></span>
+                                    </label>
+                                </div>
+                                <div class="list-item-select">list name</div>
+                            </div>
+                            <div class="col-md-2 hidden-xs">item count</div>
+                            <div class="col-md-2 hidden-xs">last updated</div>
+                        </div>
+                        <div class="content-list row">
+                        <div class="row con-list-item">
+                            <div class="col-md-8 col-xs-12">
+                                <div class="list-item-select">
+                                    <label class="checkbox-element-wrapper">
+                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                        <span class="_checkbox-element-global-span"></span>
+                                    </label>
+                                </div>
+                                <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Really Long List Name Would Go Here</a></div>
+                            </div>
+                            <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                            <div class="col-md-2 col-xs-12">10-10-2018</div>
+                        </div>
+                    </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">List Name Goes Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Firstname Lastname List Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Really Long List Name Would Go Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">List Name Goes Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Firstname Lastname List Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Really Long List Name Would Go Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">List Name Goes Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">Firstname Lastname List Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                        <div class="content-list row">
+                            <div class="row con-list-item">
+                                <div class="col-md-8 col-xs-12">
+                                    <div class="list-item-select">
+                                        <label class="checkbox-element-wrapper">
+                                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                            <span class="_checkbox-element-global-span"></span>
+                                        </label>
+                                    </div>
+                                    <div class="list-item-select"><a href="wishlist-detail.html" class="responsive-table-link js-saved-cart-name">List Name Goes Here</a></div>
+                                </div>
+                                <div class="col-md-2 col-xs-12">12 <span class="visible-xs-block">item</span></div>
+                                <div class="col-md-2 col-xs-12">10-10-2018</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-page-pagination">
+                    <ul class="pagination">
+                        <li class="disabled">
+                            <a href="#" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
+                        </li>
+                        <li class="active">
+                            <a class="page-link" href="#">1</a></li>
+                        <li>
+                            <a class="page-link" href="#">2</a></li>
+                        <li>
+                            <a class="page-link" href="#">3</a></li>
+                        <li>
+                            <a class="page-link" href="#">4</a></li>
+                        <li>
+                            <a class="page-link" href="#">5</a></li>
+                        <li>
+                            <span>...</span></li>
+                        <li>
+                            <a href="#" class="page-link">9</a></li>
+                        <li class="next">
+                            <a href="#" aria-label="Next"><i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="quick"></div>
+        <div id="footer"></div>
+
+    </main>
+    <div class="overlay"></div>
+    <div class="cbox delete-list-box" id="delete-list-box">
+        <div class="cart-popup__dialog">
+            <div class="cart-popup__header">
+                <span class="cart-popup__header-text">Delete List
+                    <i class="pop-close icon icon-x-close"></i>
+                </span>
+            </div>
+            <div class="cart-popup__content">
+                <div class="popup-coupon-text">Are you sure you want to delete this list?</div>
+                <div class="cart-popup__item-info amwahover">
+                    <div class="amway-theme">
+                        <div class="list-content">
+                            <div class="list-row-title row">
+                                <div class="col-md-8 col-xs-6">List Name</div>
+                                <div class="col-md-4 col-xs-6">Item Count</div>
+                            </div>
+                            <div class="content-list row">
+                                <div class="row con-list-item">
+                                    <div class="col-md-8 col-xs-6"><a>Holly Smith's List</a></div>
+                                    <div class="col-md-4 col-xs-6">3</div>
+                                </div>
+                            </div>
+                            <div class="content-list row">
+                                <div class="row con-list-item">
+                                    <div class="col-md-8 col-xs-6"><a>List Name Goes Here</a></div>
+                                    <div class="col-md-4 col-xs-6">21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-popup__item-link">
+                    <a href="javascript:void(0);" class="btn secondary" id="list-cancel">Cancel</a>
+                    <a href="javascript:void(0);" class="btn primary" id="list-confirm">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/new.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".delete-selected").click(function(){
+            $(".delete-list-box,.overlay").show();
+        });
+        $(".cart-popup__close,.closeCbox, .pop-close, .cart-popup__item-link .btn").click(function() {
+            $(".cbox,.overlay").hide();
+        });
+
+        $("#selectAll").click(function() {
+            if (this.checked) {
+                $(".table :checkbox").prop("checked", true);
+            } else {
+                $(".table :checkbox").prop("checked", false);
+            }
+        });
+        //select all function
+        $(".group-list-content .list-row-title #selectAllDitto").click(function() {
+            if (this.checked) {
+                $(".group-list-content .content-list :checkbox").prop("checked", true);
+            } else {
+                $(".group-list-content .content-list :checkbox").prop("checked", false);
+            }
+        });
+        $(".group-list-content .content-list :checkbox").click(function() {
+            allchkone();
+        });
+    });
+    function allchkone() {
+        var chknum = $(".group-list-content .content-list :checkbox").length; //选项总个数
+        var chk = 0;
+        $(".group-list-content .content-list :checkbox").each(function() {
+            if ($(this).prop("checked") == true) {
+                chk++;
+            }
+        });
+        if (chknum == chk) { //全选
+            $(".group-list-content .list-row-title #selectAllDitto").prop("checked", true);
+        } else { //不全选
+            $(".group-list-content .list-row-title #selectAllDitto").prop("checked", false);
+        }
+    }
+</script>
+</body>
+
+</html>

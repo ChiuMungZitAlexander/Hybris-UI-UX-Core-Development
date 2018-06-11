@@ -1,0 +1,1093 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+ul, li, ol {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+  // so we reset that to ensure it behaves more like a standard block element.
+  // See https://github.com/twbs/bootstrap/issues/12359.
+  min-width: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @line-height-computed;
+  font-size: (@font-size-base * 1.5);
+  line-height: inherit;
+  color: @legend-color;
+  border: 0;
+  border-bottom: 1px solid @legend-border-color;
+}
+
+label {
+  display: inline-block;
+  color: @deepBlue;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+// Normalize form controls
+//
+// While most of our form styles require extra classes, some basic normalization
+// is required to ensure optimum display with or without those classes to better
+// address browser inconsistencies.
+
+// Override content-box in Normalize (* isn't specific enough)
+input[type="search"] {
+  .box-sizing(border-box);
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+label.normal {
+  text-transform: none;
+}
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}
+.tab-focus() {
+  // WebKit-specific. Other browsers will keep their default outline style.
+  // (Initially tried to also force default via `outline: initial`,
+  // but that seems to erroneously remove the outline in Firefox altogether.)
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+// Focus for file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  .tab-focus();
+}
+input[type="checkbox"][disabled] {
+  cursor: not-allowed;
+}
+input.readonly {
+  color:@gray_2;
+  font-style: italic;
+  &:focus {
+    border-color:@gray_2;
+  }
+}
+// Adjust output element
+output {
+  display: block;
+  padding-top: (@padding-base-vertical + 1);
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @input-color;
+}
+.disabled label{
+  cursor:default!important;
+}
+.disabled label::before {
+    background-color: #dadada !important;
+    border: 1px solid #dadada !important;
+}
+// radio -checkox
+.amw-checkbox-wrap {
+		position: relative;
+		background-color: @trans;
+		text-transform: none;
+	}
+
+	.amw-radio-wrap {
+		position: relative;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 5px;
+		text-transform: none;
+	}
+	label.amw-radio-wrap {
+		.amw-global-radio {
+			top: 3px;
+		}
+		.amw-radio-overlay {
+			top: 8px;
+		}
+	}
+	input.amw-global-radio {
+		margin: 0;
+		padding: 0;
+		width: 16px;
+		height: 16px;
+		margin-left: 1px;
+		outline: none;
+		z-index: 10;
+		position: relative;
+		opacity: 0;
+		top: 2px;
+		cursor: pointer;
+		&:checked {
+			&+.amw-radio-overlay {
+				border-color: @gray_10;
+				&:before {
+					font-family: 'AmwayIcons' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					content: "";
+					width: 10px;
+					height: 10px;
+					display: block;
+					border-radius: 50%;
+					background: #002f5f;
+					font-size: 8px;
+					top: 3px;
+					left: 3px;
+					position: relative;
+				}
+			}
+		}
+		&~.amw-after-radio-label {
+			text-transform: none;
+		}
+		&:disabled {
+			cursor: default;
+			&+.amw-radio-overlay {
+				background: #ffffff;
+				border-color: @gray_6;
+				cursor: default;
+				&:before {
+					background: #bbbbbb;
+				}
+			}
+			&~.amw-after-radio-label {
+				color: @gray_6;
+				cursor: default;
+				.amw-label-radio-text {
+					color: @gray_6;
+					cursor: default;
+				}
+			}
+			&~.amw-label-radio-text {
+				color: @gray_6;
+				cursor: default;
+			}
+		}
+	}
+	.amw-radio-overlay {
+		margin: 0;
+		padding: 0;
+		z-index: 5;
+		border-radius: 50%;
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #dadada;
+		background: #ffffff;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		line-height: 22px;
+		cursor: pointer;
+	}
+	.amw-label-radio-text {
+		margin: 0 0 0 10px;
+		cursor: pointer;
+		color: @mainColor;
+		font-weight: 600;
+	}
+
+._checkbox-element-global-class ~ span._checkbox-element-global-span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #dadada;
+    background: white;
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+
+}
+._checkbox-element-global-class:checked:not(:disabled) ~ span._checkbox-element-global-span {
+    background: @blue_2;
+    border-color: @blue_2;
+	  &:before {
+		color: @white;
+		font-family: 'Font Awesome 5 Pro';
+		font-weight: 900;
+		content: "\f00c";
+		font-size: 14px;
+		position: absolute;
+		top: 2px;
+		left: 2px;
+
+	  }
+}
+
+// Common form controls
+//
+// Shared size and type resets for form controls. Apply `.form-control` to any
+// of the following form controls:
+//
+// select
+// textarea
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical @padding-base-horizontal;
+  padding-left: 6px;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @input-color;
+  background-color: @input-bg;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid @input-border;
+  border-radius: 0; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  // .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  // .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  // .form-control-focus();
+
+  // Placeholder
+  .placeholder();
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: @input-bg-disabled;
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}
+
+
+// Search inputs in iOS
+//
+// This overrides the extra rounded corners on search inputs in iOS so that our
+// `.form-control` class can properly style them. Note that this cannot simply
+// be added to `.form-control` as it's not specific enough. For details, see
+// https://github.com/twbs/bootstrap/issues/11586.
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+
+// Special styles for iOS temporal inputs
+//
+// In Mobile Safari, setting `display: block` on temporal inputs causes the
+// text within the input to become vertically misaligned. As a workaround, we
+// set a pixel line-height that matches the given height of the input, but only
+// for Safari. See https://bugs.webkit.org/show_bug.cgi?id=139848
+//
+// Note that as of 9.3, iOS doesn't support `week`.
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"],
+  input[type="time"],
+  input[type="datetime-local"],
+  input[type="month"] {
+    &.form-control {
+      line-height: @input-height-base;
+    }
+
+    &.input-sm,
+    .input-group-sm & {
+      line-height: @input-height-small;
+    }
+
+    &.input-lg,
+    .input-group-lg & {
+      line-height: @input-height-large;
+    }
+  }
+}
+
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-group {
+  margin-bottom: @form-group-margin-bottom;
+}
+
+
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    min-height: @line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; // space out consecutive inline controls
+}
+
+// Apply same disabled cursor tweak as for inputs
+// Some special care is needed because <label>s don't inherit their parent's `cursor`.
+//
+// Note: Neither radios nor checkboxes can be readonly.
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+  }
+}
+// These classes are used directly on <label>s
+.radio-inline,
+.checkbox-inline {
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+  }
+}
+// These classes are used on elements with <label> descendants
+.radio,
+.checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: @cursor-disabled;
+    }
+  }
+}
+
+
+// Static form control text
+//
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  // Size it appropriately next to real form controls
+  padding-top: (@padding-base-vertical + 1);
+  padding-bottom: (@padding-base-vertical + 1);
+  // Remove default margin from `p`
+  margin-bottom: 0;
+  min-height: (@line-height-computed + @font-size-base);
+
+  &.input-lg,
+  &.input-sm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+// Form control sizing
+//
+// Build on `.form-control` with modifier classes to decrease or increase the
+// height and font-size of form controls.
+//
+// The `.form-group-* form-control` variations are sadly duplicated to avoid the
+// issue documented in https://github.com/twbs/bootstrap/issues/15074.
+select.form-control {
+  margin-left: 0;
+  margin-right: 0;
+}
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
+}
+.form-group-sm {
+  .form-control {
+    height: @input-height-small;
+    padding: @padding-small-vertical @padding-small-horizontal;
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+    border-radius: @input-border-radius-small;
+  }
+  select.form-control {
+    height: @input-height-small;
+    line-height: @input-height-small;
+  }
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: @input-height-small;
+    min-height: (@line-height-computed + @font-size-small);
+    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+  }
+}
+
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
+}
+.form-group-lg {
+  .form-control {
+    height: @input-height-large;
+    padding: @padding-large-vertical @padding-large-horizontal;
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+    border-radius: @input-border-radius-large;
+  }
+  select.form-control {
+    height: @input-height-large;
+    line-height: @input-height-large;
+  }
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: @input-height-large;
+    min-height: (@line-height-computed + @font-size-large);
+    padding: (@padding-large-vertical + 1) @padding-large-horizontal;
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+  }
+}
+
+
+// Form control feedback states
+//
+// Apply contextual and semantic states to individual form controls.
+
+.has-feedback {
+  // Enable absolute positioning
+  position: relative;
+
+  // Ensure icons don't overlap text
+  .form-control {
+    padding-right: (@input-height-base * 1.25);
+  }
+}
+// Feedback icon (requires .glyphicon classes)
+.form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2; // Ensure icon is above input groups
+  display: block;
+  width: @input-height-base;
+  height: @input-height-base;
+  line-height: @input-height-base;
+  text-align: center;
+  pointer-events: none;
+}
+.input-lg + .form-control-feedback,
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
+  width: @input-height-large;
+  height: @input-height-large;
+  line-height: @input-height-large;
+}
+.input-sm + .form-control-feedback,
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
+  width: @input-height-small;
+  height: @input-height-small;
+  line-height: @input-height-small;
+}
+
+// Feedback states
+.has-success {
+  .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+}
+.has-warning {
+  .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+}
+.has-error {
+  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+}
+
+// Reposition feedback icon if input has visible label above
+.has-feedback label {
+
+  & ~ .form-control-feedback {
+    top: (@line-height-computed + 5); // Height of the `label` and its margin
+  }
+  &.sr-only ~ .form-control-feedback {
+    top: 0;
+  }
+}
+
+
+// Help text
+//
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+
+.help-block {
+  display: block; // account for any element using help-block
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: lighten(@text-color, 25%); // lighten the text some for contrast
+}
+
+
+// Inline forms
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+.control-label {
+     text-transform: uppercase;
+     font-weight: 600;
+     .certify-text {
+        text-transform: none;
+     }
+}
+.form-inline {
+
+  // Kick in the inline
+  @media (min-width: @screen-sm-min) {
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    // Make static controls behave like regular ones
+    .form-control-static {
+      display: inline-block;
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    // Input groups need that 100% width though
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+      
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+
+    // Re-override the feedback icon.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+  }
+}
+
+
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form-horizontal {
+
+  // Consistent vertical alignment of radios and checkboxes
+  //
+  // Labels also get some reset styles, but that is scoped to a media query below.
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+  }
+  // Account for padding we're adding to ensure the alignment and of help text
+  // and other content below items
+  .radio,
+  .checkbox {
+    min-height: (@line-height-computed + (@padding-base-vertical + 1));
+  }
+
+  // Make form groups behave like rows
+  .form-group {
+      .make-row();
+       @media (max-width: @screen-sm-min) {
+         margin-left: 0;
+         margin-right: 0;
+       }
+  }
+
+  // Reset spacing and right align labels, but scope to media queries so that
+  // labels on narrow viewports stack the same as a default form example.
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+    }
+  }
+
+  // Validation states
+  //
+  // Reposition the icon because it's now within a grid column and columns have
+  // `position: relative;` on them. Also accounts for the grid gutter padding.
+  .has-feedback .form-control-feedback {
+    right: floor((@grid-gutter-width / 2));
+  }
+
+  // Form group sizes
+  //
+  // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
+  // inputs and labels within a `.form-group`.
+  .control-text {
+    display: block;
+    padding-top:@padding-base-vertical;
+  }
+  .form-group-lg {
+    @media (min-width: @screen-sm-min) {
+      .control-label {
+        padding-top: (@padding-large-vertical + 1);
+        font-size: @font-size-large;
+      }
+    }
+  }
+  .form-group-sm {
+    @media (min-width: @screen-sm-min) {
+      .control-label {
+        padding-top: (@padding-small-vertical + 1);
+        font-size: @font-size-small;
+      }
+    }
+  }
+}
+//checkout steps
+
+.checkout-steps {
+	padding: 0 15px 20px;
+	list-style-type: @none;
+	font-size: 12px;
+	clear: both;
+	line-height: 1em;
+	margin: 0 auto;
+	text-align: center;
+	display: table;
+  width: 100%
+}
+.checkout-step {
+	display: block;
+	float: left;
+	padding: 10px 30px 10px 20px;
+	background: @gray_9;
+	color: @mainColor;
+	font-size: 18px;
+	font-weight: @weight600;
+	line-height: 1.33;
+	text-align: left;
+	position: relative;
+	border-top: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+	border-left: 1px solid #dadada;
+	//width: 33.33%;
+	text-transform: uppercase;
+	height: 60px;
+	&:after {
+		content: '';
+		border-left: 30px solid @gray_9;
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent;
+		position: absolute;
+		top: 0;
+		left: @w100;
+		z-index: 20;
+	}
+	&:before {
+		content: '';
+		border-left: 30px solid #dadada;
+		border-top: 30px solid transparent;
+		border-bottom: 30px solid transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:first-child {
+		&::before {
+			border: @none;
+		}
+	}
+	&:last-child {
+		&::after {
+			border: @none;
+		}
+		border-right: 1px solid #dadada;
+		padding-left: 35px;
+	}
+}
+.checkout-steps-circle {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border: solid 1px #56565a;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 16px;
+	margin: 0;
+	position: absolute;
+	.vertical_center;
+	left: 100px;
+}
+.checkout-steps-text {
+	left: 140px;
+	margin: 0;
+	position: absolute;
+	.vertical_center;
+}
+.checkout-steps-circleactive {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border: solid 1px #007eb0;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 16px;
+	margin: 0;
+	position: absolute;
+	.vertical_center;
+	left: 100px;
+}
+.checkout-steps-active {
+	background: @white;
+	color: @blue_2;
+	&:after {
+		border-left-color: @white;
+	}
+}
+.checkout-steps-before {
+	.checkout-steps-text {
+		margin-left: -50px;
+    color: @deepBlue;
+		.fas {
+			font-size:14px;
+			width:22px;
+			height:22px;
+			padding: 4px 0 0 2px;
+			display: inline-block;
+			border-radius:100%;
+			box-shadow: 0 2px 1px  #fff;
+			color:@white;
+			background: @blue_2;
+			vertical-align: middle;
+			margin-right: 6px;
+			margin-top: -4px;
+		}
+	}
+		
+}
+.form-sub-title {
+    font-size: 18px;
+    color: @mainColor;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    display: table;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 600;
+}
+.form-group {
+    .form-control {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .col-md-10 {
+        .row {
+          margin-left:0;
+          margin-right:0;
+        }
+        .form-item-row {
+          .form-control {
+                width: 100%;
+            }
+            .col {
+                padding-left: 0;
+                padding-right: 10px;
+            }
+            .last-col {
+                padding-right: 0;
+            }
+        }
+    }
+    .action {
+      .form-item-row {
+            width: 100%;
+            position: relative;
+            margin: 0;
+            margin-bottom: 25px;
+            .form-control {
+                width: 100%;
+            }
+            .col {
+                padding-left: 0;
+                padding-right: 10px;
+            }
+            .last-col {
+                padding-right: 0;
+            }
+        }
+    }
+    
+}
+.reg-input-maxwidth {
+   input.form-control, .form-item-row {
+       max-width:285px;
+   }
+   .action {
+      .normal {
+          margin-top: 12px;
+      }
+     
+   }
+}
+.password-strength {
+    height: 4px;
+    background: #dadada;
+    &.active {
+      background: #27a248;
+    }
+}
+.password-strength-text {
+  position: absolute;
+  right: 2px;
+  bottom: -20px;
+  font-size: 12px;
+}
+.center-line {
+		font-size:32px;
+		line-height: 1;
+		font-weight:100;
+		color: @gray_10;
+    border-top: 1px solid #dadada;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: -2px;
+		@media(max-width:768px){
+			left:14px;
+		}
+		@media(max-width:430px){
+			left:-3px;
+		}
+	}
+	.form-control {
+		min-width: 1px;
+		margin-bottom: 0;
+		color:@blue_1;
+		text-transform: initial;
+		&:focus {
+			box-shadow: none;
+			border-color: @blue_1;
+		}
+		&.verify-error{
+			border:1px solid #e90033;
+			color:#e90033;
+			& + p.error-tip{
+				color:#e90033;
+        font-weight: 600;
+        margin-top: 3px;
+			}
+		}
+	}
+.divider {
+    padding-top: 18px;
+    margin-bottom: 37px;
+    border-bottom: 1px solid #e3e3e3;
+    clear: both;
+	  display: block;
+}
+@media (max-width: @screen-sm-min) {
+  .reg-input-maxwidth {
+      input.form-control {
+          max-width:100%;
+      }
+    }
+  .checkout-steps {
+    
+    .checkout-step {
+			//width: 20%;
+      font-size: 16px;
+			&:nth-child(2) {
+				.checkout-steps-circleactive {
+					left: 35px;
+				}
+			}
+		}
+		.checkout-steps-active {
+			//width: 40%;
+			.checkout-steps-text {
+				left: 55px;
+				display: inline-block;
+			}
+		}
+		.checkout-steps-circle {
+			left: 50%;
+		}
+		.checkout-steps-circle-active {
+			float: left;
+			left: 32px;
+		}
+		.checkout-steps-text {
+			display: @none;
+		}
+  }
+  .form-group {
+      .form-control {
+          max-width:100%;
+      }
+      .col-md-10 {
+          .form-control {
+              width: 100%;
+          }
+          .form-item-row {
+              width: 100%;
+              
+          }
+      }
+  }
+}

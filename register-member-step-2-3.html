@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>register-member-step-2-3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main class="amway-theme">
+    <div id="headerNologin"></div>
+    <div class="container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="register-landing.html">Register</a>
+                </li>
+                <li class="active">member Registration</li>
+            </ol>
+        </div>
+        <div class="product-list-page-title md25">member registration</div>
+    </div>
+    <ul class="checkout-steps abo-checkout-steps">
+        <li class="checkout-step col-xs-4 col-md-3 checkout-steps-before">  <span class="checkout-steps-text arrow-steps-ship"><i class="fas fa-check"></i>Primary Applicant</span> </li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-active">  <span class="checkout-steps-text checkout-steps-pay">Co-Applicant</span></li>
+        <li class="checkout-step col-xs-3 col-md-3"> <span class="checkout-steps-text checkout-steps-order">Purchase</span></li>
+        <li class="checkout-step col-xs-3 col-md-3"> <span class="checkout-steps-text checkout-steps-order">payment</span></li>
+    </ul>
+    <div class="container new-ibo-reg">
+        <div class="reg-ques-box">
+            <h3 class="fontWeight600">OTP Validation</h3>
+            <div class="content">
+                <p class="mainColor">You can come back to this step by clicking on the link provided in OTP.</p>
+            </div>
+            <div class="form-horizontal amway-theme reg-input-maxwidth">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Enter 6 digit OTP Number</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                        <p class="form-tips" id="resend-tips">Did not receive OTP yet? <a id="resend">Please click to resend.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-control">
+            <a class="btn primary" id="submit-btn">Next</a>
+            <a class="btn btn-cancel">Back</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#submit-btn').click(function () {
+            location.href = 'register-member-step-3.html'
+        })
+    })
+</script>
+</body>
+
+</html>

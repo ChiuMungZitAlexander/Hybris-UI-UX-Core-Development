@@ -1,0 +1,836 @@
+<!--Version: 2.0 by epam-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>renewal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body>
+<main class="amway-theme">
+    <div id="header"></div>
+    <div class="container main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li>
+                    <a href="my-account.html">My Account</a></li>
+                <li>renewal</li></ol>
+        </div>
+    </div>
+    <div class="user-account-header">
+        <div class="container">
+            <div class="row">
+                <div class="user-block col-sm-4">
+                    <div class="user-image-container">
+                        <img class="user-image" src="images/yui.png">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Yui Mori</span>
+                        <span class="user-id">ABO # 1234567</span></div>
+                </div>
+                <div class="go-block col-sm-8">
+                    <div class="amway-theme">
+                        <div class="jump-to">
+                            <span>Jump to</span>
+                        </div>
+                        <div class="jump-to-wrapper">
+                            <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                <option value="/my-account/orders" class="js-account-option-link text-capitalize" selected>Order History</option>
+                                <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option>
+                            </select>
+                            <input class="js-jump-to-selection-btn" value="GO" type="button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-count">
+        <h4 class="panel-title">
+            <i class="fas fa-sync-alt"></i>
+            <span class="text-uppercase panel-title-text">Renewals</span></h4>
+        <div class="page-section-content my-count-page-wrap">
+            <div class="navigation-tabs-container">
+                <ul class="tabs-toggles">
+                    <li class="tab-toggle-wrap active">
+                        <a class="tab-toggle" data-toggle="tab" href="#individual">
+                            <h6 class="toggle-text">individual</h6></a>
+                    </li>
+                    <li class="tab-toggle-wrap">
+                        <a class="tab-toggle" data-toggle="tab" href="#group">
+                            <h6 class="toggle-text">group</h6></a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane content-block active" id="individual">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <div class="list-content">
+                                    <div class="list-row-title row">
+                                        <div class="col-md-2 col-xs-6">subscriptions</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">effective period</div>
+                                        <div class="col-md-2 hidden-xs">commence date</div>
+                                        <div class="col-md-2 hidden-xs">renewal type</div>
+                                        <div class="col-md-2 hidden-xs">payment method</div>
+                                        <div class="col-md-2 hidden-xs">status</div>
+                                    </div>
+                                    <div class="content-list">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-2 col-xs-6">Current</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">2018</div>
+                                            <div class="col-md-2 col-xs-6">1 Jan 2018</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">Self</div>
+                                            <div class="col-md-2 col-xs-6">Card</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-2 col-xs-6">Upcoming</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">2019</div>
+                                            <div class="col-md-2 col-xs-6">1 Jan 2019</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">--</div>
+                                            <div class="col-md-2 col-xs-6">--</div>
+                                            <div class="col-md-2 col-xs-6 col-xs-rig">Incomplete</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="renewal-wrap">
+                            <div class="text-uppercase fontWeight600 blue">Renew ABO MemberShip For 2019</div>
+                            <h6 class="tips renewal-tips lightGray">All fields are required unless noted as optional.</h6>
+                            <div class="row">
+                                <div class="col-md-9 col-xs-12">
+                                    <h3 class="h3-title fontWeight600">MemberShip & Subscriptions</h3>
+                                    <div class="h3-content">
+                                        <p>Review the items below designed to support your business and select which to include in your membership for 2019.</p>
+                                    </div>
+                                    <div class="row" id="reg-items-title">
+                                        <div class="col-md-1 col-xs-12">
+                                            <h4>SELECT</h4>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12 hide-in-mob">
+                                            <h4>Items</h4>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12 hide-in-mob">
+                                            <h4>Description</h4>
+                                        </div>
+                                        <div class="col-md-2 col-xs-12 hide-in-mob">
+                                            <h4>Total</h4>
+                                        </div>
+                                    </div>
+                                    <div class="reg-items-box">
+                                        <div class="row reg-items">
+                                            <div class="col-md-1 col-xs-12 select-box disabled">
+                                                <input id="item-1" type="checkbox" disabled="disabled" checked="checked">
+                                                <label for="item-1"></label>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="reg-items-text">Membership Fee
+                                                    <div class="tips">
+                                                        <div class="toolTips">
+                                                            <div id="triangle-down"></div>
+                                                            ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="lightBlue item-tips">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="des">
+                                                    <p>Includes your Getting Started Guide and Business Reference Guide</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-12">
+                                                <p class="total">$50.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row reg-items">
+                                            <div class="col-md-1 col-xs-12 select-box">
+                                                <input id="item-2" type="checkbox" checked="checked">
+                                                <label for="item-2"></label>
+                                            </div>
+                                            <div class="col-md-3 col-xs-12">
+                                                <div class="reg-items-text">e-Amagram
+                                                    <div class="tips">
+                                                        <div class="toolTips">
+                                                            <div id="triangle-down"></div>
+                                                            ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="lightBlue item-tips">
+                                                            <i class="fas fa-info-circle"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="des">
+                                                    <p>Amway encourages you to choose e-Amagram as a support to our environmental-friendly effort and vision. You get access to the eAmagram. Secures all the benefits of your ABOship for another year!</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-12">
+                                                <p class="total">$25.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="terms" class="box-sizing">
+                                <li>
+                                    <h3 class="uppercase">ABO Agreement<a class="show-terms2"><i class="fas fa-external-link-alt"></i></a></h3>
+                                    <div class="conditions">
+                                        <div class="text">
+                                            <p><b>I agree to be aware and faithful to the following facts when submitting this application to act as AMO Korea ABO.</b><br></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                        <button class="text-btn view-all">
+                                            View All
+                                            <i class="icon icon-arrow-downs"></i>
+                                            <i class="icon icon-arrow-ups"></i>
+                                        </button>
+                                    </div>
+                                    <div class="action amway-theme">
+                                        <div class="radio-wrapper">
+                                            <label class="amw-radio-wrap radio-label">
+                                                <input name="radio-4" checked="checked" class="amw-global-radio" type="radio">
+                                                <span class="amw-radio-overlay"></span>
+                                                <span class="amw-label-radio-text">Accept</span></label>
+                                        </div>
+                                        <div class="radio-wrapper">
+                                            <label class="amw-radio-wrap radio-label">
+                                                <input name="radio-4" class="amw-global-radio" type="radio">
+                                                <span class="amw-radio-overlay"></span>
+                                                <span class="amw-label-radio-text">Do not Accept</span></label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="shipping-delivery">
+                                <div class="row">
+                                        <div class="col-xs-12 col-md-9 cart-items-wrapper">
+                                            <div id="shippingdiv" class="shipping-delivery-ship">
+                                                <p class="shipping-delivery-shipping-header">payment information</p>
+                                                <div class="panel">
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1">
+                                                    <label for="radio1" class="collapsed" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">Saved Credit Card</label>
+                                                    <div id="collapseOne" class="shipping-delivery-radio-body panel-collapse collapse">
+                                                        <div class="panel-body">Saved Credit Card</div></div>
+                                                </div>
+                                                <div class="panel">
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio2">
+                                                    <label for="radio2" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">New Credit Card</label>
+                                                    <div id="collapseTwo" class="shipping-delivery-radio-body panel-collapse collapse in">
+                                                        <form action="" method="post" name="editAddress">
+                                                            <fieldset>
+                                                                <div class="form-group row">
+                                                                    <label for="cardNumber" class="col-md-2 col-xs-12">Card number</label>
+                                                                    <input name="cardNumber" type="text">
+                                                                    <div class="card-image">
+                                                                        <img src="images/visa-new.png" alt="Visa">
+                                                                        <img src="images/mastercard-new.png" alt="Master">
+                                                                        <img src="images/jcb-new.png" alt="jcb">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="addName" class="col-md-2 col-xs-12">name on card</label>
+                                                                    <input name="addName" type="text"></div>
+                                                                <div class="form-group row">
+                                                                    <label for="expDate" class="col-md-2 col-xs-12">expiration date</label>
+                                                                    <input name="expDate" type="text" placeholder="MM">
+                                                                    <div class="payment-forms-back-slash">/</div>
+                                                                    <input name="expDate2" type="text" placeholder="YY"></div>
+                                                                <div class="form-group row">
+                                                                    <label for="expDate3" class="col-md-2 col-xs-12">security code</label>
+                                                                    <input name="expDate3" type="text"></div>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="shipping-delivery setup-auto-renewal">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="shipping-delivery-shipping-header">setup auto-renewal</div>
+                                        <div class="">
+                                            <input id="_checkbox-element-global-class" class="_checkbox-element-global-class" type="checkbox" checked="checked">
+                                            <label for="_checkbox-element-global-class" class="_checkbox-element-global-class-label"></label>
+                                            <span class="setup-renewal-text">I hereby authorise Amway to renew my subscriptions and menbership annually using the above payment information.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row renewal-amwa-btnbar">
+                            <div class="col-xs-12">
+                                <a href="renewal-auto.html" class="btn-blue-white">confirm payment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane content-block" id="group">
+                        <div class="pagination-bar top new-pagination-bar">
+                            <div class="print-hide pagination-toolbar delivery-pagination-toolbar">
+                                <div class="sort-refine-bar">
+                                    <div class="order-history-search-wrapper">
+                                        <div class="col-xs-12 col-md-5 form-wrapper js-search-form-wrapper">
+                                            <form id="searchForm" action="" method="POST">
+                                                <input id="searchData" name="searchData" placeholder="Search by ABO Name or ABO#" value="" type="text">
+                                                <button class="btn-primary" type="submit">Search</button></form>
+                                        </div>
+                                        <div class="col-xs-12 col-md-7 form-wrapper text-right js-filter-form-wrapper">
+                                            <div class="channel-sort channel-text">Sort by:
+                                                <select class="form-control" id="sortBy">
+                                                    <option selected="selected">Status</option>
+                                                    <option>ABO Number</option>
+                                                    <option>ABO Name</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 print-hide">
+                                <div class="product-list-left-refinements-slot">
+                                    <div class="product-list-left-refinements-component">
+                                        <div id="product-facet" class="product__facet hidden-xs hidden-sm">
+                                            <div class="filters-header">
+                                                <span>Filters(2)</span>
+                                                <a class="clearAllForm" type="submit">Clear All</a></div>
+                                            <div class="panel-group accordion-custom new-accordion-custom" id="facetAccordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel">
+                                                    <div class="panel-heading" role="tab" id="BrandPc">
+                                                        <h4 class="panel-title">
+                                                            <div role="button" class="collapse-button" data-toggle="collapse" data-parent="#facetAccordion" href="#brandBodypc" aria-controls="retailPriceFacetBody">
+                                                                <span class="text-uppercase">status</span>
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </div>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="brandBodypc" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                                                        <div class="panel-body">
+                                                            <div id="tabContent_brandPc" class="facet js-facet">
+                                                                <ul class="facet__list js-facet-list js-facet-top-values">
+                                                                    <li class="js-facet-value js-facet-init-value js-facet-top-value">
+                                                                        <form action="" method="get" class="non-js-desctop">
+                                                                            <label class="row">
+                                                                                <input id="bone-health" type="checkbox">
+                                                                                <label for="bone-health" class="normal inline-label checklabel fontWeight600 remember">
+                                                                                    <span>Expired</span>
+                                                                                </label>
+                                                                            </label>
+                                                                        </form>
+                                                                    </li>
+                                                                    <li class="js-facet-value js-facet-init-value">
+                                                                        <form action="" method="get" class="non-js-desctop">
+                                                                            <label class="row">
+                                                                                <input id="brian-health" type="checkbox">
+                                                                                <label for="brian-health" class="normal inline-label checklabel fontWeight600 remember">
+                                                                                    <span>Expiring Soon</span>
+                                                                                </label>
+                                                                            </label>
+                                                                        </form>
+                                                                    </li>
+                                                                    <li class="js-facet-value js-facet-init-value">
+                                                                        <form action="" method="get" class="non-js-desctop">
+                                                                            <label class="row">
+                                                                                <input id="children" type="checkbox">
+                                                                                <label for="children" class="normal inline-label checklabel fontWeight600 remember">
+                                                                                    <span>Active</span>
+                                                                                </label>
+                                                                            </label>
+                                                                        </form>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading" role="tab" id="date">
+                                                        <h4 class="panel-title">
+                                                            <div role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#orderDate" aria-controls="retailPriceFacetBody">
+                                                                <span class="text-uppercase">date</span>
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </div>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="orderDate" class=" panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <select class="form-control">
+                                                                        <option>Show all</option></select>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p>FROM</p>
+                                                                    <div class="form-item-row">
+                                                                        <div class="col-xs-4 col">
+                                                                            <select class="form-control">
+                                                                                <option>18</option>
+                                                                                <option>19</option></select>
+                                                                        </div>
+                                                                        <div class="col-xs-4 col">
+                                                                            <select class="form-control">
+                                                                                <option>Feb</option>
+                                                                                <option>Mar</option></select>
+                                                                        </div>
+                                                                        <div class="col-xs-4 col last-col">
+                                                                            <select class="form-control">
+                                                                                <option>1979</option>
+                                                                                <option>1980</option></select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>TO</p>
+                                                                    <div class="form-item-row">
+                                                                        <div class="col-xs-4 col">
+                                                                            <select class="form-control">
+                                                                                <option>18</option>
+                                                                                <option>19</option></select>
+                                                                        </div>
+                                                                        <div class="col-xs-4 col">
+                                                                            <select class="form-control">
+                                                                                <option>Aug</option>
+                                                                                <option>Sep</option></select>
+                                                                        </div>
+                                                                        <div class="col-xs-4 col last-col">
+                                                                            <select class="form-control">
+                                                                                <option>1979</option>
+                                                                                <option>1980</option></select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <div class="panel-heading" role="tab" id="sizePc">
+                                                        <h4 class="panel-title">
+                                                            <div role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#sizeBodyPc" aria-controls="retailPriceFacetBody">
+                                                                <span class="text-uppercase">Subscription</span>
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </div>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="sizeBodyPc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                        <div class="panel-body">
+                                                            <div id="tabContent_sizePc" class="facet js-facet">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 ">
+                                <div class="list-content group-list-content">
+                                    <div class="list-row-title row">
+                                        <div class="col-md-6 col-xs-7">
+                                            <div class="list-item-select">
+                                                <label class="checkbox-element-wrapper">
+                                                    <input id="selectAllDitto" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                    <span class="_checkbox-element-global-span"></span>
+                                                </label>
+                                            </div>
+                                            <div class="list-item-select">ABO Number</div>
+                                        </div>
+                                        <div class="col-md-2 col-xs-5 col-xs-rig">ABO Name</div>
+                                        <div class="col-md-2 hidden-xs">Expiration Date</div>
+                                        <div class="col-md-2 hidden-xs">Status</div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig red">Expired</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig red">Expired</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig red">Expired</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig red">Expired</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Expiring Soon</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Expiring Soon</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Expiring Soon</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Active</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Active</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-list row">
+                                        <div class="row con-list-item">
+                                            <div class="col-md-6 col-xs-7">
+                                                <div class="list-item-select">
+                                                    <label class="checkbox-element-wrapper">
+                                                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                        <span class="_checkbox-element-global-span"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="list-item-select">1238212793</div>
+                                            </div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">John Doe</div>
+                                            <div class="col-md-2 col-xs-7">21/02/2018</div>
+                                            <div class="col-md-2 col-xs-5 col-xs-rig">Active</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-page-pagination">
+                                    <ul class="pagination">
+                                        <li class="disabled">
+                                            <a href="#" aria-label="Previous">
+                                                <i class="fas fa-angle-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a class="page-link" href="#">1</a></li>
+                                        <li>
+                                            <a class="page-link" href="#">2</a></li>
+                                        <li>
+                                            <a class="page-link" href="#">3</a></li>
+                                        <li>
+                                            <a class="page-link" href="#">4</a></li>
+                                        <li>
+                                            <a class="page-link" href="#">5</a></li>
+                                        <li>
+                                            <span>...</span></li>
+                                        <li>
+                                            <a href="#" class="page-link">9</a></li>
+                                        <li class="next">
+                                            <a href="#" aria-label="Next">
+                                                <i class="fas fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="renewal-wrap">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3 class="h3-title fontWeight600">MemberShip &amp; Subscriptions</h3>
+                                            <div class="h3-content">
+                                                <p>Select which items to renew for your selected downlines. (32 Selected)</p>
+                                            </div>
+                                            <div class="row" id="reg-items-title">
+                                                <div class="col-md-1 col-xs-12">
+                                                    <h4>SELECT</h4>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 hide-in-mob">
+                                                    <h4>Items</h4>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12 hide-in-mob">
+                                                    <h4>Description</h4>
+                                                </div>
+                                                <div class="col-md-2 col-xs-12 hide-in-mob">
+                                                    <h4>Total</h4>
+                                                </div>
+                                            </div>
+                                            <div class="reg-items-box">
+                                                <div class="row reg-items">
+                                                    <div class="col-md-1 col-xs-12 select-box disabled">
+                                                        <input id="item-3" type="checkbox" disabled="disabled" checked="checked">
+                                                        <label for="item-3"></label>
+                                                    </div>
+                                                    <div class="col-md-3 col-xs-12">
+                                                        <div class="reg-items-text">Membership Fee
+                                                            <div class="tips">
+                                                                <div class="toolTips">
+                                                                    <div id="triangle-down"></div>
+                                                                    ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="lightBlue item-tips">
+                                                                    <i class="fas fa-info-circle"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-xs-12">
+                                                        <div class="des">
+                                                            <p>Includes your Getting Started Guide and Business Reference Guide</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-xs-12">
+                                                        <p class="total">$50.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row reg-items">
+                                                    <div class="col-md-1 col-xs-12 select-box">
+                                                        <input id="item-4" type="checkbox" checked="checked">
+                                                        <label for="item-4"></label>
+                                                    </div>
+                                                    <div class="col-md-3 col-xs-12">
+                                                        <div class="reg-items-text">e-Amagram
+                                                            <div class="tips">
+                                                                <div class="toolTips">
+                                                                    <div id="triangle-down"></div>
+                                                                    ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...
+                                                                </div>
+                                                                <a href="javascript:void(0)" class="lightBlue item-tips">
+                                                                    <i class="fas fa-info-circle"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-xs-12">
+                                                        <div class="des">
+                                                            <p>Amway encourages you to choose e-Amagram as a support to our environmental-friendly effort and vision. You get access to the eAmagram. Secures all the benefits of your ABOship for another year!</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-xs-12">
+                                                        <p class="total">$25.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="row renewal-amwa-btnbar">
+                                    <div class="col-xs-12">
+                                        <a href="renewal-group-payment.html" class="btn-blue-white" onclick="">Continue</a>
+                                        <span class="downline-amount">32 Downline Selected</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div class="overlay"></div>
+<div class="popup box-sizing" id="pop-terms2">
+    <div class="pop-box">
+        <div class="pop-header uppercase">ABO Agreement<i class="pop-close cart-popup__close icon icon-x-close"></i></div>
+        <div class="pop-content">
+            <div class="scroll-text">
+                <p>By completing this pre-registration, you acknowledge the following:
+                    I have read and understand the information in the Amway Business Overview Brochure, including the statement that the average monthly Gross Income for “active ABOs” in the US was $183 USD and in Canada was $206 CAD. Approximately 53% of ABOs in the US and 49% of ABOs in Canada were “active.” ABOs were considered “active” in months in 2013 when they attempted to make a retail sale, or presented the Amway ABO Compensation Plan, or received bonus money, or attended an Amway or ABO Meeting. I agree to abide by the Amway Rules of Conduct found in the Amway Business Reference Guide, which I understand are available at Amway.com. I acknowledge I will also receive these materials in my ABO Mailing from Amway.</p>
+                <p>By completing this pre-registration, you acknowledge the following:
+                    I have read and understand the information in the Amway Business Overview Brochure, including the statement that the average monthly Gross Income for “active ABOs” in the US was $183 USD and in Canada was $206 CAD. Approximately 53% of ABOs in the US and 49% of ABOs in Canada were “active.” ABOs were considered “active” in months in 2013 when they attempted to make a retail sale, or presented the Amway ABO Compensation Plan, or received bonus money, or attended an Amway or ABO Meeting. I agree to abide by the Amway Rules of Conduct found in the Amway Business Reference Guide, which I understand are available at Amway.com. I acknowledge I will also receive these materials in my ABO Mailing from Amway.</p>
+            </div>
+            <!--<input class="" id="agree" name="agree" type="checkbox" checked="" />-->
+            <!--<label for="agree" class="normal" id="agree-label">I Agree</label>-->
+        </div>
+        <div class="pop-footer">
+            <button class="btn primary" id="submit-btn">Close</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.show-terms2').click(function () {
+            $('#pop-terms2').fadeIn()
+        });
+        $('.pop-close, #submit-btn, #cancel-btn').click(function (e) {
+            e.preventDefault();
+            $('.popup').fadeOut();
+        });
+        //select all function
+        $(".group-list-content .list-row-title #selectAllDitto").click(function() {
+            if (this.checked) {
+                $(".group-list-content .content-list :checkbox").prop("checked", true);
+            } else {
+                $(".group-list-content .content-list :checkbox").prop("checked", false);
+            }
+        });
+        $(".group-list-content .content-list :checkbox").click(function() {
+            allchkone();
+        });
+
+        // search order
+        var $search = $("#searchForm");
+        var $searchInput = $search.find("#searchOrder");
+        $searchInput.arrt('autocomplete', 'off');
+        var $autocomplete = $('');
+
+    });
+
+    function allchkone() {
+        var chknum = $(".group-list-content .content-list :checkbox").length; //选项总个数
+        var chk = 0;
+        $(".group-list-content .content-list :checkbox").each(function() {
+            if ($(this).prop("checked") == true) {
+                chk++;
+            }
+        });
+        if (chknum == chk) { //全选
+            $(".group-list-content .list-row-title #selectAllDitto").prop("checked", true);
+        } else { //不全选
+            $(".group-list-content .list-row-title #selectAllDitto").prop("checked", false);
+        }
+    }
+</script>
+</body>
+
+</html>

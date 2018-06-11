@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>register-abo-step-1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body>
+    <main class="amway-theme">
+        <div id="headerNologin"></div>
+        <div class="container">
+            <div class="print-hide breadcrumb-section">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="homepage-logged-in.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="register-landing.html">Register</a>
+                    </li>
+                    <li class="active">ABO Registration</li>
+                </ol>
+            </div>
+            <div class="product-list-page-title md25">ABO registration</div>
+        </div>
+        <ul class="checkout-steps abo-checkout-steps">
+            <li class="checkout-step col-xs-4 col-md-3 checkout-steps-active">
+                <span class="checkout-steps-text arrow-steps-ship">Primary Applicant</span>
+            </li>
+            <li class="checkout-step col-xs-3 col-md-3">
+                <span class="checkout-steps-text checkout-steps-pay">Co-Applicant</span>
+            </li>
+            <li class="checkout-step col-xs-3 col-md-3">
+                <span class="checkout-steps-text checkout-steps-order">Purchase</span>
+            </li>
+            <li class="checkout-step col-xs-3 col-md-3">
+                <span class="checkout-steps-text checkout-steps-order">payment</span>
+            </li>
+        </ul>
+        <div class="container new-ibo-reg">
+            <!-- Sponsor popup -->
+            <div class="popup box-sizing" id="sponsor-confirm-popup">
+                <div class="pop-box">
+                    <div class="pop-header uppercase">Confirm Sponsoring ABO
+                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
+                    </div>
+                    <div class="pop-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Number</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">123456910</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Name</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
+                        </div>
+                    </div>
+                    <div class="pop-footer">
+                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
+                        <a class="link-cancel" id="cancel-btn">Cancel</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sponsor popup with country-->
+            <div class="popup box-sizing" id="sponsor-confirm-with-country-popup">
+                <div class="pop-box">
+                    <div class="pop-header uppercase">Confirm Sponsoring ABO
+                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
+                    </div>
+                    <div class="pop-content">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <span class="title">Sponsoring ABO Number</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">123456910</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <span class="title">Sponsoring ABO Name</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <span class="title">Country</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Malaysia</div>
+                        </div>
+                    </div>
+                    <div class="pop-footer">
+                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
+                        <a class="link-cancel" id="cancel-btn">Cancel</a>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="tips tips-marginLeftShort">All fields are required unless noted as optional.</h6>
+
+            <h3 class="form-sub-title">ID Verification</h3>
+            <div class="form-horizontal amway-theme reg-input-maxwidth">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Identity Card Number</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control" value="12345612940586">
+                        <button type="button" class="btn primary abo-step1-confirm-button" id="">Confirm</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 col-xs-12">
+                        <div id="reg-confirm-info" class="marginTopShort">
+                            <p id="abo-sponsor-confirmed" class="abo-sponsor-confirmed uppercase">
+                                <i class="fas fa-check"></i>
+                                Verified
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <h3 class="form-sub-title sponsor-information-title">Sponsor Information</h3>
+            <div class="form-horizontal amway-theme reg-input-maxwidth">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">sponsoring Abo number</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control" value="123456910">
+                        <button type="button" class="btn primary abo-step1-confirm-button" id="sponsor-confirm">Confirm</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10 col-xs-12">
+                        <div id="reg-confirm-info" class="marginTopShort">
+                            <p id="abo-sponsor-confirmed" class="abo-sponsor-confirmed uppercase">
+                                <i class="fas fa-check"></i>
+                                Abo sponsor confirmed
+                            </p>
+                            <p>Fjord Doe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-12 control-label input-label">
+                        <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox" checked="checked">
+                        <span class="_checkbox-element-global-span"></span>
+                        <span class="label-text no-sponsor-text">I don't have a sponsor. I would like Amway to assign a sponsor for me.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="amway-theme">
+                <div class="accordion-element new-accordion-element" id="productPageAccordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default accordion-panel">
+                        <div class="accordion-panel-heading" role="tab" id="bundle">
+                            <div class="accordion-toggle reg-accordion-toggle collapsed" data-toggle="collapse" data-parent="#productPageAccordion" href="#detailsBody">
+                                <h5 class="accordion-panel-title panel-title">
+                                    <i class="fas fa-plus"></i>
+                                    <span class="accordion-title-wrapper">
+                                        <span class="title-element title-text">International Sponsor</span>
+                                        <span class="title-element accordion-icon-wrapper"></span>
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div id="detailsBody" class="accordion-panel-collapse panel-collapse collapse sponsor-panel" role="tabpanel" aria-labelledby="bundle">
+                            <div class="panel-body">
+                                <h6 class="title-optional">*Optional</h6>
+                                <div class="form-horizontal amway-theme">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label text-upper paddingLeft15">sponsoring Abo number</label>
+                                        <div class="col-md-10 col-xs-12">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label text-upper paddingLeft15">Country</label>
+                                        <div class="col-md-10 col-xs-12">
+                                            <select class="form-control">
+                                                <option>Malaysia</option>
+                                                <option>Paris</option>
+                                            </select>
+                                            <button type="button" class="btn primary abo-step1-confirm-button" id="sponsor-confirm-with-country">Confirm</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10 col-xs-12">
+
+                                            <div id="reg-confirm-info">
+                                                <p id="abo-sponsor-confirmed" class="abo-sponsor-confirmed uppercase">
+                                                    <i class="fas fa-check"></i>
+                                                    Abo sponsor confirmed
+                                                </p>
+                                                <p>Fjord Doe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default accordion-panel">
+                        <div class="accordion-panel-heading" role="tab" id="ingredients">
+                            <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#productPageAccordion" href="#ingredientsBody">
+                                <h5 class="accordion-panel-title panel-title">
+                                    <i class="fas fa-plus"></i>
+                                    <span class="accordion-title-wrapper">
+                                        <span class="title-element title-text">Multiple Business</span>
+                                        <span class="title-element accordion-icon-wrapper"></span>
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div id="ingredientsBody" class="abo-multiple-business accordion-panel-collapse panel-collapse collapse multi-business-panel"
+                            role="tabpanel" aria-labelledby="ingredients">
+                            <div class="panel-body">
+                                <h6 class="title-optional">*Optional</h6>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label text-upper paddingLeft15">Country</label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <select class="form-control">
+                                            <option>Thailand</option>
+                                            <option>Thailand</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label text-upper">ABO Number</label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label text-upper">ABO Name</label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label"></label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <button class="btn primary">Confirm</button>
+                                        <span class="confirm-fail-icon">
+                                            <img src="images/icons/confirm-fail-icon.png"> ABO verification failed.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-horizontal amway-theme abo-steps1 reg-input-maxwidth">
+                <h3 class="form-sub-title personal-info-sub-title">Personal Information</h3>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Salutation</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="row form-item-row">
+                            <div class="col-xs-12 col-md-6 col last-col">
+                                <select class="form-control">
+                                    <option>ซฌฎ</option>
+                                    <option>รลฬ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">First Name (Thai)</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Last Name (Thai)</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">First Name (Eng)</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Last Name (Eng)</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">citizenship</label>
+                    <div class="col-md-10 col-xs-12 fixed-option">
+                        <span>Thai</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label paddingTop0">gender</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="radio-wrapper marginBottom10">
+                            <label class="amw-radio-wrap radio-label">
+                                <input type="radio" name="radio-male-style" checked="checked" class="amw-global-radio">
+                                <span class="amw-radio-overlay"></span>
+                                <span class="amw-label-radio-text">Male</span>
+                            </label>
+                        </div>
+                        <div class="radio-wrapper marginBottom0">
+                            <label class="amw-radio-wrap radio-label">
+                                <input type="radio" name="radio-male-style" class="amw-global-radio">
+                                <span class="amw-radio-overlay"></span>
+                                <span class="amw-label-radio-text">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Date of birth</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="row form-item-row">
+                            <div class="col-xs-4 col">
+                                <select class="form-control">
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4 col">
+                                <select class="form-control">
+                                    <option>18</option>
+                                    <option>19</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4 col last-col">
+                                <select class="form-control">
+                                    <option>1979</option>
+                                    <option>1980</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label paddingTop0">marital status</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="radio-wrapper marginBottom10">
+                            <label class="amw-radio-wrap radio-label">
+                                <input type="radio" name="radio-single-style" value="single" checked="checked" class="amw-global-radio">
+                                <span class="amw-radio-overlay"></span>
+                                <span class="amw-label-radio-text">Single</span>
+                            </label>
+                        </div>
+                        <div class="radio-wrapper marginBottom0">
+                            <label class="amw-radio-wrap radio-label">
+                                <input type="radio" name="radio-single-style" value="married" class="amw-global-radio">
+                                <span class="amw-radio-overlay"></span>
+                                <span class="amw-label-radio-text">Married</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spouse Information -->
+                <div class="spouse-info" id="spouse-info">
+                    <div class="divider"></div>
+                    <h3 class="form-sub-title">Spouse Information</h3>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Identity Card Number
+                            <br>
+                            <em class="label-hint">*For Thai Citizens</em>
+                        </label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control" value="12345612940586">
+                            <button type="button" class="btn primary abo-step1-confirm-button" id="confirm">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10 col-xs-12">
+                            <div id="reg-confirm-info" class="marginTopShort">
+                                <p id="abo-sponsor-confirmed" class="abo-sponsor-confirmed uppercase">
+                                    <i class="fas fa-check"></i>
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Identity Card Number
+                            <br>
+                            <em class="label-hint">*For Foreigners (Non-Thai)</em>
+                        </label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label input-label">
+                            <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox" checked="checked">
+                            <span class="_checkbox-element-global-span"></span>
+                            <span class="label-text">Add as Co-Applicant</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="divider"></div>
+                <h3 class="form-sub-title">Contact information</h3>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Mobile number</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="row form-item-row">
+                            <div class="col-xs-4 col">
+                                <select class="form-control">
+                                    <option>+66</option>
+                                    <option>+67</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-8 col last-col">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Email Address</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Confirm Email Address</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <h3 class="form-sub-title primary-address">Primary address</h3>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Address</label>
+                    <div class="col-md-10 col-xs-12">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Province</label>
+                    <div class="col-md-10 col-xs-12">
+                        <select class="form-control">
+                            <option>ชาวต่างช</option>
+                            <option>ธยาว่า</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">District</label>
+                    <div class="col-md-10 col-xs-12">
+                        <select class="form-control">
+                            <option>ะวัติศาส</option>
+                            <option>นว่ามี</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Subdistrict</label>
+                    <div class="col-md-10 col-xs-12">
+                        <select class="form-control">
+                            <option>นว่ามี</option>
+                            <option>ะวัติศาส</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Postal Code</label>
+                    <div class="col-md-10 col-xs-12">
+                        <div class="row form-item-row">
+                            <div class="col-xs-12 col-md-6 col last-col">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Country</label>
+                    <div class="col-md-10 col-xs-12 fixed-option">
+                        <span>Thailand</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="next-control">
+                    <a class="btn primary" id="submit-btn" href="register-abo-step-2.html">Next</a>
+                    <a class="btn btn-cancel" href="register-simple-terms.html">Back</a>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+    </main>
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/select2.js"></script>
+    <script src="scripts/new.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#submit-btn').click(function () {
+                location.href = 'register-simple-terms-step2.html'
+            });
+
+            $(".interOpt").click(function () {
+                var isOpt = $('.interOpt:checked').val();
+                if (isOpt == null) {
+                    $(".international-type-options-block").show();
+                } else {
+                    $(".international-type-options-block").hide();
+                }
+            });
+
+            // Marital status radio select
+            $("input[name='radio-single-style']").change(function () {
+                if ($(this).val() === 'married') {
+                    $("#spouse-info").slideDown();
+                } else {
+                    $("#spouse-info").slideUp();
+                }
+            });
+
+            // Sponsor confirm click
+            $("#sponsor-confirm").click(function () {
+                $("#sponsor-confirm-popup").fadeIn();
+            });
+
+            $(".pop-close").click(function () {
+                $("#sponsor-confirm-popup").fadeOut();
+                $("#sponsor-confirm-with-country-popup").fadeOut();
+            });
+
+            $(".link-cancel").click(function () {
+                $("#sponsor-confirm-popup").fadeOut();
+                $("#sponsor-confirm-with-country-popup").fadeOut();
+            });
+
+            // Sponsor confirm with country click
+            $("#sponsor-confirm-with-country").click(function () {
+                $("#sponsor-confirm-with-country-popup").fadeIn();
+            });
+        });
+    </script>
+</body>
+
+</html>

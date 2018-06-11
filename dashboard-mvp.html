@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>dashboard-mvp</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" href="scripts/owl.carousel.css">
+        <link rel="stylesheet" href="scripts/owl.theme.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    <body id="dashboard">
+        <main>
+            <div id="header"></div>
+            <!--<div class="container-fluid main-container ">-->
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                        <a href="homepage-logged-in.html">Home</a></li>
+                    <li class="active">My Business Center</li></ol>
+                </div>
+            </div>
+            <div class="container-fluid main-container">
+                <div class="container-fluid box-content">
+                    <div class="row dash-title-box">
+                        <div class="col-md-8">
+                            <h1 class="dashboard-acc__name text-center">Welcome to Your New Business Center!</h1>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="sponsorship__list" id="dashboard-ad">
+                                <div><img class="dashboard-ad-img" src="images/ad-1.jpg" alt=""></div>
+                                <div><img class="dashboard-ad-img" src="images/ad-1.jpg" alt=""></div>
+                                <div><img class="dashboard-ad-img" src="images/ad-1.jpg" alt=""></div>
+                                <div><img class="dashboard-ad-img" src="images/ad-1.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid box-content">
+                    <div class="performance-box clearfix row">
+                        <div class="col-lg-8">
+                            <div class="performance-box__pvbv">
+                                <div class="performance-box__header">
+                                    <div class="performance-box__title-mob">
+                                        <div class="performance-box__title"><img src="images/icon-mv.png">my pv / bv</div></div>
+                                    <ul class="performance-box__nav">
+                                        <li class="performance-box__arch active">
+                                            <img data-toggle="tab" href="#round" src="images/arch-grey.svg" alt="Arch Chart"></li>
+                                        <li class="performance-box__bar ">
+                                            <img class="svg" data-toggle="tab" href="#bar" src="images/bar-graph-grey.svg" alt="Bar Chart"></li>
+                                    </ul>
+                                    <select class="performance-box__select">
+                                        <option selected>
+                                            <span>August 2016</span></option>
+                                        <option>
+                                            <span>August 2016</span></option>
+                                        <option>
+                                            <span>August 2016</span></option>
+                                    </select>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="performance-box__data clearfix row">
+                                        <div class="col-md-6 performance-box__graph-area">
+                                            <h5 class="performance-box__message-main">August 2016 Performance</h5>
+                                            <span class="performance-box__message-sub">Performance Bonus History,</span>
+                                            <span class="performance-box__message-sub performance-box__italic">Totals as of 1:49 PM EDT, 08/23/16</span>
+                                            <div class="performance-box__tab-content tab-content">
+                                                <div id="round" class="tab-pane fade in active">
+                                                    <!--<image src="images/performance-chart-arch-mobile.png" />-->
+                                                    <amw-rainbow>
+                                                        <!---->
+                                                        <amw-performance-graph>
+                                                            <div id="performance-graph-rainbow">
+                                                                <svg preserveaspectratio="xMinYMin meet" viewbox="0 0 340 230">
+                                                                    <g transform="translate(170, 170)">
+                                                                        <path class="arc-done" d="M-170,-2.0818995585505004e-14A170,170 0 0,1 -170,-2.0818995585505004e-14L-140,-1.7145055188062946e-14A140,140 0 0,0 -140,-1.7145055188062946e-14Z"></path>
+                                                                        <path class="arc-todo" d="M-170,-2.0818995585505004e-14A170,170 0 0,1 170,0L140,0A140,140 0 0,0 -140,-1.7145055188062946e-14Z"></path>
+                                                                        <polyline points="10 -135,
+                                                                        0 -125,
+                                                                        -10 -135" fill="#27a248" transform="rotate(-90)">
+                                                                        </polyline>
+                                                                        <text x="0" y="-3.5em" text-anchor="middle" class="grouppv-title">Group PV</text>
+                                                                        <text x="0" y="-1.2em" text-anchor="middle" class="grouppv-value">0.00</text>
+                                                                        <text x="0" y="-0.5em" text-anchor="middle" class="grouppv-content">100.00 Group PV to 3%</text>
+                                                                        <text x="-170px" y="1.8em" text-anchor="start" class="point-text green">0%</text>
+                                                                        <text x="-170px" y="3.5em" text-anchor="start" class="point-value">0.00 GPV</text>
+                                                                        <text x="170px" y="1.8em" text-anchor="end" class="point-text">3%</text>
+                                                                        <text x="170px" y="3.5em" text-anchor="end" class="point-value">100.00 GPV</text></g>
+                                                                </svg>
+                                                            </div>
+                                                        </amw-performance-graph>
+                                                        <div class="text-center">
+                                                            <amw-modal>
+                                                                <div aria-hidden="true" bsmodal="" class="modal fade amw-performance-modal" role="dialog" tabindex="-1">
+                                                                    <div class="modal-dialog  amw-modal">
+                                                                        <div class="modal-content">
+                                                                            <button aria-label="Close" class="close" type="button">
+                                                                                <span aria-hidden="true">&times;</span></button>
+                                                                            <div class="modal-header">
+                                                                                <div class="modal-title amw-modal-title">Performance Bonus Schedule</div></div>
+                                                                            <div class="modal-body">
+                                                                                <ul>
+                                                                                    <li class="amw-performance-raw amw-performance-title">
+                                                                                        <span class="amw-performance-cell">If your total monthly PV is:</span>
+                                                                                        <span class="amw-performance-cell">Your performance bonus is:</span></li>
+                                                                                    <!---->
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">7,500 or more</span>
+                                                                                        <span class="amw-performance-cell">25% of your BV (Business Volume)</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">6,000</span>
+                                                                                        <span class="amw-performance-cell">23% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">4,000</span>
+                                                                                        <span class="amw-performance-cell">21% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">2,500</span>
+                                                                                        <span class="amw-performance-cell">18% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">1,500</span>
+                                                                                        <span class="amw-performance-cell">15% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">1,000</span>
+                                                                                        <span class="amw-performance-cell">12% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">600</span>
+                                                                                        <span class="amw-performance-cell">9% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">300</span>
+                                                                                        <span class="amw-performance-cell">6% of BV</span></li>
+                                                                                    <li class="amw-performance-raw">
+                                                                                        <span class="amw-performance-cell">100</span>
+                                                                                        <span class="amw-performance-cell">3% of BV</span></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </amw-modal>
+                                                        </div>
+                                                    </amw-rainbow>
+                                                </div>
+                                                <div id="bar" class="tab-pane fade">
+                                                    <!--<image src="images/performance-chart-bar.png" />-->
+                                                    <amw-barchart>
+                                                        <!---->
+                                                        <!---->
+                                                        <amw-bar-chart class="">
+                                                            <div class="bar-chart-container">
+                                                                <svg width="350" height="300">
+                                                                    <g transform="translate(45,20)">
+                                                                        <g class="x axis" transform="translate(0,240)" style="pointer-events: none;">
+                                                                            <g class="tick" transform="translate(36.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">FEB</text></g>
+                                                                            <g class="tick" transform="translate(74.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">MAR</text></g>
+                                                                            <g class="tick" transform="translate(112.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">APR</text></g>
+                                                                            <g class="tick" transform="translate(150.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">MAY</text></g>
+                                                                            <g class="tick" transform="translate(188.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">JUN</text></g>
+                                                                            <g class="tick" transform="translate(226.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">JUL</text></g>
+                                                                            <g class="tick" transform="translate(264.5,0)" style="opacity: 1;">
+                                                                                <line y2="0" x2="0"></line>
+                                                                                <text dy=".71em" y="10" x="0" style="text-anchor: middle;">AUG</text></g>
+                                                                            <path class="domain" d="M0,0V0H300V0"></path>
+                                                                        </g>
+                                                                        <g class="y axis" style="pointer-events: none;">
+                                                                            <g class="tick" transform="translate(0,240)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">0</text></g>
+                                                                            <g class="tick" transform="translate(0,216)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">100</text></g>
+                                                                            <g class="tick" transform="translate(0,192)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">300</text></g>
+                                                                            <g class="tick" transform="translate(0,168)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">600</text></g>
+                                                                            <g class="tick" transform="translate(0,144)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">1,000</text></g>
+                                                                            <g class="tick" transform="translate(0,120)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">1,500</text></g>
+                                                                            <g class="tick" transform="translate(0,96)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">2,500</text></g>
+                                                                            <g class="tick" transform="translate(0,72)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">4,000</text></g>
+                                                                            <g class="tick" transform="translate(0,48)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">6,000</text></g>
+                                                                            <g class="tick" transform="translate(0,24)" style="opacity: 1;">
+                                                                                <line x2="300" y2="0"></line>
+                                                                                <text dy=".32em" x="-3" y="0" style="text-anchor: end;">7,500</text></g>
+                                                                            <path class="domain" d="M-10,24H0V240H-10"></path>
+                                                                        </g>
+                                                                        <g class="chartGroup">
+                                                                            <g class="bar" transform="translate(22,0)">
+                                                                                <rect class="barrect" width="29" y="16.000000000000004" height="224" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="11.000000000000004" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(60,0)">
+                                                                                <rect class="barrect" width="29" y="50.17788" height="189.82211999999998" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="45.17788" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(98,0)">
+                                                                                <rect class="barrect" width="29" y="16.000000000000004" height="224" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="11.000000000000004" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(136,0)">
+                                                                                <rect class="barrect" width="29" y="16.000000000000004" height="224" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="11.000000000000004" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(174,0)">
+                                                                                <rect class="barrect" width="29" y="16.000000000000004" height="224" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="11.000000000000004" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(212,0)">
+                                                                                <rect class="barrect" width="29" y="39.9208" height="200.07920000000001" style="fill: rgb(212, 236, 218);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="34.9208" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                            <g class="bar" transform="translate(250,0)">
+                                                                                <rect class="barrect" width="29" y="16.000000000000004" height="224" style="fill: rgb(32, 137, 61);"></rect>
+                                                                                <rect width="29" height="260" fill="#ff4444" opacity="0.01" class="barrectHover"></rect>
+                                                                                <text class="value1" y="11.000000000000004" width="29" x="14.5" font-size="14px" font-weight="600" fill="#55565a" text-anchor="middle">25%</text></g>
+                                                                        </g>
+                                                                        <g class="prev" transform="translate(-8,240)" cursor="pointer" display="inline">
+                                                                            <rect fill="#FFF" opacity="0.01" width="20" height="40"></rect>
+                                                                            <polyline stroke="#0073b0" stroke-width="2" fill="none" points="13 10 8 15 13 20"></polyline>
+                                                                        </g>
+                                                                        <g class="next" transform="translate(285,240)" cursor="pointer" display="none">
+                                                                            <rect fill="#FFF" opacity="0.01" width="20" height="40"></rect>
+                                                                            <polyline stroke="#0073b0" stroke-width="2" fill="none" points="8 10 13 15 8 20"></polyline>
+                                                                        </g>
+                                                                        <g class="currentPeriodTooltip" transform="translate(264.5,0)" style="pointer-events: none; display: none;">
+                                                                            <rect width="100" height="75" x="-50" rx="4" ry="4" stroke="#56565A" fill="#56565A" style="opacity: 1;"></rect>
+                                                                            <path d="M -7 0 L 0 5 L 7 0 z" transform="translate(0,75)" style="fill: rgb(86, 86, 90);"></path>
+                                                                            <text width="50" x="0" font-weight="bold" style="text-anchor: middle; fill: rgb(255, 255, 255);">
+                                                                                <tspan x="0" dy="20" style="font-size: 16px; font-weight: bold;">25%</tspan>
+                                                                                <tspan x="0" dy="20" style="font-size: 14px; font-weight: bold;">GPV</tspan>
+                                                                                <tspan x="0" dy="20" style="font-size: 14px; font-weight: bold;">11242.8</tspan></text>
+                                                                        </g>
+                                                                        <g class="hoverTooltip" transform="translate(226.5,0)" style="pointer-events: none; display: none;">
+                                                                            <rect width="100" height="75" x="-50" rx="4" ry="4" stroke="#56565A" fill="#56565A" style="opacity: 1;"></rect>
+                                                                            <path d="M -7 0 L 0 5 L 7 0 z" style="fill: rgb(86, 86, 90);" transform="translate(0,75)"></path>
+                                                                            <text width="50" x="0" font-weight="bold" style="text-anchor: middle; fill: rgb(255, 255, 255);">
+                                                                                <tspan x="0" dy="20" style="font-size: 16px; font-weight: bold;">25%</tspan>
+                                                                                <tspan x="0" dy="20" style="font-size: 14px; font-weight: bold;">GPV</tspan>
+                                                                                <tspan x="0" dy="20" style="font-size: 14px; font-weight: bold;">6504.95</tspan></text>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </amw-bar-chart>
+                                                    </amw-barchart>
+                                                </div>
+                                            </div>
+                                            <a class="performance-box__message-link" href="#">View Performance Bonus Schedule</a>
+                                            <div class="performance-box__message-abstract">
+                                                <span class="performance-box__message-label">QCPV:</span>
+                                                <span class="performance-box__message-value">2,500</span>
+                                                <span class="performance-box__message-divider"></span>
+                                                <span class="performance-box__message-label">CVR:</span>
+                                                <span class="performance-box__message-value">Yes</span></div>
+                                        </div>
+                                        <div class="col-md-6 performance-box__list-area">
+                                            <ul>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Personal PV</span>
+                                                    <span class="performance-box__item-abovalue">120.00</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Personal PV</span>
+                                                    <span class="performance-box__item-abovalue">360.00</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Group PV</span>
+                                                    <span class="performance-box__item-abovalue">1,600.00</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Ruby PV</span>
+                                                    <span class="performance-box__item-abovalue">1245.54</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Leadership PV</span>
+                                                    <span class="performance-box__item-abovalue">276.34</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Leadership Bonus</span>
+                                                    <span class="performance-box__item-abovalue">3%</span></li>
+                                                <li class="performance-box__list-item">
+                                                    <span class="performance-box__item-abolabel">Qualified Legs</span>
+                                                    <span class="performance-box__item-abovalue">1</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="performance-box__message-more">
+                                    <a class="performance-box__more-link" href="#">PV Inquiry
+                                        <span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+                                    <span class="performance-box__message-divider"></span>
+                                    <a class="performance-box__more-link" href="#">PV Transfer History
+                                        <span class="featured-product__message-icon glyphicon glyphicon-menu-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class=" performance-box__tool">
+                                <div class="performance-box__tool-header">
+                                    <span class="performance-box__title"><img src="images/icon-report.png">toolbox</span></div>
+                                <div class="performance-box__data clearfix">
+                                    <div class="performance-box__tool-list">
+                                        <ul>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/mail-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Messages</a>
+                                                <span class="performance-box__tool-flag">2</span></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/rss-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Feeds</a></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/share-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Social</a>
+                                                <span class="performance-box__tool-flag">3</span></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/users-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Who's New</a>
+                                                <span class="performance-box__tool-flag">1</span></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/location-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Who's Close</a></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/cake-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Birthdays</a>
+                                                <span class="performance-box__tool-flag">1</span></li>
+                                            <li class="performance-box__tool-item">
+                                                <img class="performance-box__tool-icon" src="images/cycle-icon.png" alt="Mail">
+                                                <a class="performance-box__tool-message performance-box__item-abolabel" href="#">Renewals</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid box-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dashboard-half">
+                                <div class="sponsorship__titile-section">
+                                    <h1 class="sponsorship__title"><img src="images/icon-line.png">EDUCATION</h1>
+                                </div>
+                                <div class="dashboard-half-body">
+                                    <ul>
+                                        <li><img src="images/edu.png">
+                                            <p>Lorem Dolor Sit Amet Adipiscing Elit Sed Diam Nonummy
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                    <a class="sponsorship__link dashboard-half-link" href="#">Go to Learning Center
+                                        <i class="glyphicon glyphicon-menu-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="dashboard-half no-margin">
+                                <div class="sponsorship__titile-section">
+                                    <h1 class="sponsorship__title"><img src="images/icon-line.png">EXPLORE MORE</h1>
+                                </div>
+                                <div class="dashboard-half-body">
+                                    <ul>
+                                        <li><img src="images/explore-1.png">
+                                            <p>Take Our Survey on the New Business Center
+                                            </p>
+                                        </li>
+                                        <li><img src="images/explore-2.png">
+                                            <p>Watch Our Business Center Video To Discover More
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsorship">
+                    <div class="sponsorship__titile-section">
+                        <h1 class="sponsorship__title"><img src="images/icon-line.png">DOWNLINE LEGS</h1>
+                        </div>
+                    <div class="sponsorship__list" id="sponsorshipTabList">
+                        <div>
+                            <img class="sponsorship__img" src="images/1.png" alt="person"></div>
+                        <div>
+                            <img class="sponsorship__img" src="images/2.png" alt="person"></div>
+                        <div>
+                            <img class="sponsorship__img" src="images/3.png" alt="person"></div>
+                        <div>
+                            <img class="sponsorship__img" src="images/4.png" alt="person"></div>
+                        <div>
+                            <img class="sponsorship__img" src="images/5.png" alt="person"></div>
+                        <div>
+                            <img class="sponsorship__img" src="images/3.png" alt="person"></div>
+                    </div>
+                    <a class="sponsorship__link" href="#">View Los
+                        <i class="glyphicon glyphicon-menu-right"></i></a>
+                </div>
+
+                <div class="resource-center">
+                    <div class="business-tracking__title"><img src="images/icon-res.png">Resource Center</div>
+
+                    <div class="resource-center__tabs tab-content">
+                        <div id="new" class="scrollbox scrollbox__list scrollbox-js ">
+                            <div class="scrollbox__item ">
+                                <img class="scrollbox__image" src="images/resource-m-g.png" alt="resource">
+                                <p class="scrollbox__message">
+                                    <span class="scrollbox__title">How to Hydrate Your Oily Skin and Reduce Shine</span></p>
+                            </div>
+                            <div class="scrollbox__item ">
+                                <img class="scrollbox__image" src="images/resource-lighting.png" alt="resource">
+                                <p class="scrollbox__message">
+                                    <span class="scrollbox__title">Leverage the Switch, Share, Duplicate App</span></p>
+                            </div>
+                            <div class="scrollbox__item ">
+                                <img class="scrollbox__image" src="images/resource-success.png" alt="resource">
+                                <p class="scrollbox__message">
+                                    <span class="scrollbox__title">Path to Success: Your Steps to Success Map</span></p>
+                            </div>
+                            <div class="scrollbox__item ">
+                                <img class="scrollbox__image" src="images/resource-tablet.png" alt="resource">
+                                <p class="scrollbox__message">
+                                    <span class="scrollbox__title">Make this Year Amazing</span></p>
+                            </div>
+                            <div class="scrollbox__item ">
+                                <img class="scrollbox__image" src="images/events-sea.png" alt="resource">
+                                <p class="scrollbox__message">
+                                    <span class="scrollbox__title">Leverage the Switch, Share, Duplicate App</span></p>
+                            </div>
+                        </div>
+                        <div class="resource-center__bottom">
+                            <a class="sponsorship__link" href="#">VIEW ALL RESOURCES
+                                <i class="glyphicon glyphicon-menu-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <!--<script src="scripts/slick.min.js"></script>-->
+        <script src="scripts/owl.carousel.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">$(function() {
+
+              
+
+            $('#dashboard-ad').owlCarousel({
+                    loop: true,
+                    nav: true,
+                    dots: false,
+                    margin: 0,
+                    items: 1
+                    
+                });
+            $('#sponsorshipTabList').owlCarousel({
+                    loop: true,
+                    nav: true,
+                    dots: false,
+                    margin: 0,
+                    items: 1,
+                    responsiveClass: true,
+                    responsive: {
+                        480 : {
+                            items: 1
+                        },
+                        960 : {
+                            items: 3
+                        },
+                        1200 : {
+                            items: 4
+                        },
+                        1440 : {
+                            items: 5
+                        }
+                    }
+                });
+                $('.scrollbox-js').owlCarousel({
+                    loop: true,
+                    nav: true,
+                    dots: false,
+                    margin: 0,
+                    items: 1,
+                    responsiveClass: true,
+                    responsive: {
+                        480 : {
+                            items: 1
+                        },
+                        960 : {
+                            items: 2
+                        },
+                        1200 : {
+                            items: 3
+                        }
+                    }
+                });
+
+            })</script>
+    </body>
+
+</html>

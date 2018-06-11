@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>coupon-management</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="scripts/owl.carousel.css">
+        <link rel="stylesheet" href="scripts/owl.theme.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <link rel="stylesheet" href="styles/select2.css">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    
+    <body>
+        <main class="amway-theme">
+            <div id="header"></div>
+            <div class="container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a></li>
+                        <li>
+                            <a href="my-account.html">My Account</a></li>
+                        <li>Coupon Management</li></ol>
+                </div>
+            </div>
+            <div class="user-account-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="user-block col-sm-4">
+                            <div class="user-image-container">
+                                <img class="user-image" src="images/yui.png">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="user-info">
+                                <span class="user-name">Yui Mori</span>
+                                <span class="user-id">ABO # 1234567</span></div>
+                        </div>
+                        <div class="go-block col-sm-8">
+                            <div class="amway-theme">
+                                <div class="jump-to">
+                                    <span>Jump to</span></div>
+                                <div class="jump-to-wrapper">
+                                    <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                        <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                        <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                        <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                        <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                        <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                        <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                        <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                        <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                        <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                        <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                        <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                        <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                        <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                        <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                        <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option></select>
+                                    <input class="js-jump-to-selection-btn" value="GO" type="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-count">
+                <h4 class="panel-title">
+                    <i class="fas fa-percent"></i>
+                    <span class="text-uppercase panel-title-text">Coupon Management</span></h4>
+                <div class="my-count-page-wrap">
+                    <div class="page-head-title">
+                        <div class="page-head__description">There are 31 coupons in total</div></div>
+                    <div class="page-section-content">
+                        <div class="navigation-tabs-container">
+                            <div class="outer-border-bottom">
+                                <ul class="tabs-toggles">
+                                    <li class="tab-toggle-wrap">
+                                        <a class="tab-toggle" data-toggle="tab" href="#credit-vouchers">
+                                            <h6 class="toggle-text">Credit vouchers</h6></a>
+                                    </li>
+                                    <li class="tab-toggle-wrap active">
+                                        <a class="tab-toggle" data-toggle="tab" href="#coupon">
+                                            <h6 class="toggle-text">Coupons</h6></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane content-block credit-vouchers" id="credit-vouchers">
+                                    <div class="text-right cm-sortBy">
+                                        <div class="channel-text">Sort by:
+                                            <select class="form-control" id="sortBy">
+                                                <option selected="selected">Order Voucher</option>
+                                                <option>Event Voucher</option>
+                                                <option>Return Voucher</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="credit-vouchers-content list-content ">
+                                        <div class="list-row-title row">
+                                            <div class="col-md-2 col-xs-6">Voucher Number</div>
+                                            <div class="col-md-2 hidden-xs hidden-sm">Voucher Type</div>
+                                            <div class="col-md-2 hidden-xs hidden-sm">Order ID</div>
+                                            <div class="col-md-2 col-xs-6 status">
+                                                <span class="hover-area">Expiry Date
+                                                    <span class="header-icon fas fa-angle-down"></span></span>
+                                            </div>
+                                            <div class="col-md-1 hidden-xs hidden-sm">PV</div>
+                                            <div class="col-md-1 hidden-xs hidden-sm">BV</div>
+                                            <div class="col-md-1 hidden-xs hidden-sm">Value</div>
+                                            <div class="col-md-1 hidden-xs hidden-sm">Status</div></div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Beauty Assesment Vouhger</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">416.50</div>
+                                            <div class="col-md-1 col-xs-12">416.50</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Open</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Open</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Redeemed</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Deleted</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Open</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Redeemed</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Open</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-list row">
+                                            <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                            <div class="col-md-2 col-xs-12 mob-font-bold">Event Voucher</div>
+                                            <div class="col-md-2 col-xs-12">32977449</div>
+                                            <div class="col-md-2 col-xs-12 action-required">08/19/2018</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">0.00</div>
+                                            <div class="col-md-1 col-xs-12">5555.50</div>
+                                            <div class="col-md-1 col-xs-6 action-required status">
+                                                <span class="lightBlue">Open</span>
+                                            </div>
+                                        </div>
+                                        <div class="list-page-pagination">
+                                            <ul class="pagination">
+                                                <li class="disabled">
+                                                    <a href="#" aria-label="Previous">
+                                                        <i class="fas fa-angle-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="active">
+                                                    <a class="page-link" href="#">1</a></li>
+                                                <li>
+                                                    <a class="page-link" href="#">2</a></li>
+                                                <li>
+                                                    <a class="page-link" href="#">3</a></li>
+                                                <li>
+                                                    <a class="page-link" href="#">4</a></li>
+                                                <li>
+                                                    <a class="page-link" href="#">5</a></li>
+                                                <li>
+                                                    <span>...</span></li>
+                                                <li>
+                                                    <a href="#" class="page-link">9</a></li>
+                                                <li class="next">
+                                                    <a href="#" aria-label="Next">
+                                                        <i class="fas fa-angle-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane content-block coupon active" id="coupon">
+                                    <div class="cm-apply-coupon-area">
+                                        <div class="cm-apply-coupon-area-title">Apply Coupon Code</div>
+                                        <div class="form-wrapper coupon-code">
+                                            <form id="" action="" method="POST">
+                                                <input id="couponCode" name="searchData" placeholder="Enter Coupon Code" value="" type="text">
+                                                <button id="apply-coupon-code" class="btn-primary" type="submit">Apply</button></form>
+                                            <span class="error">Please enter a valid coupon code</span>
+                                            <span class="correct">
+                                                <i class="fas fa-check"></i>Coupon added successfully.</span>
+                                        </div>
+                                    </div>
+                                    <div class="cm-apply-coupon-area second">
+                                        <div class="cm-apply-coupon-area-title">Your Coupons</div>
+                                        <div class="pagination-bar">
+                                            <div class="sort-refine-bar">
+                                                <div class="order-history-search-wrapper">
+                                                    <div class="col-xs-12 col-md-5 form-wrapper js-search-form-wrapper">
+                                                        <form id="searchForm" action="" method="POST">
+                                                            <input id="searchData" name="searchData" placeholder="Search by recipient's name" value="" type="text">
+                                                            <button class="btn-primary" type="submit">Search</button></form>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-7 form-wrapper text-right js-filter-form-wrapper">
+                                                        <div class="channel-filter channel-filter-group channel-text">
+                                                            <label>Filter:</label>
+                                                            <div class="dropdown">
+                                                                <button id="filterDropdown" class="dropdown-toggle" data-toggle="dropdown">
+                                                                    <i class="fas fa-filter"></i>
+                                                                    <span>Filters</span></button>
+                                                                <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                                                                    <li>All Coupons</li>
+                                                                    <li>Activated Coupons</li>
+                                                                    <li>Expired Coupons</li></ul>
+                                                            </div>
+                                                            <select class="form-control" id="Filter">
+                                                                <option>All Coupons</option>
+                                                                <option>Activated Coupons</option>
+                                                                <option>Expired Coupons</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="channel-sort channel-sort-group channel-text">
+                                                            <label>Sort by:</label>
+                                                            <select class="form-control" id="sortBy">
+                                                                <option selected="selected">BEC</option>
+                                                                <option>Birthday</option>
+                                                                <option>Sign Up</option>
+                                                                <option>E-Amagram</option>
+                                                                <option>Shopping E-Coupon</option>
+                                                                <option>Trade-In</option>
+                                                                <option>Renewal</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="credit-vouchers-content list-content">
+                                            <div class="list-row-title row">
+                                                <div class="col-md-2 col-xs-6">Coupon Number</div>
+                                                <div class="col-md-3 hidden-xs hidden-sm">Coupon Type</div>
+                                                <div class="col-md-2 hidden-xs hidden-sm">Type</div>
+                                                <div class="col-md-2 col-xs-5 date">
+                                                    <span class="hover-area">Date
+                                                        <span class="header-icon fas fa-angle-down"></span></span>
+                                                </div>
+                                                <div class="col-md-1 hidden-xs hidden-sm">Value</div>
+                                                <div class="col-md-1 hidden-xs hidden-sm">Status</div>
+                                                <div class="col-md-1 col-xs-1"></div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item has-drop-down">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Artistry Super Saver</div>
+                                                    <div class="col-md-2 col-xs-12">BEC</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">$10</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                                <div class="dropdown-content general row">
+                                                    <div class="col-md-7 col-xs-12 dropdown-left">
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-9 col-xs-12 left">Save up to $10 for every $400 spent in a single order.reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit in reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit inreprehenderit</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Artistry 40 OFF</div>
+                                                    <div class="col-md-2 col-xs-12">Sign Up</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">Value:</span>40% OFF</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item has-drop-down">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Atmosphere Air Purifier Trade-in</div>
+                                                    <div class="col-md-2 col-xs-12">Trade-In</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">$500</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                                <div class="dropdown-content trade-in row">
+                                                    <div class="col-md-7 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-9 col-xs-12 description-text">
+                                                                <p>Description Text Here(if any).</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7 col-xs-12 dropdown-left">
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-4 col-xs-12 left">Orderable Item</div>
+                                                            <div class="col-md-5 col-xs-12 right">283411 Atmosphere Air Purifier</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-4 col-xs-12 left">Ordered Item</div>
+                                                            <div class="col-md-5 col-xs-12 right">283411 Atmosphere Air Purifier</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-4 col-xs-12 left">Order Number</div>
+                                                            <div class="col-md-5 col-xs-12 right">SA112</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-4 col-xs-12 left">Order Date</div>
+                                                            <div class="col-md-5 col-xs-12 right">02/24/2018</div></div>
+                                                    </div>
+                                                    <div class="col-md-5 col-xs-12 dropdown-right">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-12 left">Traded-in Accepted</div>
+                                                            <div class="col-md-7 col-xs-12 right">Y</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-12 left">Traded-in Return Date</div>
+                                                            <div class="col-md-7 col-xs-12 right">02/24/2018</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-12 left">Traded-in wareHouse</div>
+                                                            <div class="col-md-7 col-xs-12 right">PETALING</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-12 left">Traded-in Serial NO.</div>
+                                                            <div class="col-md-7 col-xs-12 right">12983912</div></div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-12 left">Traded-in Description</div>
+                                                            <div class="col-md-7 col-xs-12 right">Reprehenderit in voluptate velit
+                                                                <br>esse cillum (if any).</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item ">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Beauty Assesment Vouhger</div>
+                                                    <div class="col-md-2 col-xs-12">BEC</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">416.50</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item has-drop-down">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028724</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Ut Enim Ad Minim Veniam</div>
+                                                    <div class="col-md-2 col-xs-12">BEC</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">Value:</span>$10</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Redeemed</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                                <div class="dropdown-content general row">
+                                                    <div class="col-md-7 col-xs-12 dropdown-left">
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-9 col-xs-12 left">Save up to $10 for every $400 spent in a single order.reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit in reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit inreprehenderit</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item ">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Artistry 40 OFF</div>
+                                                    <div class="col-md-2 col-xs-12">Sign Up</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">40% OFF</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item has-drop-down">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028724</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Ut Enim Ad Minim Veniam</div>
+                                                    <div class="col-md-2 col-xs-12">E-Amagram</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">$10</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Deleted</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                                <div class="dropdown-content general row">
+                                                    <div class="col-md-7 col-xs-12 dropdown-left">
+                                                        <div class="row">
+                                                            <div class="col-md-3 hidden-sm"></div>
+                                                            <div class="col-md-9 col-xs-12 left">Save up to $10 for every $400 spent in a single order.reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit in reprehenderit in voluptate velit esse cillum dolore eu fugia reprehenderit inreprehenderit</div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-list">
+                                                <div class="row con-list-item ">
+                                                    <div class="col-md-2 col-xs-6 mob-font-bold">11709290028728</div>
+                                                    <div class="col-md-3 col-xs-12 mob-font-bold">Artistry 40 OFF</div>
+                                                    <div class="col-md-2 col-xs-12">Sign Up</div>
+                                                    <div class="col-md-2 col-xs-12">08/19/2018 - 08/19/2018</div>
+                                                    <div class="col-md-1 col-xs-7">40% OFF</div>
+                                                    <div class="col-md-1 col-xs-5 action-required status">
+                                                        <span class="lightBlue">Open</span>
+                                                    </div>
+                                                    <div class="col-md-1 col-xs-1 collapse-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="list-page-pagination">
+                                                <ul class="pagination">
+                                                    <li class="disabled">
+                                                        <a href="#" aria-label="Previous">
+                                                            <i class="fas fa-angle-left"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="active">
+                                                        <a class="page-link" href="#">1</a></li>
+                                                    <li>
+                                                        <a class="page-link" href="#">2</a></li>
+                                                    <li>
+                                                        <a class="page-link" href="#">3</a></li>
+                                                    <li>
+                                                        <a class="page-link" href="#">4</a></li>
+                                                    <li>
+                                                        <a class="page-link" href="#">5</a></li>
+                                                    <li>
+                                                        <span>...</span></li>
+                                                    <li>
+                                                        <a href="#" class="page-link">9</a></li>
+                                                    <li class="next">
+                                                        <a href="#" aria-label="Next">
+                                                            <i class="fas fa-angle-right"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/owl.carousel.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">$(function() {
+                $(".collapse-icon").click(function() {
+                    var father = $(this).parent(".con-list-item");
+                    if (father.next('.dropdown-content').is(":hidden")) {
+                        father.next('.dropdown-content').show();
+                        $(this).addClass('collapse');
+                    } else {
+                        father.next('.dropdown-content').hide();
+                        $(this).removeClass('collapse');
+                    }
+                });
+
+                $("#apply-coupon-code").click(function(e) {
+                    e.preventDefault();
+                    var value = $("#couponCode").val();
+                    if (value == '' || value !== 'XMASTENOFF') {
+                        $(this).parents('.coupon-code').removeClass('has-correct');
+                        $(this).parents('.coupon-code').addClass('has-error');
+                    } else {
+                        $(this).parents('.coupon-code').removeClass('has-error');
+                        $(this).parents('.coupon-code').addClass('has-correct');
+                    }
+                });
+
+                //        $(".js-order-history-filters").click(function(){
+                //            $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                //            if($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                //                $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+                //            }else{
+                //                $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                //            }
+                //        });
+                //
+                //        $(".js-order-history-search").click(function(){
+                //            $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                //            if($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')){
+                //                $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+                //            }else{
+                //                $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                //
+                //            }
+                //        });
+                //new-announcement-pop
+                $('.ditto-schedule-table tbody tr').click(function(event) {
+                    event.preventDefault();
+                    $(".message-center-pop2,.overlay").show();
+                });
+                $(".message-center-pop2 #cboxClose").click(function() {
+                    $(".message-center-pop2,.overlay").hide();
+                });
+
+                //mob get ".tabs-toggles" max-width
+                function tabwidth() {
+                    var maxWidth = $(window).width() + 4;
+                    $(".tabs-toggles").css('max-width', maxWidth)
+                }
+                $(window).resize(function() {
+                    tabwidth()
+                });
+                $(document).ready(function() {
+                    tabwidth()
+                });
+
+            });</script>
+    </body>
+
+</html>

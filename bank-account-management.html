@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bank-account-management</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    
+
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main class="amway-theme">
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li> <a href="my-account.html">My Account</a></li>
+                <li> Bank Account Management</li>
+            </ol>
+        </div>
+    </div>
+    <div class="container-fluid my-count">
+        <div class="row">
+            <div class="account-landing-page">
+                <div class="user-account-header row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="user-block col-sm-4">
+                                <div class="user-image-container">
+                                    <img class="user-image" src="images/yui.png">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="user-info">
+                                    <span class="user-name">Yui Mori</span>
+                                    <span class="user-id">ABO # 1234567</span>
+                                </div>
+                            </div>
+                            <div class="go-block col-sm-8">
+                                <div class="amway-theme">
+                                    <div class="jump-to">
+                                        <span>Jump to</span>
+                                    </div>
+                                    <div class="jump-to-wrapper">
+                                        <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                            <option value="/my-account/billing-shipping/bank-account" class="js-account-option-link text-capitalize">Bank Account Management</option>
+                                            <option value="/my-account/billing-shipping/credit-card-management" class="js-account-option-link text-capitalize">Credit Card Management</option>
+                                            <option value="/my-account/profile-management" class="js-account-option-link text-capitalize">Profile Management</option>
+                                            <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                            <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                            <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                            <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                            <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                            <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                            <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                            <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Edit Profile</option>
+                                            <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                            <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T & C Management</option>
+                                            <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                            <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                        </select>
+                                        <input type="button" class="js-jump-to-selection-btn" value="GO">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container ">
+                <h4 class="panel-title">
+                    <i class="far fa-credit-card"></i>
+                    <span class="text-uppercase panel-title-text">Bank Account Management</span>
+                </h4>
+                <div class="main-content bank-payment-box">
+                    <div class="bank-payment-subTitle col-xs-12">Bonus payment & Refunds</div>
+                    <div class="container list-content">
+                        <div class="list-row-title row">
+                            <div class="col-md-5 col-xs-10">Bank Institution</div>
+                            <div class="col-md-6 hidden-xs">Account Holder's Name</div>
+                            <div class="col-md-1 hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                        <div class="content-list row last-content-list">
+                            <div class="row con-list-item">
+                                <div class="col-md-5 col-xs-12 card-info-block">
+                                    <div class="card-info">
+                                        <span class="card-code">Bank Account</span>
+                                        <span class="panel-title-text">Commonwealth Bank</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12"><span>John Doe &nbsp;</span></div>
+                                <div class="col-md-1 col-xs-12 card-btn text-right">
+                                    <button id="edit" class="btn primary edit" style="display: inline-block;">EDIT</button>
+                                    
+                                </div>
+                            </div>
+                            <div id="editPay" class="row form-horizontal amway-theme" style="display:none;">
+                                <div class="row edit-form-box">
+                                    <div class="accountActions col-md-1 col-xs-12 right-btn">
+                                        <button type="button" id="editFormSubmit" class="btn primary">Save</button>
+                                        <button type="button" id="editCancel" onclick="beforeSubmit();" class="btn">cancel</button>
+                                        <a href="javascript:void(0)">Delete</a>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Account Holder's Name</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Account Number</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Bank Institution</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <select id="Bank-Institution" type="text" name="Bank-Institution" class="form-control">
+                                                    <option> </option>
+                                                    <option> </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Routing Number</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 bank-agreement">
+                                        <ul id="terms" class="box-sizing">
+                                            <li>
+                                                <div class="action amway-theme">
+                                                    <h3 class="uppercase">depositor's acceptance</h3>
+                                                    <div class="checkbox bank-account-checkbox">
+                                                        <label class="control-label">
+                                                            <input id="acceptance02" name="verified" type="checkbox">
+                                                            <label for="acceptance02" class="normal">I certify the account information I have provided to be true and accurate, and I acknowledge my accpetance of the Authorization and Agreement set forth above.</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bank-payment-subTitle col-xs-12">Direct Debit</div>
+                    <div class="container list-content">
+                        <div class="list-row-title row">
+                            <div class="col-md-5 col-xs-10">Bank Institution</div>
+                            <div class="col-md-6 hidden-xs">Account Holder's Name</div>
+                            <div class="col-md-1 hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        </div>
+                        <div class="content-list row last-content-list">
+                            <div class="row con-list-item">
+                                <div class="col-md-5 col-xs-12 card-info-block">
+                                    <div class="card-info">
+                                        <span class="card-code">Bank Account</span>
+                                        <span class="panel-title-text">HSBC</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12"><span>John Doe &nbsp;</span></div>
+                                <div class="col-md-1 col-xs-12 card-btn text-right">
+                                    <button id="edit" class="btn primary edit" style="display: inline-block;">EDIT</button>
+
+                                </div>
+                            </div>
+                            <div id="editPay" class="row form-horizontal amway-theme" style="display:none;">
+                                <div class="row edit-form-box">
+                                    <div class="accountActions col-md-1 col-xs-12 right-btn">
+                                        <button type="button" id="editFormSubmit" class="btn primary">Save</button>
+                                        <button type="button" id="editCancel" onclick="beforeSubmit();" class="btn">cancel</button>
+                                        <a href="javascript:void(0)">Delete</a>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Account Holder's Name</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Account Number</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Bank Institution</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <select id="Bank-Institution" type="text" name="Bank-Institution" class="form-control">
+                                                    <option> </option>
+                                                    <option> </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Routing Number</label>
+                                            <div class="col-md-4 col-xs-12">
+                                                <input class="form-control" value=" " type="text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 bank-agreement">
+                                        <ul id="terms" class="box-sizing">
+                                            <li>
+                                                
+                                                <div class="action amway-theme">
+                                                    <h3 class="uppercase">depositor's acceptance</h3>
+                                                    <div class="checkbox bank-account-checkbox">
+                                                        <label class="control-label">
+                                                            <input id="acceptance" name="verified" type="checkbox" />
+                                                            <label for="acceptance" class="normal">I certify the account information I have provided to be true and accurate, and I acknowledge my accpetance of the Authorization and Agreement set forth above.</label>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".edit").click(function() {
+            var father = $(this).parents('.content-list');
+            if(father.children("#editPay").is(":visible")) {
+            } else {
+                $(this).addClass('disabled');
+                father.children("#editPay").slideDown("slow");
+                
+            }
+        });
+        $("#editFormSubmit, #editCancel").click(function() {
+            var father = $(this).parents('#editPay');
+
+            if(father.is(":visible")) {
+                father.slideToggle("slow");
+                father.prev(".con-list-item").find('.edit').removeClass('disabled');
+            } else {
+                father.slideDown("slow");
+            }
+        });
+
+        $(".js-order-history-filters").click(function () {
+            $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+            } else {
+                $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        $(".js-order-history-search").click(function () {
+            $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+            if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+            } else {
+                $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+            }
+        });
+
+        $(".js-expand-order").click(function () {
+            if (!$(this).hasClass("open")) {
+                $(this).addClass("open");
+                $(this).next(".js-order-details-block").addClass("expanded");
+            } else {
+                $(this).removeClass("open");
+                $(this).next(".js-order-details-block").removeClass("expanded");
+            }
+        });
+        $("._checkbox-element-global-span").click(function(){
+            var father=$(this).parent('.control-label');
+            if(!father.find("#paymentInfo").is(":checked")){
+                $(this).parents('.box-sizing').next('.next-control').removeClass('disabled');
+            }else{
+                $(this).parents('.box-sizing').next('.next-control').addClass('disabled');
+            }
+        });
+    })</script>
+</body>
+
+</html>

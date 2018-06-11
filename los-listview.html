@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>los-listview</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+
+
+</head>
+<body>
+<main id="reports-page" class="los-listview">
+    <div id="header"></div>
+    <div class="container-fluid main-container ">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="dashboard.html">My Business Center</a>
+                </li>
+                <li class="active">Line of Sponsorship</li>
+            </ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/LOS-ListView" class="js-account-option-link text-capitalize" selected="selected">LOS List View</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">LOS Tree View</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                        <option value="/my-business-center/higher-award-tracking" class="js-account-option-link text-capitalize">Higher Award Tracking</option>
+                        <option value="/my-business-center/dashboard" class="js-account-option-link text-capitalize">Dashboard</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container clear-overflow">
+        <h1 class="page-title">LINE OF SPONSORSHIP</h1>
+
+        <div class="los-tree-view-opera row">
+            <div class="los-tree-view-opera-left col-md-8">
+                <!--<select id="group-order" class="prw-jump-to-selection select2-hidden-accessible" tabindex="-2" aria-hidden="true">-->
+                    <!--<option>In Market</option>-->
+                    <!--<option>International</option>-->
+                <!--</select>-->
+                <select  id="date-order" class="form-control no-uppercase-form-control width125" tabindex="-3" aria-hidden="true">
+                    <option>Sept 2017</option>
+                    <option>Aug 2017</option>
+                    <option>July 2017</option>
+                    <option>June 2017</option>
+                    <option>May 2017</option>
+                    <option>Apr 2017</option>
+                    <option>Mar 2017</option>
+                    <option>Feb 2017</option>
+                </select>
+                <input type="text"  id="search-order" placeholder="Search Downline Name or #" class="form-control">
+                <button class="btn btn-primary"  id="search-order-button">Search</button>
+            </div>
+            <div class="los-tree-view-opera-right col-md-4">
+                <div class="los-tree-view-opera-right-content">
+                    <div class="row">
+                        <div class="col-xs-6 add-to-ditto-container change-view-container">
+                            <div class="cart-detail__addto dropdown-toggle add-to-ditto-button" >CHANGE VIEW<i class="icon-arrow-down"></i></div>
+                            <div class="cart-detail__dropdown-menu dropdown-menu" >
+                                <div class="dropdown-menu-inside">
+                                    <ul class="nav nav-tabs extra1">
+                                        <li class="active">
+                                            <a data-toggle="tab" href="#view1"><i class="glyphicon glyphicon-th-list"></i>LIST VIEW</a></li>
+                                        <li>
+                                            <a data-toggle="tab" href="#view2"><i class="icon icon-line"></i>TREE VIEW</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <input class="" id="toDitto1" name="toDitto" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto1"></label><span>Hide Inactive</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto2" name="toDitto" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto2"></label><span>Hide IBOs with no Volume</span>
+                                        </li>
+
+                                    </ul>
+
+
+                                    <div class="save-content">
+
+                                        <div id="view1" class="tab-pane fade in active">
+                                            <h3>SAVE VIEWS</h3>
+                                            <ul>
+                                                <li class="active"><i class="glyphicon glyphicon-ok"></i>COMMON.SETTING.SAVED.DEFAULT</li>
+                                                <li>Leg<i class="glyphicon glyphicon-pencil"></i></li>
+                                                <li>Leg<i class="glyphicon glyphicon-pencil"></i></li>
+                                                <li>Leg<i class="glyphicon glyphicon-pencil"></i></li>
+                                                <li>Leg<i class="glyphicon glyphicon-pencil"></i></li>
+                                                <li>Leg<i class="glyphicon glyphicon-pencil"></i></li>
+                                            </ul>
+                                            <div class="content-bottom">
+                                                <i class="glyphicon glyphicon-plus"></i>&nbsp;&nbsp;<a href="#" class="add-new-custom">Add new custom view</a>
+                                            </div>
+                                        </div>
+                                        <div id="view2" class="tab-pane fade">
+                                            <h3>DATA IN VIEW</h3>
+                                            <ul class="clear-padding">
+
+                                                <li>
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio2">
+                                                    <label for="radio2" data-parent="#dataview">IBO Name and Photo</label>
+                                                </li>
+                                                <li>
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio3">
+                                                    <label for="radio3" data-parent="#dataview">IBO Name, PPV and GPV</label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio4">
+                                                    <label for="radio4" data-parent="#dataview">IBO No. and Photo</label>
+
+                                                </li>
+                                                <li>
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio5">
+                                                    <label for="radio5" data-parent="#dataview">IBO No. and PPV/GPV</label>
+
+                                                </li>
+
+                                            </ul>
+                                            <div class="data-view-btns">
+                                                <button class="btn-blue-white"  onclick="javascript:location.href='los-treeview.html'">APPLY</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu-inside-edit dropdown-menu-inside-edit-module">
+                                    <a class="back-preview" href="#"><i class="glyphicon glyphicon-chevron-left"></i>BACK</a>
+                                    <h3>CUSTOM LOS VIEW</h3>
+                                    <p>Drag and drop metrics you want to view towards the top of the list.</p>
+                                    <input type="text" class="form-control">
+                                    <div class="dropdown-menu-edit-btns">
+                                        <button class="btn-gray">SAVE</button>
+                                        <button class="btn-blue-white">DELETE</button>
+                                    </div>
+                                    <p>DATA IN VIEW</p>
+                                    <ul class="data-list">
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li class="">common.settings.edit.columns.ppv</li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown-menu-inside-edit-module dropdown-menu-inside-edit dropdown-menu-inside-edit-2">
+                                    <a class="back-preview" href="#"><i class="glyphicon glyphicon-chevron-left"></i>BACK</a>
+                                    <h3>CUSTOM LOS VIEW</h3>
+                                    <p>Drag and drop metrics you want to view towards the top of the list.</p>
+                                    <input type="text" class="form-control">
+                                    <div class="dropdown-menu-edit-btns">
+                                        <button class="btn-blue-white">APPLY</button>
+                                    </div>
+                                    <p>DATA IN VIEW</p>
+                                    <ul class="data-list">
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li>common.settings.edit.columns.ppv</li>
+                                        <li class="">common.settings.edit.columns.ppv</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 export-container">
+                            <div class="export-button dropdown-toggle">EXPORT<i class="icon-arrow-down"></i></div>
+                            <div class="cart-detail__dropdown-menu dropdown-menu">
+                                <div class="dropdown-menu-inside-edit-module">
+                                    <h3>EXPORT LOS DATA</h3>
+                                    <p>Select the LOS data that you want to export. Drage and drop to re-arrange.</p>
+                                    <ul class="export-list no-border">
+                                        <li class="">
+                                            <input class="" id="toDittoALL" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDittoALL"></label><span>SELECT ALL</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="export-list">
+                                        <li>
+                                            <input class="" id="toDitto31" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto31"></label><span>Phone Number</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto32" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto32"></label><span>Email</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto33" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto33"></label><span>Address</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto34" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto34"></label><span>PPV</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto35" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto35"></label><span>Bonus</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto36" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto36"></label><span>GPV</span>
+                                        </li>
+                                        <li>
+                                            <input class="" id="toDitto37" name="exportTo" type="checkbox">
+                                            <label class="cart-detail__addto-options" for="toDitto37"></label><span>Leadershop PV</span>
+                                        </li>
+                                    </ul>
+                                    <div class="export-bottom">
+                                        <a href="">PDF Export</a>
+                                        <a href="">CSV Export</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--svg-->
+        <div class="amw-page-los-container">
+            <ul class="list" id="listView">
+                <li>
+                    <div class="list-box">
+                        <div class="top-bar">
+                            <span class="idx">1</span>
+                            <h5>D & B YAGER ENTERPRISES INC</h5>
+                            <p>IBO # 1406325<span class="line">|</span>United States</p>
+                            <div class="indicator-box">
+                                <span class="text">SP Month</span>
+                                <span class="indicator blue"></span>
+                            </div>
+                        </div>
+                        <div class="content box-sizing">
+                            <div class="column">
+                                <dl>
+                                    <dt class="ellipsis">PPV</dt>
+                                    <dd>529.81</dd>
+                                </dl>
+                            </div><div class="column">
+                            <dl>
+                                <dt class="ellipsis">GPV</dt>
+                                <dd>3,275.23</dd>
+                            </dl>
+                        </div><div class="column">
+                            <dl>
+                                <dt class="ellipsis">TOTAL ABOs</dt>
+                                <dd>240</dd>
+                            </dl>
+                        </div><div class="column">
+                            <dl class="dashed">
+                                <dt class="ellipsis">BONUS</dt>
+                                <dd>25%</dd>
+                            </dl>
+                        </div><div class="column">
+                            <dl class="dashed">
+                                <dt class="ellipsis">points to next level</dt>
+                                <dd>44.06</dd>
+                            </dl>
+                        </div><div class="column">
+                            <dl>
+                                <dt class="ellipsis">PERSONAL ORDERS</dt>
+                                <dd>1</dd>
+                            </dl>
+                        </div><div class="column">
+                            <dl>
+                                <dt class="ellipsis">GROUP ORDERS</dt>
+                                <dd>32</dd>
+                            </dl>
+                        </div>
+                        </div>
+                        <div class="footer-bar">
+                            <div class="num"><i class="icon icon-person pos-vertical-center"></i>163</div>
+                            <div class="action">
+                                <button type="button"><i class="icon icon-three-dots-h pos-vertical-center"></i></button>
+                                <ul class="action-list">
+                                    <div class="arrow-right"></div>
+                                    <li><i class="icon icon-person pos-vertical-center"></i>View Profile</li>
+                                    <li><i class="icon icon-person pos-vertical-center"></i>Isolate</li>
+                                    <li><i class="icon icon-person pos-vertical-center"></i>View Performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="amway-theme">
+                <!--tabs component-->
+               <img src="images/form-img-4.jpg" style="max-width: 100%;">
+            </div>
+        </div>
+        <!--svg-end-->
+
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div class="overlay"></div>
+<div class="cbox" id="delete-prw">
+    <div class="cart-popup__dialog">
+        <div class="cart-popup__header">
+            <span class="cart-popup__header-text">DELETE SOP
+                <img class="cart-popup__close" src="images/close.png" alt="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">
+            </span>
+        </div>
+        <div class="cart-popup__content">
+            <div class="cart-popup__item-info amwahover">
+                <div id="popup_confirm_ditto_delete_00005001" class="js-ditto_delete_confirm_modal amway-theme" data-savedcartinfo="{name:232, id:00005001}">
+                    <p>
+                        Are you sure you want to delete the selected  SOP Schedule(s)?
+                    </p>
+                </div>
+            </div>
+            <div class="cart-popup__item-link">
+                <a href="" class="btn-blue-white">Cancel</a>
+                <a href="" class="btn-blue-white">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#toDittoALL").click(function() {
+            if (this.checked) {
+                $(".export-list li :checkbox").prop("checked", true);
+            } else {
+                $(".export-list li :checkbox").prop("checked", false);
+            }
+        });
+
+        $(".select2-hidden-accessible").select2();
+        $(".add-to-ditto-button").on('click', function () {
+            if($('.change-view-container').hasClass('open')){
+                $('.change-view-container').removeClass('open');
+            }else{
+                $('.change-view-container').addClass('open');
+                $('.export-container').removeClass('open');
+            }
+        });
+
+        $(".export-button").on('click', function () {
+            if($('.export-container').hasClass('open')){
+                $('.export-container').removeClass('open');
+            }else{
+                $('.export-container').addClass('open');
+                $('.change-view-container').removeClass('open');
+            }
+        });
+
+        $(".save-content i").on('click', function () {
+            $(".dropdown-menu-inside").hide();
+
+            $(".dropdown-menu-inside-edit").show();
+            $(".dropdown-menu-inside-edit-2").hide();
+
+        });
+        $(".back-preview").on('click', function () {
+            $(".dropdown-menu-inside").show();
+            $(".dropdown-menu-inside-edit").hide();
+
+        });
+        $(".add-new-custom").on('click', function () {
+            $(".dropdown-menu-inside").hide();
+            $(".dropdown-menu-inside-edit-2").show();
+
+        });
+        $('.action button').click(function () {
+            $(this).next('ul').fadeToggle('fast')
+        });
+
+        $(".amw-toggle-downlines-button span").click(function(){
+            $(this).attr("title","").hide();
+            $(this).siblings().show();
+            $(this).siblings().children().show();
+        })
+    });
+
+
+</script>
+</body>
+
+</html>

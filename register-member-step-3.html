@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>register-member-step-3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+<body>
+<main class="amway-theme">
+    <div id="headerNologin"></div>
+    <div class="container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="register-landing.html">Register</a>
+                </li>
+                <li class="active">Member Registration</li>
+            </ol>
+        </div>
+        <div class="product-list-page-title md25">Member registration</div>
+    </div>
+    <ul class="checkout-steps abo-checkout-steps">
+        <li class="checkout-step col-xs-4 col-md-3 checkout-steps-before">  <span class="checkout-steps-text arrow-steps-ship"><i class="fas fa-check"></i>Primary Applicant</span> </li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-before">  <span class="checkout-steps-text checkout-steps-pay"><i class="fas fa-check"></i>Co-Applicant</span></li>
+        <li class="checkout-step col-xs-3 col-md-3 checkout-steps-active"> <span class="checkout-steps-text checkout-steps-order">Purchase</span></li>
+        <li class="checkout-step col-xs-3 col-md-3"> <span class="checkout-steps-text checkout-steps-order">payment</span></li>
+    </ul>
+    <div class="container new-ibo-reg">
+        <h6 class="tips">All fields are required unless noted as optional.</h6>
+        <div class="row">
+            <div class="col-md-9 col-xs-12">
+                <h3 class="h3-title fontWeight600">Complete your registration</h3>
+                <div class="h3-content">
+                    <p>Review the items below designed to support your business and select which to include in your registration.</p>
+                </div>
+                <div class="row" id="reg-items-title">
+                    <div class="col-md-1 col-xs-12">
+                        <h4>SELECT</h4>
+                    </div>
+                    <div class="col-md-3 col-xs-12 hide-in-mob">
+                        <h4>Registration Items</h4>
+                    </div>
+                    <div class="col-md-6 col-xs-12 hide-in-mob">
+                        <h4>Description</h4>
+                    </div>
+                    <div class="col-md-2 col-xs-12 hide-in-mob">
+                        <h4>Total</h4>
+                    </div>
+                </div>
+                <div class="reg-items-box">
+                    <div class="row reg-items">
+                        <div class="col-md-1 col-xs-12 select-box disabled">
+                            <input id="item-1" type="checkbox" disabled="disabled" checked="checked"/>
+                            <label for="item-1"></label>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <h5>Registration Items
+                                <div class="tips">
+                                    <div class="toolTips">
+                                        <div id="triangle-down"></div>
+                                        ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...
+                                    </div>
+                                    <a href="javascript:void(0)" class="upTips">
+                                        <i class="fa fa-info"></i>
+                                    </a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="des">
+                                <p>Includes your Getting Started Guide and Business Reference Guide</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-12">
+                            <p class="total">$50.00</p>
+                        </div>
+                    </div>
+                    <div class="row reg-items active">
+                        <div class="col-md-1 col-xs-12 select-box image-select-box">
+                            <input id="item-3" type="checkbox" checked="checked" />
+                            <label for="item-3"></label>
+                        </div>
+                        <div class="col-md-3 col-xs-12 img-col hide-in-mob">
+                            <img src="images/register/reg-item-pic.jpg">
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="des">
+                                <h6>amway Product starter kit <span>(Optional)</span></h6>
+                                <p>More than $249 of top-selling products for you to sample and start sharing with others right away!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-12">
+                            <p class="total bold">FREE</p>
+                        </div>
+                        <div class="img-col show-in-mob">
+                            <img src="images/register/reg-item-big-pic.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-horizontal amway-theme">
+                    <h3 class="h3-title fontWeight600 shipping-information">Shipping information</h3>
+
+                    <div class="payment-sub-box marginLeft0 reg-input-maxwidth mainColor" id="shopping-address">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">addressee name</label>
+                            <div class="col-md-10 col-xs-12">
+                                <input type="text" class="form-control" value="Robertson Quay">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">address line1</label>
+                            <div class="col-md-10 col-xs-12">
+                                <input type="text" class="form-control" value="123 Maple Street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">address line2</label>
+                            <div class="col-md-10 col-xs-12">
+                                <input type="text" class="form-control" value="Flat E,4th Floor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">city/state</label>
+                            <div class="col-md-10 col-xs-12">
+                                <div class="row form-item-row">
+                                    <div class="col-xs-8 col">
+                                        <input type="text" class="form-control" value="Grand Rapids">
+                                    </div>
+                                    <div class="col-xs-4 col last-col">
+                                        <select class="form-control">
+                                            <option>MI</option>
+                                            <option>MI</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">ZIP</label>
+                            <div class="col-md-10 col-xs-12">
+                                <div class="row form-item-row">
+                                    <div class="col-xs-4 col">
+                                        <input type="text" class="form-control" value="49501">
+                                    </div>
+                                    <div class="col-xs-1 col">
+                                        <span class="center-line"></span>
+                                    </div>
+                                    <div class="col-xs-4 col last-col">
+                                        <input type="text" class="form-control" value="1234">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input id="remember" type="checkbox" checked="checked"/>
+                                <label for="remember" class="normal inline-label checklabel fontWeight600 remember"><span>Same as Primary Shipping Address</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="reg-side-info float-reg-side-info">
+                    <h3>Order summary</h3>
+                    <ul class="content">
+                        <li><div class="fontWeight600">Registration Items</div><p>2 X Amway Product<br/>Starter Kit</p><span>$99.99</span></li>
+                        <li><div class="fontWeight600">Registration Items</div> <p>2 X Amway Applicant</p><span>$50.00</span></li>
+                        <li class="line"></li>
+                        <li><div class="fontWeight600">Item(s) Subtotal</div> <span>$149.99</span></li>
+                        <li><div class="fontWeight600">Delivery Charge </div><span>$11.75</span></li>
+                        <!--<li><div class="fontWeight600">Tax on Delivery Charge</div> <span>$0.82</span></li>-->
+                        <!--<li><div class="fontWeight600">Sales Tax-->
+                        <!--<div class="tips">-->
+                        <!--<div class="toolTips">-->
+                        <!--<div id="triangle-down"></div>-->
+                        <!--ABO/Member need a sponsor information for registration. Contact to a call center or an ABO to get the info...-->
+                        <!--</div>-->
+                        <!--<a href="javascript:void(0)" class="upTips">-->
+                        <!--<i class="icon icon-infos"></i>-->
+                        <!--</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<span>$7.00</span>-->
+                        <!--</li>-->
+                        <li class="line"></li>
+                        <li class="stress">Total <span>$181.56</span></li>
+                        <li class="line"></li>
+                        <li class="stress">Total PV/BV <span>30.00 / 60.00</span></li>
+                    </ul>
+                    <div class="reg-side-info-tips">
+                        <p>Exact discounts, promotions, delivery charges, taxes, and other fees will be calculated after submitting this sales report.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divider"></div>
+
+        <div class="next-control">
+            <a class="btn primary" id="submit-btn">NEXT</a>
+            <a class="btn btn-cancel">Back</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+    //            function checkAttr() {
+    //                if ($("#remember").is(':checked')) {
+    //                    $('#shopping-address').slideDown();
+    //                } else {
+    //                    $('#shopping-address').slideUp();
+    //                }
+    //            }
+    $(function() {
+        $('#submit-btn').click(function () {
+            location.href = 'register-member-step-3-2.html'
+        })
+        $(".checklabel").click(function(){
+            checkAttr();
+        })
+
+
+    })
+</script>
+</body>
+
+</html>

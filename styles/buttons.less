@@ -1,0 +1,184 @@
+@import 'variables.less';
+@import 'fonts.less';
+
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button {
+      background: none;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      line-height: normal;
+      overflow: visible;
+      outline: none;
+      box-shadow: none;
+      padding: 0;
+      -webkit-appearance: button; /* for input */
+      -webkit-user-select: none; /* for button */
+         -moz-user-select: none;
+          -ms-user-select: none;
+  }
+  input::-moz-focus-inner,
+  button::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+
+  [role="button"] {
+      color: inherit;
+      cursor: default;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      white-space: pre;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+  }
+
+  [role="button"]
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .btn {
+    box-sizing: border-box;
+    color: @deepBlue;
+    font-family: 'SourceSansPro';
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 25px;
+    line-height: 0.95em;
+    height: 40px;
+    padding: 10px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid @deepBlue;
+    &:hover {
+      background: @deepBlue;
+      color: @white;
+    }
+    &:active, &:focus {
+      box-shadow: none;
+      text-align: none;
+      outline: none;
+    }
+    &.btn-cancel {
+      color: @blue;
+      border-color: transparent;
+      text-transform: inherit;
+      &:hover {
+        color: @deepBlue;
+        background: transparent;
+      }
+    }
+    &.primary, &.btn-blue-white, &.btn-primary {
+      color: @white;
+      background-color: @deepBlue;
+      border: 2px solid @deepBlue;
+      * {
+        color: @white;
+      }
+      &:hover {
+        color: @deepBlue;
+        background-color: @white;
+        border: 2px solid @deepBlue;
+        cursor: pointer;
+        * {
+          color: @deepBlue;
+        }
+      }
+
+      &:disabled {
+        background-color: @grey2;
+        border: 1px solid @grey2;
+      }
+    }
+    &.btn-xl {
+      width: 300px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    &.secondary {
+      color: @deepBlue;
+      background-color: @white;
+      border: 2px solid @deepBlue;
+
+      &:hover {
+        background-color: @deepBlue;
+        color: @white;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background: @white;
+        border: 1px solid @grey2;
+        color: @grey2;
+      }
+    }
+    &.btn-link {
+      color: @blue;
+      background-color: none;
+      border: none;
+      text-transform: inherit;
+      &:hover, &:hover * {
+        background: none;
+        color: @deepBlue;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background: @white;
+        border: 1px solid @grey2;
+        color: @grey2;
+      }
+    }
+    &.disabled {
+      background: @grey2;
+      border-color: @grey2;
+      color:#fff;
+      cursor: default;
+      &:hover {
+        background: @grey2;
+        border-color: @grey2;
+        color:#fff;
+        cursor: default;
+      }
+    }
+    &.transparent {
+      color: @white;
+      background-color: rgba(0, 0, 0, .3);
+      border: 1px solid @white;
+
+      &:hover {
+        background-color: rgba(128, 130, 133, .3);
+        color: @white;
+        cursor: pointer;
+      }
+    }
+
+    &.small {
+      height: 40px;
+      font-size: 1em;
+    }
+
+    &.large {
+      font-size: 1.375em;
+      padding: 0 40px;
+      height: 60px;
+    }
+    &.mobile-user-btn {
+      background: none;
+      border:0;
+    }
+  }
+  @media (max-width: 768px) {
+    .btn.btn-xl {
+      width:100%;
+      margin-top: 30px;
+    } 
+  }
+

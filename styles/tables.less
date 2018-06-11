@@ -1,0 +1,620 @@
+// WebKit-style focus
+
+.tab-focus() {
+  // WebKit-specific. Other browsers will keep their default outline style.
+  // (Initially tried to also force default via `outline: initial`,
+  // but that seems to erroneously remove the outline in Firefox altogether.)
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Tables
+
+.table-row-variant(@state; @background) {
+  // Exact selectors below required to override `.table-striped` and prevent
+  // inheritance to nested tables.
+  .table > thead > tr,
+  .table > tbody > tr,
+  .table > tfoot > tr {
+    > td.@{state},
+    > th.@{state},
+    &.@{state} > td,
+    &.@{state} > th {
+      background-color: @background;
+    }
+  }
+
+  // Hover states for `.table-hover`
+  // Note: this is not available for cells or rows within `thead` or `tfoot`.
+  .table-hover > tbody > tr {
+    > td.@{state}:hover,
+    > th.@{state}:hover,
+    &.@{state}:hover > td,
+    &:hover > .@{state},
+    &.@{state}:hover > th {
+      background-color: darken(@background, 5%);
+    }
+  }
+}
+
+//
+// Tables
+// --------------------------------------------------
+
+
+    table {
+      background-color: @table-bg;
+      thead{
+        tr{
+          height: 40px;
+          line-height: 38px;
+          background: #f4f4f4;
+          border-top: 1px solid #dadada;
+          border-bottom: 1px solid #dadada;
+        }
+      }
+    }
+    caption {
+      padding-top: @table-cell-padding;
+      padding-bottom: @table-cell-padding;
+      color: @text-muted;
+      text-align: left;
+    }
+    th {
+      text-align: left;
+     
+     button, .btn {
+        border:none;
+        background: none;
+        &:hover {
+          border:none;
+          background: none;
+          color: inherit;
+        }
+      }
+    }
+
+
+    // Baseline styles
+
+    .table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: @line-height-computed;
+      border-collapse: collapse;
+      // Cells
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            padding: @table-cell-padding;
+            line-height: @line-height-base;
+            vertical-align: top;
+            border-top: 1px solid @table-border-color;
+            &:last-child {
+              width: 15%;
+            }
+            
+            &.checkall {
+              width:40px;
+              label {
+                vertical-align: middle;
+                line-height: 1;
+              }
+            }
+          }
+          &:last-child {
+            > th,
+            > td {
+               border-bottom: 1px solid @table-border-color;
+            }
+          }
+          
+        }
+      }
+      // Bottom align for column headings
+      > thead > tr > th {
+        vertical-align: bottom;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:@deepBlue;
+        border-bottom: 1px solid @table-border-color;
+      }
+      // Remove top border from thead by default
+      > caption + thead,
+      > colgroup + thead,
+      > thead:first-child {
+        > tr:first-child {
+          > th,
+          > td {
+            border-top: 0;
+          }
+        }
+      }
+      // Account for multiple tbody instances
+      > tbody + tbody {
+        border-top: 2px solid @table-border-color;
+      }
+
+      // Nesting
+      .table {
+        background-color: @body-bg;
+      }
+    }
+
+
+    // Condensed table w/ half padding
+
+    .table-condensed {
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            padding: @table-condensed-cell-padding;
+          }
+        }
+      }
+    }
+
+
+    // Bordered version
+    //
+    // Add borders all around the table and between all the columns.
+
+    .table-bordered {
+      border: 1px solid @table-border-color;
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            border: 1px solid @table-border-color;
+          }
+        }
+      }
+      > thead > tr {
+        > th,
+        > td {
+          border-bottom-width: 2px;
+        }
+      }
+    }
+
+
+    // Zebra-striping
+    //
+    // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+    .table-striped {
+      > tbody > tr:nth-of-type(odd) {
+        background-color: @table-bg-accent;
+      }
+    }
+
+
+    // Hover effect
+    //
+    // Placed here since it has to come after the potential zebra striping
+
+    .table-hover {
+      > tbody > tr:hover {
+        background-color: @table-bg-hover;
+      }
+    }
+
+
+    // Table cell sizing
+    //
+    // Reset default table behavior
+
+    table col[class*="col-"] {
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+      float: none;
+      display: table-column;
+    }
+    table {
+      td,
+      th {
+        &[class*="col-"] {
+          position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+          float: none;
+          display: table-cell;
+        }
+      }
+    }
+
+
+    // Table backgrounds
+    //
+    // Exact selectors below required to override `.table-striped` and prevent
+    // inheritance to nested tables.
+
+    // Generate the contextual variants
+    .table-row-variant(active; @table-bg-active);
+    .table-row-variant(success; @state-success-bg);
+    .table-row-variant(info; @state-info-bg);
+    .table-row-variant(warning; @state-warning-bg);
+    .table-row-variant(danger; @state-danger-bg);
+
+
+    // Responsive tables
+    //
+    // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
+    // by enabling horizontal scrolling. Only applies <768px. Everything above that
+    // will display normally.
+
+    .table-responsive {
+      overflow-x: auto;
+      min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+
+      @media screen and (max-width: @screen-xs-max) {
+        width: 100%;
+        margin-bottom: (@line-height-computed * 0.75);
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid @table-border-color;
+
+        // Tighten up spacing
+        > .table {
+          margin-bottom: 0;
+
+          // Ensure the content doesn't wrap
+          > thead,
+          > tbody,
+          > tfoot {
+            > tr {
+              > th,
+              > td {
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+
+        // Special overrides for the bordered tables
+        > .table-bordered {
+          border: 0;
+
+          // Nuke the appropriate borders so that the parent can handle them
+          > thead,
+          > tbody,
+          > tfoot {
+            > tr {
+              > th:first-child,
+              > td:first-child {
+                border-left: 0;
+              }
+              > th:last-child,
+              > td:last-child {
+                border-right: 0;
+              }
+            }
+          }
+
+          // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
+          // chances are there will be only one `tr` in a `thead` and that would
+          // remove the border altogether.
+          > tbody,
+          > tfoot {
+            > tr:last-child {
+              > th,
+              > td {
+                border-bottom: 0;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .right-btn {
+        display: block;
+        float:right;
+        position: absolute;
+        right:0;
+        top:0;
+        .btn {
+            display: block;
+            width:100%;
+            padding:10px;
+            margin: 0 0 12px; 
+        }
+        a {
+          line-height: 40px;
+          text-align: center;
+          width:100%;
+          margin: 0;
+          font-weight: 600;
+        }
+        @media (max-width:768px) {
+          a {
+            width: auto;
+            margin-top:0;
+          }
+        }
+    }
+    .list-content {
+        display: table;
+        width: 100%;
+        clear: both;
+        font-size: 1em;
+        // [class*="col-"]{
+        //   @media (min-width: 769px) {
+        //     float:none;
+        //     display: table-cell;
+        //     vertical-align: middle;
+        //   }
+        // }
+        .card-info {
+          min-height: 40px;
+          display: block;
+          width: 100%;
+          vertical-align: middle;
+          img {
+            width:50px;
+            margin-right: 5px;
+          }
+        }
+        .delete-btn {
+          text-align: center;
+          display: block;
+        }
+        
+        .form-horizontal {
+            display: table;
+            width: 100%;
+            clear: both;
+            margin: 20px 0;
+            background: #fff;
+            position: relative;
+            z-index: 99;
+            [class^="col-"] {
+                display: inline-block;
+                vertical-align: middle;
+                float: left;
+            }
+            .form-group {
+                margin: 0 0 10px; 
+                .form-control {
+                    max-width: 100%;
+                } 
+                select.form-control {
+                    width: 100%;
+                    margin-bottom: 0;
+                    padding-left:2px;
+                    font-size: 14px;
+                    text-transform: initial;
+                  }
+                  
+            }
+            .accountActions {
+                margin: 15px 0;
+            }
+            
+        }  
+        .list-row-title {
+            background-color: #F4F4F4;
+            padding: 10px 0;
+            display: table;
+            vertical-align: middle;
+            width: 100%;
+            margin: 0;
+            border-top: 1px solid #e3e3e3;
+            border-bottom: 1px solid #e3e3e3;
+            margin-top: 20px;
+            div {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #002F5F;
+            }
+        }
+        .content-list {
+            position: relative;
+            z-index: 2;
+            padding: 20px 0;
+            background: #fff;
+            display: table;
+            vertical-align: middle;
+            width: 100%;
+            margin: 0;
+            border-top: none;
+            &:nth-child(2n+1) {
+              background-color: #F4F4F4;
+            }
+            .card-info-block {
+              padding-top: 0;
+            }
+            .con-list-item {
+              margin: 0;
+              position: relative;
+            }
+            .hasCard {
+              @media (max-width:768px) {
+                line-height: 1.2;
+              }
+            }
+            .btn {
+                width: 100%;
+                padding:10px 0;
+                text-align: center;
+                @media (max-width:768px) {
+                  max-width:98px;
+                }
+                &.countTwo {
+                  width:47%;
+                  margin:0 0 0 3%;
+                  float:right;
+                  @media (max-width:768px) {
+                    max-width:47%;
+                    margin:10px 0 0 3%;
+                  }
+                }
+            }
+          &:last-child{
+            //border-bottom:1px solid #e3e3e3;
+          }
+        }
+        .list-item-select {
+            display: table-cell;
+            vertical-align: middle;
+            min-width: 80px;
+            .checkbox-element-wrapper {
+              padding-left:20px;
+            }
+            
+        }
+        .add-new-payment-info {
+            display: table;
+            vertical-align: middle;
+            width: 100%;
+            padding-top:25px;
+            margin-bottom: 25px;
+            border-top: 1px solid #e3e3e3;
+        }
+        &.noBg {
+          .list-row-title, .content-list:nth-child(2n+1) {
+            background: none;
+            border: none;
+          }
+        }
+    }
+
+    .text-right {
+      text-align: right;
+    }
+    .mob-text-right{
+      text-align: left;
+    }
+    
+    @media (max-width: 768px) {
+      .orderStatus {
+        color: @blue;
+      }
+      .orderList {
+        .content-list {
+          color: @gray_10;
+          font-size: 14px;
+          a, .orderStatus {
+            font-size:16px;
+          }
+          .pvbv {
+            color: @gray_3;
+          }
+        }
+      }
+      .mob-text-right{
+        text-align: right;
+      }
+        .list-content {
+            padding: 0;
+            [class^="col-"] {
+              display: block;
+              padding-left:10px;
+              padding-right:10px;
+            }
+            .orderStatus {
+                position: absolute !important;
+                right:0;
+                z-index: 9999;
+
+                top:0;
+                text-transform: uppercase;
+                
+             }
+            .form-horizontal {
+                background: #f6f6f6;
+                padding: 10px;
+                margin-top: 0;
+                .row {
+                  margin: 0 -10px;
+                }
+            }
+            
+            .content-list {
+                .col-xs-12 {
+                    padding-left: 10px;   //angela modify 40 to 10
+                }
+                .btn, a {
+                  margin-top: 10px;
+                  &.disabled {
+                    display: none;
+                  }
+                }
+            }
+            .con-list-item {
+              display: table;
+              width: 100%;
+              .left-active {
+                position: absolute;
+                top: 56%;
+                right:0;
+                z-index: 9999;
+              }
+
+            }
+            .right-btn {
+              bottom:0;
+              left:15px;
+              right:auto;
+              text-align: left;
+              top:auto;
+              .btn {
+                margin-right: 10px;
+                
+              }
+                a {
+                    display: inline-block;
+                    float: left;
+                    margin-top:0;
+                }
+            }
+            .list-item-select {
+              min-width:30px;
+              font-weight: 600;
+              padding-bottom: 5px;
+            }
+          
+        }
+        
+        .account-landing-page .pagination li a {
+          padding: 6px;
+        }
+        .pagination-bar {
+          margin-right: 0;
+          margin-top: 0;
+          padding-top: 0;
+        }
+        .pagination-bar .channel-text {
+          text-align: left;
+          margin: 0 0 10px 0;
+          font-size: 16px;
+        }
+        .pagination-bar .channel-text span {
+          margin: 0 2px;
+        }
+        .form-wrapper select.form-control {
+          width: 100%;
+        }
+        .form-wrapper form input {
+          width: 100%;
+          margin: 0 0 10px;
+        }
+        .form-wrapper form button {
+          float: right;
+        }
+        .user-account-header {
+          padding: 1.5em 1em;
+          height: auto;
+        }
+        .user-account-header .go-block .jump-to {
+          border-left: none;
+          padding: 5px 0;
+        }
+
+        
+      }

@@ -1,0 +1,97 @@
+<div class="quick-links">
+    <div class="container">
+        <div class="row">
+            <ul id="accordion" class="col-sm-8">
+                <li class="quick-links-item col-sm-3 panel">
+                    <h5 class="quick-links-header">AMWAY NEWS</h5>
+                    <ul id="quick-links-collapse1" class="panel-collapse collapse">
+                        <li><a href="">Announcement</a></li>
+                        <li><a href="">PR News</a></li>
+                        <li><a href="">CSR News</a></li>
+                        <li><a href="">New Products</a></li>
+                        <li><a href="">Promotion</a></li>
+                        <li><a href="">NLA/TNA/NYA Status</a></li></ul>
+                </li>
+                <li class="quick-links-item col-sm-3 panel">
+                    <h5 class="quick-links-header">service center</h5>
+                    <ul id="quick-links-collapse2" class="panel-collapse collapse">
+                        <li><a href="">Service Center Info</a></li>
+                        <li><a href="">Service Request</a></li>
+                        <li><a href="">Service Request Result</a></li>
+                        <li><a href="">Product Warranty Reg.</a></li>
+                        <li><a href="">Technical Support Center</a></li>
+                        <li><a href="">Additional Services</a></li>
+                        <li><a href="">Quality Assurance System</a></li>
+                    </ul>
+                </li>
+                <li class="quick-links-item col-sm-3 panel">
+                    <h5 class="quick-links-header">Need help?</h5>
+                    <ul id="quick-links-collapse3" class="panel-collapse collapse">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">E-mail</a></li>
+                    </ul>
+                    <h5 class="quick-links-header single-link extra1"><a href="">CHAT with us</a></h5>
+                    <h5 class="quick-links-header single-link"><a href="">call center info</a></h5>
+                </li>
+                <li class="quick-links-item col-sm-3 panel">
+                    <h5 class="quick-links-header single-link"><a href="">shop finder</a></h5>
+                </li>
+
+
+
+            </ul>
+            <div class="quick-links-misc col-sm-4">
+                <ul>
+                    <li>
+                        <p class="quick-links-title">CONNECT WITH AMWAY</p>
+                        <div class="foot-social-icon">
+                            <a href="">
+                                <img src="images/facebook2.png"></a>
+                            <a href="">
+                                <img src="images/twitter.png"></a>
+                            <a href="">
+                                <img src="images/Google.png"></a>
+                            <a href="">
+                                <img src="images/instgram.png"></a>
+                            <a href="">
+                                <img src="images/youtube.png"></a>
+                            <a href="">
+                                <img src="images/line.png"></a>
+                            <a href="">
+                                <img src="images/kakao.png"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <!--<p class="quick-links-title">CONNECT WITH AMWAY</p>-->
+                        <img src="images/logo2.png" alt="logo icons" />
+                        <img src="images/new-connections.png" alt="logo icons" /></li>
+                    <li>
+                        <p class="quick-links-title">GET THE AMWAY APP</p>
+                        <img src="images/footer_appstore.png" alt="download on the appstore" />
+                        <img src="images/footer_googleplay.png" alt="download on the googleplay" />
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //This code will be removed when project end.Consistent with the new.js
+    (function () {
+        function linkToggle () {
+            $(".quick-links-header").not(".single-link").click(function () {
+                if($(this).parent().hasClass("switcher")){
+                    $(this).parent().removeClass("switcher");
+                }else{
+                    $(this).parent().addClass("switcher");
+                    $(this).parent().siblings().removeClass("switcher");
+
+                }
+            });
+        }
+        linkToggle();
+    })();
+</script>

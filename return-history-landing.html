@@ -1,0 +1,419 @@
+<!--Version: 1.0 by epam-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Return History Landing</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    
+    <body>
+        <main class="amway-theme">
+            <div id="header"></div>
+            <div class="container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a></li>
+                        <li>
+                            <a href="my-account.html">My Account</a></li>
+                        <li>Return History</li></ol>
+                </div>
+            </div>
+            <div class="user-account-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="user-block col-sm-4">
+                            <div class="user-image-container">
+                                <img class="user-image" src="images/yui.png">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="user-info">
+                                <span class="user-name">Yui Mori</span>
+                                <span class="user-id">ABO # 1234567</span></div>
+                        </div>
+                        <div class="go-block col-sm-8">
+                            <div class="amway-theme">
+                                <div class="jump-to">
+                                    <span>Jump to</span></div>
+                                <div class="jump-to-wrapper">
+                                    <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                        <option value="/my-account/delivery-address-management" class="js-account-option-link text-capitalize">Delivery Address Management</option>
+                                        <option value="/my-account/billing-shipping" class="js-account-option-link text-capitalize">Billing &amp; Shipping</option>
+                                        <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                        <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                        <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                        <option value="/my-account/orders" class="js-account-option-link text-capitalize">Return History</option>
+                                        <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                        <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                        <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                        <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Profile Management</option>
+                                        <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                        <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T &amp; C Management</option>
+                                        <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                        <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option>
+                                        <option value="/my-account/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                                        <option value="/my-account/return-history-details" class="js-account-option-link text-capitalize">return-history-details</option>
+                                    </select>
+                                    <input class="js-jump-to-selection-btn" value="GO" type="button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-count">
+                <h4 class="panel-title">
+                    <i class="far fa-archive"></i>
+                    <span class="text-uppercase panel-title-text">Return History</span>
+                    <span>(29 Returns)</span></h4>
+                <div class="page-section-content my-count-page-wrap">
+                    <div class="pagination-bar">
+                        <div class="print-hide pagination-toolbar delivery-pagination-toolbar">
+                            <div class="sort-refine-bar">
+                                <div class="order-history-search-wrapper">
+                                    <div class="col-xs-12 col-md-5 form-wrapper js-search-form-wrapper">
+                                        <form id="searchForm" action="" method="POST">
+                                            <input id="searchData" name="searchData" placeholder="Search by order / item / ABO#" value="" type="text">
+                                            <button class="btn-primary" type="submit">Search</button></form>
+                                    </div>
+                                    <div class="col-xs-12 col-md-7 form-wrapper text-right js-filter-form-wrapper">
+                                        <div class="channel-sort channel-text">Sort by:
+                                            <select class="form-control" id="sortBy">
+                                                <option selected="selected">Latest</option>
+                                                <option>Recipient Name A-Z</option>
+                                                <option>Recipient Name Z-A</option></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3 print-hide">
+                            <div class="product-list-left-refinements-slot">
+                                <div class="product-list-left-refinements-component">
+                                    <div id="product-facet" class="product__facet hidden-xs hidden-sm">
+                                        <div class="filters-header">
+                                            <span>Filters(2)</span>
+                                            <a class="clearAllForm" type="submit">Clear All</a></div>
+                                        <div class="panel-group accordion-custom new-accordion-custom" id="facetAccordion" role="tablist" aria-multiselectable="true">
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="date">
+                                                    <h4 class="panel-title">
+                                                        <div role="button" class="collapse-button" data-toggle="collapse" data-parent="#facetAccordion" href="#orderDate" aria-controls="retailPriceFacetBody">
+                                                            <span class="text-uppercase">date</span>
+                                                            <span class="pull-right icon-minus"></span>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                                <div id="orderDate" class=" panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <select class="form-control">
+                                                                    <option>Show all</option></select>
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                <p>FROM</p>
+                                                                <div class="form-item-row">
+                                                                    <div class="col-xs-4 col">
+                                                                        <select class="form-control">
+                                                                            <option>18</option>
+                                                                            <option>19</option></select>
+                                                                    </div>
+                                                                    <div class="col-xs-4 col">
+                                                                        <select class="form-control">
+                                                                            <option>Feb</option>
+                                                                            <option>Mar</option></select>
+                                                                    </div>
+                                                                    <div class="col-xs-4 col last-col">
+                                                                        <select class="form-control">
+                                                                            <option>1979</option>
+                                                                            <option>1980</option></select>
+                                                                    </div>
+                                                                </div>
+                                                                <p>TO</p>
+                                                                <div class="form-item-row">
+                                                                    <div class="col-xs-4 col">
+                                                                        <select class="form-control">
+                                                                            <option>18</option>
+                                                                            <option>19</option></select>
+                                                                    </div>
+                                                                    <div class="col-xs-4 col">
+                                                                        <select class="form-control">
+                                                                            <option>Aug</option>
+                                                                            <option>Sep</option></select>
+                                                                    </div>
+                                                                    <div class="col-xs-4 col last-col">
+                                                                        <select class="form-control">
+                                                                            <option>1979</option>
+                                                                            <option>1980</option></select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="categoryPc">
+                                                    <h4 class="panel-title">
+                                                        <div role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#categoryBodypc" aria-controls="retailPriceFacetBody">
+                                                            <span class="text-uppercase">METHOD</span>
+                                                            <span class="pull-right icon-minus"></span>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                                <div id="categoryBodypc" class="categoryBodypc panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        <div id="tabContent_categoryPc" class="facet js-facet"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="BrandPc">
+                                                    <h4 class="panel-title">
+                                                        <div role="button" class="collapse-button collapsed" data-toggle="collapse" data-parent="#facetAccordion" href="#brandBodypc" aria-controls="retailPriceFacetBody">
+                                                            <span class="text-uppercase">status</span>
+                                                            <span class="pull-right icon-minus"></span>
+                                                        </div>
+                                                    </h4>
+                                                </div>
+                                                <div id="brandBodypc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div class="panel-body">
+                                                        <div id="tabContent_brandPc" class="facet js-facet"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-9 ">
+                            <div class="list-content">
+                                <div class="list-row-title row">
+                                    <div class="col-md-2 col-xs-6">return number</div>
+                                    <div class="col-md-2 col-xs-6 col-xs-rig">return date</div>
+                                    <div class="col-md-2 hidden-xs">Refund Amount</div>
+                                    <div class="col-md-2 hidden-xs">return pv/bv</div>
+                                    <div class="col-md-1 hidden-xs">return method</div>
+                                    <div class="col-md-2 hidden-xs">status</div>
+                                    <div class="col-md-1 hidden-xs">&nbsp;</div></div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="return-history-details.html">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Voucher</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Voucher</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Voucher</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Pending</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                                <div class="content-list">
+                                    <div class="row con-list-item">
+                                        <div class="col-md-2 col-xs-6"><a href="">123123</a></div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">21/10/2018</div>
+                                        <div class="col-md-2 col-xs-6">$335</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">20.0/80.0</div>
+                                        <div class="col-md-1 col-xs-6">Cash</div>
+                                        <div class="col-md-2 col-xs-6 col-xs-rig">Completed</div>
+                                        <div class="col-md-1 col-xs-12 col-xs-rig">
+                                            <a href="">Details</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-page-pagination">
+                                <ul class="pagination">
+                                    <li class="disabled">
+                                        <a href="#" aria-label="Previous">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a class="page-link" href="#">1</a></li>
+                                    <li>
+                                        <a class="page-link" href="#">2</a></li>
+                                    <li>
+                                        <a class="page-link" href="#">3</a></li>
+                                    <li>
+                                        <a class="page-link" href="#">4</a></li>
+                                    <li>
+                                        <a class="page-link" href="#">5</a></li>
+                                    <li>
+                                        <span>...</span></li>
+                                    <li>
+                                        <a href="#" class="page-link">9</a></li>
+                                    <li class="next">
+                                        <a href="#" aria-label="Next">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/slick.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">$(function() {
+              
+
+                $(".select2-hidden-accessible").select2();
+
+                $(".js-order-history-filters").click(function() {
+                    $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                    if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                        $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+                    } else {
+                        $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                    }
+                });
+
+                $(".js-order-history-search").click(function() {
+                    $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                    if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                        $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+                    } else {
+                        $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                    }
+                });
+
+                //record collapse
+                $(".js-expand-order").click(function() {
+                    if (!$(this).hasClass("open")) {
+                        $(this).addClass("open");
+                        $(this).next(".js-order-details-block").addClass("expanded");
+                        $(this).siblings(".js-expand-order").removeClass("open");
+                        $(this).next(".js-order-details-block").siblings(".js-order-details-block").removeClass("expanded");
+                    } else {
+                        $(this).removeClass("open");
+                        $(this).next(".js-order-details-block").removeClass("expanded");
+                    }
+                });
+
+                // search order
+                var $search = $("#searchForm");
+                var $searchInput = $search.find("#searchOrder");
+                $searchInput.arrt('autocomplete', 'off');
+                var $autocomplete = $('');
+            })</script>
+    </body>
+
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sop-site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <meta name="description" content="NY Fee Bundle">
+    <meta name="robots" content="index,follow">
+    
+    <link rel="stylesheet" href="styles/select2.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+    <script type="text/javascript" src="scripts/less.min.js"></script>
+</head>
+
+<body>
+<main class="ditto-site">
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a></li>
+                <li>SOP</li></ol>
+        </div>
+    </div>
+    <div class="container-fluid main-container">
+        <div class="account-section">
+            <div class="yCmsContentSlot account-section-content ditto-account-section-content">
+                <div class="amway-theme">
+                    <div class="masthead">
+                        <img src="images/hero-1280-550.jpg">
+                        <div class="banner_wrapper">
+                            <h1>SOP ordering</h1>
+                            <div class="text">One-of-a-kind convenience! Schedule AmwayTM products to arrive when you need them most! Create a personal SOP profile today.</div>
+                            <a href="#" class="banner-more">Learn More</a>
+                            <a href="" class="banner-more primary-link">
+                                <span>shopping wizard</span>
+                                <span class="primary-link-icon icon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- promo component-->
+                    <div class="ditto-promo-component">
+                        <div class="promo-element">
+                            <h2 class="promo-header">get <span class="header-green">free shipping</span> on any new SOP order!</h2>
+                        </div>
+                        <div class="promo-element">
+                            <span class="promo-text">Offer expires November 25, 2016.</span>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--'create new ditto' accordion-->
+                <div class="amway-theme">
+                    <div class="new-ditto-accordion-wrapper">
+                        <div id="accordionElement" class="accordion-element new-ditto-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="accordion-panel">
+                                <div class="accordion-panel-heading" role="tab" id="headingOne">
+                                    <div class="accordion-toggle" data-toggle="collapse" data-parent="#accordionElement" href="#CollapseOne" aria-expanded="true" aria-controls="CollapseOne">
+                                        <h5 class="accordion-panel-title">
+                                        <span class="accordion-title-wrapper">
+                                            <span class="title-element accordion-header-icon icon-Hamburger-Plus"><img src="images/creat-new-list.png" alt="Hamburger-Plus" class="ditto-creat-new-list"></span>
+                                            <span class="title-element title-text">Create New SOP Schedule</span>
+                                            <span class="title-element accordion-icon-wrapper">
+                                                <span class="pull-right icon-minus"></span>
+                                            </span>
+                                        </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div id="CollapseOne" class="accordion-panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="accordion-collapse-wrapper">
+                                        <form id="saveDittoScheduleForm" class="create-ditto-schedule-form create-ditto-schedule-form--popup" action="" method="post" autocomplete="off">
+                                            <div class="row new-ditto-row">
+                                                <div class="col-sm-12 col-md-4 col-lg-3 create-ditto-schedule-form-element-lebel">
+                                                    <label for="saveDittoName">
+                                                        <h6>SOP Name</h6>
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-5">
+                                                    <input id="saveDittoName" name="name" class="create-ditto-input js-create-new-ditto-input" type="text" value="" maxlength="255">
+                                                </div>
+                                            </div>
+                                            <div class="row new-ditto-row">
+                                                <div class="col-sm-12 col-md-4 create-ditto-schedule-form-element-lebel">
+                                                    <h6>Order recipient</h6>
+                                                </div>
+                                                <div class="col-sm-12 col-md-8">
+                                                    <div class="radio-wrapper">
+                                                        <label class="amw-radio-wrap">
+                                                            <input type="radio" id="me" name="radio" checked="checked" class="amw-global-radio">
+                                                            <span class="amw-radio-overlay"></span><span class="amw-label-radio-text">Me</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-wrapper los-search-wrap">
+                                                        <label class="amw-radio-wrap">
+                                                            <input type="radio" id="contacts" name="radio" class="amw-global-radio">
+                                                            <span class="amw-radio-overlay"></span><span class="amw-label-radio-text">Custom List from My Contacts</span>
+                                                        </label>
+                                                        <div class="new-ditto-search-contacts amway-theme">
+                                                            <span id="search-contacts-btn" class="new-ditto-link-wrap">
+                                                                <a href="" title="Search: My contacts" data-single-select="">
+                                                                    <span class="new-ditto-icon icon-add-user"></span>
+                                                                    <span class="link-text">Search Contacts</span>
+                                                                </a>
+                                                            </span>
+                                                            <input id="los-contacts" name="ownerIDs" type="hidden">
+                                                            <input id="los-contacts-type" name="ownerType" type="hidden">
+                                                            <input id="los-contacts-name" name="ownerName" type="hidden">
+                                                            <span class="new-ditto-link-wrap">
+                                                                <span class="link-text js-los-search-total-value">(0)Total</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row new-ditto-row">
+                                                <div class="col-xs-12 col-md-12">
+                                                    <div class="new-ditto-button-wrapper">
+                                                        <button type="submit" class="btn primary btn-primary small js-create-new-ditto-btn new-ditto-button-wrapper__create" id="saveDittoButton">Create SOP</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-section-content ditto-account-section-content">
+                        <div class="account-orderhistory-pagination ditto-pagination js-ditto-pagination">
+                            <div class="top">
+                                <div class="print-hide">
+                                    <div>
+                                        <div class="pagination-controls-wrapper">
+                                            <div class="form-group sort-control">
+                                                <label class="sort-control__label" for="sortForm1">
+                                                    Sort by
+                                                </label>
+                                                <form id="sortForm1" name="sortForm1" method="get" action="">
+                                                    <div class="amway-theme">
+                                                        <select id="sortOptions1" name="sort" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                            <option disabled="">Sort by</option>
+                                                            <option value="byName" selected="selected">
+                                                                Name(A..Z)
+                                                            </option>
+                                                            <option value="byNameDesc">
+                                                                Name(Z..A)
+                                                            </option>
+                                                            <option value="byCreator">
+                                                                Creator(A..Z)
+                                                            </option>
+                                                            <option value="byCreatorDesc">
+                                                                Creator(Z..A)
+                                                            </option>
+                                                            <option value="byOwner">
+                                                                Owner(A..Z)
+                                                            </option>
+                                                            <option value="byOwnerDesc">
+                                                                Owner(Z..A)
+                                                            </option>
+                                                            <option value="byCreationDate">
+                                                                Creation Date(Newest..Oldest)
+                                                            </option>
+                                                            <option value="byCreationDateDesc">
+                                                                Creation Date(Oldest..Newest)
+                                                            </option>
+                                                            <option value="byStatus">
+                                                                Status(A..Z)
+                                                            </option>
+                                                            <option value="byStatusDesc">
+                                                                Status(Z..A)
+                                                            </option>
+                                                            <option value="byReleaseDate">
+                                                                Release Date(Newest..Oldest)
+                                                            </option>
+                                                            <option value="byReleaseDateDesc">
+                                                                Release Date(Oldest..Newest)
+                                                            </option>
+                                                        </select>
+                                                        <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-sortOptions1-container"><span class="select2-selection__rendered" id="select2-sortOptions1-container" title=" name(a..z)">
+                                            Name(A..Z)
+								</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-sortOptions1-container"><span class="select2-selection__rendered" id="select2-sortOptions1-container" title=" name(a..z)">
+                                            Name(A..Z)
+								</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-5 pagination-wrap">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="amway-theme">
+                            <!-- section title -->
+                            <div class="ditto-section-title-wrap">
+                                <h2>All SOP Schedules</h2>
+                            </div>
+                            <!--tabs component-->
+                            <div class="ditto-nav-tabs-wrap js-ditto-nav-tabs-wrap">
+                                <div class="navigation-tabs-container">
+                                    <div class="outer-border-bottom">
+                                        <ul class="tabs-toggles">
+                                        <li class="tab-toggle-wrap js-tab-toggle-wrap active">
+                                            <a class="tab-toggle" href="#myDittoContent" data-toggle="tab">
+                                                <h6 class="toggle-text">My SOP Schedule (6)</h6>
+                                            </a>
+                                        </li>
+                                        <li class="tab-toggle-wrap js-tab-toggle-wrap">
+                                            <a class="tab-toggle" href="#downlineDittoContent" data-toggle="tab">
+                                                <h6 class="toggle-text">Downline SOP Schedule (1)</h6>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="tab-content tabs-content-blocks my-count-page-wrap sop-site">
+                                        <div class="tab-pane content-block active" id="myDittoContent">
+                                            <div class="ditto-schedule-table-content">
+                                                <div class="col-xs-12 ditto-action-panel">
+                                                    <span class="ditto-panel-element">
+                                                        <label class="amw-checkbox-wrap">
+                                                            <input id="selectAllDitto" type="checkbox" class="amw-global-checkbox js-list-selectall-checkbox" data-parent-id="myDittoContent" data-target-class="js-landing-select-list">
+                                                            <span class="amw-checkbox-overlay"></span>
+                                                            <span class="amw-label-checkbox-text">
+                                                                <span class="checkbox-text">Select all</span>
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                    <span class="ditto-panel-element pull-right">
+                                                        <a id="removeDitto" class="btn small btn-link ditto-remove-button js-multi-delete-ditto js-multi-delete-lists" data-delete-popup-title="Delete Selected Ditto">Delete</a>
+                                                        <div class="hidden">
+                                                            <div id="popup_confirm_ditto_multi_delete" class="js-ditto_multi_delete_confirm_modal amway-theme">
+                                                                <p>
+                                                                    Are you sure you want to delete the selected  SOP Schedule(s)?
+                                                                </p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn primary small" id="removeDittoBtn">
+                                                                            Delete
+                                                                        </button>
+                                                                        <button onclick="$.colorbox.close();" class="js-ditto_delete_confirm_cancel btn-link small">
+                                                                            Cancel
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="list-content">
+                                                    <div class="list-row-title row">
+                                                        <div class="col-md-1 col-xs-1">
+                                                            <div class="list-item-select">
+                                                                <label class="checkbox-element-wrapper">
+                                                                    <input id="" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                                    <span class="_checkbox-element-global-span"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-xs-6">SOP Name<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-2 col-xs-5 col-xs-rig">Next SOP<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-1 hidden-xs">Status<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-1 hidden-xs">Created<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-1 hidden-xs">Creator<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-1 hidden-xs">Total PV/BV<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-1 hidden-xs">Total Price<i class="fas fa-angle-down"></i></div>
+                                                        <div class="col-md-2 hidden-xs">Owned by<i class="fas fa-angle-down"></i></div>
+                                                    </div>
+                                                    <div class="content-list row">
+                                                        <div class="row con-list-item">
+                                                            <div class="col-md-1 hidden-xs">
+                                                                <div class="list-item-select">
+                                                                    <label class="checkbox-element-wrapper">
+                                                                        <input id="" class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox">
+                                                                        <span class="_checkbox-element-global-span"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2 col-xs-7"><a href="sop-details-site.html" class="ditto-schedule-link js-saved-cart-name">List Name Goes here</a></div>
+                                                            <div class="col-md-2 col-xs-5 col-xs-rig">Sep 12, 2017</div>
+                                                            <div class="col-md-1 col-xs-7">ACTIVE</div>
+                                                            <div class="col-md-1 col-xs-5 col-xs-rig">Aug 7, 2017</div>
+                                                            <div class="col-md-1 col-xs-7">Tester QaLOS</div>
+                                                            <div class="col-md-1 col-xs-5 col-xs-rig">5.0/4.0</div>
+                                                            <div class="col-md-1 col-xs-7">$95.4</div>
+                                                            <div class="col-md-2 col-xs-5 col-xs-rig">Tester QaLOS</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane content-block" id="downlineDittoContent">
+                                            <div class="ditto-schedule-table-content">
+                                                <div class="col-xs-12 ditto-action-panel">
+                                                    <span class="ditto-panel-element">
+                                                        <label class="amw-checkbox-wrap">
+                                                            <input id="DownLineSelectAllDitto" type="checkbox" class="amw-global-checkbox">
+                                                            <span class="amw-checkbox-overlay"></span>
+                                                            <span class="amw-label-checkbox-text">
+                                                            <span class="checkbox-text">Select all</span>
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                    <span class="ditto-panel-element pull-right">
+                                                        <a id="removeDitto" class="btn small btn-link ditto-remove-button js-multi-delete-ditto" data-delete-popup-title="Delete Selected Ditto">Delete</a>
+                                                        <div class="hidden">
+                                                            <div id="popup_confirm_ditto_multi_delete" class="js-ditto_multi_delete_confirm_modal amway-theme">
+                                                                <p>
+                                                                Are you sure you want to delete the selected  SOP Schedule(s)?
+                                                                </p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <button type="button" class="btn primary small" id="removeDittoBtn">
+                                                                        Delete
+                                                                        </button>
+                                                                        <button onclick="$.colorbox.close();" class="js-ditto_delete_confirm_cancel btn-link small">
+                                                                        Cancel
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="table-block-wrapper">
+                                                    <table class="ditto-schedule-table js-ditto-schedule-table">
+                                                        <thead>
+                                                        <tr>
+                                                            <td class="ditto-field-name js-ditto-sorting-option">
+                                                                <form class="ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        SOP Name
+                                                                        <span class="header-icon icon-arrow-dropdown"></span>
+                                                                    </button>
+                                                                </form>
+                                                                <form class="display-none ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        SOP Name
+                                                                        <span class="header-icon icon-arrow-dropdown-expanded"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-date">
+                                                                <form class="ditto-sorting-form">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Next SOP
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-status js-ditto-sorting-option">
+                                                                <form class="ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Status
+                                                                        <span class="header-icon icon-arrow-dropdown"></span>
+                                                                    </button>
+                                                                </form>
+                                                                <form class="display-none ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Status
+                                                                        <span class="header-icon icon-arrow-dropdown-expanded"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-creation-date js-ditto-sorting-option">
+                                                                <form class="ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Created
+                                                                        <span class="header-icon icon-arrow-dropdown"></span>
+                                                                    </button>
+                                                                </form>
+                                                                <form class="display-none ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Created
+                                                                        <span class="header-icon icon-arrow-dropdown-expanded"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-author js-ditto-sorting-option">
+                                                                <form class="ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Creator
+                                                                        <span class="header-icon icon-arrow-dropdown"></span>
+                                                                    </button>
+                                                                </form>
+                                                                <form class="display-none ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Creator
+                                                                        <span class="header-icon icon-arrow-dropdown-expanded"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-pv-bv">
+                                                                <form class="ditto-sorting-form">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Total PV/BV
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-price">
+                                                                <form class="ditto-sorting-form">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Total Price
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                            <td class="ditto-field-owner js-ditto-sorting-option">
+                                                                <form class="ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Owned by
+                                                                        <span class="header-icon icon-arrow-dropdown"></span>
+                                                                    </button>
+                                                                </form>
+                                                                <form class="display-none ditto-sorting-form js-ditto-sorting-form" action="">
+                                                                    <button type="submit" class="ditto-header-button">
+                                                                        Owned by
+                                                                        <span class="header-icon icon-arrow-dropdown-expanded"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr id="row-0">
+                                                            <td class="ditto-field-name">
+                                                                <span class="ditto-schedule-checkbox-wrapper">
+                                                                    <span class="amw-checkbox-wrap">
+                                                                        <input id="checkbox1" name="selectedDitto" type="checkbox" class="amw-global-checkbox js-landing-select-list" data-parent-id="myDittoContent" value="00005001">
+                                                                        <span class="amw-checkbox-overlay">
+                                                                        </span>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="link-wrapper">
+                                                                <a href="sop-details-site.html" class="ditto-schedule-link js-saved-cart-name">IBO2Custttt</a>
+                                                                </span>
+                                                            </td>
+                                                            <td class="ditto-field-date">
+                                                            </td>
+                                                            <td class="ditto-field-status">
+                                                                INCOMPLETE
+                                                            </td>
+                                                            <td class="ditto-field-creation-date">
+                                                                Aug 7, 2017
+                                                            </td>
+                                                            <td class="ditto-field-author">
+                                                            </td>
+                                                            <td class="ditto-field-pv-bv">
+                                                                0.0/
+                                                                0.0
+                                                            </td>
+                                                            <td class="ditto-field-price">
+                                                                $0.0
+                                                            </td>
+                                                            <td class="ditto-field-owner">
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center show-more-products-wrapper">
+                                <button type="button" id="show-more" class="btn btn-link">
+                                    <span class="text-wrap">View More SOP Schedules</span>
+                                    <span class="icon icon-arrow-dropdown"></span>
+                                </button>
+                            </p>
+                            <!-- horizontal line -->
+                            <div class="ditto-section-separate-line"></div>
+                            <!-- section title -->
+                            <div class="ditto-section-title-wrap">
+                                <h2>SOP business reports headline</h2>
+                                <div class="sub-title-text">
+                                    Lorem ipsum dolor sit amet adipiscing elit sed diam nonummy.
+                                </div>
+                            </div>
+                            <div class="ditto-article-links-wrap">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="article-link-component">
+                                            <div class="article-image-wrap">
+                                                <img src="images/ditto-business.jpg">
+                                            </div>
+                                            <div class="article-link-wrap">
+                                                <a href="" class="primary-link">
+                                                    <span>Lorem ipsum dolor Sit Amet Consectetur</span>
+                                                    <span class="primary-link-icon icon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="article-link-component">
+                                            <div class="article-image-wrap">
+                                                <img src="images/ditto-business.jpg">
+                                            </div>
+                                            <div class="article-link-wrap">
+                                                <a href="" class="primary-link">
+                                                    <span>Lorem ipsum dolor Sit Amet Consectetur</span>
+                                                    <span class="primary-link-icon icon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="article-link-component">
+                                            <div class="article-image-wrap">
+                                                <img src="images/ditto-business.jpg">
+                                            </div>
+                                            <div class="article-link-wrap">
+                                                <a href="" class="primary-link">
+                                                    <span>Lorem ipsum dolor Sit Amet Consectetur</span>
+                                                    <span class="primary-link-icon icon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+</main>
+<div class="overlay"></div>
+<div id="colorbox" class="bonus-payment-modal bonus-payment-method lynx-modal-window--opened directbox Ditto-colorbox create-ditto-box-two cbox search-my-contacts" >
+    <div id="cboxWrapper">
+        <div id="cboxContent">
+            <div class="step_01">
+                <div id="cboxLoadedContent">
+                    <div id="bonusPaymentDirectDeposit">
+                        <div class="bonus-payment-method__wrapper">
+                            <div class="row">
+                                <div class="col-xs-12 date-choose">
+                                    <div class="quick-find">
+                                        <span class="upper-font">QUICKFIND:</span>Enter the Name or ID Number of the IBO/Customer
+                                    </div>
+                                    <div class="search-wrap">
+                                    <input id="contacts-search" class="form-control js-update-entry-quantity-input quantity-value " name="quickfind" value="" size="1" type="text">
+                                    <div class="contacts-auto-suggestion">
+                                        <div class="suggestion-header container-fluid">
+                                            <div class="suggestion-row row">
+                                                <div class="col-md-6">NAME</div>
+                                                <div class="col-md-3">TYPE</div>
+                                                <div class="col-md-3">ID NUMBER</div>
+                                            </div>
+                                        </div>
+                                        <div class="suggestion-body container-fluid">
+                                            <div class="suggestion-row row">
+                                                <div class="suggestion-name col-md-6">Andrew Allen</div>
+                                                <div class="col-md-3">IBO</div>
+                                                <div class="col-md-3">123124124124</div>
+                                            </div>
+                                            <div class="suggestion-row row">
+                                                <div class="suggestion-name col-md-6">Andrew Hackman</div>
+                                                <div class="col-md-3">IBO</div>
+                                                <div class="col-md-3">123124124124</div>
+                                            </div>
+                                            <div class="suggestion-row row">
+                                                <div class="suggestion-name col-md-6">Andrew Frisch</div>
+                                                <div class="col-md-3">IBO</div>
+                                                <div class="col-md-3">123124124124</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 customer-list">
+                                    <label class="upper-font select-customer">Select Customers/IBO</label>
+                                    <ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
+                                        <li class="customer-list-header">
+                                            <div class="col-xs-12 list-header">
+                                                <div class="col-xs-5 list-item-info">Name<span class="icon icon-arrow-dropdown"></span></div>
+                                                <div class="col-xs-3 list-item-quantity">Type<span class="icon icon-arrow-dropdown"></span></div>
+                                                <div class="col-xs-4 list-item-total">Id Number<span class="icon icon-arrow-dropdown"></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <div class="col-xs-5 col-md-5 product-details print-col-6">
+                                                <input class="login-form__remember" id="category1" name="category1" type="checkbox">
+                                                <label for="category1">Aaron Ackerman</label>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 product-item-element print-col-6">
+                                                <span class="customer-type">IBO</span>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 product-item-element print-col-6">
+                                                <span class="id-number">123456789</span>
+                                            </div>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <div class="col-xs-5 col-md-5 product-details print-col-6">
+                                                <input class="login-form__remember" id="category2" name="category1" type="checkbox">
+                                                <label for="category2">Aaron Ackerman</label>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 product-item-element print-col-6">
+                                                <span class="customer-type">IBO</span>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 product-item-element print-col-6">
+                                                <span class="id-number">123456789</span>
+                                            </div>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <div class="col-xs-5 col-md-5 product-details print-col-6">
+                                                <input class="login-form__remember" id="category3" name="category1" type="checkbox">
+                                                <label for="category3">Aaron Ackerman</label>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 product-item-element print-col-6">
+                                                <span class="customer-type">IBO</span>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 product-item-element print-col-6">
+                                                <span class="id-number">123456789</span>
+                                            </div>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <div class="col-xs-5 col-md-5 product-details print-col-6">
+                                                <input class="login-form__remember" id="category4" name="category1" type="checkbox">
+                                                <label for="category4">Aaron Ackerman</label>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 product-item-element print-col-6">
+                                                <span class="customer-type">IBO</span>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 product-item-element print-col-6">
+                                                <span class="id-number">123456789</span>
+                                            </div>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <div class="col-xs-5 col-md-5 product-details print-col-6">
+                                                <input class="login-form__remember" id="category5" name="category1" type="checkbox">
+                                                <label for="category5">Aaron Ackerman</label>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 product-item-element print-col-6">
+                                                <span class="customer-type">IBO</span>
+                                            </div>
+                                            <div class="col-xs-4 col-md-4 product-item-element print-col-6">
+                                                <span class="id-number">123456789</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 recipient-list">
+                                    <label class="upper-font select-customer">Recipient List</label>
+                                    <ul class="shopping-cart-item-list js-shopping-cart-item-list shopping-cart-product-item-list">
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+                                        <li class="product-list-item  js-shopping-cart-list-item">
+                                            <span class="customer-name">Aaron Ackerman</span>
+                                            <span class="customer-remove">×</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="bonus-payment-form" class="bonus-payment-method-form" action="#" method="post">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5">
+                                    <div class="bonus-payment-method__image-wrapper"></div>
+                                </div>
+                            </div>
+                            <div class="form-group bonus-payment-method-form__control">
+                                <button type="submit" id="agreeBtn" class="btn btn-primary">confirm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="cboxTitle" style="float: left; display: table;">
+                <div class="headline">
+                    <span class="headline-text">SEARCH: MY CONTACTS</span></div>
+            </div>
+        </div>
+        <button type="button" id="cboxClose" class="cClose01"><span class="modal-close-icon">×</span></button>
+    </div>
+</div>
+<div id="colorbox" class="cbox lynx-modal-window add-to-shopping-list-box create-ditto-box create-new-list">
+    <div id="cboxWrapper">
+        <div>
+            <div id="cboxTopLeft"></div>
+            <div id="cboxTopCenter"></div>
+            <div id="cboxTopRight"></div>
+        </div>
+        <div style="clear: left;">
+            <div id="cboxMiddleLeft"></div>
+            <div id="cboxContent">
+                <div id="cboxTitle">
+                    <div class="headline">
+                        <span class="headline-text">Create A New SOP Schedule</span>
+                    </div>
+                </div>
+                <div id="cboxLoadedContent">
+                    <div id="createNewShoppingListModal" class="amway-theme create-new-shopping-list-modal js-create-new-shopping-list-modal js-create-new-modal">
+                        <div class="amway-theme">
+                            <form id="saveShoppingListForm" class="create-shopping-list-form" action="" method="post">
+                                <div class="row new-shopping-list-row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4 shopping-list-form-element-label">
+                                        <label for="newShoppingListName"> <h6>SOP Name</h6> </label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <input id="newShoppingListName" name="name" type="text" class="shopping-list-input js-create-shopping-list-input" required="required"   value="" />
+                                    </div>
+                                </div>
+                                <div class="row new-shopping-list-row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4 shopping-list-form-element-label">
+                                        <h6>Order Recipient</h6>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="radio-wrapper">
+                                            <label class="amw-radio-wrap radio-label"> <input type="radio" id="me" value="Me" name="ownerType" checked="checked" class="js-me-button amw-global-radio" required="required" /> <span class="amw-radio-overlay"></span><span class="amw-label-radio-text">Me</span> </label>
+                                        </div>
+                                        <div class="radio-wrapper">
+                                            <label class="amw-radio-wrap radio-label"> <input type="radio" id="mySponsor" value="Sponsor" name="ownerType" class="js-my-sponsor-button amw-global-radio" required="required" /> <span class="amw-radio-overlay"></span><span class="amw-label-radio-text">My Sponsor [Sponsor Name Goes Here]</span> </label>
+                                        </div>
+                                        <div class="radio-wrapper los-search-wrap">
+                                            <label class="amw-radio-wrap radio-label"> <input type="radio" id="personalySponsored" value="Downline" name="ownerType" class="js-downlines-button amw-global-radio" required="required" /> <span class="amw-radio-overlay"></span><span class="amw-label-radio-text">Customs List from My Contacts</span> </label>
+                                            <div class="new-ditto-search-contacts amway-theme">
+                                                <span class="new-ditto-link-wrap"> <a href="" class="losSearchLink new-ditto-link" title="Search: My contacts" data-single-select=""> <span class="new-ditto-icon icon-add-user"></span> <span class="link-text">Search Contacts</span> </a><span class="link-text js-los-search-total-value">|&nbsp;(0)Total</span> </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="radio" id="me" value="Me" name="ownerType" checked="checked" required="required" hidden="hidden" />
+                                <div class="row new-shopping-list-row">
+                                    <div class="col-xs-12 col-md-12">
+                                        <div class="shopping-list-row-button-wrapper">
+                                            <button type="submit" class="btn btn-primary" id="createShoppingList"> Create SOP </button>
+                                            <a href="javascript:void(0);" class="cancel-delete ditto-cancel-delete">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="cboxCurrent"></div>
+                <button type="button" id="cboxClose"><span class="modal-close-icon">&times;</span></button>
+            </div>
+            <div id="cboxMiddleRight"></div>
+        </div>
+        <div style="clear: left;">
+            <div id="cboxBottomLeft"></div>
+            <div id="cboxBottomCenter"></div>
+            <div id="cboxBottomRight"></div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/new.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+    //create new ditto
+    //step 1
+    $(".new-ditto-button-wrapper__create").click(function(e){
+        e.preventDefault();
+        $("#colorbox.create-ditto-box,.overlay").show();
+    });
+    $(".create-ditto-box #cboxClose").click(function(){
+        $("#colorbox.create-ditto-box,.overlay").hide();
+    });
+    //step 2
+    $(".create-ditto-button").click(function(e){
+        e.preventDefault();
+        $("#colorbox.create-ditto-box-two,.overlay").show();
+    });
+    $(".create-ditto-box-two .cClose01").click(function(){
+        $("#colorbox.create-ditto-box,.overlay").hide();
+        $("#colorbox.create-ditto-box-two,.overlay").hide();
+    });
+
+    //cancel ditto creating
+    $(".cancel-delete").click(function(){
+        $("#colorbox.create-ditto-box,.overlay").hide();
+    });
+
+    //search contacts
+    $('#search-contacts-btn').click(function(event) {
+        event.preventDefault();
+        $("#colorbox.search-my-contacts,.overlay").show();
+        $("#colorbox.create-ditto-box").hide();
+        
+    });
+    $(".search-my-contacts .modal-close-icon").click(function() {
+        $("#colorbox.search-my-contacts,.overlay").hide();
+    });
+
+
+    //my ditto schedule
+    $("#myDittoContent #selectAllDitto").click(function() {
+        if (this.checked) {
+            $("#myDittoContent .ditto-schedule-table :checkbox").prop("checked", true);
+        } else {
+            $("#myDittoContent .ditto-schedule-table :checkbox").prop("checked", false);
+        }
+    });
+    $("#myDittoContent .ditto-schedule-table :checkbox").click(function() {
+        allchkone();
+    });
+    function allchkone() {
+        var chknum = $("#myDittoContent .ditto-schedule-table :checkbox").size(); //选项总个数
+        var chk = 0;
+        $("#myDittoContent .ditto-schedule-table :checkbox").each(function() {
+            if ($(this).prop("checked") == true) {
+                chk++;
+            }
+        });
+        if (chknum == chk) { //全选
+            $("#myDittoContent #selectAllDitto").prop("checked", true);
+        } else { //不全选
+            $("#myDittoContent #selectAllDitto").prop("checked", false);
+        }
+    }
+
+    //downline ditto schedule
+    $("#downlineDittoContent #DownLineSelectAllDitto").click(function() {
+        if (this.checked) {
+            $("#downlineDittoContent .ditto-schedule-table :checkbox").prop("checked", true);
+        } else {
+            $("#downlineDittoContent .ditto-schedule-table :checkbox").prop("checked", false);
+        }
+    });
+    $("#downlineDittoContent .ditto-schedule-table :checkbox").click(function() {
+        allchktwo();
+    });
+    function allchktwo() {
+        var chknum = $("#downlineDittoContent .ditto-schedule-table :checkbox").size(); //选项总个数
+        var chk = 0;
+        $("#downlineDittoContent .ditto-schedule-table :checkbox").each(function() {
+            if ($(this).prop("checked") == true) {
+                chk++;
+            }
+        });
+        if (chknum == chk) { //全选
+            $("#downlineDittoContent #DownLineSelectAllDitto").prop("checked", true);
+        } else { //不全选
+            $("#downlineDittoContent #DownLineSelectAllDitto").prop("checked", false);
+        }
+    }
+})
+</script>
+
+</body>
+</html>

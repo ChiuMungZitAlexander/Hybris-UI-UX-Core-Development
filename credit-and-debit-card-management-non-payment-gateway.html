@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>credit-and-debit-card-management</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    
+    <body>
+        <main class="amway-theme">
+            <div id="header"></div>
+            <div class="container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a></li>
+                        <li>
+                            <a href="my-account.html">My Account</a></li>
+                        <li>Credit & Debit Card Management</li></ol>
+                </div>
+            </div>
+            <div class="user-account-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="user-block col-sm-4">
+                            <div class="user-image-container">
+                                <img class="user-image" src="images/yui.png">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div class="user-info">
+                                <span class="user-name">Yui Mori</span>
+                                <span class="user-id">ABO # 1234567</span></div>
+                        </div>
+                        <div class="go-block col-sm-8">
+                            <div class="amway-theme">
+                                <div class="jump-to">
+                                    <span>Jump to</span></div>
+                                <div class="jump-to-wrapper">
+                                    <select class="js-jump-to-selection form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                        <option value="/my-account/billing-shipping/credit-card-management" class="js-account-option-link text-capitalize">Credit Card Management</option>
+                                        <option value="/my-account" class="js-account-option-link text-capitalize">My Account</option>
+                                        <option value="/my-account/business-information" class="js-account-option-link text-capitalize">Business Information &amp; Upline</option>
+                                        <option value="/my-account/orders" class="js-account-option-link text-capitalize">Order History</option>
+                                        <option value="/my-account/bonus-payment" class="js-account-option-link text-capitalize">Bonus Payment Preferences</option>
+                                        <option value="/my-account/auto-renewal" class="js-account-option-link text-capitalize">Auto Renewal</option>
+                                        <option value="/my-account/contracts" class="js-account-option-link text-capitalize">Contracts</option>
+                                        <option value="/my-account/update-profile" class="js-account-option-link text-capitalize">Edit Profile</option>
+                                        <option value="/my-account/contract-renewal" class="js-account-option-link text-capitalize">Contract Renewal</option>
+                                        <option value="/my-account/terms-and-conditions-management" class="js-account-option-link text-capitalize">T & C Management</option>
+                                        <option value="/my-account/coupon-management" class="js-account-option-link text-capitalize">Coupon Management</option>
+                                        <option value="/my-account/point-management" class="js-account-option-link text-capitalize">Point Management</option></select>
+                                    <input type="button" class="js-jump-to-selection-btn" value="GO"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-count">
+                <h4 class="panel-title page-title">
+                    <i class="fas fa-credit-card"></i>
+                    <span class="text-uppercase panel-title-text">Credit & Debit Card Management</span></h4>
+                <div class=" my-count-page-wrap">
+                    <div class="add-delivery-panel panel-group" id="add-delivery">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#add-delivery" href="#collapseOne">
+                                        <i class="fas fa-credit-card"></i>
+                                        <span class="text-uppercase">Add new Card</span>
+                                        <span class="indicator pull-right"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="add-edit-address hidden-line" id="newPayment" style="display: block;">
+                                        <div class="row form-horizontal amway-theme">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">NickName</label>
+                                                    <div class="col-md-4 col-xs-12">
+                                                        <input class="form-control" value="Work Hard" type="text"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Owner Name</label>
+                                                    <div class="col-md-4 col-xs-12">
+                                                        <input class="form-control" value="John Doe" type="text"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">Card Number</label>
+                                                    <div class="col-md-4 col-xs-12">
+                                                        <input type="text" id="newPayment-card-password" class="newPayment-card-password text form-control gw-proxied" value="**** **** **** ****" onkeyup="AddSpaceTwo();" onpropertychange="onPropertyChange(event)"></div>
+                                                </div>
+                                                <div class="form-group number-form-group">
+                                                    <label class="col-md-2 control-label">Expires</label>
+                                                    <div class="row col-md-4 col-xs-12 form-item-row">
+                                                        <div class="col-xs-4 col">
+                                                            <input class="form-control" value="11" type="text"></div>
+                                                        <div class="col-xs-1 col">
+                                                            <span class="separator">/</span></div>
+                                                        <div class="col-xs-4 col last-col">
+                                                            <input class="form-control" value="12" type="text"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label">CVV</label>
+                                                    <div class="col-md-4 col-xs-12">
+                                                        <input type="text" id="newPayment-security-code" class="text form-control gw-proxied" value="***" onpropertychange="onPropertyChange(event)">
+                                                        <span class="has-error js-security-code-error hide">Please enter a valid security code</span></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-2 control-label"></label>
+                                                    <div class="col-md-4 col-xs-12 set-address">
+                                                        <input id="new-primary" checked="checked" type="checkbox">
+                                                        <label for="new-primary" class="normal inline-label checklabel fontWeight600 remember">
+                                                            <span>Set as Primary Card</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-row-title row">
+                            <div class="col-md-4 col-xs-7">Payment Type</div>
+                            <div class="col-md-2 col-xs-5 col-xs-rig">expiry date</div>
+                            <div class="col-md-2 hidden-xs">owner name</div>
+                            <div class="col-md-1 hidden-xs">NickName</div>
+                            <div class="col-md-2 hidden-xs">
+                                <a>
+                                </a>
+                            </div>
+                            <div class="col-md-1 hidden-xs">
+                                <a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <div class="row con-list-item hasCard">
+                                <div class="col-md-4 col-xs-7 card-info-block">
+                                    <div class="card-info">
+                                        <img src="images/payment/2x/icon_card_amex@2x.png">
+                                        <div class="card-info-right">
+                                            <span class="card-code">American</span>
+                                            <span class="panel-title-text">ending in</span>
+                                            <span class="expiration-date">0008</span>
+                                            <span class="blue-tip-label hidden-xs">Primary</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig">05/21</div>
+                                <div class="col-md-2 col-xs-12">John Doe</div>
+                                <div class="col-md-1 col-xs-7">Word Hard</div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig">
+                                    <a>
+                                    </a>
+                                </div>
+                                <div class="col-md-1 col-xs-12 row-list-action">
+                                    <button id="edit" class="btn primary">EDIT</button><span class="blue-tip-label visible-xs-block">Primary</span></div>
+                            </div>
+                            <div id="editPay" class="row form-horizontal amway-theme table-edit-form" style="display:none;">
+                                <div class="form-horizontal add-delivery-wraps">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">NickName</label>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <input class="form-control" value="Work Hard" type="text"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Owner Name</label>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <input class="form-control" value="John Doe" type="text"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Card Number</label>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <input type="text" id="editpay-card-password" class="text form-control gw-proxied express-card" value="**** **** **** ****" oncopy="AddSpace();" onkeyup="AddSpace();" onpropertychange="onPropertyChange(event)"></div>
+                                            </div>
+                                            <div class="form-group number-form-group">
+                                                <label class="col-md-2 control-label">Expires</label>
+                                                <div class="row col-md-4 col-xs-12 form-item-row">
+                                                    <div class="col-xs-4 col">
+                                                        <input class="form-control" value="11" type="text"></div>
+                                                    <div class="col-xs-1 col">
+                                                        <span class="separator">/</span></div>
+                                                    <div class="col-xs-4 col last-col">
+                                                        <input class="form-control" value="12" type="text"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">CVV</label>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <input type="text" id="editpay-security-code1" class="text form-control gw-proxied" value="***">
+                                                    <span class="has-error js-security-code-error hide">Please enter a valid security code</span></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label"></label>
+                                                <div class="col-md-4 col-xs-12 set-address">
+                                                    <input id="remember" checked="checked" type="checkbox">
+                                                    <label for="remember" class="normal inline-label checklabel fontWeight600 remember">
+                                                        <span>Set as Primary Card</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12 ">
+                                            <div class="add-delivery-accountActions">
+                                                <button type="button" id="editFormSubmit" class="btn primary">Save</button>
+                                                <button type="button" id="editCancel" onclick="beforeSubmit();" class="btn">cancel</button>
+                                                <a href="javascript:void(0)">Delete</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <div class="row con-list-item hasCard">
+                                <div class="col-md-4 col-xs-7 card-info-block">
+                                    <div class="card-info">
+                                        <img src="images/payment/2x/icon_card_mastercard@2x.png">
+                                        <div class="card-info-right">
+                                            <span class="card-code">Mastercard</span>
+                                            <span class="panel-title-text">ending in</span>
+                                            <span class="expiration-date">0008</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig">
+                                    <span class="red-expiry-date">Expired 11/19</span></div>
+                                <div class="col-md-2 col-xs-12">John Doe</div>
+                                <div class="col-md-1 col-xs-7">Personal Card</div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig right-tip-label">
+                                    <span class="blue-tip-label">SOP</span></div>
+                                <div class="col-md-1 col-xs-12 row-list-action">
+                                     <button  class="btn primary"> Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <div class="row con-list-item hasCard">
+                                <div class="col-md-4 col-xs-7 card-info-block">
+                                    <div class="card-info">
+                                        <img src="images/payment/2x/icon_card_visa@2x.png">
+                                        <div class="card-info-right">
+                                            <span class="card-code">Visa</span>
+                                            <span class="panel-title-text">ending in</span>
+                                            <span class="expiration-date">0008</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig">05/21</div>
+                                <div class="col-md-2 col-xs-12">John Doe</div>
+                                <div class="col-md-1 col-xs-7">Personal Card 2</div>
+                                <div class="col-md-2 col-xs-5 col-xs-rig right-tip-label">
+                                    <span class="blue-tip-label first-tip">SOP</span>
+                                    <span class="blue-tip-label">RENEWAL</span></div>
+                                <div class="col-md-1 col-xs-12 row-list-action">
+                                    <button id="edit" class="btn primary" >EDIT</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <div class="overlay"></div>
+        <div class="cbox" id="credit-and-debit-delete-msg">
+            <div class="cart-popup__dialog">
+                <div class="cart-popup__header">
+                    <span class="cart-popup__header-text">Delete Payment Option?</span>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="cart-popup__content">
+                    <div class="cart-popup__item-info amwahover credit-and-debit-delete-msg-info">
+                        <div class="cd-info-delete-alert">
+                            <div class="cd-alert-icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <div class="cd-alert-text">
+                                <span>The following 9 items will be cancelled.</span>
+                                <span>Change payment method to keep these items.</span></div>
+                        </div>
+                        <div class="new-coupon-management">
+                            <div class="credit-vouchers-content">
+                                <div class="bank-row-title row">
+                                    <div class="col-md-5 col-xs-5">
+                                        <span class="hover-area">Item Name
+                                            <i class="fas fa-angle-down"></i></span>
+                                    </div>
+                                    <div class="col-md-7 col-xs-7 next-payment-date">
+                                        <span class="hover-area">Next Payment Date
+                                            <i class="fas fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="content-list row">
+                                    <div class="col-md-5 col-xs-5">Item Name Goes Here</div>
+                                    <div class="col-md-7 col-xs-7 next-payment-date">24-11-2018</div></div>
+                                <div class="content-list row">
+                                    <div class="col-md-5 col-xs-5">Item Name Goes Here</div>
+                                    <div class="col-md-7 col-xs-7 next-payment-date">24-11-2018</div></div>
+                                <div class="content-list row">
+                                    <div class="col-md-5 col-xs-5">Item Name Goes Here</div>
+                                    <div class="col-md-7 col-xs-7 next-payment-date">24-11-2018</div></div>
+                                <div class="content-list row">
+                                    <div class="col-md-5 col-xs-5">Item Name Goes Here</div>
+                                    <div class="col-md-7 col-xs-7 next-payment-date">24-11-2018</div></div>
+                            </div>
+                        </div>
+                        <a>Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">$(function() {
+                $(".delete-btn").click(function() {
+                    $("#credit-and-debit-delete-msg").show();
+                    $(".overlay").show();
+                });
+
+                $(".fa-times").click(function() {
+                    $("#credit-and-debit-delete-msg").hide();
+                    $(".overlay").hide();
+                });
+                $("#newPayment .payment-input").click(function() {
+                    if ($("#newPayment .payment-input").is(":checked")) {
+                        $("#newPayment .checkbox-container").show();
+                    } else {
+                        $("#newPayment .checkbox-container").hide();
+                    }
+                });
+                $("#newPayment .sop-input,#newPayment .renewal-input").click(function() {
+                    $("#newPayment .checkbox-container").hide();
+                });
+                $('#newPayment .account-profile__editor').find('input[type=checkbox]').bind('click',
+                function() {
+                    $('#newPayment .account-profile__editor').find('input[type=checkbox]').not(this).attr("checked", false);
+                });
+
+                $("#editPay .payment-input").click(function() {
+                    if ($("#editPay .payment-input").is(":checked")) {
+                        $("#editPay .checkbox-container").show();
+                    } else {
+                        $("#editPay .checkbox-container").hide();
+                    }
+                });
+                $("#editPay .sop-input,#editPay .renewal-input").click(function() {
+                    $("#editPay .checkbox-container").hide();
+                });
+                $('#editPay .account-profile__editor').find('input[type=checkbox]').bind('click',
+                function() {
+                    $('#editPay .account-profile__editor').find('input[type=checkbox]').not(this).attr("checked", false);
+                });
+
+                $("#edit").click(function() {
+                    var father = $(this).parents('.content-list');
+                    if (father.children("#editPay").is(":visible")) {} else {
+                        father.children("#editPay").slideDown("slow");
+                        $(this).addClass('disabled');
+                    }
+                });
+                $("#editFormSubmit, #editCancel").click(function() {
+                    var father = $(this).parents('.content-list');
+                    if (father.children("#editPay").is(":visible")) {
+                        father.children("#editPay").slideToggle("slow");
+                        father.find("#edit").removeClass('disabled');
+                    } else {
+                        father.children("#editPay").slideDown("slow");
+                    }
+
+                });
+                //        $(".credit-debit-modify").click(function(){
+                //            $(this).hide();
+                //            $(this).parents(".payment-info-container").find(".delete").hide();
+                //            $(this).parents(".payment-info-container").find(".edit").show();
+                //        })
+                $(".add-new-payment-info").click(function() {
+
+                    if ($("#newPayment").is(":visible")) {
+                        $("#newPayment").slideUp();
+
+                    } else {
+                        $("#newPayment").slideDown();
+                        $(this).hide();
+                    }
+                });
+                $("#newCreditCardFormSubmit, #newCancel").click(function() {
+
+                    if ($("#newPayment").is(":visible")) {
+                        $("#newPayment").slideUp();
+                        $('.add-new-payment-info').show();
+                    } else {
+                        $("#newPayment").slideDown();
+                    }
+                });
+
+                $(".js-order-history-filters").click(function() {
+                    $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                    if ($(".js-filter-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                        $(".js-filter-form-wrapper").removeClass('hidden-sm hidden-xs');
+                    } else {
+                        $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                    }
+                });
+                $(".js-order-history-search").click(function() {
+                    $(".js-filter-form-wrapper").addClass('hidden-sm hidden-xs');
+                    if ($(".js-search-form-wrapper").hasClass('hidden-sm hidden-xs')) {
+                        $(".js-search-form-wrapper").removeClass('hidden-sm hidden-xs');
+                    } else {
+                        $(".js-search-form-wrapper").addClass('hidden-sm hidden-xs');
+                    }
+                });
+
+                $(".js-expand-order").click(function() {
+                    if (!$(this).hasClass("open")) {
+                        $(this).addClass("open");
+                        $(this).next(".js-order-details-block").addClass("expanded");
+                    } else {
+                        $(this).removeClass("open");
+                        $(this).next(".js-order-details-block").removeClass("expanded");
+                    }
+                });
+
+                $("#editpay-card-password").bind("input propertychange",
+                function() {
+                    value = $('#editpay-card-password').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#editpay-card-password').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#editpay-card-password').val(str1 + str)
+                        } else {
+                            $('#editpay-card-password').val('')
+                        }
+                    },
+                    0);
+                });
+                $("#editpay-security-code1").bind("input propertychange",
+                function() {
+                    value = $('#editpay-security-code1').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#editpay-security-code1').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#editpay-security-code1').val(str1 + str)
+                        } else {
+                            $('#editpay-security-code1').val('')
+                        }
+                    },
+                    0);
+                });
+
+                $("#editpay-security-code2").bind("input propertychange",
+                function() {
+                    value = $('#editpay-security-code2').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#editpay-security-code2').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#editpay-security-code2').val(str1 + str)
+                        } else {
+                            $('#editpay-security-code2').val('')
+                        }
+                    },
+                    0);
+                });
+                $("#editpay-security-code3").bind("input propertychange",
+                function() {
+                    value = $('#editpay-security-code3').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#editpay-security-code3').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#editpay-security-code3').val(str1 + str)
+                        } else {
+                            $('#editpay-security-code3').val('')
+                        }
+                    },
+                    0);
+                });
+                $("#newPayment-security-code").bind("input propertychange",
+                function() {
+                    value = $('#newPayment-security-code').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#newPayment-security-code').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#newPayment-security-code').val(str1 + str)
+                        } else {
+                            $('#newPayment-security-code').val('')
+                        }
+                    },
+                    0);
+                });
+                $("#newPayment-card-password").bind("input propertychange",
+                function() {
+                    value = $('#newPayment-card-password').val();
+                    setTimeout(function() {
+                        str = value.substr(value.length - 1, 1);
+                        str = '*';
+                        str1 = '';
+                        if (value.length > 1) {
+                            str1 = value.substr(0, value.length - 1);
+                            $('#newPayment-card-password').val(str1)
+                        }
+                        if (value !== '') {
+                            $('#newPayment-card-password').val(str1 + str)
+                        } else {
+                            $('#newPayment-card-password').val('')
+                        }
+                    },
+                    0);
+                });
+
+            });
+
+            function AddSpace() {
+                var currentString = document.getElementById("editpay-card-password").value;
+                var arrSpaces = currentString.split(" ");
+                var spaces = arrSpaces.length - 1;
+                var i;
+                if (currentString.length > 0 && (currentString.length - spaces) % 4 == 0) {
+                    document.getElementById("hdnSpaces").value = parseInt(document.getElementById("hdnSpaces").value) + 1;
+                    document.getElementById("editpay-card-password").value += " ";
+                }
+            }
+
+            function AddSpaceTwo() {
+                var currentString = document.getElementById("newPayment-card-password").value;
+                var arrSpaces = currentString.split(" ");
+                var spaces = arrSpaces.length - 1;
+                var i;
+                if (currentString.length > 0 && (currentString.length - spaces) % 4 == 0) {
+                    document.getElementById("hdnSpacesTwo").value = parseInt(document.getElementById("hdnSpacesTwo").value) + 1;
+                    document.getElementById("newPayment-card-password").value += " ";
+                }
+            }</script>
+    </body>
+
+</html>

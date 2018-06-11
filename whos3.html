@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>action-reports</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="scripts/bootstrap-slider.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet" href="scripts/owl.carousel.css">
+        <link rel="stylesheet" href="scripts/owl.theme.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+        
+    </head>
+    
+    <body id="reports-page" class="">
+        <main>
+            <div id="header"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="dashboard.html">My Business Center</a>
+                        </li>
+                        <li class="active">Action Reports</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="amway-theme">
+                    <div class="prw-nav">
+                        <div class="prw-nav-container clearfix">
+                            <div class="title">
+                                Jump To
+                            </div>
+                            <div class="jump-dropdown-container">
+                                <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                    <option value="/my-business-center/LOS-ListView" class="js-account-option-link text-capitalize">LOS List View</option>
+                                    <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">LOS Tree View</option>
+                                    <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize" selected="selected">Action Reports</option>
+                                    <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                                    <option value="/my-business-center/higher-award-tracking" class="js-account-option-link text-capitalize">Higher Award Tracking</option>
+                                    <option value="/my-business-center/dashboard" class="js-account-option-link text-capitalize">Dashboard</option>
+                                </select>
+                            </div>
+                            <div class="jump-to-button-wrap">
+                                <button class="btn primary small prw-jump-to-button">Go</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid main-container">
+
+                    <img src="images/birthdays.png" class="birthdays" style="max-width: 100%;">
+                    <!--<img src="images/platinums.png" class="platinums">-->
+
+
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap-slider.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/owl.carousel.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#report-tree').owlCarousel({
+                    loop: true,
+                    nav: true,
+                    dots: false,
+                    margin: 0,
+                    items: 1,
+                    responsiveClass: true,
+                    responsive: {
+                        749 : {
+                            items: 3
+                        },
+                        1200 : {
+                            items: 5
+                        }
+                    }
+                });
+                $("#btnTree").click(function(e){
+                    e.preventDefault();
+                    var parent = $(this).parents('.dropdown-div');
+                    var box = $(this).parents('.dropdown-box');
+                    if($('#treeView').is(':hidden')) {
+                        $('#listView').slideUp();
+                        $('#treeView').slideDown();
+                        $(this).addClass('active');
+                        $("#btnList").removeClass('active');
+                        box.hide();
+                        parent.removeClass('active')
+                    }
+                });
+                $("#btnList").click(function(e){
+                    e.preventDefault();
+                    var parent = $(this).parents('.dropdown-div');
+                    var box = $(this).parents('.dropdown-box');
+                    if($('#listView').is(':hidden')) {
+                        $('#listView').slideDown();
+                        $('#treeView').slideUp();
+                        $(this).addClass('active');
+                        $("#btnTree").removeClass('active');
+                        box.hide();
+                        parent.removeClass('active')
+                    }
+                });
+                $(".select2-hidden-accessible").select2();
+                $('.filter-type').change(function () {
+                    var type = $(this).val()
+                    var text = ''
+
+                    $('#reports-filter').removeClass().addClass(type)
+
+                    switch (type) {
+                        case 'new-type':
+                            console.log("1");
+                            $(".whosnew").show().siblings().hide();
+                            break
+                        case 'close-type':
+                            console.log("2");
+                            $(".whosclose").show().siblings().hide();
+                            break
+                        case 'birth-type':
+                            console.log("3");
+                            $(".birthdays").show().siblings().hide();
+                            break
+                        case 'renew-type':
+                            console.log("4");
+                            $(".platinums").show().siblings().hide();
+                            break
+
+                    }
+
+                    $('.notice').text(text)
+                })
+
+                $('.dropdown-btn').click(function () {
+                    var parent = $(this).parent()
+                    var box = $(this).next('.dropdown-box')
+                    
+                    if (box.is(':hidden')) {
+                        box.show()
+                        parent.addClass('active')
+                    } else {
+                        box.hide()
+                        parent.removeClass('active')
+                    }
+                })
+
+                $('#ex1').slider({
+                    tooltip: 'always',
+                    formatter: function(value) {
+                        return value + '%'
+                    }
+                })
+
+                $('.tooltip').css('margin-left', '-14.5px')
+
+                $(window).resize(function(){
+                    setTimeout(function () {
+                        $('.tooltip').css('margin-left', '-14.5px')
+                    }, 1000)
+                })
+
+                $('.show-slider-btn').click(function () {
+                    var obj = $('#reports-filter')
+
+                    if (obj.hasClass('close-active')) {
+                        obj.removeClass('close-active')
+                    } else {
+                        obj.addClass('close-active')
+                    }
+                });
+
+                $('.action button').click(function () {
+                    $(this).next('ul').fadeToggle('fast');
+                    $(this).parents("li").siblings().find(".action-list").hide();
+                });
+
+                //apply button to link to birthday and overview
+                $(".apply-item").click(function(e){
+                    e.preventDefault();
+                    var value =$(".filter-type").val();
+                    if (value == 'birth-type') {
+                        window.location.href = "action-reports-birthday.html";
+                    }
+                });
+            })
+        </script>
+    </body>
+
+</html>

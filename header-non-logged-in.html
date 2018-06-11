@@ -1,0 +1,2233 @@
+
+    <header class="js-mainHeader main-header general-header">
+        <div class="amway-theme">
+            <nav class="header-container">
+                <div class="header-wrapper pos-relative">
+                    <div class="popover bottom extraclass1 no-login" id="login-drop-content" style="margin-top: 31px;">
+                        <div class="popover-arrow arrow"></div>
+                        <div class="popover-content">
+                            <form class="topbar__popover login-form authentication-js">
+                                <h1 class="login-form__title">welcome to amway!</h1>
+                                <div class="login-form__username-wrap">
+                                    <input type="text" placeholder="Username or ABO ID" class="login-form__username">
+                                    <i class="fas fa-info-circle">
+                                        <div class="userinfo-tip-wrap">
+                                            Please enter your username
+                                            or ABO ID registered when
+                                            signing up.
+                                        </div>
+                                    </i>
+
+                                </div>
+
+                                <input type="password" placeholder="Password" class="login-form__password">
+                                <input class="login-form__remember" id="remember" name="remember" type="checkbox">
+                                <label for="remember" class="remember-me">Remember me</label>
+                                <a href="homepage-logged-in.html">
+                                    <input class="btn primary login-form__submit" type="button" value="submit"></a>
+                                <a class="login-form__link" href="#">Forgot your password?</a>
+                                <a class="login-form__link" href="#">First time loging in?</a>
+                                <hr>
+                                <p class="login-form__owner">Become an Amway Business Owner</p>
+                                <a href="register-landing.html">
+                                    <input class="btn login-form__register" type="button" value="register here"></a></form>
+
+                        </div>
+                    </div>
+                    <div class="mini-cart-items-container mini-cart-wrapper"
+                         id="shoppingcar-drop-content">
+                        <div class="arrow" style=""></div>
+
+                        <div class="tab-content js-tab-content">
+                            <p class="mini-cart-des">No items in your shopping cart</p>
+                            <a href="shopping-cart.html"
+                               class="btn primary start-shopping">start shopping
+                            </a>
+                        </div>
+                    </div>
+                    <div class="country-language-container header-content">
+                        <div class="header-element-content">
+                            <div class="site-logo">
+                                <a href="homepage-logged-in.html"></a>
+                            </div>
+                            <span class="dropdown countrySelectorWrap">
+                            <button id="countrySelectorDropdown" class="btn small dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <div class="wrapper">
+                                    <span class="flag-icon flag-icon-US">
+                                        <img class="topbar__flag" src="images/jp.jpg" alt="flag"/></span>
+                                    <span class="current-country-code">Japan</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu countryBox" aria-labelledby="countrySelectorDropdown">
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/cn.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">China</span></a>
+                                </li>
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/my.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Malaysia</span></a>
+                                </li>
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/ph.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Philippines</span></a>
+                                </li>
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/kr.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Korea</span></a>
+                                </li>
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/th.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Thailand</span></a>
+                                </li>
+                                <li class="content-item">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/sg.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Singapore</span></a>
+                                </li>
+                                <li class="content-item current-country">
+                                    <a class="country-item-link" href="">
+                                        <span class="flag-icon">
+                                            <img class="topbar__flag" src="images/jp.jpg" alt="flag"/></span>
+                                        <span class="country-item-text">Japan</span></a>
+                                </li>
+                            </ul>
+                        </span>
+                            <span class="dropdown langSelectorWrap">
+                            <button id="langSelectorDropdown" class="btn small dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <div class="wrapper">
+                                    <span class="flag-icon flag-icon-US">
+                                    <span class="current-country-code">ENGLISH</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu countryBox" aria-labelledby="langSelectorDropdown">
+                                <li class="content-item">
+                                    <a class="lang-item-link" href="">
+                                        <span class="lang-item-text">ENGLISH</span></a>
+                                </li>
+
+                                <li class="content-item">
+                                    <a class="lang-item-link" href="">
+                                        <span class="lang-item-text">日本語</span></a>
+                                </li>
+                            </ul>
+                        </span>
+                            <form id="lang-form" class="hidden" action="#" method="post">
+                                <div class="form-group">
+                                    <select name="code" id="lang-selector" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                        <option value="en" lang="en">English</option>
+                                        <option value="es" lang="es">Espa&ntilde;ol</option></select>
+                                    <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;">
+                                    <span class="selection">
+                                        <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-lang-selector-container">
+                                            <span class="select2-selection__rendered" id="select2-lang-selector-container" title="English">English</span>
+                                            <span class="select2-selection__arrow" role="presentation">
+                                                <b role="presentation"></b>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                </span>
+                                </div>
+                                <div>
+                                    <input type="hidden" name="CSRFToken" value="a2a5ec40-53df-43c9-87ae-c3e661dbd64d" /></div>
+                            </form>
+                            <div class="nav-links-container pos-relative">
+                                <ul class="nav-list clearfix">
+                                    <li class="yCmsComponent nav-item">
+                                        <a href="javascript:void(0);" class="pos-relative img-nav-link js-my-account-menu">
+                                            <i class="fas fa-user-circle"></i>
+
+                                        </a>
+                                    </li>
+                                    <li class="componentContainer liOffcanvas nav-item nav-mini-cart">
+                                    <span class="">
+                                        <div class="nav-cart nav-cart-wrapper js-nav-cart-wrapper print-hide">
+                                            <a href="javascript:void(0);"
+                                               class="pos-relative mini-cart-link js-mini-cart-link clearfix">
+                                                <div class="mini-cart-icon">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                                <div class="mini-cart-count js-mini-cart-count">
+                                                    <span class="nav-items-total">0</span></div>
+                                                <div class="cart-icon-wrapper">
+                                                    <div class="mini-cart-arrow"></div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="mini-cart-container js-mini-cart-container"></div>
+                                    </span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="nav-links-container">
+                            <ul class="nav-list clearfix"></ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="amway-theme">
+            <nav class="print-hide amw-navigation-menu js-navigation--middle">
+                <div class="navigation-menu-container">
+                    <div class="mobile-container">
+                        <div class="mobile-wrapper">
+                            <div class="mobile-header-cell navigation-menu-toggle-wrapper">
+                                <a role="button" data-toggle="collapse" href="#mobile-menu-accordion" aria-expanded="false"
+                                   aria-controls="mobile-menu-accordion"
+                                   class="overlay-menu-toggle-mobile js-overlay-menu-toggle-mobile collapsed">
+                                <span class="hamburger-icon">
+                                    <i class="fas fa-bars"></i>
+                                    <i class="fas fa-times"></i>
+                                </span>
+                                </a>
+                                <div class="panel-group collapse overlay-mobile-menu js-overlay-mobile-menu js-remove-overlay-desktop-menu"
+                                     id="mobile-menu-accordion" role="tablist" aria-multiselectable="true">
+                                    <li role="presentation" class=" nav-list-element">
+                                        <div class="overlay-menu-component-mobile-wrapper">
+                                            <div class="panel-group" id="mobile-menu-category-accordion" role="tablist"
+                                                 aria-multiselectable="true">
+                                                <div class="panel panel-default overlay-menu-mobile__panel">
+                                                    <div class="panel-heading overlay-menu-mobile__panel__heading"
+                                                         role="tab" id="navMenuMobHeading0">
+                                                        <i class="fas fa-angle-left"></i>
+                                                        <h4 class="panel-title">
+                                                            <a class="panel-toggle collapsed" href="#">
+                                                            <span class="title-element tab-image">
+                                                                <img src="images/nutrition.png"/></span>
+                                                                <span class="title-element active-parent-icon">
+                                                                <span class="icon-chevron-left"></span>
+                                                            </span>
+                                                                <span class="title-element title-text">Nutrition</span>
+                                                                <span class="title-element accordion-icon-wrapper">
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </span>
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="navMenuMobCollapse0"
+                                                         class="panel-collapse collapse overlay-menu-mobile__panel__content"
+                                                         role="tabpanel" aria-labelledby="navMenuMobHeading0">
+                                                        <div class="panel-body">
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="vitamins-and-supplements-product-listing-page.html"
+                                                                       onclick="javascript:location.href='vitamins-and-supplements-product-listing-page.html'"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-VitaminsSupplementsNavNode">
+                                                                        <span class="subcategory-title">Vitamins &amp; Supplements</span>
+                                                                        <i class="fas fa-angle-right"></i>
+
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-VitaminsSupplementsNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Supplements">Supplements</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Bone Health">Bone Health</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Energy">Energy</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#" aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-WeightManagementNavNode">
+                                                                        <span class="subcategory-title">Weight Management</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-WeightManagementNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#"
+                                                                               title="Multivitamins">Multivitamins</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Bar">Bar</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Shakes">Shakes</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#" aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-SportsNutrionNavNode">
+                                                                        <span class="subcategory-title">Sports Nutrion</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-SportsNutrionNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Energize">Energize</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Hydrate">Hydrate</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Nutrilite Sports Nutrition">Nutrilite
+                                                                                Sports Nutrition</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#" aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-EnergyDrinksNavNode">
+                                                                        <span class="subcategory-title">Energy Drinks</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-EnergyDrinksNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Sugar Free">Sugar Free</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Low Carb">Low Carb</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Kosher">Kosher</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="overlay-menu-subcategory tools-brands js-overlay-menu-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle tools-link"
+                                                                       data-toggle="collapse"
+                                                                       href="#navMenuMobBrandsCollapse-NutritionBrandsNavNode">
+                                                                        <span class="subcategory-title">Shop by Brands</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobBrandsCollapse-NutritionBrandsNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#">truvinity.png</a></li>
+                                                                        <li>
+                                                                            <a href="#">Nutrilite</a></li>
+                                                                        <li>
+                                                                            <a href="#">BodyKey</a></li>
+                                                                        <li>
+                                                                            <a href="#">XS Energy Drink</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory view-all-link">
+                                                                <h5>
+                                                                    <a href="category-page.html"
+                                                                       class="subcategory-toggle tools-link">
+                                                                        <span class="subcategory-title">All Nutrition</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory tools-brands">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle tools-link"
+                                                                       data-toggle="collapse"
+                                                                       href="#navMenuMobToolsCollapse-NutritionToolsNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobToolsCollapseNutritionToolsNavNode">
+                                                                        <span class="subcategory-title">Tools &amp; Advice</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobToolsCollapse-NutritionToolsNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Supplement Recommender">Skincare
+                                                                                Recommender </a>
+                                                                            <a href="#" title="Ditto Scheduled Ordering">SOP
+                                                                                Scheduled Ordering</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default overlay-menu-mobile__panel">
+                                                    <div class="panel-heading overlay-menu-mobile__panel__heading"
+                                                         role="tab" id="navMenuMobHeading1">
+                                                        <i class="fas fa-angle-left"></i>
+                                                        <h4 class="panel-title">
+                                                            <a class="panel-toggle collapsed" href="#">
+                                                            <span class="title-element tab-image">
+                                                                <img src="images/beauty.png"/></span>
+                                                                <span class="title-element active-parent-icon">
+                                                                <span class="icon-chevron-left"></span>
+                                                            </span>
+                                                                <span class="title-element title-text">Beauty</span>
+                                                                <span class="title-element accordion-icon-wrapper">
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </span>
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="navMenuMobCollapse1"
+                                                         class="panel-collapse collapse overlay-menu-mobile__panel__content"
+                                                         role="tabpanel" aria-labelledby="navMenuMobHeading1">
+                                                        <div class="panel-body">
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#" aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-SkincareNavNode">
+                                                                        <span class="subcategory-title">Skin Care</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-SkincareNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Cleansers">Cleansers</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Toners">Toners</a></li>
+                                                                        <li>
+                                                                            <a href="#"
+                                                                               title="Moisturizers">Moisturizers</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-MakeupNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-MakeupNavNode">
+                                                                        <span class="subcategory-title">Makeup</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-MakeupNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Accessories">Accessories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Cheeks">Cheeks</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Eyes">Eyes</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory view-all-link">
+                                                                <h5>
+                                                                    <a href="#" class="subcategory-toggle tools-link">
+                                                                        <span class="subcategory-title">View All&nbsp;Beauty</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default overlay-menu-mobile__panel">
+                                                    <div class="panel-heading overlay-menu-mobile__panel__heading"
+                                                         role="tab" id="navMenuMobHeading2">
+                                                        <i class="fas fa-angle-left"></i>
+                                                        <h4 class="panel-title">
+                                                            <a class="panel-toggle collapsed" href="#">
+                                                            <span class="title-element tab-image">
+                                                                <img src="images/bath.png"/></span>
+                                                                <span class="title-element active-parent-icon">
+                                                                <span class="icon-chevron-left"></span>
+                                                            </span>
+                                                                <span class="title-element title-text">Bath &amp; Body</span>
+                                                                <span class="title-element accordion-icon-wrapper">
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </span>
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="navMenuMobCollapse2"
+                                                         class="panel-collapse collapse overlay-menu-mobile__panel__content"
+                                                         role="tabpanel" aria-labelledby="navMenuMobHeading2">
+                                                        <div class="panel-body">
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-HairCareNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-HairCareNavNode">
+                                                                        <span class="subcategory-title">Hair Care</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-HairCareNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#"
+                                                                               title="Conditioners">Conditioners</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Shampoos">Shampoos</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Styling &amp; Treatments">Styling
+                                                                                &amp; Treatments</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-BodyCareNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-BodyCareNavNode">
+                                                                        <span class="subcategory-title">Body Care</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-BodyCareNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Body Wash">Body Wash</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Spa">Spa</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Lotions">Lotions</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-OralCareNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-OralCareNavNode">
+                                                                        <span class="subcategory-title">Oral Care</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-OralCareNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Toothpastes">Toothpastes</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Breath Sprays">Breath
+                                                                                Sprays</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Brushes &amp; Floss">Brushes
+                                                                                &amp; Floss</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory tools-brands">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle tools-link"
+                                                                       data-toggle="collapse"
+                                                                       href="#navMenuMobToolsCollapse-BathBodyToolsNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobToolsCollapseBathBodyToolsNavNode">
+                                                                        <span class="subcategory-title">Tools &amp; Advice</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobToolsCollapse-BathBodyToolsNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Ditto Scheduled Ordering">SOP
+                                                                                Scheduled Ordering</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory view-all-link">
+                                                                <h5>
+                                                                    <a href="" class="subcategory-toggle tools-link">
+                                                                        <span class="subcategory-title">View All&nbsp;Bath &amp; Body</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default overlay-menu-mobile__panel">
+                                                    <div class="panel-heading overlay-menu-mobile__panel__heading"
+                                                         role="tab" id="navMenuMobHeading3">
+                                                        <i class="fas fa-angle-left"></i>
+                                                        <h4 class="panel-title">
+                                                            <a class="panel-toggle collapsed" href="#">
+                                                            <span class="title-element tab-image">
+                                                                <img src="images/home.png"/></span>
+                                                                <span class="title-element active-parent-icon">
+                                                                <span class="icon-chevron-left"></span>
+                                                            </span>
+                                                                <span class="title-element title-text">Home</span>
+                                                                <span class="title-element accordion-icon-wrapper">
+                                                                <span class="pull-right icon-minus"></span>
+                                                            </span>
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="navMenuMobCollapse3"
+                                                         class="panel-collapse collapse overlay-menu-mobile__panel__content"
+                                                         role="tabpanel" aria-labelledby="navMenuMobHeading3">
+                                                        <div class="panel-body">
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-LaundryNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-LaundryNavNode">
+                                                                        <span class="subcategory-title">Laundry</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-LaundryNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Detergents">Detergents</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" title="Treatments &amp; Additives">Treatments
+                                                                                &amp; Additives</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-HomeCleanersNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-HomeCleanersNavNode">
+                                                                        <span class="subcategory-title">Home Cleaners</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-HomeCleanersNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Surface Cleaners">Surface
+                                                                                Cleaners</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Disinfectant Cleaners">Disinfectant
+                                                                                Cleaners</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Dish Detergent">Dish
+                                                                                Detergent</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-WaterTreatmentNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-WaterTreatmentNavNode">
+                                                                        <span class="subcategory-title">Water Treatment</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-WaterTreatmentNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Purifiers">Purifiers</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Replacement Filters">Replacement
+                                                                                Filters</a></li>
+                                                                        <li>
+                                                                            <a href="" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-AirTreatmentNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-AirTreatmentNavNode">
+                                                                        <span class="subcategory-title">Air Treatment</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-AirTreatmentNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Filtration">Filtration</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle" data-toggle="collapse"
+                                                                       href="#navMenuMobCategoryCollapse-CookwareNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobCategoryCollapse-CookwareNavNode">
+                                                                        <span class="subcategory-title">Cookware</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobCategoryCollapse-CookwareNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Cutlery">Cutlery</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Pans">Pans</a></li>
+                                                                        <li>
+                                                                            <a href="#" title="Replacement Parts">Replacement
+                                                                                Parts</a></li>
+                                                                        <li>
+                                                                            <a href="#" class="overlay-tab-title">View
+                                                                                All</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory tools-brands">
+                                                                <h5>
+                                                                    <a class="subcategory-toggle tools-link"
+                                                                       data-toggle="collapse"
+                                                                       href="#navMenuMobToolsCollapse-HomeToolsNavNode"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="navMenuMobToolsCollapseHomeToolsNavNode">
+                                                                        <span class="subcategory-title">Tools &amp; Advice</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul class="subcategory-list collapse"
+                                                                    id="navMenuMobToolsCollapse-HomeToolsNavNode">
+                                                                    <div class="list-wrapper">
+                                                                        <li>
+                                                                            <a href="#" title="Ditto Scheduled Ordering">SOP
+                                                                                Scheduled Ordering</a></li>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory view-all-link">
+                                                                <h5>
+                                                                    <a href="" class="subcategory-toggle tools-link">
+                                                                        <span class="subcategory-title">View All&nbsp;Home</span>
+                                                                        <i class="fas fa-angle-right"></i>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="presentation" class=" nav-list-element">
+                                        <a href="dashboard.html" title="Start a Business">Business Center</a></li>
+                                    <li role="presentation" class=" nav-list-element">
+                                        <a href="about-Amway.html" title="About Amway">About Amway</a></li>
+                                    <li role="presentation" class=" nav-list-element">
+                                        <a href="#" title="About Amway">Education</a>
+                                    </li>
+                                    <li role="presentation" class=" nav-list-element">
+                                        <div class="overlay-menu-component-mobile-wrapper country">
+                                            <div class="panel-group" id="mobile-menu-category-accordion" role="tablist"
+                                                 aria-multiselectable="true">
+                                                <div class="panel panel-default overlay-menu-mobile__panel">
+                                                    <div class="panel-heading overlay-menu-mobile__panel__heading"
+                                                         role="tab" id="navMenuMobHeading4">
+                                                        <i class="fas fa-angle-left"></i>
+                                                        <h4 class="panel-title">
+                                                            <a class="panel-toggle collapsed" href="#">
+                                                                <div id="closeHead">
+                                                                <span class="title-element tab-image">
+                                                                    <img src="images/jp.jpg"/></span>
+                                                                    <span class="title-element active-parent-icon">
+                                                                    <span class="icon-chevron-left"></span>
+                                                                </span>
+                                                                    <span class="title-element title-text">Japan</span>
+                                                                    <span class="title-element accordion-icon-wrapper">
+                                                                    <span class="pull-right icon-minus"></span>
+                                                                </span>
+                                                                </div>
+                                                                <div id="openHead">
+                                                                    <span class="title-element title-text">COUNTRY</span>
+                                                                </div>
+                                                                <i class="fas fa-angle-right"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="navMenuMobCollapse4"
+                                                         class="panel-collapse collapse overlay-menu-mobile__panel__content"
+                                                         role="tabpanel" aria-labelledby="navMenuMobHeading4">
+                                                        <div class="panel-body">
+                                                            <div class="overlay-menu-subcategory js-overlay-menu-subcategory main-subcategory">
+
+                                                                <ul class="subcategory-list countryBox"
+                                                                    id="navMenuMobCountry">
+
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/cn.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">China</span></a>
+                                                                    </li>
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/my.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Malaysia</span></a>
+                                                                    </li>
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/ph.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Philippines</span></a>
+                                                                    </li>
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/kr.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Korea</span></a>
+                                                                    </li>
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/th.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Thailand</span></a>
+                                                                    </li>
+                                                                    <li class="content-item">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/sg.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Singapore</span></a>
+                                                                    </li>
+                                                                    <li class="content-item current-country">
+                                                                        <a class="country-item-link" href="">
+                                                                        <span class="flag-icon">
+                                                                            <img class="topbar__flag"
+                                                                                 src="images/jp.jpg" alt="flag"></span>
+                                                                            <span class="country-item-text">Japan</span></a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="overlay-mobile-menu-background js-overlay-mobile-menu-background"></div>
+                            </div>
+
+                            <div class="mobile-header-cell mobile-nav-row-btn-logo">
+                                <div class="yCmsComponent yComponentWrapper">
+                                    <div class="banner__component banner">
+                                        <a href="homepage-logged-in.html">
+                                            <img title="" alt="" src="images/logo2.png" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-header-cell search-btn-container">
+                                <a class="mobile-search-btn js-toggle-xs-search print-hide">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="mobile-header-cell user-info-container">
+                                <button class="mobile-user-btn js-toggle-xs-search print-hide js-my-account-menu" type="button">
+                                    <img src="images/yui.png" alt="" width="34px">
+                                    <span class="icon icon-user">
+                                                <i class="fas fa-user-circle"></i>
+                                            </span>
+                                </button>
+                            </div>
+                            <div class=" miniCartSlot componentContainer mobile-header-cell mobile-cart-container">
+                                <div class="">
+                                    <div class="nav-cart nav-cart-wrapper js-nav-cart-wrapper print-hide">
+                                        <a href="#" class="mini-cart-link js-mini-cart-link clearfix " data-mini-cart-url="" data-mini-cart-refresh-url="" data-mini-cart-name="Shopping Cart" data-mini-cart-empty-name="Empty Cart">
+                                            <div class="mini-cart-icon ">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="nav-items-total">0</span>
+                                            </div>
+
+                                        </a>
+                                        <!--remove min-cart-->
+                                    </div>
+                                    <div class="mini-cart-container js-mini-cart-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-nav-menu clearfix">
+                        <div class="col-xs-12 col-sm-8 top-menu">
+                            <div class="top-menu-links pull-left">
+                                <ul class="menu-nav-list print-hide">
+                                    <li role="presentation" class="yCmsComponent nav-list-item js-remove-overlay-mobile-menu">
+                                        <div class="overlay-menu-component-desktop-wrapper">
+                                            <a role="button" data-toggle="collapse" href="#overlay-menu-wrapper" aria-expanded="false" aria-controls="overlay-menu-wrapper" class="overlay-menu-toggle-desktop js-overlay-menu-toggle-desktop collapsed">
+                                                        <span class="button-text">Shop
+                                                <i class="fa fa-angle-down"></i></span>
+                                            </a>
+                                            <div id="overlay-menu-wrapper"
+                                                 class="collapse hidden-sm overlay-menu-container">
+                                                <div class="overlay-menu row">
+                                                    <button class="overlay-menu-close"><i class="fas fa-times"></i></button>
+                                                    <div class="col-sm-3 overlay-menu-headers">
+                                                        <div class="menu-headers-container">
+                                                            <div>
+                                                                <ul class="tab-header-list" role="tablist">
+                                                                    <li role="presentation" class="tab-header-item active">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab0" aria-controls="navMenuTab0"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/nutrition.png"/></span>
+                                                                                <span class="tab-title">Nutrition</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item ">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab1" aria-controls="navMenuTab1"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/beauty.png"/></span>
+                                                                                <span class="tab-title">Beauty</span></div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item ">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab2" aria-controls="navMenuTab2"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/bath.png"/></span>
+                                                                                <span class="tab-title">Bath &amp; Body</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item ">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab3" aria-controls="navMenuTab3"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/home.png"/></span>
+                                                                                <span class="tab-title">Home</span></div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab4" aria-controls="navMenuTab4"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/nutrition.png"/></span>
+                                                                                <span class="tab-title">one for one</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item ">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab5" aria-controls="navMenuTab5"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/beauty.png"/></span>
+                                                                                <span class="tab-title">subproduct</span></div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li role="presentation" class="tab-header-item ">
+                                                                        <div class="arrow"></div>
+                                                                        <a href="#navMenuTab6" aria-controls="navMenuTab6"
+                                                                           role="tab" data-toggle="tab" class="tab-toggle">
+                                                                            <div class="wrapper">
+                                                                            <span class="tab-image">
+                                                                                <img src="images/bath.png"/></span>
+                                                                                <span class="tab-title">plus shop</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-9 tab-content">
+                                                        <div role="tabpanel" class="tab-pane active" id="navMenuTab0">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+
+                                                                        <div class="overlay-menu-tab-row">
+
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+                                                                                <h6><a href="">Nutrition Health</a></h6>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Basic nutrition</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="Supplements">Vitamin mineral chamber</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="Supplements">protein</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="Supplements">Lactic acid dietary fiber</a>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                    <h6><a href="">FUNCTIONAL</a></h6>
+                                                                                    <h6><a href="">CHILDREN</a></h6>
+                                                                                    <h6><a href="">FOOD/DRINK</a></h6>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">BODY KEY</a></h6>
+                                                                                    <h6><a href="">xs energize</a></h6>
+                                                                                    <h6><a href="">Secondary supplies</a></h6>
+                                                                                    <h6><a href="">gift set</a></h6>
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab1">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row">
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+                                                                                <h6><a href="">BEAUTY</a></h6>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">skincare</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intensive</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Youth Extend</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Youth Extend Ultra</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Ideal Radiance</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Hydra-V</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Special Care</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Artistist Man</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Supreme XL</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Essential by Artist</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">BASE MAKEUP</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Concealer</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">powder</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Power Foundation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Foundation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Foundation base</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">POINT MAKEUP</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Lip</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Children</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Cheek</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">TOOLS</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Lip</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Brushes</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">children</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">cleansing</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Power Foundation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Etc</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <h6><a href="">PERFUME</a></h6>
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!--<div class=" col-sm-3 overlay-menu__tab__banner">
+                                                                    <div class="banner__component banner">
+                                                                        <a href="#">
+                                                                            <img title="tab_banner.jpg" alt="tab_banner.jpg"
+                                                                                 src="./Checkout _ Lynx Site_files/tab-banner.jpg"/></a>
+                                                                    </div>
+                                                                </div>-->
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab2">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row">
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+                                                                                <h6><a href="">bath & body</a></h6>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">ORAL CARE</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Toothpaste</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Toothbrush</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Oral cleanser</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">HAIR CARE</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Shampoo / Conditioner</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Treatment</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Styling</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Hair loss care</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Hair color</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">BODY CARE</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Body wash</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Body modulator</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Body Sun Care</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Oil product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Lip Care</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Hand Care</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">Secondary supplies</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Sales Aid</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Gift Set</a></h6>
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!--<div class=" col-sm-3 overlay-menu__tab__banner">
+                                                                    <div class="banner__component banner">
+                                                                        <a href="#">
+                                                                            <img title="tab_banner.jpg" alt="tab_banner.jpg"
+                                                                                 src="./Checkout _ Lynx Site_files/tab-banner.jpg"/></a>
+                                                                    </div>
+                                                                </div>-->
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab3">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row">
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">home living</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Water purifier</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Isfring</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Air cleaner</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Anemosphere</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">kitchen utensils</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Amway Queen</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Knife wear</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Etc</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Cleaning supplies</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">For washing</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">For surface cleaning</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Kitchen cleaning</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Plus shop</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Gift Set</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab4">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row">
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Coffee / drinks / tea</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Cafe de Damon</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Lime tree</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">food</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Nobusgala</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Regular article</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Jonggwa</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Nutri Ramen</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Kellogg</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Fake</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Restraint</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Happy beautiful</a>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                    <h6><a href="">Baby goods</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Well Ross</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Pasteur</a>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                    <h6><a href="">Seasoning Supplies & Others</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Vivian</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Etc</a>
+                                                                                        </li>
+
+                                                                                    </ul>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Red ginseng</a></h6>
+                                                                                    <h6><a href="">This work</a></h6>
+                                                                                    <h6><a href="">Gift Set</a></h6>
+
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab5">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row">
+                                                                            <div class="overlay-menu-tab-categories clearfix row">
+
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Vitamins & Supplements</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Bone health</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Children's Vitamins</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Heart Health</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">View All</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">Supplements</a></h6>
+                                                                                    <h6><a href="">Energy Drinks</a></h6>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+                                                                                    <h6><a href="">Sports Nuitrition</a></h6>
+                                                                                    <ul class="category-links">
+                                                                                        <li>
+                                                                                            <a href="#" title="">Hydrate</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Energize</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <h6><a href="">Sports Nuitrition</a></h6>
+                                                                                    <h6><a href="">WEIGHT Management</a></h6>
+                                                                                    <h6><a href="">Vitamins</a></h6>
+
+                                                                                </div>
+                                                                                <div class="col-sm-3 tab__category">
+
+                                                                                </div>
+
+                                                                                <div class="col-sm-3 side-menu">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">News Product</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Promotion</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Temporarily Out of Stock</a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Shopping Information</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Order History</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">My Return History Wish</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Wish List</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Intermediary Sales Management</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Product Purchase Reservation</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" title="">Order Rights Transfer</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane " id="navMenuTab6">
+                                                            <div class="overlay-menu-tab">
+                                                                <div class="overlay-menu-tab-first-col">
+                                                                    <div class="overlay-menu__tab-wrapper">
+                                                                        <div class="overlay-menu-tab-row overlay-menu-tab-brands">
+                                                                            <div class="multi-in-row">
+                                                                                <h6>Shop by Brands</h6>
+                                                                                <div class="row images-container">
+                                                                                    <div class="yCmsComponent">
+                                                                                        <div class="banner__component banner">
+                                                                                            <a href="#">
+                                                                                                <img title="truvinity.png" alt="truvinity.png" src="images/nutrilite@2x.png" /></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="yCmsComponent">
+                                                                                        <div class="banner__component banner">
+                                                                                            <a href="#">
+                                                                                                <img title="Nutrilite" alt="Nutrilite" src="images/bodu-key@2x.png" /></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="yCmsComponent">
+                                                                                        <div class="banner__component banner">
+                                                                                            <a href="#">
+                                                                                                <img title="BodyKey" alt="BodyKey" src="images/truvivity@2x.png" /></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="yCmsComponent">
+                                                                                        <div class="banner__component banner">
+                                                                                            <a href="#">
+                                                                                                <img title="XS Energy Drink" alt="XS Energy Drink" src="images/layer-712@2x.png" /></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="multi-in-row">
+                                                                                <h6>Beauty</h6>
+                                                                                <div class="row images-container">
+                                                                                    <div class="yCmsComponent">
+                                                                                        <div class="banner__component banner">
+                                                                                            <a href="#">
+                                                                                                <img title="truvinity.png" alt="truvinity.png" src="images/artistry@2x.png"></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="overlay-menu-tab-row overlay-menu-tab-brands">
+
+                                                                            <h6>BATH & BODY</h6>
+                                                                            <div class="row images-container">
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="truvinity.png" alt="truvinity.png" src="images/satinique@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="Nutrilite" alt="Nutrilite" src="images/suntime@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="BodyKey" alt="BodyKey" src="images/g-h@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="XS Energy Drink" alt="XS Energy Drink" src="images/glister@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="overlay-menu-tab-row overlay-menu-tab-brands">
+                                                                            <h6>home</h6>
+                                                                            <div class="row images-container">
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="truvinity.png" alt="truvinity.png" src="images/amway-home@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="Nutrilite" alt="Nutrilite" src="images/legacy-of-clean@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="BodyKey" alt="BodyKey" src="images/e-spring@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent col-md-3">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="XS Energy Drink" alt="XS Energy Drink" src="images/i-cook@2x.png" /></a>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="overlay-menu-tab-row overlay-menu-tab-brands multi-brands">
+                                                                            <h6>other products</h6>
+                                                                            <div class="row images-container ">
+
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand1.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand2.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand3.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand4.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand5.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand6.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand7.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand8.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand9.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand10.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand11.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand12.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="yCmsComponent">
+                                                                                    <div class="banner__component banner">
+                                                                                        <a href="#">
+                                                                                            <img title="" alt="" src="images/brand13.jpg" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="presentation" class="yCmsComponent nav-list-item js-remove-overlay-mobile-menu">
+                                        <a href="dashboard.html" title="">Business Center</a></li>
+                                    <li role="presentation" class="yCmsComponent nav-list-item js-remove-overlay-mobile-menu">
+                                        <a href="#" title="About Amway">About Amway</a></li>
+                                    <li role="presentation" class="yCmsComponent nav-list-item js-remove-overlay-mobile-menu">
+                                        <a href="#" title="About Amway">Education</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 top-search print-hide">
+                            <div class="site-search">
+                                <div class="ui-front">
+                                    <form name="search_form_SearchBox" method="get" action="">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control js-site-search-input ui-autocomplete-input" name="text" value="" maxlength="100" placeholder="Search" data-options="{&quot;autocompleteUrl&quot; : &quot;/lynxstorefront/lynx/en/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;2&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : true}" autocomplete="off" />
+                                            <span class="input-group-btn">
+                                            <a class="btn btn-link" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </form>
+                                    <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--search suggest-->
+        <div class="popover auto-suggestion-popover fade bottom in" role="tooltip" id="">
+            <div class="popover-arrow arrow" style="left: 71.9353%;"></div>
+            <h3 class="popover-title" style="display: none;"></h3>
+            <div class="popover-content">
+                <div class="search-results-close"><i class="fas fa-times"></i></div>
+                <ul>
+                    <div class="category-wrapper js-category-wrapper suggested-words-wrapper js-suggested-words-wrapper js-search-words-wrapper">
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">cion</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">lite</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">plant</span></div>
+                            </a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="name">
+                                    <span class="js-name"></span>
+                                    <span class="js-start-of-name"></span>
+                                    <span class="bold js-highlited-part-of-name">nutri</span>
+                                    <span class="js-rest-of-name">tion</span></div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="category-wrapper js-category-wrapper products-wrapper hidden-xs hidden-sm">
+                        <div class="header row">
+                            <div class="title col-md-6">
+                                <span>Products</span></div>
+                            <div class="view-all-container col-md-6">
+                                <a class="js-products-view-all-results" href="">View all results</a></div>
+                        </div>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/1.jpeg" /></div>
+                                <div class="name">Nutrilite Vitamin C</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/2.jpeg" /></div>
+                                <div class="name">Nutrilite Women’s Pack</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/3.jpeg" /></div>
+                                <div class="name">Nutrilite Cal Mag D</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/4.jpeg" /></div>
+                                <div class="name">Nutrilite Double X 31</div></a>
+                        </li>
+                        <li class="ui-menu-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="images/5.jpeg" /></div>
+                                <div class="name">Nutrilite dietary</div></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--search end-->
+
+    </header>
+   
+
+<script type="text/javascript">
+    (function () {
+        $('.overlay-menu-close').click(function () {
+            $('#overlay-menu-wrapper').removeClass("in");
+            $('.overlay-menu-toggle-desktop').addClass("collapsed");
+        });
+        function mobileEvent() {
+
+            $(".js-my-account-menu").click(function (e) {
+                $('header').hasClass('userinfo-open') ? $('header').removeClass('userinfo-open') : $('header').addClass('userinfo-open');
+                $('.top-search').removeClass('search-open');
+                $(".dropdown").removeClass("open");
+                $(".auto-suggestion-popover").hide();
+                $('header').removeClass('mincart-open');
+                $("#overlay-menu-wrapper").removeClass("in");
+//                $('#overlay-menu-wrapper').collapse('hide');
+                $('.overlay-menu-toggle-desktop').addClass('collapsed');
+                e.stopPropagation();
+            });
+
+
+            $(".js-mini-cart-link").click(function (e) {
+                $('header').hasClass('mincart-open') ? $('header').removeClass('mincart-open') : $('header').addClass('mincart-open');
+                $('.top-search').removeClass('search-open');
+                $('header').removeClass('userinfo-open');
+                $(".dropdown").removeClass("open");
+                $("#overlay-menu-wrapper").removeClass("in");
+                $(".auto-suggestion-popover").hide();
+//                $('#overlay-menu-wrapper').collapse('hide');
+                $('.overlay-menu-toggle-desktop').addClass('collapsed');
+                e.stopPropagation();
+            });
+
+
+            $(".mobile-search-btn").click(function () {
+                $('.top-search').hasClass('search-open') ? $('.top-search').removeClass('search-open') : $('.top-search').addClass('search-open');
+                $('header').removeClass('userinfo-open');
+                $('header').removeClass('mincart-open');
+                $(".dropdown").removeClass("open");
+            });
+
+            $(".mobile-popover-close").click(function () {
+                $('header').removeClass('userinfo-open');
+            });
+
+
+
+            $(".mobile-popover-close2").click(function () {
+                $('header').removeClass('mincart-open');
+            });
+            $(".dropdown").click(function () {
+                $('header').removeClass('userinfo-open mincart-open');
+                $(".auto-suggestion-popover").hide();
+            });
+            $('.auto-suggestion-popover,#shoppingcar-drop-content,#login-drop-content').click(function (e) {
+                e.stopPropagation();
+            });
+            $('#shoppingcar-drop-content .nav a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show');
+            });
+            $(document).bind('click',function(){
+                $('header').removeClass('userinfo-open mincart-open');
+                $(".auto-suggestion-popover").hide();
+            });
+        }
+
+        mobileEvent();
+    })();
+
+    (function () {
+        //search box click event
+        $(window).resize(searchClick);
+        function searchClick() {
+            console.log("function");
+            // PC search click event
+            if (window.innerWidth > 768) {
+                $(".icon-search").click(function (e) {
+                    e.preventDefault();
+                    var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+                    if (value == 'did you mean') {
+                        window.location.href = "did-you-mean.html";
+                    } else if (value == 'artistry') {
+                        window.location.href = "search-result-page.html";
+                    } else if(value != '') {
+                        window.location.href = "search-no-result.html";
+                    }
+                });
+            } else {
+                //mob search click event
+                $(".icon-search").click(function (e) {
+                    e.preventDefault();
+                    var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+                    if ($('.top-search').hasClass('search-open')) {
+                        if (value == 'did you mean') {
+                            window.location.href = "did-you-mean.html";
+                        } else if (value == 'artistry') {
+                            window.location.href = "search-result-page.html";
+                        }else if(value != ''){
+                            window.location.href = "search-no-result.html";
+                        }
+                    }
+                });
+            }
+        }
+        searchClick();
+
+
+        $(window).resize(navToggling);
+
+        function navToggling() {
+            if (window.innerWidth < 768) {
+                $('.overlay-menu-mobile__panel__heading').click(function () {
+                    if($(this).hasClass('active')){
+                        $(this).removeClass('active');
+                        $(this).next('.panel-collapse').removeClass('in');
+                        $(this).parent('.panel').siblings('.panel').show();
+                        $(this).parents('.nav-list-element').siblings('.nav-list-element').show();
+                    }else{
+                        $(this).addClass('active');
+                        $(this).parent('.panel').siblings('.panel').hide();
+                        $(this).parents('.nav-list-element').siblings('.nav-list-element').hide();
+                    }
+                });
+            } else {
+            }
+        }
+        navToggling();
+    })();
+    (function () {
+        var SPEED = 'slow';
+        function showSearchResults() {
+            var $this = $(this);
+
+            var $searchResult = $('.auto-suggestion-popover');
+            if ($this.val().length >= 3) {
+                $searchResult.fadeIn(SPEED);
+            } else {
+                $searchResult.fadeOut(SPEED);
+            }
+        }
+
+        function closeSearchResults() {
+            var $searchResult = $('.auto-suggestion-popover').fadeOut(SPEED);
+            $('.ui-autocomplete-input').val('');
+        }
+
+        function registerEvents() {
+            $('.ui-autocomplete-input').on('keyup', showSearchResults);
+            $('.search-results-close').on('click', closeSearchResults);
+        }
+
+        function init() {
+            registerEvents();
+        }
+        init();
+    })();
+</script>

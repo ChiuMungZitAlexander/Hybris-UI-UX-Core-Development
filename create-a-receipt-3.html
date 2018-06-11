@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>create-a-receipt-3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet" href="styles/bootstrap.datepicker.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+<body>
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">My Business Center</a>
+                </li>
+                <li class="active">Create a Receipt</li>
+            </ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/create-receipt" class="js-account-option-link text-capitalize">Create a Receipt</option>
+                        <option value="/my-business-center/PV/BV-Transfer" class="js-account-option-link text-capitalize">PV/BV Transfer</option>
+                        <option value="/my-business-center/pv-inquiry" class="js-account-option-link text-capitalize">PV Inquiry</option>
+                        <option value="/my-business-center/customer-sales-history" class="js-account-option-link text-capitalize">Customer Sales History</option>
+                        <option value="/my-business-center/key-indicators" class="js-account-option-link text-capitalize">Key Indicators</option>
+                        <option value="/my-business-center/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center" class="js-account-option-link text-capitalize">Business Center</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">Line of Sponsorship</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+                <div class="buttons-wrap">
+                    <div class="edit-button-wrap">
+                        <a class="prw-link-reg" href="">
+                            <div class="prw-btn-reg">
+                                <span class="prw-panel-icon icon-register-user"></span>
+                                <span>Register</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="edit-button-wrap">
+                        <a class="prw-btn-edit">
+                            <span class="prw-panel-icon icon-edit"></span>
+                            <span>Edit</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container">
+        <div class="shipping-delivery receipt-container">
+            <div class="container-fluid">
+            <div class="row cartTitile">
+                <div class="product-list-page-title mb25">
+                    CREATE A RECEIPT
+                </div>
+            </div>
+            </div>
+            <ul class="checkout-steps">
+                <li class="checkout-step col-xs-6 col-md-4 "> <span class="checkout-steps-circle">1</span> <span class="checkout-steps-text arrow-steps-ship">RECEIPT INFORMATION</span> </li>
+                <li class="checkout-step col-xs-3 col-md-4 "> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-pay">ADD ITEM</span></li>
+                <li class="checkout-step col-xs-3 col-md-4 checkout-steps-active"> <span class="checkout-steps-circleactive ">3</span> <span class="checkout-steps-text checkout-steps-order">ORDER PRICING DETAILS</span></li>
+            </ul>
+            <div class="container-fluid des-wrapper">
+            <p class="size-small color-gray">Here's a closer look at your pricing details.Make adjustments as needed below.</p>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-9 cart-items-wrapper">
+
+                        <div class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">SHIPPING CHARGE</p>
+                            <div class="radio-line-form">
+                            <input class="amwa-radio" type="radio" name="optradio2" id="radio21" value="radio21" checked />
+                            <label for="radio21">No shipping charge</label>
+                            </div>
+
+                            <div class="radio-line-form">
+                            <input class="amwa-radio" type="radio" name="optradio2" id="radio22" value="radio22" />
+                            <label for="radio22">Calculate shipping charge</label>
+                            </div>
+
+                            <div class="radio-line-form">
+                            <input class="amwa-radio" type="radio" name="optradio2" id="radio23" value="radio23" />
+                            <label for="radio23">Apply shipping charge of</label>
+                                <input type="text" value="$">
+                            </div>
+                            <p class="subtotal">Shipping Subtotal : &nbsp;$0.00</p>
+
+                        </div>
+                        <div class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">Discounts & promotions</p>
+                            <div class="radio-line-form">
+                                <input class="amwa-radio" type="radio" name="optradio3" id="radio26" value="radio26" checked />
+                                <label for="radio26">No discounts</label>
+                            </div>
+
+                            <div class="radio-line-form">
+                                <input class="amwa-radio" type="radio" name="optradio3" id="radio24" value="radio24" />
+                                <label for="radio24">Apply available Amway Promotions/Calculate Deposits</label>
+                            </div>
+
+                            <div class="radio-line-form">
+                                <input class="amwa-radio" type="radio" name="optradio3" id="radio25" value="radio25" />
+                                <label class="extra1" for="radio25">Apply discount of</label>
+                                <input  type="text" value="$">   <div class="unit-box"><div class="active">$</div><div>%</div></div>
+                            </div>
+                        </div>
+                        <div class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">SALES TAX</p>
+                            <div class="radio-line-form">
+                                <input class="amwa-radio" type="radio" name="optradio4" id="radio27" value="radio27" checked />
+                                <label for="radio27">Calculate sales tax on receipt price</label>
+                            </div>
+
+                            <div class="radio-line-form">
+                                <input class="amwa-radio" type="radio" name="optradio4" id="radio28" value="radio28" />
+                                <label for="radio28">Do not calculate sales tax</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 shipping-delivery-summary">
+                        <div class="shipping-delivery-side">
+                            <div class="shipping-delivery-summary-header">
+                                <span>order summary</span>
+                            </div>
+                            <div class="shipping-delivery-summary-prices">
+                                <ul>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Item(s) Subtotal</span> <span class="performance-box-item-abovalue">$556.59</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Promotions</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Shipping</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+                                    <li class="shipping-delivery-list-item"> <span class="shipping-delivery-item-label">Taxes</span> <span class="performance-box-item-abovalue">$0.00</span> </li>
+
+                                    <li class="shipping-delivery-list-item-total"> <span class="shipping-delivery-item-total">TOTAL</span> <span class="shipping-delivery-item-totalvalue">$543.08</span> </li>
+                                    <li class="shipping-delivery-list-item-pvbv"> <span class="shipping-delivery-item-total">TOTAL PV/ BV</span> <span class="shipping-delivery-item-totalvalue">222.45 / 699.63</span> </li>
+                                </ul>
+                            </div>
+                            <span class="cartlist-instock"><span class="icon icon-check-bold"></span>PV HAS BEEN TRANSFERRED</span>
+                            <p class="summary-des font-italic">Exact discounts,promotions,delivery charges,taxes,and other fees will be calclated and viewed in the Transaction Preview.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-bottom">
+
+                <a href="create-a-receipt-4.html" class="btn primary">PREVIEW RECEIPT</a>
+                <a href="create-a-receipt-2.html" class="btn-white-blue">BACK</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+    
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/bootstrap.datepicker.js"></script>
+<script src="scripts/new.js"></script>
+<script>$(function () {
+    $(".quickShopBody").collapse();
+    $(".form_datetime").datepicker({format: 'dd-mm-yyyy',autoclose: true});
+    $(".select2-hidden-accessible").select2();
+
+    //search box click even
+    $(".icon-search").click(function(e) {
+        e.preventDefault();
+        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+        console.log(value);
+        if (value == 'did you mean') {
+            window.location.href = "did-you-mean.html";
+        } else {
+            window.location.href = "search-no-result.html";
+        }
+    });
+
+    $(".unit-box div").click(function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    })
+})</script>
+</body>
+</html>

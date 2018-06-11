@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>create-a-receipt-1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+<body>
+<main>
+    <div id="header"></div>
+    <div class="container-fluid main-container">
+        <div class="print-hide breadcrumb-section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="homepage-logged-in.html">Home</a>
+                </li>
+                <li>
+                    <a href="dashboard.html">My Business Center</a>
+                </li>
+                <li class="active">Create a Receipt</li>
+            </ol>
+        </div>
+    </div>
+    <div class="amway-theme">
+        <div class="prw-nav">
+            <div class="prw-nav-container clearfix">
+                <div class="title">
+                    Jump To
+                </div>
+                <div class="jump-dropdown-container">
+                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                        <option value="/my-business-center/create-receipt" class="js-account-option-link text-capitalize">Create a Receipt</option>
+                        <option value="/my-business-center/PV/BV-Transfer" class="js-account-option-link text-capitalize">PV/BV Transfer</option>
+                        <option value="/my-business-center/pv-inquiry" class="js-account-option-link text-capitalize">PV Inquiry</option>
+                        <option value="/my-business-center/customer-sales-history" class="js-account-option-link text-capitalize">Customer Sales History</option>
+                        <option value="/my-business-center/key-indicators" class="js-account-option-link text-capitalize">Key Indicators</option>
+                        <option value="/my-business-center/message-center" class="js-account-option-link text-capitalize">Message Center</option>
+                        <option value="/my-business-center/action-reports-overview" class="js-account-option-link text-capitalize">Action Reports</option>
+                        <option value="/my-business-center" class="js-account-option-link text-capitalize">Business Center</option>
+                        <option value="/my-business-center/LOS-TreeView" class="js-account-option-link text-capitalize">Line of Sponsorship</option>
+                        <option value="/my-business-center/my-business-income" class="js-account-option-link text-capitalize">My Business Income</option>
+                    </select>
+                </div>
+                <div class="jump-to-button-wrap">
+                    <button class="btn primary small prw-jump-to-button">Go</button>
+                </div>
+                <div class="buttons-wrap">
+                    <div class="edit-button-wrap">
+                        <a class="prw-link-reg" href="">
+                            <div class="prw-btn-reg">
+                                <span class="prw-panel-icon icon-register-user"></span>
+                                <span>Register</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="edit-button-wrap">
+                        <a class="prw-btn-edit">
+                            <span class="prw-panel-icon icon-edit"></span>
+                            <span>Edit</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-container">
+        <div class="shipping-delivery receipt-container">
+            <div class="container-fluid">
+            <div class="row cartTitile">
+                <div class="product-list-page-title mb25">
+                    CREATE A RECEIPT
+                </div>
+            </div>
+            </div>
+            <ul class="checkout-steps">
+                <li class="checkout-step col-xs-6 col-md-4 checkout-steps-active"> <span class="checkout-steps-circleactive">1</span> <span class="checkout-steps-text arrow-steps-ship">RECEIPT INFORMATION</span> </li>
+                <li class="checkout-step col-xs-3 col-md-4"> <span class="checkout-steps-circle">2</span> <span class="checkout-steps-text checkout-steps-pay">ADD ITEM</span></li>
+                <li class="checkout-step col-xs-3 col-md-4"> <span class="checkout-steps-circle">3</span> <span class="checkout-steps-text checkout-steps-order">ORDER PRICING DETAILS</span></li>
+            </ul>
+            <div class="container-fluid des-wrapper">
+            <p class="size-small color-gray">Need to create a receipt for a sale?The process is simple.Just follow the steps below.</p>
+            <p class="size-small color-gray font-italic">All fields are required unless noted as optional.</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 cart-items-wrapper">
+                        <div class="shipping-delivery-ship">
+                            <p class="shipping-delivery-shipping-header">SALE DATE & SOLD TO</p>
+                            <form action="" method="post" name="editAddress">
+                                <fieldset>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-xs-12">SALE DATE</label>
+                                        <div class="form-right-wrapper">
+                                            <div class="box-date-select">
+                                                <input type="text" maxlength="3" class="form_datetime text-center js-qty-selector-input" value="01/09/2017" data-max="FORCE_IN_STOCK" data-min="1" name="pdpAddtoCartInput" id="pdpAddtoCartInput">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2 col-xs-12">SOLD TO</label>
+                                        <div class="form-right-wrapper">
+                                            <div id="shippingdiv" class="">
+                                                <div class="panel">
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1" checked/>
+                                                    <label id="label1" for="radio1" class="" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">IBO</label>
+                                                    <div id="collapseOne" class="collapse in">
+                                                        <label>IBO NUMBER</label><input type="text"><button class="btn primary">APPLY</button>
+                                                        <p class>Don't know IBO Number? <a href="">Search LOS</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio2" />
+                                                    <label id="label2" for="radio2" class="collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">Customer</label>
+                                                    <div id="collapseTwo" class="collapse">
+                                                        <label>CUSTOMER ID</label><input type="text"><button class="btn primary">APPLY</button>
+                                                    </div>
+                                                </div>
+                                                <div class="panel">
+                                                    <input class="amwa-radio" type="radio" name="optradio" id="radio3" />
+                                                    <label id="label3" for="radio3" class="collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">New Customer</label>
+                                                    <div id="collapseThree" class="collapse">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div id="label1-conainer">
+                            <div class="shipping-delivery-ship">
+                                <p class="shipping-delivery-shipping-header">DO YOU WANT TO TRANSFER PV/BV</p>
+                                <form action="" method="post" name="editAddress">
+                                    <fieldset>
+                                        <div class="form-group row">
+                                            <label class="col-md-2 col-xs-12">TRANSFER PV/BV</label>
+                                            <div class="form-right-wrapper">
+                                                <input class="amwa-radio" type="radio" name="optradio" id="radio21" value="radio21" checked/>
+                                                <label for="radio21">Yes</label>
+                                                <input class="amwa-radio" type="radio" name="optradio" id="radio22" value="radio22" checked/>
+                                                <label for="radio22">No</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-2 col-xs-12">BONUS PERIOD</label>
+                                            <div class="form-right-wrapper">
+                                            <select class="form-control no-uppercase-form-control create-a-receipt-select" tabindex="-1" aria-hidden="true">
+                                                <option value="" class="js-account-option-link text-capitalize">August 2016</option>
+                                                <option value="" class="js-account-option-link text-capitalize">August 2017</option>
+                                                <option value="" class="js-account-option-link text-capitalize">August 2018</option>
+                                                <option value="" class="js-account-option-link text-capitalize">August 2019</option>
+                                            </select>
+                                            <a href="">Bonus Calendar</a>
+
+                                        </div>
+                                        </div>
+
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="shipping-delivery-ship">
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">FIRST NAME</label>
+                                <div class="form-right-wrapper">
+                                <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">LAST NAME</label>
+                                <div class="form-right-wrapper">
+                                <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">ADDRESS LINE 1</label>
+                                <div class="form-right-wrapper">
+                                <input name="" type="text" value="" />
+                            </div>
+                            </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">ADDRESS LINE 2<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                    <div class="form-right-wrapper">
+                                        <input name="" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">CITY/STATE</label>
+                                    <div class="form-right-wrapper">
+                                        <div class="row form-right-wrapper-width">
+                                        <div class="col-xs-8">
+                                            <input class="width-auto" name="" type="text" value="" />
+                                        </div>
+                                            <div class="col-xs-4">
+                                                <select class="form-control no-uppercase-form-control city-select" tabindex="-1" aria-hidden="true">
+                                                    <option value="" class="">MI</option>
+                                                    <option value="" class="">MI</option>
+                                                    <option value="" class="">MI</option>
+                                                    <option value="" class="">MI</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">ZIP</label>
+                                    <div class="form-right-wrapper">
+                                        <input name="" class="width-50" type="text" value="" />
+                                        <span class="line-through">—</span>
+                                        <input name="" class="width-50" type="text" value="" />
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">PHONE<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                    <div class="form-right-wrapper">
+                                        <input name="" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">EMAIL<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                    <div class="form-right-wrapper">
+                                        <input name="" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">ADD MESSAGE TO RECEIPT<br/><span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                    <div class="form-right-wrapper">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div id="label2-conainer">
+                        <div class="shipping-delivery-ship">
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">FIRST NAME</label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">LAST NAME</label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">ADDRESS LINE 1</label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">ADDRESS LINE 2<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">CITY/STATE</label>
+                                <div class="form-right-wrapper ">
+
+
+                                    <input class="width-auto" name="" type="text" value="" />
+
+
+                                    <select class="form-control no-uppercase-form-control" tabindex="-1" aria-hidden="true">
+                                        <option value="" class="">MI</option>
+                                        <option value="" class="">MI</option>
+                                        <option value="" class="">MI</option>
+                                        <option value="" class="">MI</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">ZIP</label>
+                                <div class="form-right-wrapper">
+                                    <input name="" class="width-50" type="text" value="" />
+                                    -
+                                    <input name="" class="width-50" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">PHONE<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">EMAIL<span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                <div class="form-right-wrapper">
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">ADD MESSAGE TO RECEIPT<br/><span class="font-italic font-text-transform-none font-weight-normal">(Optional)</span></label>
+                                <div class="form-right-wrapper">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="label3-conainer">
+                            <div class="shipping-delivery-ship">
+                                <p class="size-small color-gray font-italic">Enter new customer information below or <a href="">Register New Customer</a></p>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">FIRST NAME</label>
+                                    <input name="" type="text" value="" />
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">LAST NAME</label>
+                                    <input name="" type="text" value="" />
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-xs-12">PHONE OR EMAIL</label>
+                                    <input name="" type="text" value="" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="shipping-delivery-ship clear-border">
+                            <p class="shipping-delivery-shipping-header">seller information options<span class="color-gray font-italic font-text-transform-none font-weight-normal">(Appears on Receipt)</span></p>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">BUSINESS NAME</label>
+                                <input name="" type="text" value="" />
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">PHONE</label>
+                                <input name="" type="text" value="" />
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-xs-12">EMAIL</label>
+                                <input name="" type="text" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="button-bottom">
+            <a href="create-a-receipt-2.html" class="btn primary">NEXT</a>
+        </div>
+    </div>
+    <div id="quick"></div>
+    <div id="footer"></div>
+    
+</main>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/select2.js"></script>
+<script src="scripts/bootstrap.datepicker.js"></script>
+<script src="scripts/new.js"></script>
+<script>$(function () {
+    $(".quickShopBody").collapse();
+    $(".form_datetime").datepicker({format: 'dd-mm-yyyy',autoclose: true});
+    $(".select2-hidden-accessible").select2();
+
+    //search box click even
+    $(".icon-search").click(function(e) {
+        e.preventDefault();
+        var value = $(".form-control.js-site-search-input.ui-autocomplete-input[placeholder]").val();
+        console.log(value);
+        if (value == 'did you mean') {
+            window.location.href = "did-you-mean.html";
+        } else {
+            window.location.href = "search-no-result.html";
+        }
+    });
+
+    $("#label1").click(function() {
+       if($(this).hasClass("collapsed")){
+           $("#label1-conainer").show();
+           $("#label2-conainer,#label3-conainer").hide();
+       }
+    });
+    $("#label2").click(function() {
+        if($(this).hasClass("collapsed")){
+            $("#label2-conainer").show();
+            $("#label1-conainer,#label3-conainer").hide();
+        }
+    });
+    $("#label3").click(function() {
+        if($(this).hasClass("collapsed")){
+            $("#label3-conainer").show();
+            $("#label2-conainer,#label1-conainer").hide();
+        }
+    });
+})</script>
+</body>
+</html>

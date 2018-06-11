@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>register-customer-step-1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords">
+        <meta name="description" content="NY Fee Bundle">
+        <meta name="robots" content="index,follow">
+        
+        <link rel="stylesheet" type="text/css" href="scripts/bootstrap-slider.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/select2.css">
+        <link rel="stylesheet/less" type="text/css" href="styles/base.less">
+        
+        <script type="text/javascript" src="scripts/less.min.js"></script>
+    </head>
+    <body id="register-step-page" class="page">
+        <main>
+            <div id="headerNologin"></div>
+            <div class="container-fluid main-container">
+                <div class="print-hide breadcrumb-section">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="homepage-logged-in.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="register-landing.html">Register</a>
+                        </li>
+                        <li class="active">CUSTOMER Registration</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="container-fluid main-container">
+                <div  class="product-list-page-title md25">CUSTOMER registration</div>
+                <p class="total-tip">Ready to register as a new Amway customer? Simply fill out the fields below.</p>
+                <h6 class="tips">All fields are required.</h6>
+                <div class="form-horizontal amway-theme">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">First Name</label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Last name</label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Email(username)</label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">CONFIRM EMAIL</label>
+                        <div class="col-md-10 col-xs-12">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">country of primary residence</label>
+                        <div class="col-md-10 col-xs-12 new-select">
+                            <select class="form-control no-uppercase-form-control register-absolute-width">
+                                <option>United States</option>
+                                <option>Chinese</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">language preference</label>
+                        <div class="col-md-10 col-xs-12 new-select">
+                            <select class="form-control no-uppercase-form-control register-absolute-width">
+                                <option>English</option>
+                                <option>Chinese</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="shipping-delivery register-option-div">
+                    <div id="shippingdiv" class="shipping-delivery-ship form-horizontal">
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1" />
+                            <label for="radio1" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">I already know an IBO and have their IBO Number</label>
+                            <div id="collapseOne" class=" panel-collapse collapse in">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">SPONSOR IBO NUMBER</label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">SPONSOR IBO LAST NAME</label>
+                                    <div class="col-md-10 col-xs-12">
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <button class="btn-line">CONFIRM</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio2" />
+                            <label for="radio2" class="collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">I want to be connected with IBO but I don't know one.</label>
+                            <div id="collapseTwo" class=" panel-collapse collapse">
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <input class="amwa-radio" type="radio" name="optradio" id="radio3" />
+                            <label for="radio3" class="collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">I am not interested in the benefits of connecting with an IBO right now.</label>
+                            <div id="collapseThree" class=" panel-collapse collapse">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="next-control">
+                    <a class="btn primary" id="sign-btn">SIGN UP</a>
+                    <a href="" class="">Cancel</a>
+                </div>
+            </div>
+            </div>
+            <div id="quick"></div>
+            <div id="footer"></div>
+        </main>
+
+        <script type="text/javascript" src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/select2.js"></script>
+        <script src="scripts/new.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#sign-btn').click(function () {
+                    location.href = 'register-customer-step-2.html'
+                });
+                $(".select2-hidden-accessible").select2();
+            })
+        </script>
+    </body>
+
+</html>
