@@ -45,83 +45,29 @@
         <div class="row">
             <div class="col-md-9 col-xs-12 shipping-delivery">
                 <div class="form-horizontal amway-theme">
-                    <h3 class="h3-title fontWeight600">shopping & payment information</h3>
-
-                    <div id="shippingdiv" class="shipping-delivery-ship">
-                        <div class="panel">
-                            <input class="amwa-radio" type="radio" name="optradio" id="radio1" value="radio1">
-                            <label for="radio1" class="radio-label" data-toggle="collapse" href="#collapseOne" data-parent="#shippingdiv">New Credit Card</label>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="payment-sub-box">
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">card number</label>
-                                        <div class="col-md-8 col-xs-12">
-                                            <input type="text" class="form-control">
-                                            <img src="images/register/card-1.jpg" class="card-img">
-                                            <img src="images/register/card-2.jpg" class="card-img">
-                                            <img src="images/register/card-3.jpg" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">NAME ON CARD</label>
-                                        <div class="col-md-8 col-xs-12">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group" id="expiration-date">
-                                        <label class="col-md-2 control-label">EXPIRATION DATE</label>
-                                        <div class="col-md-8 col-xs-12 col">
-                                            <div class="row">
-                                                <div class="col-xs-6 mm">
-                                                    <input type="text" class="form-control" placeholder="MM">
-                                                </div>
-                                                <div class="col-xs-6 yy">
-                                                    <input type="text" class="form-control" placeholder="YY">
-                                                </div>
-                                            </div>
-
-                                            <span class="slash">/</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label">SECURITY CODE</label>
-                                        <div class="col-md-8 col-xs-12">
-                                            <input type="text" class="form-control security-code">
-                                            <div class="action">
-                                                <input id="use-primary" type="checkbox" checked="checked">
-                                                <label for="use-primary" class="normal">Use as Primary Card</label>
-                                                <br><br>
-                                                <input id="use-registration" type="checkbox" checked="checked">
-                                                <label for="use-registration" class="normal">Use Registration as Billing Address</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <h3 class="h3-title fontWeight600">Shipping & Payment Information</h3>
+                        <div id="shippingdiv" class="shipping-delivery-ship">
+                            <div class="radio-wrapper marginBottom10">
+                                <label class="amw-radio-wrap radio-label">
+                                    <input type="radio" name="radio-shipping-info" value="method1" checked="checked" class="amw-global-radio">
+                                    <span class="amw-radio-overlay"></span>
+                                    <span class="amw-label-radio-text">Credit/Debit Card</span>
+                                </label>
                             </div>
-                        </div>
-                        <div class="panel col-panel">
-                            <input class="amwa-radio" type="radio" name="optradio" id="radio2">
-                            <label for="radio2" class="radio-label collapsed" data-toggle="collapse" href="#collapseTwo" data-parent="#shippingdiv">PayPal</label>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-
+                            <div class="radio-wrapper marginBottom0">
+                                <label class="amw-radio-wrap radio-label">
+                                    <input type="radio" name="radio-shipping-info" value="method2" class="amw-global-radio">
+                                    <span class="amw-radio-overlay"></span>
+                                    <span class="amw-label-radio-text">Waiting Payment</span>
+                                </label>
                             </div>
-                        </div>
-                        <div class="panel">
-                            <input class="amwa-radio" type="radio" name="optradio" id="radio3">
-                            <label for="radio3" class="radio-label collapsed" data-toggle="collapse" href="#collapseThree" data-parent="#shippingdiv">Bank Draft</label>
-                            <div id="collapseThree" class="panel-collapse collapse">
-
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <input class="amwa-radio" type="radio" name="optradio" id="radio4">
-                            <label for="radio4" class="radio-label collapsed" data-toggle="collapse" href="#collapseFour" data-parent="#shippingdiv">2 Interest-Free Payments of $XX.XX&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="fontWeight600">Details</a></label>
-                            <div id="collapseFour" class="panel-collapse collapse">
-
+                            <div class="divider"></div>
+                            <div class="next-control">
+                                <a class="btn primary" id="submit-btn">submit</a>
+                                <a class="btn btn-cancel">Back</a>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
             <div class="col-md-3 col-xs-12">
                 <div class="reg-side-info">
@@ -129,7 +75,7 @@
                     <ul class="content">
                         <li><div class="fl fontWeight600">Registration Items</div> <i>2 X Amway product <br>Starter Kit</i> <span>$99.99</span></li>
                         <li><div class="fl fontWeight600">Registration Items </div> <i>2 X Applicant</i><span>$50.00</span></li>
-                        <li><div class="fl fontWeight600">ABOAI Menbership</div> <i>2 X Applicant</i> <span>$12.00</span></li>
+                        
                         <li class="line"></li>
                         <li><div class="fontWeight600">Item(s) Subtotal </div><span>$149.99</span></li>
                         <li><div class="fontWeight600">Delivery Charge</div> <span>$11.75</span></li>

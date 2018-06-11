@@ -49,65 +49,7 @@
             </li>
         </ul>
         <div class="container new-ibo-reg">
-            <!-- Sponsor popup -->
-            <div class="popup box-sizing" id="sponsor-confirm-popup">
-                <div class="pop-box">
-                    <div class="pop-header uppercase">Confirm Sponsoring ABO
-                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
-                    </div>
-                    <div class="pop-content">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <span class="title">Sponsoring ABO Number</span>
-                            </div>
-                            <div class="col-xs-6 col-xs-rig">123456910</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <span class="title">Sponsoring ABO Name</span>
-                            </div>
-                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
-                        </div>
-                    </div>
-                    <div class="pop-footer">
-                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
-                        <a class="link-cancel" id="cancel-btn">Cancel</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sponsor popup with country-->
-            <div class="popup box-sizing" id="sponsor-confirm-with-country-popup">
-                <div class="pop-box">
-                    <div class="pop-header uppercase">Confirm Sponsoring ABO
-                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
-                    </div>
-                    <div class="pop-content">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <span class="title">Sponsoring ABO Number</span>
-                            </div>
-                            <div class="col-xs-6 col-xs-rig">123456910</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <span class="title">Sponsoring ABO Name</span>
-                            </div>
-                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <span class="title">Country</span>
-                            </div>
-                            <div class="col-xs-6 col-xs-rig">Malaysia</div>
-                        </div>
-                    </div>
-                    <div class="pop-footer">
-                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
-                        <a class="link-cancel" id="cancel-btn">Cancel</a>
-                    </div>
-                </div>
-            </div>
+           
 
             <h6 class="tips tips-marginLeftShort">All fields are required unless noted as optional.</h6>
 
@@ -343,8 +285,7 @@
                             </div>
                             <div class="col-xs-4 col last-col">
                                 <select class="form-control">
-                                    <option>1979</option>
-                                    <option>1980</option>
+                                    <option>2561</option>
                                 </select>
                             </div>
                         </div>
@@ -381,7 +322,7 @@
                         </label>
                         <div class="col-md-10 col-xs-12">
                             <input type="text" class="form-control" value="12345612940586">
-                            <button type="button" class="btn primary abo-step1-confirm-button" id="confirm">Confirm</button>
+                            <button type="button" class="btn primary abo-step1-confirm-button" id="sponsor-confirm2">Confirm</button>
                         </div>
                     </div>
                     <div class="form-group">
@@ -395,19 +336,16 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label">Identity Card Number
-                            <br>
-                            <em class="label-hint">*For Foreigners (Non-Thai)</em>
-                        </label>
+                        <label class="col-md-2 control-label">PASSPORT number
+                            <i class="mbr-tips">*For Foreigners(Non-Thai)</i></label>
                         <div class="col-md-10 col-xs-12">
-                            <input type="text" class="form-control" value="">
-                        </div>
+                            <input type="text" class="form-control"></div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label input-label">
                             <input class="_checkbox-element-global-class" value="" data-product-code="" type="checkbox" checked="checked">
                             <span class="_checkbox-element-global-span"></span>
-                            <span class="label-text">Add as Co-Applicant</span>
+                            <span class="label-text co-applicant">Add as Co-Applicant</span>
                         </label>
                     </div>
                 </div>
@@ -503,7 +441,65 @@
             <div id="quick"></div>
             <div id="footer"></div>
     </main>
+ <!-- Sponsor popup -->
+            <div class="popup box-sizing" id="sponsor-confirm-popup">
+                <div class="pop-box">
+                    <div class="pop-header uppercase">Confirm Sponsoring ABO
+                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
+                    </div>
+                    <div class="pop-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Number</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">123456910</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Name</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
+                        </div>
+                    </div>
+                    <div class="pop-footer">
+                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
+                        <a class="link-cancel" id="cancel-btn">Cancel</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Sponsor popup with country-->
+            <div class="popup box-sizing" id="sponsor-confirm-with-country-popup">
+                <div class="pop-box">
+                    <div class="pop-header uppercase">Confirm Sponsoring ABO
+                        <i class="pop-close cart-popup__close icon icon-x-close"></i>
+                    </div>
+                    <div class="pop-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Number</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">123456910</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Sponsoring ABO Name</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Jeniffer Jones</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="title">Country</span>
+                            </div>
+                            <div class="col-xs-6 col-xs-rig">Malaysia</div>
+                        </div>
+                    </div>
+                    <div class="pop-footer">
+                        <a href="" class="btn primary" id="submit-btn">Confirm</a>
+                        <a class="link-cancel" id="cancel-btn">Cancel</a>
+                    </div>
+                </div>
+            </div>
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/select2.js"></script>
@@ -548,7 +544,7 @@
             });
 
             // Sponsor confirm with country click
-            $("#sponsor-confirm-with-country").click(function () {
+            $("#sponsor-confirm2").click(function () {
                 $("#sponsor-confirm-with-country-popup").fadeIn();
             });
         });

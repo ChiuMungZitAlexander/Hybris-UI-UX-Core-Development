@@ -4,11 +4,12 @@
 // --------------------------------------------------
 
 .breadcrumb-section {
-  padding: 166px 0 0;
-  
+  padding: 166px 0 1em;
+  position: relative;
+  display: block;
   .breadcrumb {
     padding: @breadcrumb-padding-vertical 0 @breadcrumb-padding-vertical 0;
-    margin-bottom: @line-height-computed;
+    margin-bottom: 0.25em;
     list-style: none;
     border-radius: @border-radius-base;
     font-size: 0.875em;
@@ -34,6 +35,7 @@
   }
   @media (max-width:768px) {
     padding-top: 60px;
+    padding-bottom:0;
     .breadcrumb {
       margin:15px 0;
     }

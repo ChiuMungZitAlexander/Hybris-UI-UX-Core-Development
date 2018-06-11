@@ -127,7 +127,6 @@
                             <div class="col-xs-4 col last-col">
                                 <select class="form-control">
                                     <option>2561</option>
-                                    <option>9999</option>
                                 </select>
                             </div>
                         </div>
@@ -137,21 +136,33 @@
                 <h3 class="form-sub-title">TAX PAYER INFORMATION</h3>
                 <div class="form-group">
                     <label class="col-md-2 control-label">TAX PAYER</label>
+
                     <div class="col-md-10 col-xs-12">
-                        <div class="col-md-1 col-xs-12 select-box image-select-box panel step2-email-container">
-                            <input class="amwa-radio" type="radio" name="tax-payer1" id="select1">
-                            <label for="select1" class="radio-label collapsed" data-toggle="collapse" href="#collapseOne">Primary Applicant</label>
-                            <div id="collapseOne" class="panel-collapse collapse" style="display: none;">
+                        <div class="select-box image-select-box panel step2-email-container">
+                            <div class="radio-wrapper marginBottom10">
+                                <label class="amw-radio-wrap radio-label">
+                                    <input type="radio" name="radio-shipping-info" value="method1" checked="checked" class="amw-global-radio">
+                                    <span class="amw-radio-overlay"></span>
+                                    <span class="amw-label-radio-text">Primary Applicant</span>
+                                </label>
                             </div>
-                            <input class="amwa-radio" type="radio" name="tax-payer2" id="select2">
-                            <label for="select2" class="radio-label" data-toggle="collapse" href="#collapseTwo">Co-Applicant</label>
-                            <div id="collapseTwo" class="panel-collapse collapse in" style="display: none;">
+                            <div class="radio-wrapper marginBottom0">
+                                <label class="amw-radio-wrap radio-label">
+                                    <input type="radio" name="radio-shipping-info" value="method2" class="amw-global-radio">
+                                    <span class="amw-radio-overlay"></span>
+                                    <span class="amw-label-radio-text">Co-Applicant</span>
+                                </label>
                             </div>
-                            <input class="amwa-radio" type="radio" name="tax-payer3" id="select3">
-                            <label for="select3" class="radio-label" data-toggle="collapse" href="#collapseThree">Primary Applicant & Co-Applicant</label>
-                            <div id="collapseThree" class="panel-collapse collapse in">
+                            <div class="radio-wrapper marginBottom0">
+                                <label class="amw-radio-wrap radio-label">
+                                    <input type="radio" name="radio-shipping-info" value="method3" class="amw-global-radio">
+                                    <span class="amw-radio-overlay"></span>
+                                    <span class="amw-label-radio-text">Primary Applicant & Co-Applicant</span>
+                                </label>
                             </div>
                         </div>
+                           
+                        
                     </div>
                 </div>
                 <div class="divider"></div>
